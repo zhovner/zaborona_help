@@ -1,0 +1,19 @@
+{
+  "name": "zaborona",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhovner/zaborona_help.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhovner/zaborona_help/issues"
+  },
+  "homepage": "https://github.com/zhovner/zaborona_help#readme"
+}
