@@ -36,7 +36,7 @@
                 <div class="t-container t-align_center">
                     <div class="t-col t-col_8 t-prefix_2">
                         <div class="t225__title t-title t-title_md" field="title" >Инструкция по настройке Zaborona VPN для iOS/MacOS</div>
-                        <div class="t225__descr t-descr t-descr_xxl" field="descr" >Данная инструкция работает на iOS ≥ 8<br> и MacOS не ниже 10.7 Lion.</div>
+                        <div class="t225__descr t-descr t-descr_xxl" field="descr" >Данная инструкция работает на iOS ≥ 8<br> и MacOS не ниже 10.11 El Capitan.</div>
                     </div>
                 </div>
             </div>
@@ -50,8 +50,8 @@
                             <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff;; border: 2px solid #1f5bff; ">1</div>
                         </div>
                         <div class="t510__textwrapper t-cell t-valign_top" >
-                            <div class="t-descr t-descr_sm"  field="li_descr__1495296369410">Установите приложение <a href="https://itunes.apple.com/us/app/openvpn-connect/id590379981">OpenVPN Connect</a> из AppStore.
-                                </div>
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296369410">Зайдите на сайт <a href="https://zaborona.help/">zaborona.help</a> через браузер Safari.
+                                <br><strong>Важно:</strong> При открытии ссылки через мессенджеры или из почты, файл автоконфигурации может не работать.</div>
                         </div>
                     </div>
                     <div class="t-clear t510__separator" ></div>
@@ -60,9 +60,8 @@
                             <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff;; border: 2px solid #1f5bff; ">2</div>
                         </div>
                         <div class="t510__textwrapper t-cell t-valign_top" >
-                            <div class="t-descr t-descr_sm"  field="li_descr__1495296384224">Скачайте профиль автоконфигурации VPN.
-                                <br><a href="https://zaborona.help/zaborona-help.mobileconfig">https://zaborona.help/zaborona-help.ovpn</a>
-                                <br><strong>Важно:</strong> Используйте браузер Safari. При открытии ссылки через мессенджеры или из почты, файл автоконфигурации может не работать.</div>
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296384224">Скачайте профиль автоконфигурации VPN:
+                                <br><a href="https://zaborona.help/zaborona-help.mobileconfig">https://zaborona.help/zaborona-help.mobileconfig</a></div>
                         </div>
                     </div>
                     <div class="t-clear t510__separator" ></div>
@@ -71,7 +70,7 @@
                             <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff;; border: 2px solid #1f5bff; ">3</div>
                         </div>
                         <div class="t510__textwrapper t-cell t-valign_top" >
-                            <div class="t-descr t-descr_sm"  field="li_descr__1495296393211">Импортируйте файл автоконфигурации и подключитесь к VPN.</div>
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296393211">Установите профиль автоконфигурации</div>
                         </div>
                     </div>
                 </div>
@@ -81,7 +80,7 @@
             <!-- T107 -->
             <div class="t107">
                 <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
-                    <meta itemprop="image" content="/img/ios_openvpn.png"> <img src="/img/ios_openvpn.png" data-original="/img/ios_openvpn.png" class="t107__width t-width t-width_10 t-img loaded" imgfield="img"> </div>
+                    <meta itemprop="image" content="/img/ios1.png"> <img src="/img/ios1.png" data-original="/img/ios1.png" class="t107__width t-width t-width_10 t-img loaded" imgfield="img"> </div>
             </div>
         </div>
         <div id="rec20207054" class="r r_anim r_showed" style="padding-top:56px;padding-bottom:56px; " data-record-type="106">
@@ -89,11 +88,10 @@
             <div class="t004">
                 <div class="t-container ">
                     <div class="t-col t-col_8 t-prefix_2">
-                        <div field="text" class="t-text t-text_md ">После подключения вы увидите значок VPN в области уведомлений вверху. Для управления подключением используйте программу OpenVPN Connect.
+                        <div field="text" class="t-text t-text_md ">После установки профиля VPN автоматически активируется и будет включен всегда, пока устройство имеет подключение к интернету. Это может немного увеличить расход батареи.
                             <br>
                             <br> VPN активируется только для заблокированных сайтов и приложений. Список заблокированных сетей можно посмотреть <a href="/ips.txt">здесь</a>. Остальные сайты будут работать как и раньше напрямую через вашего провайдера.
                             <br>
-                            <br> Постоянное подклчюение к VPN может незначительно влиять на расход батареи.
                         </div>
                     </div>
                 </div>
@@ -114,7 +112,8 @@
             <div class="t004">
                 <div class="t-container ">
                     <div class="t-col t-col_8 t-prefix_2">
-                        <div field="text" class="t-text t-text_md ">Для полного удаления Zaborona VPN с устройства, удалите приложение OpenVPN Connect.
+                        <div field="text" class="t-text t-text_md ">1. Зайдите в меню «Настройки → Основные → Профили»
+                            <br> 2. Удалите профиль «Антiзаборона VPN»
                             <br>
                         </div>
                     </div>
