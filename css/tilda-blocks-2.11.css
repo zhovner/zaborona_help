@@ -44,6 +44,10 @@
     color: #000
 }
 
+.t-text li {
+    padding-bottom: 0.5em;
+}
+
 .t-text_xs {
     font-size: 15px;
     line-height: 1.55
@@ -196,6 +200,10 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #000
+}
+
+.t-descr li {
+    padding-bottom: 0.5em;
 }
 
 .t-descr_xxs {
