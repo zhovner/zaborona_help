@@ -11,7 +11,7 @@
 
 #allrecords a {
     color: #3888ff;
-    text-decoration: none
+    text-decoration: underline
 }
 
 #allrecords a[href^=tel] {

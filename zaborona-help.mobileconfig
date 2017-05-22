@@ -48,15 +48,6 @@
                         <string></string>
                     </array>
 
-                    <key>OnDemandEnabled</key>
-                    <integer>1</integer>
-                    <key>OnDemandRules</key>
-                    <array>
-                        <dict>
-                            <key>Action</key>
-                            <string>Connect</string>
-                        </dict>
-                    </array>
                     <key>DeadPeerDetectionRate</key>
                     <string>High</string>
                     <key>AuthenticationMethod</key>
