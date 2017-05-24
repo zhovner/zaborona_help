@@ -38,6 +38,21 @@
     }
 }
 
+.button-donate {
+    position: fixed;
+    right: 0;
+    bottom: 0; 
+    background-color: rgba(255, 255, 255, 0.8);    
+    width: 120px;
+    height: 140px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
 .t-text {
     font-family: 'Open Sans', serif;
     font-weight: 400;
