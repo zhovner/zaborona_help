@@ -53,6 +53,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.card-number span {
+    font-weight: normal;
+    padding-right: 10px;
+}
+
 .t-text {
     font-family: 'Open Sans', serif;
     font-weight: 400;
