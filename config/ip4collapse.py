@@ -11,7 +11,7 @@ print('IP Addresses before collapsing:', len(nlist))
 collapsed = ipaddress.collapse_addresses(nlist)
 cnt = 0
 for addr in collapsed:
-    #print(addr)
-    print(addr.with_netmask.replace('/', ' '))
+    print(addr)
+    #print(addr.with_netmask.replace('/', ' '))
     cnt+=1
 print('IP Addresses after collapsing:', cnt)
