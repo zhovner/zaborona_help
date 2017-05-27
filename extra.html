@@ -58,17 +58,63 @@
                                 <br /><a href="https://github.com/zhovner/zaborona_help/tree/master/config">https://github.com/zhovner/zaborona_help/tree/master/config</a>
                                 <br />
                                 <br /><span style="font-size: 32px;">Ручная настройка OpenVPN</span>
-                                <br />
-                                <br />Адрес сервера: <strong>vpn.zaborona.help</strong>
-                                <br />
-                                <p style="font-size: 80%;padding: 10px 0">Доменное имя направлено на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов могут измениться.</p>
-                                Порт: <strong>1194</strong>
-                                <br /> Протокол: <strong>TCP</strong>
-                                <br /> Протокол инкапсулирования/device type: <strong>L3 (tun)</strong>
-                                <br /> Алгоритм шифрования: <strong>AES-128-GCM</strong> (рекомендуется) либо <strong>AES-128-CBC</strong>
-                                <br /> Корневой сертификат: <a href="https://zaborona.help/ca.crt">https://zaborona.help/ca.crt</a>
-                                <br /> Клиентский сертификат: <a href="https://zaborona.help/zaborona-help.crt">https://zaborona.help/zaborona-help.crt</a>
-                                <br /> Приватный ключ: <a href="https://zaborona.help/zaborona-help.key">https://zaborona.help/zaborona-help.key</a>
+                               <div>
+  <style type="text/css">
+    .zz-config {
+      margin-top: 10px;
+    }
+    .zz-config li {
+      /*margin-bottom: 5px*/
+      margin-left: 10px;
+    }
+    .zz-value {
+      font-family: monospace;
+      font-weight: bold;
+    }
+    .zz-note {
+      display: block;
+      font-size: 14px;
+    }
+  </style>
+
+  <ul class="zz-config">
+    <li>
+      Адрес сервера &mdash;
+      <span class="zz-value">vpn.zaborona.help</span>
+      <span class="zz-note">Доменное имя направлено на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов могут измениться.</span>
+    </li>
+    <li>
+      Порт &mdash;
+      <span class="zz-value">1194</span>
+    </li>
+    <li>
+      Протокол &mdash;
+      <span class="zz-value">TCP</span>
+    </li>
+    <li>
+      Протокол инкапсулирования/device type &mdash;
+      <span class="zz-value">L3 (tun)</span>
+    </li>
+    <li>
+      Алгоритм шифрования &mdash;
+      <span class="zz-value">AES-128-GCM</span>
+      (рекомендуется),
+      <span class="zz-value">AES-128-CBC</span>
+    </li>
+    <li>
+      Корневой сертификат &mdash;
+      <a href="https://zaborona.help/ca.crt">https://zaborona.help/ca.crt</a>
+    </li>
+    <li>
+      Клиентский сертификат &mdash;
+      <a href="https://zaborona.help/zaborona-help.crt">https://zaborona.help/zaborona-help.crt</a>
+    </li>
+    <li>
+      Приватный ключ &mdash;
+      <a href="https://zaborona.help/zaborona-help.key">https://zaborona.help/zaborona-help.key</a>
+    </li>
+  </ul>
+</div>
                             </div>
                         </div>
                     </div>
