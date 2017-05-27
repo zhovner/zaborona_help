@@ -4,6 +4,11 @@ push "route 8.8.8.8"
 push "dhcp-option DNS 74.82.42.42" # HE.net DNS 
 push "route 74.82.42.42" # Route to HE.net DNS
 
+
+# IPv6 DNS. Not working?
+#push "dhcp-option DNS6 2001:4860:4860::8888"
+#push "route-ipv6 2001:4860:4860::8888"
+
 # Persist TUN
 push "persist-tun"
 
@@ -33,6 +38,12 @@ push "route 199.21.96.0 255.255.252.0"
 push "route 199.36.240.0 255.255.252.0"
 push "route 213.180.192.0 255.255.224.0"
 
+push "route-ipv6 2001:678:384::/48"
+push "route-ipv6 2620:10f:d000::/44"
+push "route-ipv6 2a02:6b8::/32"
+push "route-ipv6 2a02:5180::/32"
+
+
 # Mail.ru network
 push "route 5.61.16.0 255.255.248.0"
 push "route 5.61.232.0 255.255.248.0"
@@ -56,6 +67,10 @@ push "route 208.87.94.0 255.255.255.0"
 push "route 217.20.144.0 255.255.240.0"
 push "route 217.69.128.0 255.255.240.0"
 
+push "route-ipv6 2a00:1148::/32"
+push "route-ipv6 2a00:a300::/32"
+push "route-ipv6 2a00:b4c0::/32"
+
 
 # VK.com network
 push "route 87.240.128.0 255.255.192.0"
@@ -65,15 +80,19 @@ push "route 95.213.0.0 255.255.192.0"
 push "route 185.29.130.0 255.255.255.0"
 push "route 185.32.248.0 255.255.252.0"
 
+push "route-ipv6 2a00:bdc0::/36"
+push "route-ipv6 2a00:bdc0:e003::/48"
+push "route-ipv6 2a00:bdc0:e004::/46"
+push "route-ipv6 2a00:bdc0:e008::/48"
+push "route-ipv6 2a00:bdc0:f000::/36"
+
 
 # Kaspersky network
-push "route 77.74.176.0 255.255.252.0"
-push "route 77.74.181.0 255.255.255.0"
-push "route 77.74.183.0 255.255.255.0"
-push "route 93.159.228.0 255.255.252.0"
-push "route 185.54.220.0 255.255.254.0"
-push "route 185.85.12.0 255.255.255.0"
-push "route 185.85.14.0 255.255.254.0"
 push "route 77.74.176.0 255.255.248.0"
 push "route 91.103.64.0 255.255.248.0"
 push "route 93.159.224.0 255.255.248.0"
+push "route 185.54.220.0 255.255.254.0"
+push "route 185.85.12.0 255.255.255.0"
+push "route 185.85.14.0 255.255.254.0"
+
+push "route-ipv6 2a03:2480::/33"
