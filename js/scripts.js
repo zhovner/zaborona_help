@@ -1,9 +1,6 @@
-const warning = 0;
-
-
 document.addEventListener("DOMContentLoaded", function(){
 	let message = document.getElementById('warning_ddos');
-	if ( message && warning ){
+	if ( message && warning_ddos ){
 		message.style.display = "block";
 	}
 })
