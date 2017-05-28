@@ -54,9 +54,9 @@
                         <div class="t512__textwrapper t-cell t-valign_top" style="">
                             <div field="text" class="t-text t-text_md ">Сервер работает на OpenVPN 2.4.2
                                 <br />
-                                <br /> Конфиги сервера доступны на Github:
-                                <br /><a href="https://github.com/zhovner/zaborona_help/tree/master/config">https://github.com/zhovner/zaborona_help/tree/master/config</a>
-                                <br />
+                                <br /> Конфиги сервера и исходный код сайта доступны на <a href="https://github.com/zhovner/zaborona_help/tree/master/config">GitHub</a>.
+                                <br /> Если вы нашли ошибку на сайте или хотите что-то дополнить, это можно сделать отправив <a href="https://git-scm.com/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B">pull request</a>
+                                <br /> Отпавить пулл реквест можно без установки программ прямо из браузера. Для этого нажмите Fork, внесите правки в свой клон проекта и потом отправьте pull requst.
                                 <br /><span style="font-size: 32px;">Ручная настройка OpenVPN</span>
                                 <br />
                                 <br /> 
@@ -83,7 +83,7 @@
     <li>
       Адрес сервера &mdash;
       <span class="zz-value">vpn.zaborona.help</span>
-      <span class="zz-note">Доменное имя направлено на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов могут измениться.</span>
+      <span class="zz-note">Доменное имя направлено на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
     </li>
     <li>
       Порт &mdash;
@@ -92,6 +92,7 @@
     <li>
       Протокол &mdash;
       <span class="zz-value">TCP</span>
+      <span class="zz-note">Мы используем TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
     </li>
     <li>
       Протокол инкапсулирования/device type &mdash;
@@ -105,18 +106,23 @@
     </li>
     <li>
       Корневой сертификат &mdash;
-      <a href="https://zaborona.help/ca.crt">https://zaborona.help/ca.crt</a>
+      <a href="https://zaborona.help/ca.crt">ca.crt</a>
     </li>
     <li>
       Клиентский сертификат &mdash;
-      <a href="https://zaborona.help/zaborona-help.crt">https://zaborona.help/zaborona-help.crt</a>
+      <a href="https://zaborona.help/zaborona-help.crt">zaborona-help.crt</a>
     </li>
     <li>
       Приватный ключ &mdash;
-      <a href="https://zaborona.help/zaborona-help.key">https://zaborona.help/zaborona-help.key</a>
+      <a href="https://zaborona.help/zaborona-help.key">zaborona-help.key</a>
     </li>
   </ul>
 </div>
+                                <br /><span style="font-size: 32px;">Инструкции от пользователей</span>
+                                <br />
+                                <br /> Протокол OpenVPN поддерживается большим количеством разных устройств. Если вы знаете, как настроить Zaborona VPN на вашем устройстве, пожалуйста напишите инструкцию в нашу <a href="https://github.com/zhovner/zaborona_help/wiki">Wiki</a>.
+                                <br />
+                                <br />
                             </div>
                         </div>
                     </div>
