@@ -1,2 +1,14 @@
 # zaborona_help
-Бесплатный сервис для обхода блокировок сайтов в Украине — https://zaborona.help
+Бесплатный сервис для обхода блокировок сайтов в Украине — https://zaborona.help  
+Идея скопирована с https://antizapret.prostovpn.org/  
+
+Если вы знаете, как настроить Zaborona VPN на вашем устройстве, пожалуйста напишите инструкцию в нашу [Wiki](https://github.com/zhovner/zaborona_help/wiki).  
+
+* Статус серверов — [status.zaborona.help](https://status.zaborona.help)
+* Список маршрутизируемых IP — [zaborona.help/ips.txt](https://zaborona.help) 
+* Twitter аккаунт — [zhovner](https://zhovner.com/twitter) искать по тегу #zaborona
+  
+* Как настроить свой сервер — [habrahabr.ru/post/329248/](habrahabr.ru/post/329248/) (конфиги в папке `config`)
+* Хостинг-партнер — [veesp.com](https://veesp.com/ru/)
+
+
