@@ -95,3 +95,6 @@ push "route 185.85.12.0 255.255.255.0"
 push "route 185.85.14.0 255.255.254.0"
 
 push "route-ipv6 2a03:2480::/33"
+
+#Habrahabr
+push "route 178.248.237.68"
