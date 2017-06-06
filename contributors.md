@@ -10,3 +10,4 @@
 
 Hello world!
 Yep
+Редактирование wiki
