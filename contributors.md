@@ -12,3 +12,4 @@ Hello world!
 Yep
 Редактирование wiki
 tesuto desu
+и я хочу помочь!
