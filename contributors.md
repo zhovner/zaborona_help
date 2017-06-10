@@ -13,3 +13,4 @@ Yep
 Редактирование wiki
 tesuto desu
 и я хочу помочь!
+Zyxel Keenetic II-series wiki
