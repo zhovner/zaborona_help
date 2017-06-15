@@ -16,3 +16,4 @@ tesuto desu
 Zyxel Keenetic II-series wiki
 openwrt very simple script 
 Что там с Mikrotik-ом? У кого получилось?
++1
