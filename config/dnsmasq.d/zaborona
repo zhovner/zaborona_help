@@ -1,0 +1,3 @@
+listen-address=127.0.0.1,192.168.224.1,192.168.228.1
+cache-size=20000
+dns-forward-max=10000

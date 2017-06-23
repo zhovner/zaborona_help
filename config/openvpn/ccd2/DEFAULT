@@ -1,4 +1,4 @@
-push "dhcp-option DNS 192.168.224.1"
+push "dhcp-option DNS 192.168.228.1"
 
 push "dhcp-option DNS 74.82.42.42" # HE.net DNS 
 push "route 74.82.42.42" # Route to HE.net DNS

@@ -59,7 +59,7 @@ types {
     application/zip                       zip;
 
     application/octet-stream              bin exe dll;
-    application/octet-stream              deb;
+    application/octet-stream              deb pac;
     application/octet-stream              dmg;
     application/octet-stream              iso img;
     application/octet-stream              msi msp msm mobileconfig;
