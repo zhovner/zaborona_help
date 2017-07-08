@@ -18,4 +18,5 @@ openwrt very simple script
 Что там с Mikrotik-ом? У кого получилось?
 +1
 На Mikrotik работает!
+Всем чмоки в этом чяти
 Wiki для Ubuntu
