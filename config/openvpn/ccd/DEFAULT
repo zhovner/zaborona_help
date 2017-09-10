@@ -1,15 +1,14 @@
-push "dhcp-option DNS 192.168.224.1"
-
-push "dhcp-option DNS 74.82.42.42" # HE.net DNS 
+push "dhcp-option DNS 74.82.42.42" # First DNS HE.net
 push "route 74.82.42.42" # Route to HE.net DNS
 
-push "route 77.88.8.8" # Route to Yandex DNS
+push "dhcp-option DNS 77.88.8.8" # Second DNS Yandex
+push "route 77.88.8.8"
 
-push "dhcp-option DNS6 2001:4860:4860::8888" # Google ipv6 dns
-push "route-ipv6 2001:4860:4860::8888"
+#push "dhcp-option DNS6 2001:4860:4860::8888" # Google ipv6 dns
+#push "route-ipv6 2001:4860:4860::8888"
 
-push "dhcp-option DNS6 2001:4860:4860::8844" # Google ipv6 dns
-push "route-ipv6 2001:4860:4860::8844"
+#push "dhcp-option DNS6 2001:4860:4860::8844" # Google ipv6 dns
+#push "route-ipv6 2001:4860:4860::8844"
 
 #Persist TUN
 push "persist-tun"
