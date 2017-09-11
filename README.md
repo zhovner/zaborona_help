@@ -8,6 +8,7 @@
 * Статус серверов — [status.zaborona.help](https://status.zaborona.help)
 * Список маршрутизируемых IP — [zaborona.help/ips.txt](https://zaborona.help/ips.txt) 
 * Twitter аккаунт — [zhovner](https://twitter.com/zhovner) (искать по тегу #zaborona)
+* Блог - [medium.com/@zaborona](https://medium.com/@zaborona/)
   
 * Как настроить свой сервер — [habrahabr.ru/post/329248/](https://habrahabr.ru/post/329248/) (конфиги в папке `config`)
 * Хостинг-партнер — [veesp.com](https://veesp.com/ru/)
