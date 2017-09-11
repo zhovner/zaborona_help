@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ручная настройка Zaborona VPN</title>
+    <meta property="og:url" content="https://zaborona.help">
+    <meta property="og:title" content="Ручная настройка Zaborona VPN">
+    <meta property="og:description" content="Настройки клиента OpenVPN для роутеров OpenWRT, AsusWRT Merlin, Padavan, Tomato, Mikrotik, Ubuntu Linux, FreeBSD">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/img/cog.png">
+    <meta property="fb:app_id" content="">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Assets -->
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/tilda-grid-3.0.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/tilda-blocks-2.11.css?v=2" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/tilda-zoom-1.0.min.css" type="text/css" media="all">
+</head>
+
+<body class="t-body" style="margin: 0px;" data-gr-c-s-loaded="true">
+    <!--allrecords-->
+    <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/zhovner/zaborona_help/">Edit on GitHub</a>
+        </div>
+    </div>
+    <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="16871" data-tilda-page-id="914548" data-tilda-page-alias="apple" data-tilda-formskey="bb001967799ba6bb8ec72c53c21ec135">
+        <div id="rec20207450" class="r" style="padding-top:0px;padding-bottom:0px;background-color:#ededed; " data-record-type="106" data-bg-color="#ededed" data-animationappear="off">
+            <!-- T004 -->
+            <div class="t004">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_12">
+                        <div field="text" class="t-text t-text_md "><a href="/"  rel="">Zaborona VPN</a> | <a href="/windows.html"  rel="">Windows</a> | <a href="/apple.html">Apple</a> | <a href="/android.html"  rel="">Android</a> | Ручная настройка | <a href="/faq.html"  rel="">Помощь</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206444" class="r r_showed r_anim" style="padding-top:60px;padding-bottom:60px; " data-record-type="255">
+            <!-- T225 -->
+            <div class="t225">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_8 t-prefix_2">
+                        <div class="t225__title t-title t-title_md" field="title" >Ручная настройка<br> Zaborona VPN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206444" class="r r_showed r_anim" style="padding-top:0;padding-bottom:0; " data-record-type="255">
+            <!-- T225 -->
+            <div class="t225">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2">
+                        <div class="t512__textwrapper t-cell t-valign_top" style="">
+                            <div field="text" class="t-text t-text_md ">
+                                <br />
+                                <br /> Конфиги сервера и исходный код сайта доступны на <a href="https://github.com/zhovner/zaborona_help/tree/master/config">GitHub</a>.
+                                <br />
+                                <br /> Если вы нашли ошибку на сайте или хотите что-то дополнить, это можно сделать отправив <a href="https://git-scm.com/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B">pull request</a>
+                                <br /> 
+                                <br /><span style="font-size: 32px;">Ручная настройка OpenVPN</span>
+                                <br />
+                                <br /> Сервер работает на OpenVPN 2.4.3
+                                <br />
+                                <br />
+                               <div>
+  <style type="text/css">
+    .zz-config {
+      margin-top: 10px;
+    }
+    .zz-config li {
+      /*margin-bottom: 5px*/
+      margin-left: 10px;
+    }
+    .zz-value {
+      font-family: monospace;
+      font-weight: bold;
+    }
+    .zz-note {
+      display: block;
+      font-size: 14px;
+    }
+  </style>
+
+  <ul class="zz-config">
+    <li>
+      Адрес сервера &mdash;
+      <span class="zz-value">vpn.zaborona.help</span>
+      <span class="zz-note">Доменное имя направлено на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
+    </li>
+    <li>
+      Порт &mdash;
+      <span class="zz-value">1194</span>
+    </li>
+    <li>
+      Протокол &mdash;
+      <span class="zz-value">TCP</span>
+      <span class="zz-note">Мы используем TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
+    </li>
+    <li>
+      Протокол инкапсулирования/device type &mdash;
+      <span class="zz-value">L3 (tun)</span>
+    </li>
+    <li>
+      Алгоритм шифрования &mdash;
+      <span class="zz-value">AES-128-GCM</span>
+      (рекомендуется), или
+      <span class="zz-value">AES-128-CBC</span>
+    </li>
+    <li>
+      Корневой сертификат &mdash;
+      <a href="https://zaborona.help/ca.crt">ca.crt</a>
+    </li>
+    <li>
+      Клиентский сертификат &mdash;
+      <a href="https://zaborona.help/zaborona-help.crt">zaborona-help.crt</a>
+    </li>
+    <li>
+      Приватный ключ &mdash;
+      <a href="https://zaborona.help/zaborona-help.key" download="zaborona-help.key">zaborona-help.key</a>
+    </li>
+    <li>
+      Первичный DNS &mdash;
+      <span class="zz-value">74.82.42.42</span>
+    </li>
+    <li>
+      Вторичный DNS &mdash;
+      <span class="zz-value">77.88.8.8</span>
+    </li>
+  </ul>
+</div>
+
+<div field="text" class="t-text t-text_md ">
+                                <br /><span style="font-size: 32px;">SOCKS 5 прокси</span>
+                                <br />
+                                <br />
+                               <div>
+  <div>
+  <style type="text/css">
+    .zz-config {
+      margin-top: 10px;
+    }
+    .zz-config li {
+      /*margin-bottom: 5px*/
+      margin-left: 10px;
+    }
+    .zz-value {
+      font-family: monospace;
+      font-weight: bold;
+    }
+    .zz-note {
+      display: block;
+      font-size: 14px;
+    }
+  </style>
+
+  <ul class="zz-config">
+    <li>
+      Адрес сервера &mdash;
+      <span class="zz-value">socks.zaborona.help</span>
+    </li>
+    <li>
+      Порт &mdash;
+      <span class="zz-value">1488</span>
+    </li>
+    <li>
+      Протокол &mdash;
+      <span class="zz-value">SOCKS 5</span>
+    </li>
+  </ul>
+    <span class="zz-note">Прокси пропускает запросы только к IP-адресам перечисленным в этом <a href="https://zaborona.help/ips.txt">списке</a>. Поэтому его не получится использовать для доступа к любым ресурсам в интернете.</span>
+</div>
+                                <br /><span style="font-size: 32px;">Инструкции от пользователей</span>
+                                <br />
+                                <br /> Протокол OpenVPN поддерживается большим количеством устройств. Если вы знаете, как настроить Zaborona VPN на вашем устройстве, пожалуйста напишите инструкцию в нашу <a href="https://github.com/zhovner/zaborona_help/wiki">Wiki</a>.
+                                <br />
+                                <br /> Редактировать страницы в Wiki может любой. Хорошие инструкции мы опубликуем на сайте.
+                                <br />
+                                <br /><strong>Роутеры</strong>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/AsusWRT">Asus</a>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/AsusWRT-Merlin">AsusWRT Merlin</a>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/DD-WRT">DD-WRT</a>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/Mikrotik">Mikrotik</a>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/Padavan">Padavan</a>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/OpenWRT-Chaos-Calmer-15.05.1">OpenWRT Chaos Calmer 15.05</a>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/Zyxel-Keenetic">Zyxel Keenetic</a>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/Tomato">Tomato</a>
+
+
+                                <br />
+                                <br /><strong>Десктопные ОС</strong>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/Ubuntu-Linux-16.04-LTS">Ubuntu Linux 16.04 LTS</a>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/Arch-Linux-KDE-gui">Arch Linux KDE</a> 
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/FreeBSD">FreeBSD</a>
+                                <br />
+                                <br /><strong>Мобильные ОС</strong>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/Android-4.4">Android 4.4</a>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/Не-скачиваются-приложения-из-Play-Маркет">Не скачиваются приложения из Play Маркет</a>
+                                <br />
+                                <br /><strong>Другое</strong>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/Конфигурация-без-IPv6">Конфигурация без IPv6</a> — для тех у кого возникает ошибка <i>netsh command failed</i>
+                                <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/Yandex.UA">Не работает Yandex.UA</a>
+                                <br /> <a href="https://github.com/ValdikSS/GoodbyeDPI">Обход блокировок без VPN</a>
+                                <br /> <a href="https://drive.google.com/open?id=0BzW47MLmwymyaURDQU1PT2ZDWEE">OpenVPN Portable версия</a> — уже настроена на zaborona.help
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="r r_showed r_anim" style="padding-top:60px;padding-bottom:30px; ">
+            <div>
+                <div class="t-section__container t-container">
+                    <div class="t-col t-col_12">
+                        <div class="t-section__topwrapper t-align_center">
+                            <div id="disqus_thread"></div>
+                            <script>
+                            (function() { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://zaborona.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                            })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20207450" class="r" style="padding-top:0px;padding-bottom:0px;background-color:#ededed; " data-record-type="106" data-bg-color="#ededed" data-animationappear="off">
+            <!-- T004 -->
+            <div class="t004">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_8 t-prefix_2">
+                        <div field="text" class="t-text t-text_xs ">
+                            Пишите письма на <a href="mailto:zaborona@cock.li" >zaborona@cock.li</a>, следите за новостями в <a href="https://twitter.com/zhovner">моём твиттере</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61140230-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Google Analytics -->
+</body>
+
+</html>
