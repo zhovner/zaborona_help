@@ -94,24 +94,20 @@ const nets = `
 `.split(/\s+/)  // split on \n, also removing leading/trailing space
  .filter( (s)=>s.match(/\d+\.\d+\.\d+\.\d+\/\d+/) )  // filter-out all but ip4
  .map( (s) => s.split('/') ) // split each net on ip-addr and subnet bits
- .map( (a) => [a[0],mkMask(a[1])] );  // convert subnet to subnet mask 
+ .map( (a) => [a[0], mkMask(a[1])] );  // convert CIDR to subnet mask 
 
 
-function mkMask(s) {  // convert /24 to 255.255.255.0 etc.
-  return [24,16,8,0].map( (n) => 
+function mkMask(s) {  // convert CIDR notation /24 to mask 255.255.255.0 etc.
+    return [24,16,8,0].map( (n) => 
                           ( (0xffffffff<<(32-Number(s))) & (0xff<<n)) >>> n )
              .join('.');
   // (using '>>>' and not '>>' so that result is unsigned)
 }
 
 function FindProxyForURL(url, host) {
-  let hostIp = dnsResolve(host);  
-  let proxy = 'DIRECT';
-  for(i=0; nets[i]; i++) {
-    if ( isInNet(hostIp, nets[i][0], nets[i][1]) ) {
-      proxy = 'SOCKS5 socks.zaborona.help:1488; DIRECT';
-      break;
+    if ( nets.some( (net) => isInNet( dnsResolve(host), net[0], net[1]) ) ) {
+        return 'SOCKS5 socks.zaborona.help:1488; DIRECT';
+    } else {
+        return 'DIRECT';
     }
-  }
-  return proxy;
 }
