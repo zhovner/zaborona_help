@@ -20,4 +20,5 @@ openwrt very simple script
 На Mikrotik работает!
 Всем чмоки в этом чяти
 Wiki для Ubuntu
-Seems like 'Обход блокировок без VPN' entry is wrong (links to https://github.com/ValdikSS/GoodbyeDPI which is completely different issue).
+
+* Seems like 'Обход блокировок без VPN' wiki entry is wrong (links to https://github.com/ValdikSS/GoodbyeDPI which is completely different issue).
