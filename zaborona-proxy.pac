@@ -98,9 +98,8 @@ const nets = `
 
 
 function mkMask(s) {  // convert CIDR notation /24 to mask 255.255.255.0 etc.
-    return [24,16,8,0].map( (n) => 
-                          ( (0xffffffff<<(32-Number(s))) & (0xff<<n)) >>> n )
-             .join('.');
+    const mask = 0xffffffff<<(32-Number(s));
+    return [24,16,8,0].map( (n) => (mask >>> n) & 0xff ).join('.');
   // (using '>>>' and not '>>' so that result is unsigned)
 }
 
