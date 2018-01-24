@@ -20,3 +20,4 @@ openwrt very simple script
 На Mikrotik работает!
 Всем чмоки в этом чяти
 Wiki для Ubuntu
++
