@@ -20,3 +20,4 @@ openwrt very simple script
 На Mikrotik работает!
 Всем чмоки в этом чяти
 Wiki для Ubuntu
+Собираюсь подрихтовать Wiki по Mikrotik, для CA лучше иметь уникальное имя файла, поэтому создаю симлинк zaborona-help.ca -> ca.crt
