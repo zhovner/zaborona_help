@@ -7,16 +7,7 @@
 Подробнее здесь: https://github.com/zhovner/zaborona_help/wiki/Как-избежать-блокировки-github
 
 ----------------------------------
-Wiki 
-Hello world!
-Yep
-Редактирование wiki
-tesuto desu
-и я хочу помочь!
-Zyxel Keenetic II-series wiki
-openwrt very simple script 
-Что там с Mikrotik-ом? У кого получилось?
-+1
-На Mikrotik работает!
-Всем чмоки в этом чяти
-Wiki для Ubuntu
+Hello
+Me heed your help 
+When you unlock my account
+Thanks:)
