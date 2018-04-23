@@ -83,7 +83,7 @@ push "route 185.29.130.0 255.255.255.0"
 push "route 185.32.248.0 255.255.252.0"
 
 # Mamba.ru (love.mail.ru)
-push "route 193.0.170.24 255.255.255.248"
+push "route 193.0.170.0 255.255.254.0"
 
 # Kaspersky network
 push "route 77.74.176.0 255.255.252.0"
