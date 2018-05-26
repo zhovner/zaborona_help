@@ -124,10 +124,6 @@ push "route 94.143.52.0 255.255.252.0"
 push "route 185.76.252.0 255.255.252.0"
 push "route 89.222.152.0 255.255.248.0"
 
-# Webmoney CloudFlare
-push "route 104.31.94.209 255.255.255.255"
-push "route 104.31.95.209 255.255.255.255"
-
 # Webmoney OVH SAS
 push "route 145.239.95.188 255.255.255.255"
 push "route 151.80.149.182 255.255.255.255"
@@ -143,6 +139,9 @@ push "route 52.28.234.188 255.255.255.255"
 #push "route 89.184.80.139 255.255.255.255"
 # Webmoney relay2.ukrgarant.com
 #push "route 91.203.69.175 255.255.255.255"
+# Webmoney CloudFlare (wm-factor.com.ua)
+#push "route 104.31.94.209 255.255.255.255"
+#push "route 104.31.95.209 255.255.255.255"
 
 # Webmoney Reserved
 #push "route 192.88.99.0 255.255.255.0"
