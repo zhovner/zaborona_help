@@ -110,6 +110,9 @@ push "route 50.117.0.0 255.255.255.224"
 push "route 88.217.190.96 255.255.255.224"
 push "route 193.84.255.0 255.255.255.0"
 
+# nashe.ru
+push "route 83.137.54.41 255.255.255.255"
+
 # ~~~ Webmoney. Begin ~~~
 # Webmoney (ru)
 push "route 194.88.208.0 255.255.254.0"
