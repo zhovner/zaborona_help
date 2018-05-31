@@ -91,6 +91,9 @@ push "route 50.117.0.0 255.255.255.224"
 push "route 88.217.190.96 255.255.255.224"
 push "route 193.84.255.0 255.255.255.0"
 
+# nashe.ru
+push "route 83.137.54.41 255.255.255.255"
+
 # ~~~ Webmoney. Begin ~~~
 # Webmoney (ru)
 push "route 194.88.208.0 255.255.254.0"
@@ -116,14 +119,27 @@ push "route 91.217.153.39 255.255.255.255"
 # Webmoney Amazon.com
 push "route 52.28.234.188 255.255.255.255"
 
-# Webmoney (ua)
+# ~~~ Webmoney (ua). Reserved. Begin ~~~~
+# Webmoney (elmi.ua, arbitrage.webmoney.ua)
 #push "route 89.184.80.139 255.255.255.255"
-# Webmoney relay2.ukrgarant.com
+
+# Webmoney (elmi.ua, relay2.ukrgarant.com, arbitrage.webmoney.ua)
 #push "route 91.203.69.175 255.255.255.255"
+
 # Webmoney CloudFlare (wm-factor.com.ua)
 #push "route 104.31.94.209 255.255.255.255"
 #push "route 104.31.95.209 255.255.255.255"
 
+# Webmoney CloudFlare (paymaster.ua)
+#push "route 104.24.105.202 255.255.255.255"
+#push "route 104.24.104.202 255.255.255.255"
+
+# Webmoney CloudFlare (paymaster.ua)
+#push "route 104.28.31.164 255.255.255.255"
+#push "route 104.28.30.164 255.255.255.255"
+
 # Webmoney Reserved
 #push "route 192.88.99.0 255.255.255.0"
+# ~~~ Webmoney (ua). Reserved. End ~~~~
+
 # ~~~ Webmoney. End ~~~
