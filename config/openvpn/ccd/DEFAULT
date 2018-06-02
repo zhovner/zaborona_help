@@ -130,9 +130,9 @@ push "route 52.28.234.188 255.255.255.255"
 #push "route 104.31.94.209 255.255.255.255"
 #push "route 104.31.95.209 255.255.255.255"
 
-# Webmoney CloudFlare (paymaster.ua)
-#push "route 104.24.105.202 255.255.255.255"
-#push "route 104.24.104.202 255.255.255.255"
+# Webmoney CloudFlare (paymaster.ua) + WebSite: Lutik.tv
+push "route 104.24.105.202 255.255.255.255"
+push "route 104.24.104.202 255.255.255.255"
 
 # Webmoney CloudFlare (paymaster.ua)
 #push "route 104.28.31.164 255.255.255.255"
