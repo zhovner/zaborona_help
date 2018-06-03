@@ -15,6 +15,10 @@ push "persist-tun"
 
 # Routes
 
+# my.kaspersky.com - check license keys
+push "route 4.31.208.86 255.255.255.255"
+push "route 4.31.208.87 255.255.255.255"
+
 # Yandex network
 push "route 5.45.192.0 255.255.192.0"
 push "route 5.255.192.0 255.255.192.0"
@@ -130,9 +134,9 @@ push "route 52.28.234.188 255.255.255.255"
 #push "route 104.31.94.209 255.255.255.255"
 #push "route 104.31.95.209 255.255.255.255"
 
-# Webmoney CloudFlare (paymaster.ua)
-#push "route 104.24.105.202 255.255.255.255"
-#push "route 104.24.104.202 255.255.255.255"
+# Webmoney CloudFlare (paymaster.ua) + WebSite: Lutik.tv
+push "route 104.24.105.202 255.255.255.255"
+push "route 104.24.104.202 255.255.255.255"
 
 # Webmoney CloudFlare (paymaster.ua)
 #push "route 104.28.31.164 255.255.255.255"
