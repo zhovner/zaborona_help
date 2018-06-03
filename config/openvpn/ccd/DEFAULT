@@ -15,6 +15,10 @@ push "persist-tun"
 
 # Routes
 
+# my.kaspersky.com - check license keys
+push "route 4.31.208.86 255.255.255.255"
+push "route 4.31.208.87 255.255.255.255"
+
 # Yandex network
 push "route 5.45.192.0 255.255.192.0"
 push "route 5.255.192.0 255.255.192.0"
