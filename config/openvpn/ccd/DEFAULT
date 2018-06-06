@@ -15,10 +15,6 @@ push "persist-tun"
 
 # Routes
 
-# my.kaspersky.com - check license keys
-push "route 4.31.208.86 255.255.255.255"
-push "route 4.31.208.87 255.255.255.255"
-
 # Yandex network
 push "route 5.45.192.0 255.255.192.0"
 push "route 5.255.192.0 255.255.192.0"
@@ -147,3 +143,7 @@ push "route 104.24.104.202 255.255.255.255"
 # ~~~ Webmoney (ua). Reserved. End ~~~~
 
 # ~~~ Webmoney. End ~~~
+
+# my.kaspersky.com
+push "route 77.74.179.130 255.255.255.255"
+push "route 212.5.110.40 255.255.255.255"
