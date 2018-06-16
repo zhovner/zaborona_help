@@ -152,7 +152,7 @@ push "route 93.159.230.60 255.255.255.255"
 # rian.com.ua
 push "route 178.248.234.60 255.255.255.255"
 
-# россиясегодня.рф
+# rossiyasegodnya.rf
 push "route 195.93.247.69 255.255.255.255"
 
 # 1prime.ru
