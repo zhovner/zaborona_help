@@ -147,3 +147,28 @@ push "route 104.24.104.202 255.255.255.255"
 # my.kaspersky.com
 push "route 77.74.179.130 255.255.255.255"
 push "route 212.5.110.40 255.255.255.255"
+push "route 93.159.230.60 255.255.255.255"
+
+# rian.com.ua
+push "route 178.248.234.60 255.255.255.255"
+
+# rossiyasegodnya.rf
+push "route 195.93.247.69 255.255.255.255"
+
+# 1prime.ru
+push "route 186.2.163.12 255.255.255.255"
+
+# rsport.ria.ru
+push "route 195.93.247.154 255.255.255.255"
+
+# ria.ru, realty.ria.ru
+push "route 178.248.233.32 255.255.255.255"
+
+# sputniknews.com
+push "route 178.248.233.26 255.255.255.255"
+
+# inosmi.ru
+push "route 178.248.232.60 255.255.255.255"
+
+# nm-g.ru
+push "route 178.210.84.61 255.255.255.255"
