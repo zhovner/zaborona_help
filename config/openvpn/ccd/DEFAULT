@@ -43,6 +43,10 @@ push "route-ipv6 2620:10f:d000::/44"
 push "route-ipv6 2a02:6b8::/32"
 push "route-ipv6 2a02:5180::/32"
 
+# Yandex.ua cogentco network
+push "route 154.47.0.0 255.255.0.0"
+push "route 149.5.244.0 255.255.252.0"
+
 # Mail.ru network
 push "route 5.61.16.0 255.255.248.0"
 push "route 5.61.232.0 255.255.248.0"
