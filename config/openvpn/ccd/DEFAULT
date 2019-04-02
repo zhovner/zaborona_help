@@ -74,6 +74,9 @@ push "route-ipv6 2a00:a300::/32"
 push "route-ipv6 2a00:b4c0::/32"
 push "route-ipv6 2a04:4b40::/29"
 
+# Nessly Company (Mail.ru Group) network
+push "route 95.163.144.0 255.255.255.0"
+
 # VK.com network
 push "route 87.240.128.0 255.255.192.0"
 push "route 93.186.224.0 255.255.240.0"
