@@ -183,3 +183,6 @@ push "route 80.247.32.208 255.255.255.255"
 
 # platform.molodost.bz
 push "route 84.201.148.246 255.255.255.255"
+
+# alternatio.org
+push "route 92.53.124.104 255.255.255.255"
