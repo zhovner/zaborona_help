@@ -8,20 +8,23 @@
 
 ----------------------------------
 Wiki 
-Hello world!
-Yep
-Редактирование wiki
-tesuto desu
-и я хочу помочь!
-Zyxel Keenetic II-series wiki
-openwrt very simple script 
-Что там с Mikrotik-ом? У кого получилось?
-+1
-На Mikrotik работает!
-Всем чмоки в этом чяти
-Wiki для Ubuntu
-+
-UniFi Controller Works!+
-Люблю маму и верстку!
-Да!
-Good!
+Hello world!  
+Yep . 
+Редактирование wiki  
+tesuto desu . 
+и я хочу помочь!  
+Zyxel Keenetic II-series wiki . 
+openwrt very simple script  
+Что там с Mikrotik-ом? У кого получилось?  
++1 . 
+На Mikrotik работает!  
+Всем чмоки в этом чяти . 
+Wiki для Ubuntu . 
++ . 
+UniFi Controller Works!+ . 
+Люблю маму и верстку!  
+Hi!  
+======= . 
+Да!  
+Good!  
+
