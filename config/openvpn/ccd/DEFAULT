@@ -181,11 +181,5 @@ push "route 178.248.232.60 255.255.255.255"
 # nm-g.ru
 push "route 178.210.84.61 255.255.255.255"
 
-# hitech.vesti.ru
-push "route 80.247.32.208 255.255.255.255"
-
-# platform.molodost.bz
-push "route 84.201.148.246 255.255.255.255"
-
 # naydex.net
 push "route 87.250.251.92 255.255.255.255"
