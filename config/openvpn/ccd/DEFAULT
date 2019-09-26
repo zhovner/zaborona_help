@@ -148,6 +148,10 @@ push "route 104.24.104.202 255.255.255.255"
 
 # Webmoney Reserved
 #push "route 192.88.99.0 255.255.255.0"
+
+# Webmoney OVH SAS info.paymaster.ru
+push "route 51.254.96.26 255.255.255.255"
+push "route 54.36.30.17 255.255.255.255"
 # ~~~ Webmoney (ua). Reserved. End ~~~~
 
 # ~~~ Webmoney. End ~~~
