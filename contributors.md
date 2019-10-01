@@ -20,7 +20,7 @@ openwrt very simple script
 На Mikrotik работает!  
 Всем чмоки в этом чяти . 
 Wiki для Ubuntu . 
-+ . 
++ .  fggg
 UniFi Controller Works!+ . 
 Люблю маму и верстку!  
 Hi!  
