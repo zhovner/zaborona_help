@@ -134,6 +134,7 @@ push "route 91.227.52.0 255.255.254.0"
 push "route 94.143.52.0 255.255.252.0"
 push "route 185.76.252.0 255.255.252.0"
 push "route 194.88.208.0 255.255.254.0"
+# 195.177.205.0/23
 push "route 195.177.205.0 255.255.255.0"
 push "route 212.118.32.0 255.255.224.0"
 
@@ -179,47 +180,46 @@ push "route 54.36.30.17 255.255.255.255"
 
 # ~~~ Webmoney. End ~~~
 
-# my.kaspersky.com
-#old
-#push "route 77.74.179.130 255.255.255.255"
-#push "route 93.159.230.60 255.255.255.255"
-#new
-push "route 212.5.110.40 255.255.255.255"
+# my.kaspersky.com, kaspersky.com
 push "route 4.31.208.86 255.255.255.255"
-push "route 93.159.231.25 255.255.255.255"
+push "route 4.59.181.140 255.255.255.255"
+push "route 77.74.176.0 255.255.252.0"
+push "route 93.159.228.0 255.255.252.0"
+push "route 185.85.8.0 255.255.248.0"
+push "route 212.5.110.0 255.255.255.0"
+# HKNet Company Limited
+push "route 218.213.144.7 255.255.255.255"
+ 
 
-# kaspersky.com
-push "route 185.85.15.26 255.255.255.255"
+# drweb.ru (178.248.232.0 - 178.248.239.255)
+push "route 178.248.232.0 255.255.248.0"
 
-# drweb.ru
-push "route 178.248.232.183 255.255.255.255"
-
-# rian.com.ua
+# rian.com.ua (rian.ru 195.93.246.0 - 195.93.247.255)
 #push "route 195.93.246.234 255.255.255.255"
 
-# rossiyasegodnya.rf
+# rossiyasegodnya.rf (rian.ru 195.93.246.0 - 195.93.247.255)
 push "route 195.93.247.69 255.255.255.255"
 
 # 1prime.ru
 push "route 186.2.163.12 255.255.255.255"
 
-# ria.ru, realty.ria.ru, rsport.ria.ru
+# ria.ru, realty.ria.ru, rsport.ria.ru, drweb.ru (178.248.232.0 - 178.248.239.255)
 #push "route 178.248.233.32 255.255.255.255"
 
-# sputniknews.com
-push "route 178.248.233.26 255.255.255.255"
+# sputniknews.com, drweb.ru (178.248.232.0 - 178.248.239.255)
+#push "route 178.248.233.26 255.255.255.255"
 
-# inosmi.ru
-push "route 178.248.232.60 255.255.255.255"
+# inosmi.ru, drweb.ru
+#push "route 178.248.232.60 255.255.255.255"
 
 # nm-g.ru
 push "route 178.210.84.61 255.255.255.255"
 
-# vesti.ru, hitech.vesti.ru
+# vesti.ru, hitech.vesti.ru (rfn.ru 80.247.32.0 - 80.247.32.255)
 push "route 80.247.32.208 255.255.255.255"
 
-# platform.molodost.bz, alternatio.org
-push "route 84.201.148.246 255.255.255.255"
+# platform.molodost.bz, alternatio.org (yandex.ru 84.201.128.0 - 84.201.191.255)
+#push "route 84.201.148.246 255.255.255.255"
 
 # alternatio.org
 #old
@@ -228,7 +228,7 @@ push "route 84.201.148.246 255.255.255.255"
 #push "route 84.201.148.246 255.255.255.255"
 
 # naydex.net
-push "route 87.250.251.92 255.255.255.255"
+push "route 87.250.251.0 255.255.255.0"
 
 # rusvesna.su
 push "route 104.20.73.219 255.255.255.255"
@@ -239,16 +239,16 @@ push "route 172.67.3.106 255.255.255.255"
 # not work site
 #push "route 178.248.233.60 255.255.255.255"
 
-# tass.ru
-push "route 82.202.190.240 255.255.255.255"
+# tass.ru, kaspersky.com
+push "route 82.202.184.0 255.255.248.0"
 
 # ozon.ru
 push "route 45.60.34.164 255.255.255.255"
 push "route 45.60.40.164 255.255.255.255"
 
 # labirint.ru
-push "route 194.84.83.151 255.255.255.255"
-push "route 194.84.120.183 255.255.255.255"
+push "route 194.84.83.128 255.255.255.224"
+push "route 194.84.120.160 255.255.255.224"
 
 # tnt-online.ru
 push "route 193.232.151.138 255.255.255.255"
@@ -263,9 +263,9 @@ push "route 172.67.70.154 255.255.255.255"
 #push "route-ipv6 2606:4700:20::681a:36f/128"
 
 # litres.ru
-#push "route 193.26.19.11 255.255.255.255"
-#push "route 193.26.19.12 255.255.255.255"
-#push "route 193.26.19.72 255.255.255.255"
-#push "route 193.26.19.73 255.255.255.255"
-#push "route 193.26.19.221 255.255.255.255"
-#push "route 193.26.19.222 255.255.255.255"
+push "route 193.26.19.0 255.255.255.0"
+
+# spotify.com (test only 8 server)
+#push "route 35.186.224.25 255.255.255.255"
+
+#push "route-ipv6 2600:1901:1:c36::/128"
