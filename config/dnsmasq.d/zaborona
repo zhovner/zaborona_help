@@ -1,4 +1,6 @@
-listen-address=127.0.0.1,192.168.224.1,192.168.228.1
+listen-address=127.0.0.1,192.168.224.1,192.168.228.1,192.168.232.1,192.168.236.1,192.168.240.1,192.168.244.1,192.168.248.1,192.168.252.1,10.14.20.1,2a00:1838:35:80::8432
+
+resolv-file=/etc/resolv.dnsmasq.conf
 cache-size=20000
 dns-forward-max=10000
 
@@ -75,3 +77,4 @@ address=/aa.mail.ru/195.211.131.161
 address=/zen.yandex.ru/213.180.204.211
 address=/zen.yandex.ua/213.180.204.211
 address=/dns-test.zaborona/94.242.59.156
+
