@@ -86,6 +86,7 @@ push "route 95.142.192.0 255.255.240.0"
 push "route 95.213.0.0 255.255.192.0"
 push "route 185.29.130.0 255.255.255.0"
 push "route 185.32.248.0 255.255.252.0"
+push "route 45.136.21.0 255.255.255.0"
 
 # Mamba.ru (love.mail.ru)
 push "route 193.0.170.0 255.255.254.0"
@@ -148,6 +149,10 @@ push "route 104.24.104.202 255.255.255.255"
 
 # Webmoney Reserved
 #push "route 192.88.99.0 255.255.255.0"
+
+# Webmoney OVH SAS info.paymaster.ru
+push "route 51.254.96.26 255.255.255.255"
+push "route 54.36.30.17 255.255.255.255"
 # ~~~ Webmoney (ua). Reserved. End ~~~~
 
 # ~~~ Webmoney. End ~~~
@@ -183,3 +188,14 @@ push "route 178.210.84.61 255.255.255.255"
 
 # naydex.net
 push "route 87.250.251.92 255.255.255.255"
+
+# http://rusvesna.su
+push "route 104.20.74.219 255.255.255.255"
+push "route 104.20.73.219 255.255.255.255"
+push "route 172.67.3.106 255.255.255.255"
+
+# http://ukraina.ru
+push "route 178.248.233.60 255.255.255.255"
+
+# http://tass.ru
+push "route 82.202.190.72 255.255.255.255"
