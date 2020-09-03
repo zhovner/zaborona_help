@@ -37,6 +37,8 @@ push "route 185.71.76.0 255.255.252.0"
 push "route 199.21.96.0 255.255.252.0"
 push "route 199.36.240.0 255.255.252.0"
 push "route 213.180.192.0 255.255.224.0"
+push "route 154.47.0.0 255.255.0.0"
+push "route 149.5.244.0 255.255.252.0"
 
 push "route-ipv6 2001:678:384::/48"
 push "route-ipv6 2620:10f:d000::/44"
@@ -74,6 +76,9 @@ push "route-ipv6 2a00:a300::/32"
 push "route-ipv6 2a00:b4c0::/32"
 push "route-ipv6 2a04:4b40::/29"
 
+# Nessly Company (Mail.ru Group) network
+push "route 95.163.144.0 255.255.255.0"
+
 # VK.com network
 push "route 87.240.128.0 255.255.192.0"
 push "route 93.186.224.0 255.255.240.0"
@@ -81,6 +86,7 @@ push "route 95.142.192.0 255.255.240.0"
 push "route 95.213.0.0 255.255.192.0"
 push "route 185.29.130.0 255.255.255.0"
 push "route 185.32.248.0 255.255.252.0"
+push "route 45.136.21.0 255.255.255.0"
 
 # Mamba.ru (love.mail.ru)
 push "route 193.0.170.0 255.255.254.0"
@@ -112,6 +118,9 @@ push "route 89.222.152.0 255.255.248.0"
 push "route 145.239.95.188 255.255.255.255"
 push "route 151.80.149.182 255.255.255.255"
 push "route 51.254.201.70 255.255.255.255"
+push "route 217.182.78.61 255.255.255.255"
+push "route 217.182.157.141 255.255.255.255"
+push "route 164.132.137.203 255.255.255.255"
 
 # Webmoney Digital Retail SIA
 push "route 91.217.153.39 255.255.255.255"
@@ -130,9 +139,9 @@ push "route 52.28.234.188 255.255.255.255"
 #push "route 104.31.94.209 255.255.255.255"
 #push "route 104.31.95.209 255.255.255.255"
 
-# Webmoney CloudFlare (paymaster.ua)
-#push "route 104.24.105.202 255.255.255.255"
-#push "route 104.24.104.202 255.255.255.255"
+# Webmoney CloudFlare (paymaster.ua) + WebSite: Lutik.tv
+push "route 104.24.105.202 255.255.255.255"
+push "route 104.24.104.202 255.255.255.255"
 
 # Webmoney CloudFlare (paymaster.ua)
 #push "route 104.28.31.164 255.255.255.255"
@@ -140,6 +149,53 @@ push "route 52.28.234.188 255.255.255.255"
 
 # Webmoney Reserved
 #push "route 192.88.99.0 255.255.255.0"
+
+# Webmoney OVH SAS info.paymaster.ru
+push "route 51.254.96.26 255.255.255.255"
+push "route 54.36.30.17 255.255.255.255"
 # ~~~ Webmoney (ua). Reserved. End ~~~~
 
 # ~~~ Webmoney. End ~~~
+
+# my.kaspersky.com
+push "route 77.74.179.130 255.255.255.255"
+push "route 212.5.110.40 255.255.255.255"
+push "route 93.159.230.60 255.255.255.255"
+
+# rian.com.ua
+push "route 178.248.234.60 255.255.255.255"
+
+# rossiyasegodnya.rf
+push "route 195.93.247.69 255.255.255.255"
+
+# 1prime.ru
+push "route 186.2.163.12 255.255.255.255"
+
+# rsport.ria.ru
+push "route 195.93.247.154 255.255.255.255"
+
+# ria.ru, realty.ria.ru
+push "route 178.248.233.32 255.255.255.255"
+
+# sputniknews.com
+push "route 178.248.233.26 255.255.255.255"
+
+# inosmi.ru
+push "route 178.248.232.60 255.255.255.255"
+
+# nm-g.ru
+push "route 178.210.84.61 255.255.255.255"
+
+# naydex.net
+push "route 87.250.251.92 255.255.255.255"
+
+# http://rusvesna.su
+push "route 104.20.74.219 255.255.255.255"
+push "route 104.20.73.219 255.255.255.255"
+push "route 172.67.3.106 255.255.255.255"
+
+# http://ukraina.ru
+push "route 178.248.233.60 255.255.255.255"
+
+# http://tass.ru
+push "route 82.202.190.72 255.255.255.255"
