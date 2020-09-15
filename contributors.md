@@ -1,5 +1,5 @@
 ## Файл чтобы стать контрибьютером
-
+## Файл чтоб не заблочили
 Напишите что-то в этот файл и отправьте pull request с изменениями.
 Дождитесь когда pull request будет принят владельцем репозитория.
 
@@ -22,3 +22,23 @@ openwrt very simple script
 Wiki для Ubuntu
 
 * Seems like 'Обход блокировок без VPN' wiki entry is wrong (links to https://github.com/ValdikSS/GoodbyeDPI which is completely different issue).
+=======
+Hello world!  
+Yep . 
+Редактирование wiki  
+tesuto desu . 
+и я хочу помочь!  
+Zyxel Keenetic II-series wiki . 
+openwrt very simple script  
+Что там с Mikrotik-ом? У кого получилось?  
++1 . 
+На Mikrotik работает!  
+Всем чмоки в этом чяти . 
+Wiki для Ubuntu . 
++ . 
+UniFi Controller Works!+ . 
+Люблю маму и верстку!  
+Hi!  
+======= . 
+Да!  
+Good!!  

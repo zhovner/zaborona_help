@@ -30,9 +30,10 @@ push "route 100.43.64.0 255.255.224.0"
 push "route 109.235.160.0 255.255.248.0"
 push "route 130.193.32.0 255.255.224.0"
 push "route 141.8.128.0 255.255.192.0"
+push "route 149.5.244.0 255.255.252.0"
+push "route 154.47.0.0 255.255.0.0"
 push "route 178.154.128.0 255.255.128.0"
-push "route 185.32.185.0 255.255.255.0"
-push "route 185.32.186.0 255.255.255.0"
+push "route 185.32.184.0 255.255.254.0"
 push "route 185.71.76.0 255.255.252.0"
 push "route 199.21.96.0 255.255.252.0"
 push "route 199.36.240.0 255.255.252.0"
@@ -46,8 +47,7 @@ push "route-ipv6 2a02:5180::/32"
 # Mail.ru network
 push "route 5.61.16.0 255.255.248.0"
 push "route 5.61.232.0 255.255.248.0"
-push "route 79.137.157.0 255.255.255.0"
-push "route 79.137.183.0 255.255.255.0"
+push "route 79.137.128.0 255.255.192.0"
 push "route 94.100.176.0 255.255.240.0"
 push "route 95.163.32.0 255.255.224.0"
 push "route 95.163.248.0 255.255.248.0"
@@ -74,30 +74,44 @@ push "route-ipv6 2a00:a300::/32"
 push "route-ipv6 2a00:b4c0::/32"
 push "route-ipv6 2a04:4b40::/29"
 
+# Nessly Company (Mail.ru Group) network
+push "route 95.163.144.0 255.255.255.0"
+
 # VK.com network
+push "route 5.181.60.0 255.255.252.0"
+push "route 45.84.128.0 255.255.252.0"
+push "route 45.136.20.0 255.255.252.0"
+push "route 79.137.174.0 255.255.254.0"
+push "route 79.137.240.0 255.255.248.0"
+push "route 85.192.32.0 255.255.252.0"
 push "route 87.240.128.0 255.255.192.0"
+push "route 89.208.0.0 255.255.0.0"
 push "route 93.186.224.0 255.255.240.0"
-push "route 95.142.192.0 255.255.240.0"
+push "route 95.142.192.0 255.255.224.0"
 push "route 95.213.0.0 255.255.192.0"
+push "route 185.16.246.0 255.255.254.0"
 push "route 185.29.130.0 255.255.255.0"
 push "route 185.32.248.0 255.255.252.0"
+push "route 185.187.63.0 255.255.255.0"
+push "route 185.226.52.0 255.255.252.0"
+push "route 213.219.212.0 255.255.252.0"
 
-# Kaspersky network
+# Mamba.ru (love.mail.ru)
+push "route 193.0.170.0 255.255.254.0"
+
+# my.kaspersky.com, kaspersky.com
+push "route 4.31.208.86 255.255.255.255"
+push "route 4.59.181.140 255.255.255.255"
 push "route 77.74.176.0 255.255.252.0"
-push "route 77.74.181.0 255.255.255.0"
-push "route 77.74.183.0 255.255.255.0"
 push "route 93.159.228.0 255.255.252.0"
-push "route 185.54.220.0 255.255.254.0"
-push "route 185.85.12.0 255.255.255.0"
-push "route 185.85.14.0 255.255.254.0"
-push "route 77.74.176.0 255.255.248.0"
-push "route 91.103.64.0 255.255.248.0"
-push "route 93.159.224.0 255.255.248.0"
+push "route 185.85.8.0 255.255.248.0"
+push "route 212.5.110.0 255.255.255.0"
+# HKNet Company Limited
+push "route 218.213.144.7 255.255.255.255"
+# tass.ru, kaspersky.com
+push "route 82.202.184.0 255.255.248.0"
 
-push "route-ipv6 2a03:2480::/33"
-
-# DrWeb
-push "route 178.248.232.183 255.255.255.255"
-push "route 178.248.233.94 255.255.255.255"
-push "route 195.88.252.0 255.255.254.0"
-
+# drweb.ru, sputniknews.com, ria.ru, realty.ria.ru, rsport.ria.ru, inosmi.ru (178.248.232.0 - 178.248.239.255)
+push "route 178.248.232.0 255.255.248.0"
+# vms.drweb.ru
+push "route 213.79.65.32 255.255.255.224"

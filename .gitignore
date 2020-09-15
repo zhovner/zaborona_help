@@ -5,3 +5,5 @@ build/*
 .well-known
 ansible
 /.idea
+config/ferm/ferm.bk_sort.conf
+config/ferm/ferm.bk_uknown_addr.conf
