@@ -182,7 +182,13 @@ push "route 212.5.110.0 255.255.255.0"
 push "route 218.213.144.7 255.255.255.255"
 
 # drweb.ru, sputniknews.com, ria.ru, realty.ria.ru, rsport.ria.ru, inosmi.ru (178.248.232.0 - 178.248.239.255)
-push "route 178.248.232.0 255.255.248.0"
+#push "route 178.248.232.0 255.255.248.0" # nslookup habr.com => Address: 178.248.237.68
+# 22 - 255.255.252.0
+push "route 178.248.232.0 255.255.252.0"
+# 24 - 255.255.255.0
+push "route 178.248.236.0 255.255.255.0"
+# 23 - 255.255.252.0
+push "route 178.248.238.0 255.255.254.0"
 # vms.drweb.ru
 push "route 213.79.65.32 255.255.255.224"
 
@@ -238,6 +244,19 @@ push "route 185.72.228.0 255.255.252.0"
 #push "route 35.186.224.25 255.255.255.255"
 
 #push "route-ipv6 2600:1901:1:c36::/128"
+
+# news-front.info
+push "route 104.31.2.185 255.255.255.255"
+#push "route-ipv6 2606:4700:3038::681f:2b9"
+
+# mangadex.org
+push "route 185.178.208.185 255.255.255.255"
+
+# donationalerts.com (Mail.ru)
+push "route 95.163.254.117 255.255.255.255"
+
+# TOR - access to union domains
+#push "route 172.16.0.0 255.255.240.0"
 
 # uablacklist.net
 #####ROUTES-TEST#####################
