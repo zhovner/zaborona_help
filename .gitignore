@@ -5,5 +5,8 @@ build/*
 .well-known
 ansible
 /.idea
-config/ferm/ferm.bk_sort.conf
-config/ferm/ferm.bk_uknown_addr.conf
+_includes/footer.html.bk1
+windows.html.bk
+srv-mon.html
+ips.txt.bk
+donate.html.old
