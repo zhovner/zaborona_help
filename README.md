@@ -17,5 +17,5 @@
 
 Вы можете поддержать проект финансово с помощью небольших ежемесячных пожертвований через сервис Patreon. Регулярные пожертвования в виде 1$ намного лучше чем большая сумма за раз, потому что позволяют прогнозировать траты на сервера.
 
-<a href="https://patreon.com/zhovner"><img width="270" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"></a>
+<a href="https://www.patreon.com/romanpavlovsky"><img width="270" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"></a>
 
