@@ -61,7 +61,7 @@
                                 <br />
                                 <br /><span style="font-size: 32px;">Ручная настройка OpenVPN</span>
                                 <br />
-                                <br /> Сервер работает на OpenVPN 2.4.9
+                                <br /> Сервер работает на OpenVPN 2.4.10
                                 <br />
                                 <br />
                                <div>
@@ -91,12 +91,12 @@
                                     </li>
                                     <li>
                                       Порт &mdash;
-                                      <span class="zz-value">1194</span>
+                                      <span class="zz-value">1194/1196</span>
                                     </li>
                                     <li>
                                       Протокол &mdash;
-                                      <span class="zz-value">TCP</span>
-                                      <span class="zz-note">Мы используем TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
+                                      <span class="zz-value">TCP/UDP</span>
+                                      <span class="zz-note">Лучше использовать TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
                                     </li>
                                     <li>
                                       Протокол инкапсулирования/device type &mdash;
@@ -120,13 +120,21 @@
                                       Приватный ключ &mdash;
                                       <a href="https://zaborona.help/zaborona-help.key" download="zaborona-help.key">zaborona-help.key</a>
                                     </li>
-                                    <li>
+<!--//                                    <li>
                                       Первичный DNS &mdash;
                                       <span class="zz-value">74.82.42.42</span>
                                     </li>
                                     <li>
                                       Вторичный DNS &mdash;
                                       <span class="zz-value">77.88.8.8</span>
+                                    </li>//-->
+                                    <li>
+                                      Первичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.222.222</span>
+                                    </li>
+                                    <li>
+                                      Вторичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.220.220</span>
                                     </li>
                                   </ul>
                                 </div>

@@ -1,14 +1,26 @@
-push "dhcp-option DNS 74.82.42.42" # First DNS HE.net
+#push "dhcp-option DNS 74.82.42.42" # First DNS HE.net
 push "route 74.82.42.42" # Route to HE.net DNS
 
-push "dhcp-option DNS 77.88.8.8" # Second DNS Yandex
-push "route 77.88.8.8"
+#push "dhcp-option DNS 77.88.8.8" # Second DNS Yandex
+push "route 77.88.8.8" # Route to Yandex DNS
+
+push "dhcp-option DNS 208.67.222.222" # First DNS OpenDNS
+push "route 208.67.222.222" # Route to OpenDNS
+
+push "dhcp-option DNS 208.67.220.220" # Second DNS OpenDNS
+push "route 208.67.220.220" # Route to OpenDNS
 
 #push "dhcp-option DNS6 2001:4860:4860::8888" # Google ipv6 dns
 #push "route-ipv6 2001:4860:4860::8888"
 
 #push "dhcp-option DNS6 2001:4860:4860::8844" # Google ipv6 dns
 #push "route-ipv6 2001:4860:4860::8844"
+
+push "dhcp-option DNS6 2620:119:35::35" # OpenDNS ipv6 dns
+push "route-ipv6 2620:119:35::35" # OpenDNS ipv6 dns
+
+push "dhcp-option DNS6 2620:119:53::53" # OpenDNS ipv6 dns
+push "route-ipv6 2620:119:53::53" # OpenDNS ipv6 dns
 
 #Persist TUN
 push "persist-tun"
@@ -255,6 +267,11 @@ push "route 185.178.208.185 255.255.255.255"
 # donationalerts.com (Mail.ru)
 push "route 95.163.254.117 255.255.255.255"
 
+# NTV Plus
+push "route 178.248.235.82 255.255.255.255"
+push "route 193.232.151.133 255.255.255.255"
+push "route 178.170.171.23 255.255.255.255"
+
 # TOR - access to union domains
 #push "route 172.16.0.0 255.255.240.0"
 
@@ -329,7 +346,7 @@ push "route 81.200.116.94 255.255.255.255"
 push "route 82.146.58.99 255.255.255.255"
 push "route 82.148.20.65 255.255.255.255"
 push "route 82.202.160.193 255.255.255.255"
-push "route 82.202.184.0 255.255.254.0"
+#push "route 82.202.184.0 255.255.254.0"
 push "route 82.202.189.118 255.255.255.255"
 push "route 82.202.189.119 255.255.255.255"
 push "route 82.202.190.240 255.255.255.255"
@@ -398,7 +415,7 @@ push "route 93.157.9.254 255.255.255.255"
 push "route 93.157.10.114 255.255.255.255"
 #push "route 93.158.128.0 255.255.192.0"
 push "route 93.159.224.0 255.255.248.0"
-push "route 93.186.224.0 255.255.248.0"
+#push "route 93.186.224.0 255.255.248.0"
 push "route 93.186.232.0 255.255.248.0"
 push "route 94.23.103.5 255.255.255.255"
 #push "route 94.100.176.0 255.255.240.0"
@@ -407,7 +424,7 @@ push "route 94.125.59.25 255.255.255.255"
 #push "route 94.143.52.0 255.255.252.0"
 push "route 94.158.47.243 255.255.255.255"
 #push "route 95.108.128.0 255.255.128.0"
-push "route 95.142.192.0 255.255.240.0"
+#push "route 95.142.192.0 255.255.240.0"
 #push "route 95.163.32.0 255.255.224.0"
 push "route 95.163.94.154 255.255.255.255"
 push "route 95.163.94.181 255.255.255.255"
@@ -711,10 +728,9 @@ push "route 176.53.181.41 255.255.255.255"
 push "route 178.33.183.157 255.255.255.255"
 push "route 178.34.182.54 255.255.255.255"
 push "route 178.57.222.34 255.255.255.255"
-push "route 178.154.128.0 255.255.224.0"
+#push "route 178.154.128.0 255.255.224.0"
 push "route 178.154.160.0 255.255.224.0"
 push "route 178.154.192.0 255.255.224.0"
-push "route 178.170.171.23 255.255.255.255"
 #push "route 178.210.84.61 255.255.255.255"
 #push "route 178.237.16.0 255.255.240.0"
 push "route 178.248.232.60 255.255.255.255"
@@ -725,7 +741,6 @@ push "route 178.248.233.60 255.255.255.255"
 push "route 178.248.233.136 255.255.255.255"
 push "route 178.248.233.188 255.255.255.255"
 push "route 178.248.234.76 255.255.255.255"
-push "route 178.248.235.82 255.255.255.255"
 #push "route 185.5.136.0 255.255.252.0"
 #push "route 185.6.244.0 255.255.252.0"
 push "route 185.9.147.200 255.255.255.255"
