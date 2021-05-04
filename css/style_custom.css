@@ -1,0 +1,31 @@
+.TargetItemMoney_subscribeButton_3B7Fw {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.ContainedButton_button_3r-em {
+    min-width: 150px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #f15f2c;
+}
+
+.BaseButton_button_1gx-n {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    height: 40px;
+    padding: 10px 0;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3px;
+    outline: 0;
+    transition: all .2s;
+    cursor: pointer;
+}
