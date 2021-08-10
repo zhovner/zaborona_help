@@ -16,11 +16,11 @@ push "route 208.67.220.220" # Route to OpenDNS
 #push "dhcp-option DNS6 2001:4860:4860::8844" # Google ipv6 dns
 #push "route-ipv6 2001:4860:4860::8844"
 
-##push "dhcp-option DNS6 2620:119:35::35" # OpenDNS ipv6 dns
-##push "route-ipv6 2620:119:35::35" # OpenDNS ipv6 dns
+push "dhcp-option DNS6 2620:119:35::35" # OpenDNS ipv6 dns
+push "route-ipv6 2620:119:35::35" # OpenDNS ipv6 dns
 
-##push "dhcp-option DNS6 2620:119:53::53" # OpenDNS ipv6 dns
-##push "route-ipv6 2620:119:53::53" # OpenDNS ipv6 dns
+push "dhcp-option DNS6 2620:119:53::53" # OpenDNS ipv6 dns
+push "route-ipv6 2620:119:53::53" # OpenDNS ipv6 dns
 
 #Persist TUN
 push "persist-tun"
@@ -64,10 +64,16 @@ push "route 199.21.96.0 255.255.252.0"
 push "route 199.36.240.0 255.255.252.0"
 push "route 213.180.192.0 255.255.224.0"
 
-#push "route-ipv6 2001:678:384::/48"
-#push "route-ipv6 2620:10f:d000::/44"
-#push "route-ipv6 2a02:6b8::/32"
-#push "route-ipv6 2a02:5180::/32"
+# yandex.ua
+push "route 80.239.201.0 255.255.255.0"
+# push "route 80.239.201.39 255.255.255.255"
+push "route 154.47.36.14 255.255.255.255"
+# yandex.ua
+
+push "route-ipv6 2001:678:384::/48"
+push "route-ipv6 2620:10f:d000::/44"
+push "route-ipv6 2a02:6b8::/32"
+push "route-ipv6 2a02:5180::/32"
 
 # Mail.ru network
 #push "route 5.61.0.0 255.255.0.0"
@@ -84,7 +90,7 @@ push "route 178.22.88.0 255.255.248.0"
 push "route 178.237.16.0 255.255.240.0"
 
 # Cloud.mail.ru App
-push "route 185.5.136.0 255.255.252.0"
+#push "route 185.5.136.0 255.255.252.0"
 #push "route 185.5.138.0 255.255.254.0"
 
 push "route 185.5.136.0 255.255.252.0"
@@ -102,10 +108,10 @@ push "route 185.6.244.0 255.255.252.0"
 push "route 185.30.176.0 255.255.252.0"
 push "route 195.218.190.0 255.255.254.0"
 
-#push "route-ipv6 2a00:1148::/32"
-#push "route-ipv6 2a00:a300::/32"
-#push "route-ipv6 2a00:b4c0::/32"
-#push "route-ipv6 2a04:4b40::/29"
+push "route-ipv6 2a00:1148::/32"
+push "route-ipv6 2a00:a300::/32"
+push "route-ipv6 2a00:b4c0::/32"
+push "route-ipv6 2a04:4b40::/29"
 
 # Nessly Company (Mail.ru Group) network
 push "route 95.163.144.0 255.255.255.0"
@@ -158,6 +164,14 @@ push "route 194.88.208.0 255.255.254.0"
 # 195.177.205.0/23
 push "route 195.177.205.0 255.255.255.0"
 push "route 212.118.32.0 255.255.224.0"
+
+push "route 90.156.201.32 255.255.255.255"
+push "route 90.156.201.78 255.255.255.255"
+push "route 90.156.201.90 255.255.255.255"
+push "route 90.156.201.109 255.255.255.255"
+
+# webmoney.com.ua
+push "route 185.116.195.214 255.255.255.255"
 
 # Webmoney OVH SAS
 push "route 51.254.201.70 255.255.255.255"
@@ -258,9 +272,9 @@ push "route 104.26.2.111 255.255.255.255"
 push "route 104.26.3.111 255.255.255.255"
 push "route 172.67.70.154 255.255.255.255"
 
-#push "route-ipv6 2606:4700:20::ac43:469a/128"
-#push "route-ipv6 2606:4700:20::681a:26f/128"
-#push "route-ipv6 2606:4700:20::681a:36f/128"
+push "route-ipv6 2606:4700:20::ac43:469a/128"
+push "route-ipv6 2606:4700:20::681a:26f/128"
+push "route-ipv6 2606:4700:20::681a:36f/128"
 
 # litres.ru
 push "route 193.26.19.0 255.255.255.0"
@@ -273,11 +287,11 @@ push "route 185.72.228.0 255.255.252.0"
 # spotify.com (test only 8 server)
 #push "route 35.186.224.25 255.255.255.255"
 
-#push "route-ipv6 2600:1901:1:c36::/128"
+push "route-ipv6 2600:1901:1:c36::/128"
 
 # news-front.info
 push "route 104.31.2.185 255.255.255.255"
-#push "route-ipv6 2606:4700:3038::681f:2b9"
+push "route-ipv6 2606:4700:3038::681f:2b9"
 
 # mangadex.org
 push "route 185.178.208.185 255.255.255.255"
@@ -311,6 +325,24 @@ push "route 81.19.72.2 255.255.255.255"
 push "route 81.19.72.3 255.255.255.255"
 push "route 81.19.72.4 255.255.255.255"
 push "route 81.19.72.5 255.255.255.255"
+
+# rzd.ru
+push "route 217.175.155.150 255.255.255.255"
+
+# qiwi.com
+push "route 79.142.17.142 255.255.255.255"
+push "route 87.236.19.238 255.255.255.255"
+push "route 91.232.230.0 255.255.255.0"
+push "route 91.239.233.254 255.255.255.255"
+push "route 184.24.25.189 255.255.255.255"
+push "route 185.146.1.121 255.255.255.255"
+
+# wildberries.ru
+push "route 185.62.200.225 255.255.255.255"
+push "route 185.62.200.235 255.255.255.255"
+push "route 185.62.200.245 255.255.255.255"
+
+push "route-ipv6 2a03:720:8::600:2/128"
 
 # TOR - access to union domains
 #push "route 172.16.0.0 255.255.240.0"

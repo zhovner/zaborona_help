@@ -64,6 +64,12 @@ push "route 199.21.96.0 255.255.252.0"
 push "route 199.36.240.0 255.255.252.0"
 push "route 213.180.192.0 255.255.224.0"
 
+# yandex.ua
+push "route 80.239.201.0 255.255.255.0"
+# push "route 80.239.201.39 255.255.255.255"
+push "route 154.47.36.14 255.255.255.255"
+# yandex.ua
+
 #push "route-ipv6 2001:678:384::/48"
 #push "route-ipv6 2620:10f:d000::/44"
 #push "route-ipv6 2a02:6b8::/32"
@@ -151,5 +157,23 @@ push "route 178.248.238.0 255.255.254.0"
 # vms.drweb.ru
 push "route 213.79.65.32 255.255.255.224"
 
+# qiwi.com
+push "route 79.142.17.142 255.255.255.255"
+push "route 87.236.19.238 255.255.255.255"
+push "route 91.232.230.0 255.255.255.0"
+push "route 91.239.233.254 255.255.255.255"
+push "route 184.24.25.189 255.255.255.255"
+push "route 185.146.1.121 255.255.255.255"
+
+# wildberries.ru
+push "route 185.62.200.225 255.255.255.255"
+push "route 185.62.200.235 255.255.255.255"
+push "route 185.62.200.245 255.255.255.255"
+
+#push "route-ipv6 2a03:720:8::600:2/128"
+
 # TOR - access to union domains
 #push "route 172.16.0.0 255.255.240.0"
+
+# IPv4 Route = 91
+# Max Routes = 100
