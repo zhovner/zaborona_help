@@ -4,7 +4,13 @@ dns-forward-max=10000
 
 # yandex.ua fix
 address=/yandex.ua/5.255.255.60
+address=/yandex.ua/80.239.201.72
+address=/yandex.ua/80.239.201.39
+address=/yandex.ua/154.47.36.14
 address=/www.yandex.ua/5.255.255.60
+address=/www.yandex.ua/80.239.201.72
+address=/www.yandex.ua/80.239.201.39
+address=/www.yandex.ua/154.47.36.14
 address=/mail.yandex.ua/93.158.134.125
 address=/tv.yandex.ua/93.158.134.154
 address=/realty.yandex.ua/213.180.204.188
@@ -37,6 +43,8 @@ address=/prefetch-maps.yandex.ua/87.250.250.137
 address=/maps.yandex.ua/77.88.21.189
 address=/probki.yandex.ua/87.250.251.71
 address=/direct.yandex.ua/213.180.204.26
+address=/direct.yandex.ua/87.250.250.134
+address=/direct.yandex.ru/87.250.250.134
 address=/market.yandex.ua/87.250.250.22
 address=/family.yandex.ua/213.180.204.3
 address=/firefox.yandex.ua/213.180.193.3
