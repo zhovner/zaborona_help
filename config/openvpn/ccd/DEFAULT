@@ -1,26 +1,51 @@
-#push "dhcp-option DNS 74.82.42.42" # First DNS HE.net
-push "route 74.82.42.42" # Route to HE.net DNS
-
-#push "dhcp-option DNS 77.88.8.8" # Second DNS Yandex
+# Yandex.DNS - Base
+#push "dhcp-option DNS 77.88.8.8" # First DNS Yandex
 push "route 77.88.8.8" # Route to Yandex DNS
 
+#push "dhcp-option DNS 77.88.8.1" # Second DNS Yandex
+push "route 77.88.8.1" # Route to Yandex DNS
+# Yandex.DNS - Base
+
+# Yandex.DNS - Safe
+#push "dhcp-option DNS 77.88.8.88" # First DNS Yandex
+#push "route 77.88.8.88" # Route to Yandex DNS
+
+#push "dhcp-option DNS 77.88.8.2" # Second DNS Yandex
+#push "route 77.88.8.2" # Route to Yandex DNS
+# Yandex.DNS - Safe
+
+# Yandex.DNS - Family
+#push "dhcp-option DNS 77.88.8.7" # First DNS Yandex
+#push "route 77.88.8.7" # Route to Yandex DNS
+
+#push "dhcp-option DNS 77.88.8.3" # Second DNS Yandex
+#push "route 77.88.8.3" # Route to Yandex DNS
+# Yandex.DNS - Family
+
+#push "dhcp-option DNS 74.82.42.42" # First DNS HE.net
+#push "route 74.82.42.42" # Route to HE.net DNS
+
+### OpenDNS ###
 push "dhcp-option DNS 208.67.222.222" # First DNS OpenDNS
 push "route 208.67.222.222" # Route to OpenDNS
 
 push "dhcp-option DNS 208.67.220.220" # Second DNS OpenDNS
 push "route 208.67.220.220" # Route to OpenDNS
 
-#push "dhcp-option DNS6 2001:4860:4860::8888" # Google ipv6 dns
-#push "route-ipv6 2001:4860:4860::8888"
-
-#push "dhcp-option DNS6 2001:4860:4860::8844" # Google ipv6 dns
-#push "route-ipv6 2001:4860:4860::8844"
-
 ##push "dhcp-option DNS6 2620:119:35::35" # OpenDNS ipv6 dns
 ##push "route-ipv6 2620:119:35::35" # OpenDNS ipv6 dns
 
 ##push "dhcp-option DNS6 2620:119:53::53" # OpenDNS ipv6 dns
 ##push "route-ipv6 2620:119:53::53" # OpenDNS ipv6 dns
+### OpenDNS ###
+
+### Google DNS ###
+#push "dhcp-option DNS6 2001:4860:4860::8888" # Google ipv6 dns
+#push "route-ipv6 2001:4860:4860::8888"
+
+#push "dhcp-option DNS6 2001:4860:4860::8844" # Google ipv6 dns
+#push "route-ipv6 2001:4860:4860::8844"
+### Google DNS ###
 
 #Persist TUN
 push "persist-tun"
@@ -175,5 +200,5 @@ push "route 185.62.200.245 255.255.255.255"
 # TOR - access to union domains
 #push "route 172.16.0.0 255.255.240.0"
 
-# IPv4 Route = 91
+# IPv4 Route = 91 + 4 DNS
 # Max Routes = 100
