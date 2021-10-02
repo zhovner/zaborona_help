@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкция по настройке Zaborona VPN для Windows с протоколом WireGuard</title>
+    <meta property="og:url" content="https://zaborona.help">
+    <meta property="og:title" content="Инструкция по настройке Zaborona VPN для Windows с использованием протокола WireGuard ">
+    <meta property="og:description" content="Работает на всех платформах: Windows, Linux, iOS, Mac, Android. Через VPN идет трафик только к заблокированным сайтам, остальные сайты работают напрямую. Не влияет на скорость остальных сайтов. Поддержка IPv6. Работает с большинством провайдеров Украины* ">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/img/s9qbuiL1.png">
+    <meta property="fb:app_id" content="">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Assets -->
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/tilda-grid-3.0.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/tilda-blocks-2.11.css?v=2" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/tilda-zoom-1.0.min.css" type="text/css" media="all">
+</head>
+
+<body class="t-body" style="margin: 0px; padding-bottom:0;" data-gr-c-s-loaded="true">
+    <!--allrecords-->
+    <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="16871" data-tilda-page-id="914692" data-tilda-page-alias="windows" data-tilda-formskey="bb001967799ba6bb8ec72c53c21ec135">
+        <div id="rec20208744" class="r" style="padding-top:0px;padding-bottom:0px;background-color:#ededed; " data-record-type="106" data-bg-color="#ededed" data-animationappear="off">
+            <!-- T004 -->
+            <div class="t004">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_12">
+                        <div field="text" class="t-text t-text_md ">
+                            <div field="text" class="t-text t-text_md "><a href="/"  rel="">Zaborona VPN</a> | Windows | <a href="/apple.html"  rel="">Apple</a> | <a href="/android.html"  rel="">Android</a> | <a href="/extra.html">Ручная настройка</a> | <a href="/faq.html"  rel="">Помощь</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--# include file="_includes/header.html" -->
+        <div id="rec20208756" class="r r_showed r_anim" style="padding-top:60px;padding-bottom:60px; " data-record-type="255">
+			<!-- T004 -->
+            <div class="t004">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_8 t-prefix_2">
+                        <div field="text" class="t-text t-text_lg ">
+                            <a href="/windows.html"  rel="">OpenVPN</a> &nbsp; <a href="/windows_rip.html"  rel="">RIP</a> &nbsp; <a href="/windows_pptp.html"  rel="">PPTP</a> &nbsp; <a href="/windows_l2tp_ipsec.html"  rel="">L2TP+IPsec</a> &nbsp; <a href="/windows_ikev2_ipsec.html"  rel="">IKEv2+IPsec</a> &nbsp; WireGuard
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- T225 -->
+            <div class="t225">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <div class="t225__title t-title t-title_md" field="title" >Инструкция по настройке <br>Zaborona VPN для windows по <br>протоколу WireGuard</div>
+                        <div class="t225__descr t-descr t-descr_xxl" field="descr" >Рекомендуется использовать систему Windows 7 или 10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">1</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966581869">
+                                      Скачайте и установите программу WireGuard с официального сайта:<br />
+                                      <span class="zz-note"><a href="https://www.wireguard.com/install/#windows-7-8-81-10-2012-2016-2019" target="_blank">WINDOWS 7/8/8.1/10, WINDOWS SERVER 2012/2016/2019</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" ></div>
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">2</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966593578">После установки программы и ее запуска, нажимаем в нижнем левом углу на стрелку вниз напротив "Добавить туннель" и выбираем пункт "Импорт туннелей из файла... [CTRL+O]".
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" ></div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/wireguard_01.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+        <div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">3</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966597622">Выбираем файл конфигурации, который мы получили в личном кабинете и нажимаем на кнопку <b>«Открыть»</b> и ждем, пока импортируется файл (скорость импорта зависит от количества маршрутов).</div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" ></div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/wireguard_02.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+        <div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">4</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966597622">После того, как импортировали конфиг и его параметры видны в WireGuard, нажимаем на кнопку <b>«Подключить»</b>.</div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" ></div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/wireguard_03.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+        <div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">5</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966597622">После успешного подключения, вы должны увидеть кнопку <b>«Отключить»</b> и порт, к которому вы подключены на сервере.</div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" ></div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/wireguard_04.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+        <div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">E!</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">Бывает такое, что после отключения, пропадает часть конфига в WireGuard. Это решается перезапуском самого WireGuard либо удалением и импортированием того же конфиг-файла. Проблема эта связана с большим количеством маршрутов, которое не всегда может переварить интерфейс WireGuard.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/wireguard_05.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+        <!--# include file="_includes/footer.html" -->
+    </div>
+</body>
+
+</html>

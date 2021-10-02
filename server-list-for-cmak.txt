@@ -11,5 +11,5 @@ My VPN Server 3=srv3.vpn.zaborona.help
 My VPN Server 4=srv4.vpn.zaborona.help
 My VPN Server 5=srv5.vpn.zaborona.help
 My VPN Server 6=srv6.vpn.zaborona.help
-My VPN Server 7 (offline)=srv7.vpn.zaborona.help
+My VPN Server 7 (offline111)=srv7.vpn.zaborona.help
 My VPN Server 8 (test server)=srv8.vpn.zaborona.help

@@ -1,0 +1,13 @@
+.scrolldiv {
+height: 400px; /* высота нашего блока */
+width: auto; /* ширина нашего блока */
+background: #fff; /* цвет фона, белый */
+border: 1px solid #C1C1C1; /* размер и цвет границы блока */
+overflow-x: scroll; /* прокрутка по горизонтали */
+/*overflow-y: scroll;*/ /* прокрутка по вертикали */
+
+/* рамка блока */
+border-width:1;
+border-color: rgb(190,190,190);
+border-style: solid;
+}
