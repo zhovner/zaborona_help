@@ -5,7 +5,7 @@
 Если вы знаете, как настроить Zaborona VPN на вашем устройстве,  
 пожалуйста напишите инструкцию в нашу [Wiki](https://github.com/zhovner/zaborona_help/wiki).  
 
-* Статус серверов — [status.zaborona.help](https://status.zaborona.help)
+* Статус серверов — [https://stats.uptimerobot.com/50VGDc0J0n](https://stats.uptimerobot.com/50VGDc0J0n)
 * Список маршрутизируемых IP — [zaborona.help/ips.txt](https://zaborona.help/ips.txt) 
 * Twitter аккаунт — [zhovner](https://twitter.com/zhovner) (искать по тегу #zaborona)
 * Блог - [medium.com/@zaborona](https://medium.com/@zaborona/)
