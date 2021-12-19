@@ -1,8 +1,8 @@
 # Yandex.DNS - Base
-#push "dhcp-option DNS 77.88.8.8" # First DNS Yandex
+push "dhcp-option DNS 77.88.8.8" # First DNS Yandex
 push "route 77.88.8.8" # Route to Yandex DNS
 
-#push "dhcp-option DNS 77.88.8.1" # Second DNS Yandex
+push "dhcp-option DNS 77.88.8.1" # Second DNS Yandex
 push "route 77.88.8.1" # Route to Yandex DNS
 # Yandex.DNS - Base
 
@@ -26,10 +26,10 @@ push "route 77.88.8.1" # Route to Yandex DNS
 #push "route 74.82.42.42" # Route to HE.net DNS
 
 ### OpenDNS ###
-push "dhcp-option DNS 208.67.222.222" # First DNS OpenDNS
+#push "dhcp-option DNS 208.67.222.222" # First DNS OpenDNS
 push "route 208.67.222.222" # Route to OpenDNS
 
-push "dhcp-option DNS 208.67.220.220" # Second DNS OpenDNS
+#push "dhcp-option DNS 208.67.220.220" # Second DNS OpenDNS
 push "route 208.67.220.220" # Route to OpenDNS
 
 ##push "dhcp-option DNS6 2620:119:35::35" # OpenDNS ipv6 dns
