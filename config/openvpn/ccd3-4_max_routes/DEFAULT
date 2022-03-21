@@ -467,7 +467,7 @@ push "route 172.67.69.221 255.255.255.255"
 push "route 104.26.13.179 255.255.255.255"
 push "route 104.26.12.179 255.255.255.255"
 
-=== Simple Sites ===
+#=== Simple Sites ===
 
 #4pda.to
 push "route 172.67.6.182 255.255.255.255"
@@ -492,13 +492,13 @@ push "route 146.255.192.77 255.255.255.255"
 push "route 146.255.192.82 255.255.255.255"
 push "route 146.255.192.75 255.255.255.255"
 
-#ddos-guard.net (νΰ νεμ ρΰιςϋ)
+#ddos-guard.net (Γ­Γ  Γ­Γ₯Γ¬ Γ±Γ Γ©Γ²Γ»)
 push "route 186.2.163.99 255.255.255.255"
 
 #rezga.ag
 push "route 75.2.18.233 255.255.255.255"
 
-=== Simple Sites ===
+#=== Simple Sites ===
 
 # TOR - access to union domains
 #push "route 172.16.0.0 255.255.240.0"
