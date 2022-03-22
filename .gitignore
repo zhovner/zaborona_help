@@ -16,3 +16,4 @@ statistic
 statistic/*
 ipsec
 ipsec/*
+config/dnsmasq.d/zaborona
