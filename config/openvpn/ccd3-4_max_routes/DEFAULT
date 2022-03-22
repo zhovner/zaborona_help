@@ -462,14 +462,45 @@ push "route 185.138.252.1 255.255.255.255"
 push "route 109.248.237.34 255.255.255.255"
 push "route 109.248.237.35 255.255.255.255"
 
-# alfabit.org
-push "route 172.67.69.221 255.255.255.255"
-push "route 104.26.13.179 255.255.255.255"
-push "route 104.26.12.179 255.255.255.255"
+# alfabit.org (CloudFlare)
+#push "route 172.67.69.221 255.255.255.255"
+#push "route 104.26.13.179 255.255.255.255"
+#push "route 104.26.12.179 255.255.255.255"
+
+# iddqd.ru
+push "route 79.174.15.140 255.255.255.255"
+
+# www.old-games.ru
+push "route 95.213.221.146 255.255.255.255"
+
+#push "route-ipv6 2a00:ab00:603:b5::1ad3/128"
+
+# www.opennet.ru
+push "route 217.65.3.21 255.255.255.255"
+
+# rutracker.org (CloudFlare)
+#push "route 172.67.137.176 255.255.255.255"
+#push "route 104.21.56.234 255.255.255.255"
+
+# goodgame.ru
+push "route 195.9.195.21 255.255.255.255"
+
+# sc2tv.ru
+push "route 188.120.225.146 255.255.255.255"
+push "route 82.221.104.145 255.255.255.255"
+
+# rezka.ag (cloudns.net)
+push "route 176.58.48.0 255.255.254.0"
+
+# drive2.ru
+push "route 146.255.192.0 255.255.255.0"
+
+# inetnum
+push "route 146.255.192.0 255.255.252.0"
 
 #=== Simple Sites ===
 
-#4pda.to
+# 4pda.to (CloudFlare)
 push "route 172.67.6.182 255.255.255.255"
 push "route 104.22.34.226 255.255.255.255"
 push "route 104.22.35.226 255.255.255.255"
@@ -478,25 +509,37 @@ push "route 104.22.35.226 255.255.255.255"
 #push "route-ipv6 2606:4700:10::ac43:6b6/128"
 #push "route-ipv6 2606:4700:10::6816:22e2/128"
 
-#habr.com, habr.ru
+# habr.com, habr.ru
 push "route 178.248.237.68 255.255.255.255"
 push "route 82.192.95.175 255.255.255.255"
 
-#mybook.ru
+# mybook.ru
 push "route 217.65.3.198 255.255.255.255"
 push "route 217.65.3.196 255.255.255.255"
 
 
-#drive2.ru
+# drive2.ru
 push "route 146.255.192.77 255.255.255.255"
 push "route 146.255.192.82 255.255.255.255"
 push "route 146.255.192.75 255.255.255.255"
 
-#ddos-guard.net (íà íåì ñàéòû)
+# ddos-guard.net
 push "route 186.2.163.99 255.255.255.255"
 
-#rezga.ag
-push "route 75.2.18.233 255.255.255.255"
+# rezga.ag
+#push "route 75.2.18.233 255.255.255.255"
+
+# outsidethebox.ms - 89.108.118.0 - 89.108.118.255
+push "route 89.108.118.0 255.255.255.0"
+
+# fotostrana.ru - 185.5.72.0 255.255.254.0
+push "route 185.5.72.0 255.255.254.0"
+
+# api.tortuga.club - 95.213.255.0 - 95.213.255.255
+push "route 95.213.255.0 255.255.255.0"
+
+# rzd.ru - 212.164.128.0 - 212.164.159.255
+push "route 212.164.128.0 255.255.224.0"
 
 #=== Simple Sites ===
 
