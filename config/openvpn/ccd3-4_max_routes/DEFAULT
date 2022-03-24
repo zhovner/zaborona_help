@@ -612,6 +612,27 @@ push "route 31.131.253.0 255.255.255.0"
 
 #=== Simple Sites ===
 
+# Zaborona.help
+# srv1
+push "route 94.242.59.156 255.255.255.255"
+# srv2
+push "route 94.242.59.126 255.255.255.255"
+# srv3
+push "route 185.22.172.185 255.255.255.255"
+# srv4
+push "route 77.73.68.230 255.255.255.255"
+# srv5
+push "route 94.242.59.92 255.255.255.255"
+# srv6
+push "route 94.242.57.109 255.255.255.255"
+# srv7 (test)
+push "route 77.223.97.127 255.255.255.255"
+# srv8 (test)
+push "route 80.93.182.161 255.255.255.255"
+# srv9 (test)
+push "route 79.143.30.176 255.255.255.255"
+# Zaborona.help
+
 # TOR - access to union domains
 #push "route 172.16.0.0 255.255.240.0"
 
