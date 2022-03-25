@@ -16,5 +16,4 @@ statistic
 statistic/*
 ipsec
 ipsec/*
-config/dnsmasq.d/zaborona
-config/dnsmasq.d/zaborona
+config/dnsmasq.d/zaborona.new
