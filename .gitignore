@@ -17,3 +17,4 @@ statistic/*
 ipsec
 ipsec/*
 config/dnsmasq.d/zaborona.new
+openvpn-client-config/alt-config/*
