@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкция по настройке Zaborona VPN для Windows с протоколом PPTP</title>
+    <meta property="og:url" content="https://zaborona.help">
+    <meta property="og:title" content="Инструкция по настройке Zaborona VPN для Windows с использованием протокола PPTP ">
+    <meta property="og:description" content="Работает на всех платформах: Windows, Linux, iOS, Mac, Android. Через VPN идет трафик только к заблокированным сайтам, остальные сайты работают напрямую. Не влияет на скорость остальных сайтов. Поддержка IPv6. Работает с большинством провайдеров Украины* ">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/img/s9qbuiL1.png">
+    <meta property="fb:app_id" content="">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Assets -->
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/tilda-grid-3.0.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/tilda-blocks-2.11.css?v=2" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/tilda-zoom-1.0.min.css" type="text/css" media="all">
+</head>
+
+<body class="t-body" style="margin: 0px; padding-bottom:0;" data-gr-c-s-loaded="true">
+    <!--allrecords-->
+    <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="16871" data-tilda-page-id="914692" data-tilda-page-alias="windows" data-tilda-formskey="bb001967799ba6bb8ec72c53c21ec135">
+        <div id="rec20208744" class="r" style="padding-top:0px;padding-bottom:0px;background-color:#ededed; " data-record-type="106" data-bg-color="#ededed" data-animationappear="off">
+            <!-- T004 -->
+            <div class="t004">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_12">
+                        <div field="text" class="t-text t-text_md ">
+                            <div field="text" class="t-text t-text_md "><a href="/"  rel="">Zaborona VPN</a> | Windows | <a href="/apple.html"  rel="">Apple</a> | <a href="/android.html"  rel="">Android</a> | <a href="/extra.html">Ручная настройка</a> | <a href="/faq.html"  rel="">Помощь</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--# include file="_includes/header.html" -->
+        <div id="rec20208756" class="r r_showed r_anim" style="padding-top:60px;padding-bottom:60px; " data-record-type="255">
+			<!-- T004 -->
+            <div class="t004">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_8 t-prefix_2">
+                        <div field="text" class="t-text t-text_lg ">
+                            <a href="/windows.html"  rel="">OpenVPN</a> &nbsp; <a href="/windows_rip.html"  rel="">RIP</a> &nbsp; PPTP &nbsp; <a href="/windows_l2tp_ipsec.html"  rel="">L2TP+IPsec</a> &nbsp; <a href="/windows_ikev2_ipsec.html"  rel="">IKEv2+IPsec</a> &nbsp; <a href="/windows_wireguard.html"  rel="">WireGuard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- T225 -->
+            <div class="t225">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <div class="t225__title t-title t-title_md" field="title" >Инструкция по настройке <br>Zaborona VPN для windows по <br>протоколу PPTP</div>
+                        <div class="t225__descr t-descr t-descr_xxl" field="descr" >Рекомендуется использовать систему Windows 7 или 10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">1</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966581869">
+                                    Нажмите <b>«Пуск»</b> (Start) — <b>«Панель управления»</b> (Control panel) - <b>«Центр управления сетями и общим доступом»</b> (Network and sharing center):<br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" ></div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/start-control_panel-network_and_sharing_center.jpg" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">2</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966593578">Щёлкните <b>«Настройка нового подключения или сети»</b> (Set up a new connection or network)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" ></div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/set_up_a_new_connection_or_network.jpg" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+        <div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">3</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966597622">В следующем окне выберите <b>«Подключение к рабочему месту»</b> (Connect to a workplace). Нажмите <b>«Далее»</b> (Next).</div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" ></div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/connect_to_a_workplace.jpg" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+        <div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">4</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">В следующем окне нажмите на пункт <b>«Использовать мое подключение к Интернету (VPN)»</b> (Use my Internet connection (VPN)). Нажмите <b>«Далее»</b> (Next).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/use_my_internet_connection_VPN.jpg" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">5</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							&#149; В поле <b>«Адрес в Интернете»</b> (Internet address) необходимо ввести адрес сервера для подключения: vpn.zaborona.help.<br>
+							&#149; В поле <b>«Имя местоназначения»</b> (Destination Name) впишите произвольное имя для этого соединения. Например, <b>Zaborona.help PPTP</b><br>
+							&#149; Если за компьютером работает несколько пользователей, которым необходимо использовать данное подключение, следует отметить поле <b>«Разрешить использовать это подключение другим пользователям»</b> (Allow other people to use this connection)<br>
+							&#149; Отметьте поле <b>«Не подключаться сейчас, только выполнить установку для подключения в будущем»</b> (Don't connect now; just set it up so I can connect later)<br>
+							&#149; Нажмите <b>«Далее»</b> (Next).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/internet_address_vpn_pptp.jpg" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">6</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							В поле: <b>«Пользователь»</b> ("User name") введите имя пользователя: <b>zaborona</b> и в поле <b>«Пароль»</b> (Password) — пароль: <b>zaborona</b>. Если Вы не хотите каждый раз при подключении вводить пароль, отметьте поле <b>«Запомнить этот пароль»</b> ("Remember this password"). Нажмите кнопку <b>«Создать»</b> (Create).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/user_name_and_password_pptp.jpg" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">7</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							В следующем окне нажмите кнопку <b>«Закрыть»</b> (Close).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/pptp-finish.jpg" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">8</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							Снова нажмите <b>«Пуск»</b> (Start) — <b>«Подключение»</b> (Connect to). Появится знакомое окошко в котором появился пункт <b>Zaborona.help PPTP</b>. Кликните по нему правой клавишей мыши и выберите в контекстном меню пункт <b>Свойства</b> ("Properties")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/pptp-connect_to.jpg" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">9</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							Появилось меню со свойствами подключения. Перейдите на закладку <b>«Безопасность»</b> (Security).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/pptp-properties.jpg" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">10</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							На закладке <b>«Безопасность»</b> (Security) должны быть выставлены следующие значения:<br>
+&#149; Тип VPN: Туннельный протокол точка-точка (PPTP) либо оставьте пункт: Автоматически;<br>
+&#149; Шифрование данных: необязательное (подключиться даже без шифрования);<br>
+&#149; Проверка подлинности — Разрешить следующие протоколы: Протокол проверки пароля (CHAP), Протокол Microsoft CHAP версии 2 (MS-CHAP v2)<br>
+&#149; Установите такие значения и нажмите <b>«OK»</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/pptp-security.jpg" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">11</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							На закладке <b>«Сеть»</b> (Network) выбираем пункт <b>«Протокол интернета версии 4»</b> и нажимаем на кнопку <b>«Свойства»</b>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/pptp_network_ipv4.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">12</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							На закладке <b>«Общие»</b> (General) должны быть выставлены значения:<br>
+&#149; Получить IP-адрес автоматически;<br>
+&#149; Получить адрес DNS-сервера автоматически;<br>
+&#149; Затем нажмите кнопку <b>«Дополнительно...»</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/pptp_network_ipv4_config.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">13</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							На закладке <b>«Параметры IP»</b> должны быть выставлены следующие значения:<br>
+&#149; Стяна галочка с пункта: Использовать основной шлюз в удаленной сети;<br>
+&#149; Поставить галочку: Отключить добавление маршрута, основанное на классе сети;<br>
+&#149; Нажмите <b>«OK»</b>, чтобы сохранить настройки и на следующем окне нажмите так же <b>«OK»</b>, чтобы сохранить настройки.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/pptp_network_ipv4_config_2.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">14</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							На закладке <b>«Сеть»</b> выбираем пункт <b>«Протокол интернета версии 6»</b> и нажимаем на кнопку <b>«Свойства»</b>.<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/pptp_network_ipv6.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">15</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							На закладке <b>«Общие»</b> (General) должны быть выставлены значения:<br>
+&#149; Получить IP-адрес автоматически;<br>
+&#149; Получить адрес DNS-сервера автоматически;<br>
+&#149; Затем нажмите кнопку <b>«Дополнительно...»</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/pptp_network_ipv6_config.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">16</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							На закладке <b>«Параметры IP»</b> должны быть выставлены следующие значения:<br>
+&#149; Стяна галочка с пункта: Использовать основной шлюз в удаленной сети;<br>
+&#149; Нажмите <b>«OK»</b>, чтобы сохранить настройки и на следующем окне нажмите так же <b>«OK»</b>, чтобы сохранить настройки.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/pptp_network_ipv6_config_2.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>		
+		
+		<div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">17</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1495296256126">
+							Для подключения по VPN необходимо нажать <b>«Пуск»</b> (Start) — <b>«Подключение к»</b> (Connect to) и в появившемся окошке:<br>
+&#149; дважды кликнуть левой клавишей мыши в название подключения, или<br>
+&#149; кликнуть правой клавишей мыши в название подключения и выбрать в контекстном меню <b>«Подключение»</b> ("Connect")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+                <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <img src="/img/pptp-connect_to-2.jpg" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+        <!--# include file="_includes/footer.html" -->
+    </div>
+</body>
+
+</html>
