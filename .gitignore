@@ -18,3 +18,4 @@ ipsec
 ipsec/*
 config/dnsmasq.d/zaborona.new
 openvpn-client-config/alt-config/*
+img/zaborona_vpn_scheme-tmpl.pdn
