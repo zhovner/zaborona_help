@@ -18,4 +18,7 @@ ipsec
 ipsec/*
 config/dnsmasq.d/zaborona.new
 openvpn-client-config/alt-config/*
-img/zaborona_vpn_scheme-tmpl.pdn
+img/openvpn-client-config/srv7.zaborona-help_maxroutes_defGW.ovpn
+img/openvpn-client-config/srv7.zaborona-help-UDP-no-encryption_maxroutes_defGW.ovpn
+img/openvpn-client-config/srv9.zaborona-help_maxroutes_defGW.ovpn
+img/openvpn-client-config/srv9.zaborona-help-UDP-no-encryption_maxroutes_defGW.ovpn
