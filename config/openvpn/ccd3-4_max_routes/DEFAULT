@@ -1721,6 +1721,11 @@ push "route 212.109.216.0 255.255.248.0"
 push "route 213.159.208.0 255.255.248.0"
 push "route 217.28.220.0 255.255.252.0"
 
+# "YooMoney" NBCO LLC
+push "route 77.75.152.0 255.255.248.0"
+push "route 109.235.160.0 255.255.248.0"
+push "route 185.71.76.0 255.255.252.0"
+
 # static.t-ru.org (rutracker.org) Dreamtorrent Corp - 195.82.146.0/23
 push "route 195.82.146.0 255.255.254.0"
 
