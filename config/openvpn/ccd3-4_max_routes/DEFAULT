@@ -789,7 +789,7 @@ push "route 92.255.176.0 255.255.248.0"
 # infostart.ru (1c.ru) (SELECTEL-NET) - 80.93.184.0 - 80.93.184.255 255.255.255.0 /24; AS49505 - 80.93.184.0/24;
 push "route 80.93.184.0 255.255.255.0"
 
-# koroleffsov.ru, infergames.com (reg.ru) - 31.31.192.0 - 31.31.199.255 255.255.248.0 /21; 31.31.200.0 - 31.31.203.255 255.255.252.0 /22; AS197695 - 31.31.198.0/24;
+# koroleffsov.ru, infergames.com (reg.ru) - 31.31.192.0 - 31.31.199.255 255.255.248.0 /21; 31.31.200.0 - 31.31.203.255 255.255.252.0 /22; AS197695 - 31.31.198.0/24; (Доступ только из РФ)
 #push "route 31.31.192.0 255.255.248.0"
 #push "route 31.31.200.0 255.255.252.0"
 
@@ -948,6 +948,60 @@ push "route 185.190.188.0 255.255.252.0"
 
 # proglib.io (SELECTEL-NET) - 109.71.12.0/23
 push "route 109.71.12.0 255.255.254.0"
+
+# radiopotok.ru - AS29182 > JSC IOT - 37.230.114.0/23 +
+push "route 37.230.114.0 255.255.254.0"
+
+# cont.ws
+# Data-center IMAQLIQ Ltd.
+push "route 45.135.92.0 255.255.252.0"
+push "route 81.29.128.0 255.255.240.0"
+push "route 93.189.144.0 255.255.248.0"
+push "route 185.37.63.0 255.255.255.0"
+
+# xchess.ru - AS210079 > EuroByte LLC - 109.234.32.0/24 +
+push "route 109.234.32.0 255.255.255.0"
+
+# цельжизни.орг - AS48287 > JSC "RU-CENTER" - 195.24.68.0/23 +
+push "route 95.24.68.0 255.255.254.0"
+push "route 195.24.64.0 255.255.248.0"
+
+# kg-portal.ru -  AS212247 > ITService LLC - 176.53.155.0/24 +
+push "route 176.53.155.0 255.255.255.0"
+
+# showgogo.ru, itunes.radiorecord.ru - AS35000 > JSC "Severen-Telecom" - 188.227.124.0/24 +
+push "route 188.227.124.0 255.255.255.0"
+
+# radiorecord.hostingradio.ru, radiorecord.magonet.ru - AS7979 > Servers.com, Inc. - 23.111.104.0/24 +
+push "route 23.111.104.0 255.255.255.0"
+
+# unisound.cdnvideo.ru - AS39572 > DataWeb Global Group B.V. - 213.174.128.0/19 +++
+push "route 213.174.128.0 255.255.224.0"
+
+# AS7979 > Development Bureau Ltd
+push "route 194.226.133.0 255.255.255.0"
+
+# tvzvezda.ru - AS197068 > HLL LLC - 178.248.232.0/21 (Доступ только из РФ)
+#push "route 178.248.232.0 255.255.248.0"
+
+# mk.ru - AS209030 > Kaspersky Lab AO - 82.202.190.0/24 (Доступ только из РФ)
+push "route 82.202.190.0 255.255.255.0"
+
+# sipnet.ru - AS12335 > Tario Communications LLC - 212.53.32.0/19
+push "route 212.53.32.0 255.255.224.0"
+
+# ruvoip.net - AS3267 > Federal State Institution Russian - 85.142.128.0/17
+push "route 85.142.128.0 255.255.128.0"
+
+# sbc.megafon.ru, 193.201.229.19 - AS25159 > PJSC MegaFon - 193.201.228.0/22
+push "route 193.201.228.0 255.255.252.0"
+
+# yandex.ru +
+# ilyabirman.ru - AS49505 > OOO "Network of data-centers "Selectel" - 80.93.176.0/20
+push "route 80.93.176.0 255.255.240.0"
+
+# kinzhal.media - AS49505 > OOO "Network of data-centers "Selectel" - 31.184.208.0/20
+#push "route 31.184.208.0 255.255.240.0"
 
 # 2whois.ru - 194.58.58.15 /32; 194.58.58.0 - 194.58.59.255 255.255.254.0 /23;
 push "route 194.58.58.15 255.255.255.255"
