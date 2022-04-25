@@ -494,8 +494,18 @@ push "route 146.255.192.0 255.255.252.0"
 
 # 4pda.to (CloudFlare)
 push "route 172.67.6.182 255.255.255.255"
-push "route 104.22.34.226 255.255.255.255"
-push "route 104.22.35.226 255.255.255.255"
+#push "route 104.22.34.226 255.255.255.255"
+#push "route 104.22.35.226 255.255.255.255"
+# s.4pda.to - SELECTEL
+push "route 95.213.133.93 255.255.255.255"
+# cs5-1.4pda.to - LEASEWEB-DE-FRA-10 Germany
+push "route 178.162.214.215 255.255.255.255"
+# cs5-2.4pda.to - LEASEWEB-DE-FRA-10 Germany
+push "route 178.162.214.219 255.255.255.255"
+# cs5-3.4pda.to - LEASEWEB-DE-FRA-10 Germany
+push "route 178.162.214.227 255.255.255.255"
+# cs6-1.4pda.to - OVH France
+push "route 147.135.254.35 255.255.255.255"
 
 #push "route-ipv6 2606:4700:10::6816:23e2/128"
 #push "route-ipv6 2606:4700:10::ac43:6b6/128"
@@ -1002,6 +1012,45 @@ push "route 80.93.176.0 255.255.240.0"
 
 # kinzhal.media - AS49505 > OOO "Network of data-centers "Selectel" - 31.184.208.0/20
 #push "route 31.184.208.0 255.255.240.0"
+
+# lostarmour.ru - 185.9.147.200/32
+push "route 185.9.147.200 255.255.255.255"
+
+# nod.kini24.ru, *.kini24.ru - 95.170.188.45/32
+push "route 95.170.188.45 255.255.255.255"
+
+# cdn.tf - 212.116.120.0/24
+push "route 212.116.120.0 255.255.255.0"
+
+# megafon.ru - 85.26.148.161/32
+push "route 85.26.148.161 255.255.255.255"
+
+# gamearmy.ru - 79.137.225.150/24
+push "route 79.137.225.0 255.255.255.0"
+
+# amlgames.com 178.20.40.66/32; 83.149.103.136/32
+push "route 178.20.40.66 255.255.255.255"
+# push "route 83.149.103.136 255.255.255.255" - Cloud Niderland
+
+# linkmeup.ru; fs.linkmeup.ru - 185.127.149.137/32; 185.127.149.141/32
+push "route 185.127.149.141 255.255.255.255"
+push "route 185.127.149.137 255.255.255.255"
+
+# autosport.com.ru - 82.202.238.162/32
+push "route 82.202.238.162 255.255.255.255"
+
+# voicecdn.sputnikimages.com - 178.176.153.4
+push "route 178.176.153.4 255.255.255.255"
+push "route 178.248.235.242 255.255.255.255"
+push "route 195.93.246.42 255.255.255.255"
+
+# *.miranda-ng.org
+push "route 92.53.65.196 255.255.255.255" # SELECTEL
+push "route 144.76.235.16 255.255.255.255" # HETZNER-AS Germany
+push "route 209.99.40.222 255.255.255.255" # CONFLUENCE-NETWORK-INC United States
+
+# *.depirf.ru - ESAMARA-AS - JSC "ER-Telecom Holding" - AS34533#_prefixes
+push "route 85.113.60.179 255.255.255.255"
 
 # 2whois.ru - 194.58.58.15 /32; 194.58.58.0 - 194.58.59.255 255.255.254.0 /23;
 push "route 194.58.58.15 255.255.255.255"
@@ -1782,6 +1831,24 @@ push "route 185.71.76.0 255.255.252.0"
 
 # static.t-ru.org (rutracker.org) Dreamtorrent Corp - 195.82.146.0/23
 push "route 195.82.146.0 255.255.254.0"
+
+# JSC "ER-Telecom Holding" - AS34533#_prefixes
+#push "route 5.164.128.0 255.255.192.0"
+#push "route 5.165.32.0 255.255.224.0"
+#push "route 37.112.208.0 255.255.240.0"
+#push "route 46.0.0.0 255.255.0.0"
+#push "route 85.113.32.0 255.255.224.0"
+#push "route 188.187.254.0 255.255.255.0"
+
+# OOO "Network of data-centers "Selectel" - AS49505
+push "route 84.38.176.0 255.255.240.0"
+# OOO "Network of data-centers "Selectel" - AS49505
+push "route 80.249.144.0 255.255.248.0"
+
+# Start LLC - AS61400
+push "route 31.200.248.0 255.255.248.0"
+# CDNvideo LLC - AS57363
+push "route 91.238.109.0 255.255.255.0"
 
 ### HOSTINGS ###
 
