@@ -1052,6 +1052,12 @@ push "route 209.99.40.222 255.255.255.255" # CONFLUENCE-NETWORK-INC United State
 # *.depirf.ru - ESAMARA-AS - JSC "ER-Telecom Holding" - AS34533#_prefixes
 push "route 85.113.60.179 255.255.255.255"
 
+# 3dtoday.ru - 212.41.0.0/19
+push "route 212.41.0.0 255.255.224.0"
+
+# static.mk.ru - AS49063 > Dataline Ltd - 185.3.140.0/22
+push "route 185.3.140.0 255.255.252.0"
+
 # 2whois.ru - 194.58.58.15 /32; 194.58.58.0 - 194.58.59.255 255.255.254.0 /23;
 push "route 194.58.58.15 255.255.255.255"
 #push "route 194.58.58.0 255.255.254.0"
