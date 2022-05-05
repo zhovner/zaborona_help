@@ -747,7 +747,7 @@ push "route 194.87.140.0 255.255.252.0"
 # techberg.ru (IHC-NET, ihc.ru) - 95.181.224.0 - 95.181.224.255 255.255.255.0 /24; AS210079 - 95.181.224.0/24;
 push "route 95.181.224.0 255.255.255.0"
 # micro-solution.ru + sergeistrelec.ru (Reg.Ru Hosting) - 37.140.192.0 - 37.140.195.255 255.255.252.0 /22; AS197695 - 37.140.192.0/24;
-push "route 37.140.192.0 255.255.252.0"
+#push "route 37.140.192.0 255.255.252.0"
 # planetaexcel.ru (Clodo-Cloud) - 62.76.176.0 - 62.76.191.255 255.255.240.0 /20; AS57010 - 62.76.184.0/21;
 #push "route 62.76.176.0 255.255.240.0"
 # webhamster.ru (IHOR-VDS-HOSTING, ihor-hosting.ru) - 193.124.184.0 - 193.124.191.255 255.255.248.0 /21; AS35196 - 193.124.176.0/20; 193.124.176.0 - 193.124.191.255 255.255.240.0 /20;
@@ -1116,7 +1116,7 @@ push "route 217.197.112.0 255.255.240.0"
 push "route 149.126.96.0 255.255.248.0" # AS196695 - 149.126.96.0/21 - NetOne Rus JSC
 push "route 92.242.32.0 255.255.248.0" # AS49063 - 92.242.32.0/21 - Dataline Ltd
 push "route 185.3.140.0 255.255.252.0" # AS49063 - 185.3.140.0/22 - Dataline Ltd
-push "route 37.140.192.0 255.255.255.0" # AS197695 - 37.140.192.0/24 - Reg.Ru Hosting
+#push "route 37.140.192.0 255.255.255.0" # AS197695 - 37.140.192.0/24 - Reg.Ru Hosting
 push "route 188.65.128.0 255.255.248.0" # AS196695 - 188.65.128.0/21 - NetOne Rus JSC
 #push "route 51.250.0.0 255.255.128.0" # AS200350 - 51.250.0.0/17 - Yandex.Cloud LLC
 #push "route 190.115.16.0 255.255.240.0" # AS262254 - 190.115.16.0/20 - DDOS-GUARD CORP.
@@ -1166,6 +1166,56 @@ push "route 77.66.176.0 255.255.240.0"
 
 # 82.202.247.12 - AS49505 > OOO "Network of data-centers "Selectel"
 push "route 82.202.192.0 255.255.192.0"
+
+# doc.ispsystem.ru
+push "route 212.109.222.0 255.255.254.0" # AS29182 - 212.109.222.0/23 - JSC Server
+push "route 80.87.203.0 255.255.255.0" # AS29182 - 80.87.203.0/24 - JSC Server
+#push "route 82.146.56.0 255.255.248.0" # AS29182 - 82.146.56.0/21 - CJSC THE FIRST
+#push "route 186.2.160.0 255.255.240.0" # AS262254 - 186.2.160.0/20 - DDOS-GUARD CORP.
+push "route 188.120.224.0 255.255.240.0" # AS29182 - 188.120.224.0/20 - JSC IOT
+push "route 185.60.134.0 255.255.254.0" # AS29182 - 185.60.134.0/23 - CJSC THE FIRST
+push "route 185.146.158.0 255.255.254.0" # AS29182 - 185.146.158.0/23 - JSC "Server"
+push "route 82.202.170.0 255.255.254.0" # AS29182 - 82.202.170.0/23
+push "route 159.69.13.233 255.255.255.255" # AS24940 - 159.69.0.0/16 - Hetzner Online GmbH
+
+# manaeff.ru - 37.113.128.0/18
+#37.113.130.229 # AS41661 - 37.113.128.0/18 - JSC "ER-Telecom Holding"
+#37.113.130.228
+push "route 37.113.128.0 255.255.192.0"
+
+# amalgama-lab.com - 195.54.214.110
+#195.54.214.110 # AS8331 - 195.54.192.0/19 - JSC "ER-Telecom Holding"
+push "route 195.54.192.0 255.255.224.0"
+
+# *.datalock.ru
+push "route 193.33.170.0 255.255.254.0" # AS42775 - 193.33.170.0/23 - ADWORLDS TECHNOLOGIES LP
+push "route 62.76.24.0 255.255.252.0" # AS61400 62.76.24.0/22 - Start LLC
+push "route 146.255.197.0 255.255.255.0" # AS42632 - 146.255.197.0/24 - MnogoByte colocation and dedicated
+
+# elibrary.ru - 194.85.223.0/24
+push "route 194.85.223.0 255.255.255.0" # AS3218 - 194.85.223.0/24 - Federal Research Center "Crystallography and Photonics" RAS
+
+# rusf.ru - 81.176.0.0/16
+push "route 81.176.66.165 255.255.255.255" # AS8342 - 81.176.0.0/16 - JSC RTComm.RU - проверить ?
+push "route 194.63.141.0 255.255.255.0" # AS211443 - 194.63.141.0/24 - NTX
+push "route 69.61.56.98 255.255.255.255" # AS22653 - 69.61.0.0/17 - Cyber Wurx LLC
+push "route 193.187.96.0 255.255.255.0" # AS211183 - 193.187.96.0/24 - AdminVPS LLC
+
+# micrus.ru - 37.113.128.0/18
+push "route 37.113.128.38 255.255.255.255" # AS41661 - 37.113.128.0/18 - JSC "ER-Telecom Holding"
+
+# atraining.ru - 178.159.48.0/20
+push "route 178.159.48.0 255.255.240.0" # AS51669 - 178.159.48.0/20 - Home Computer Networks ltd.
+
+# adacoins.ru - 91.201.40.0/22
+push "route 91.201.40.0 255.255.252.0" # AS210079 - 91.201.40.0/22 - LLC "RuWeb"
+
+# *.ctocopok.ru - 188.134.0.0/17
+push "route 217.112.32.0 255.255.240.0" # AS30943 - 217.112.32.0/20 - Utransit International Carrier Limited
+push "route 188.134.0.0 255.255.128.0" # AS41733 - 188.134.0.0/17 - JSC "ER-Telecom Holding"
+
+# *.visions.ru - 213.189.196.0/23
+push "route 213.189.196.0 255.255.254.0" # AS6903 - 213.189.196.0/23 - Rusonyx, Ltd.
 
 #=== Simple Sites ===
 
@@ -1974,4 +2024,4 @@ push "route 91.238.109.0 255.255.255.0"
 #####ROUTES-TEST#####################
 
 # Keenetic - 1100 routes maximum
-# NOW - 928 routes
+# NOW - 949 routes
