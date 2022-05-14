@@ -1217,6 +1217,46 @@ push "route 188.134.0.0 255.255.128.0" # AS41733 - 188.134.0.0/17 - JSC "ER-Tele
 # *.visions.ru - 213.189.196.0/23
 push "route 213.189.196.0 255.255.254.0" # AS6903 - 213.189.196.0/23 - Rusonyx, Ltd.
 
+# scanmatik.ru - 217.16.21.85 - AS25532 - 217.16.16.0/20 - LLC "MASTERHOST"
+push "route 217.16.16.0 255.255.240.0"
+
+# ott-play.com
+#push "route 104.21.234.86 255.255.255.255" # Cloudflare, USA
+#push "route 151.80.246.85 255.255.255.255" # OVH SAS, Poland
+#push "route 54.38.130.247 255.255.255.255" # OVH SAS, Amsterdam
+#push "route 104.21.234.87 255.255.255.255" # Cloudflare, USA
+#push "route 193.70.124.128 255.255.255.255" # OVH SAS, Poland
+
+# hlboost.ru - 37.143.10.64 - 37.143.10.0/23 - AS210079 (IHC.RU network in Digital Hub)
+push "route 37.143.10.0 255.255.254.0"
+
+# rf-cheats.ru - 62.173.128.0/19 - AS29182 (CJSC THE FIRST); AS34300 (Internet-Cosmos LLC)
+push "route 94.250.248.0 255.255.254.0"
+push "route 62.173.128.0 255.255.224.0"
+
+# wotspeak.ru - 217.78.239.0/24 - AS203004 (ISP Novorossiysk Telecom Company)
+push "route 217.78.239.0 255.255.255.0"
+#push "route 5.45.70.156 255.255.255.255" # ? USA
+#push "route 5.61.40.41 255.255.255.255" # ? USA
+
+# chto-eto-takoe.ru - 89.253.216.0/21 - AS41535 (Rusonyx, Ltd.)
+push "route 89.253.216.0 255.255.248.0"
+
+# www.club443.ru - 213.189.212.0/23 - AS6903 (Rusonyx, Ltd.)
+push "route 213.189.212.0 255.255.254.0"
+
+# apptractor.ru - AS210079 (hosted-by.ihc.ru); AS50499 (k31.hostenko.com, Canada); AS21100 (ITL LLC, Kharkov, Ukraine)
+push "route 95.183.13.0 255.255.255.0"
+#push "route 193.106.248.0 255.255.255.0" # ? Ukraine
+#push "route 185.14.28.0 255.255.252.0" # ? Netherlands
+
+# textologia.ru - 37.143.11.136 - AS210079 (IHC.RU network in Digital Hub)
+#push "route 37.143.10.0 255.255.254.0"
+
+# nihon-go.ru - 95.183.9.23 - AS210079 (IHC.RU network in Eserver.ru); AS64432 (Variti LLC)
+push "route 95.183.8.0 255.255.254.0"
+push "route 185.165.123.0 255.255.255.0"
+
 #=== Simple Sites ===
 
 # Zaborona.help
@@ -2024,4 +2064,4 @@ push "route 91.238.109.0 255.255.255.0"
 #####ROUTES-TEST#####################
 
 # Keenetic - 1100 routes maximum
-# NOW - 949 routes
+# NOW - 959 routes
