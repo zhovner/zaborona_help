@@ -1257,6 +1257,51 @@ push "route 95.183.13.0 255.255.255.0"
 push "route 95.183.8.0 255.255.254.0"
 push "route 185.165.123.0 255.255.255.0"
 
+# codenet.ru - 85.142.64.0 255.255.192.0" - AS3267 Federal State Institution
+push "route 85.142.116.0 255.255.255.0"
+push "route 85.142.64.0 255.255.192.0"
+
+# college.ru - 195.208.1.0 255.255.255.0"
+push "route 141.101.228.0 255.255.255.0" # AS198770 (Virtual Infrastructures LLC)
+push "route 195.208.1.0 255.255.255.0" # AS48287 (JSC "RU-CENTER")
+
+# aladdin-rd.ru - 195.133.240.0/20
+push "route 195.133.245.0 255.255.255.0"
+push "route 91.199.251.0 255.255.255.0"
+push "route 173.195.146.62 255.255.255.255"
+
+# live.radioscanner.net - 195.209.32.0/19
+push "route 195.209.49.0 255.255.255.0"
+push "route 195.10.205.0 255.255.255.0" # AS35813 (Transservice LLC)
+push "route 78.110.48.0 255.255.240.0" # AS31240 ("Hosting Telesystems" OOO)
+
+# zenon.net - 213.189.211.0 255.255.255.0"
+push "route 62.113.120.0 255.255.248.0" # AS6903 (Rusonyx, Ltd.)
+push "route 195.2.88.0 255.255.252.0" # AS6903 (Rusonyx, Ltd.)
+push "route 195.2.70.0 255.255.255.0" # AS48282	(Hosting technology LTD)
+push "route 195.2.72.0 255.255.255.0" # AS6903 (Rusonyx, Ltd.)
+push "route 185.48.236.0 255.255.252.0" # AS205952 (Rusonyx, Ltd.)
+push "route 213.189.200.0 255.255.255.0" # AS6903 (Rusonyx, Ltd.)
+push "route 62.113.86.0 255.255.255.0" # AS6903	(Rusonyx, Ltd.)
+push "route 62.113.95.0 255.255.255.0" # AS6903	(Rusonyx, Ltd.)
+push "route 195.2.64.0 255.255.254.0" # AS6903 (Rusonyx, Ltd.)
+push "route 195.2.68.0 255.255.254.0" # AS6903 (Rusonyx, Ltd.)
+push "route 195.2.82.0 255.255.254.0" # AS6903 (Rusonyx, Ltd.)
+push "route 62.113.100.0 255.255.255.0" # AS198610 (BEGET.RU)
+push "route 213.189.198.0 255.255.255.0" # AS6903 (Zenon N.S.P.)
+push "route 213.189.206.0 255.255.255.0" # AS12389 (PJSC Rostelecom)
+push "route 89.253.192.0 255.255.248.0" # AS41535 (Rusonyx, Ltd.)
+push "route 213.189.211.0 255.255.255.0" # AS6903 (Zenon N.S.P. Customer Allocation)
+push "route 62.113.114.0 255.255.255.0" # AS48282 (VDSINA VDS Hosting)
+push "route 195.2.94.0 255.255.254.0" # AS6903 (Zenon N.S.P.)
+
+# lib.ru - 81.176.0.0/16
+push "route 81.176.0.0 255.255.0.0" # AS8342 (JSC RTComm.RU)
+push "route 212.1.224.0 255.255.224.0" # AS12714 (Net By Net Holding LLC)
+push "route 87.245.128.0 255.255.192.0" # AS8732 (OJSC Comcor)
+#push "route 195.54.192.0 255.255.224.0" # AS8331 (JSC "ER-Telecom Holding")
+#push "route 217.16.16.0 255.255.240.0" # AS25532 (LLC "MASTERHOST")
+
 #=== Simple Sites ===
 
 # Zaborona.help
@@ -2064,4 +2109,4 @@ push "route 91.238.109.0 255.255.255.0"
 #####ROUTES-TEST#####################
 
 # Keenetic - 1100 routes maximum
-# NOW - 959 routes
+# NOW - 990 routes
