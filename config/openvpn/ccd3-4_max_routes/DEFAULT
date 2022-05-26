@@ -1,5 +1,3 @@
-# Veesp 
-push "route 77.73.64.0 255.255.248.0"
 # Yandex.DNS - Base
 push "dhcp-option DNS 77.88.8.8" # First DNS Yandex
 push "route 77.88.8.8" # Route to Yandex DNS
@@ -2172,6 +2170,9 @@ push "route 31.200.248.0 255.255.248.0"
 # CDNvideo LLC - AS57363
 push "route 91.238.109.0 255.255.255.0"
 
+# Veesp 
+push "route 77.73.64.0 255.255.248.0"
+
 ### HOSTINGS ###
 
 # uablacklist.net
@@ -2185,4 +2186,4 @@ push "route 91.238.109.0 255.255.255.0"
 #####ROUTES-TEST#####################
 
 # Keenetic - 1100 routes maximum
-# NOW - 1021 routes
+# NOW - 1022 routes
