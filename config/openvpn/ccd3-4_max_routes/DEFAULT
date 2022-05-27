@@ -1376,6 +1376,23 @@ push "route 109.174.98.0 255.255.255.0" # AS30922 - 109.174.0.0/17 (MTS PJSC)
 #icqapilogin.mail.ru - 178.237.20.117 - 178.237.20.123
 #push "route 178.237.16.0 255.255.240.0" # AS47764 (LLC VK)
 
+# *.qrz.ru
+push "route 92.53.96.0 255.255.255.0" # AS9123 (Shared hosting)
+push "route 62.181.40.0 255.255.252.0" # AS24739 (JSC "Severen-Telecom")
+#push "route 172.67.177.185 255.255.255.255" # AS13335 - 172.67.176.0/20 (Cloudflare, Inc.)
+push "route 62.181.46.0 255.255.254.0" # AS28968 (JSC "Evrasia Telecom Ru")
+push "route 195.128.120.0 255.255.252.0" # AS47196 (Garant-Park-Internet LLC)
+#push "route 185.92.223.216 255.255.255.255" # AS20473 - 185.92.222.0/23 (Vultr Holdings LLC Amsterdam)
+#push "route 84.196.143.6 255.255.255.255" # AS6848 - 84.192.0.0/13 (Telenet BVBA)
+push "route 91.194.2.0 255.255.254.0" # AS51520 ("RealHost" Ltd.)
+push "route 37.18.35.0 255.255.255.0" # AS201468 (Agrosvyaz Ltd)
+
+# hamsdr.ru
+#push "route 91.189.112.0 255.255.248.0" # AS48287 (JSC "RU-CENTER")
+
+# msreview.net
+push "route 46.254.16.0 255.255.254.0" # AS210079 (IHC.RU network in Eserver.ru)
+
 #=== Simple Sites ===
 
 # Zaborona.help
@@ -2170,7 +2187,7 @@ push "route 31.200.248.0 255.255.248.0"
 # CDNvideo LLC - AS57363
 push "route 91.238.109.0 255.255.255.0"
 
-# Veesp 
+# Veesp
 push "route 77.73.64.0 255.255.248.0"
 
 ### HOSTINGS ###
@@ -2186,4 +2203,4 @@ push "route 77.73.64.0 255.255.248.0"
 #####ROUTES-TEST#####################
 
 # Keenetic - 1100 routes maximum
-# NOW - 1022 routes
+# NOW - 1029 routes
