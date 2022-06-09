@@ -1443,6 +1443,62 @@ push "route 212.42.63.0 255.255.255.0"
 # 5.45.72.170 # AS58061 - 5.45.72.0 255.255.252.0" - IROKO Networks Corporation - US - iedem.tv
 push "route 5.45.72.170 255.255.255.255"
 
+# devapps.ru
+# ds-assets.cdn.devapps.ru (4pda visual content)
+push "route 94.130.71.180 255.255.255.255" # Germany (HETZNER-AS)
+#push "route 178.162.214.227 255.255.255.255" # Germany (LEASEWEB-DE-FRA-10)
+#push "route 147.135.254.35 255.255.255.255" # France (OVH)
+#push "route 31.131.248.0 255.255.248.0" # AS49505 (OOO "Network of data-centers "Selectel")
+#push "route 95.213.128.0 255.255.128.0" # AS49505 (OOO "Network of data-centers "Selectel")
+
+# storage.mds.yandex.net
+#push "route 5.45.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 5.255.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 37.140.128.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 87.250.224.0 255.255.224.0" # AS13238 (YANDEX LLC)
+#push "route 93.158.128.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 213.180.192.0 255.255.224.0" # AS13238 (YANDEX LLC)
+
+# metanit.com
+push "route 7.222.60.0 255.255.252.0" # AS44112 (SpaceWeb CJSC)
+
+# api.music.yandex.net
+#push "route 5.255.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 77.88.0.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 87.250.224.0 255.255.224.0" # AS13238 (YANDEX LLC)
+#push "route 93.158.128.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 100.43.64.0 255.255.224.0" # AS13238 (Yandex Inc)
+#push "route 213.180.192.0 255.255.224.0" # AS13238 (YANDEX LLC)
+
+# strm.yandex.net
+#push "route 87.250.224.0 255.255.224.0" # AS13238 (YANDEX LLC)
+#push "route 37.9.64.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 5.45.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
+push "route 185.70.202.0 255.255.255.0" # AS6762 - 185.70.200.0 255.255.252.0" - TELECOM ITALIA SPARKLE S.p.A. (Italy)
+#push "route 141.8.128.0 255.255.192.0" # AS13238 (YANDEX LLC)
+push "route 80.239.142.0 255.255.255.0" # AS1299 - 80.239.128.0 255.255.224.0" - Telia Company AB (Sweden)
+#push "route 37.9.64.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 100.43.64.0 255.255.224.0" # AS13238 (Yandex Inc)
+push "route 80.68.64.0 255.255.240.0" # AS12714 (Net By Net Holding LLC)
+#push "route 5.45.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 141.8.128.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 5.45.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 77.88.0.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 5.255.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
+push "route 149.5.241.26 255.255.255.0" # AS174 - 149.5.0.0/16 - PSINet, Inc. (France)
+#push "route 77.88.0.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 5.45.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 37.9.64.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 5.45.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 37.9.64.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 5.255.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 87.250.224.0 255.255.224.0" # AS13238 (YANDEX LLC)
+#push "route 213.180.192.0 255.255.224.0" # AS13238 (YANDEX LLC)
+#push "route 5.255.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
+
+# kp.ru [95.181.181.82]
+push "route 95.181.181.0 255.255.255.0" # AS210756 (EdgeCenter LLC)
+
 #=== Simple Sites ===
 
 # Zaborona.help
