@@ -1530,6 +1530,14 @@ push "route 188.254.0.105 255.255.255.255" # AS12389 - 188.254.0.0/17 - PJSC Ros
 #push "route 95.163.32.0 255.255.224.0" # AS47764 (LLC VK)
 #push "route 185.165.123.0 255.255.255.0" # AS64432 (Variti LLC)
 
+# srv1.freeman42.ru, srv2.freeman42.ru, freeman42.ru
+push "route 176.197.31.0 255.255.255.0" # AS39927 - 176.196.0.0/15 - E-Light-Telecom Ltd.
+push "route 188.254.20.0 255.255.255.0" # AS12389 - 188.254.0.0/17 - PJSC Rostelecom
+
+# img.imgzona.video
+push "route 95.211.199.194 255.255.255.255" # Netherlands
+push "route 185.22.234.0 255.255.254.0" # AS210079 (IHC.RU network in Eserver.ru)
+
 #=== Simple Sites ===
 
 # Zaborona.help
