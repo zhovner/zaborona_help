@@ -1210,7 +1210,7 @@ push "route 77.222.56.0 255.255.252.0"
 push "route 77.66.176.0 255.255.240.0"
 
 # 82.202.247.12 - AS49505 > OOO "Network of data-centers "Selectel"
-push "route 82.202.192.0 255.255.192.0"
+#push "route 82.202.192.0 255.255.192.0"
 
 # doc.ispsystem.ru
 push "route 212.109.222.0 255.255.254.0" # AS29182 - 212.109.222.0/23 - JSC Server
@@ -1498,6 +1498,37 @@ push "route 149.5.241.26 255.255.255.0" # AS174 - 149.5.0.0/16 - PSINet, Inc. (F
 
 # kp.ru [95.181.181.82]
 push "route 95.181.181.0 255.255.255.0" # AS210756 (EdgeCenter LLC)
+
+# 3dnews.ru
+push "route 88.212.192.0 255.255.240.0" # AS39134 (United Network LLC)
+push "route 91.210.107.0 255.255.255.0" # AS50867 (LLC "Server v arendy")
+push "route 141.105.70.0 255.255.255.0" # AS50867
+push "route 185.70.107.0 255.255.255.0" # AS50867 (LLC "Server v arendy")
+
+# calend.ru
+push "route 31.172.128.0 255.255.252.0" # AS50340 (OOO "Network of data-centers "Selectel")
+push "route 77.232.56.0 255.255.248.0" # AS24739 (JSC "Severen-Telecom")
+push "route 82.202.192.0 255.255.192.0" # AS49505 (OOO "Network of data-centers "Selectel")
+push "route 84.204.96.131 255.255.255.255" # AS31133 - 84.204.0.0/16 - PJSC MegaFon
+#push "route 95.213.128.0 255.255.128.0" # AS49505 (OOO "Network of data-centers "Selectel")
+
+# tvzvezda.ru
+push "route 79.137.224.0 255.255.240.0" # AS12695 (LLC Digital Network)
+push "route 95.131.24.0 255.255.248.0" # AS49063 (Dataline Ltd)
+#push "route 178.248.232.0 255.255.248.0" # AS197068 (HLL LLC)
+push "route 188.254.0.105 255.255.255.255" # AS12389 - 188.254.0.0/17 - PJSC Rostelecom
+
+# aliexpress.ru
+#push "route 47.246.133.22 255.255.255.255" # AS45102 - 47.246.132.0/22 - Alibaba.com LLC (United States)
+#push "route 47.246.133.23 255.255.255.255" # AS45102 - 47.246.132.0/22 - Alibaba.com LLC (United States)
+#push "route 47.246.133.86 255.255.255.255" # AS45102 - 47.246.132.0/22 - Alibaba.com LLC (United States)
+#push "route 47.246.133.87 255.255.255.255" # AS45102 - 47.246.132.0/22 - Alibaba.com LLC (United States)
+#push "route 47.246.133.88 255.255.255.255" # AS45102 - 47.246.132.0/22 - Alibaba.com LLC (United States)
+#push "route 47.246.133.89 255.255.255.255" # AS45102 - 47.246.132.0/22 - Alibaba.com LLC (United States)
+#push "route 47.246.133.0 255.255.255.0" # AS45102 - 47.246.132.0/22 - Alibaba.com LLC (United States)
+#push "route 62.128.97.25 255.255.255.255" # AS45102 - 62.128.96.0/22 - CITIC Telecom CPC Netherlands B.V. (Netherlands)
+#push "route 95.163.32.0 255.255.224.0" # AS47764 (LLC VK)
+#push "route 185.165.123.0 255.255.255.0" # AS64432 (Variti LLC)
 
 #=== Simple Sites ===
 
@@ -2372,4 +2403,4 @@ push "route 77.73.64.0 255.255.248.0"
 #####ROUTES-TEST#####################
 
 # Keenetic - 1100 routes maximum
-# NOW - 1042 routes
+# NOW - 1056 routes
