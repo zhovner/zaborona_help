@@ -1538,6 +1538,12 @@ push "route 188.254.20.0 255.255.255.0" # AS12389 - 188.254.0.0/17 - PJSC Rostel
 push "route 95.211.199.194 255.255.255.255" # Netherlands
 push "route 185.22.234.0 255.255.254.0" # AS210079 (IHC.RU network in Eserver.ru)
 
+# thg.ru
+push "route 194.67.128.0 255.255.255.0" # AS5523 - 194.67.128.0/18 - JSC "CREDO-TELECOM"
+
+# ideafix.name
+push "route 95.82.227.0 255.255.255.0" # AS12668 - 95.82.192.0/18 - LLC "KomTehCentr"
+
 #=== Simple Sites ===
 
 # Zaborona.help
