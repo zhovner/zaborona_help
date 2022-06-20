@@ -1543,6 +1543,22 @@ push "route 194.67.128.0 255.255.255.0" # AS5523 - 194.67.128.0/18 - JSC "CREDO-
 
 # ideafix.name
 push "route 95.82.227.0 255.255.255.0" # AS12668 - 95.82.192.0/18 - LLC "KomTehCentr"
+# ideafix.name
+push "route 178.248.0.0 255.255.248.0" # AS16230 (Company Skynet Ltd)
+
+# krt-club.ru
+push "route 88.212.247.0 255.255.255.0" # AS39134 (SERVERS)
+
+# p2.patriarchia.ru
+push "route 93.158.192.0 255.255.248.0" # AS200044 (Stack Group, LLC)
+#push "route 178.248.232.0 255.255.248.0" # AS197068 (HLL LLC)
+#push "route 62.181.46.0 255.255.254.0" # AS28968 (JSC "Evrasia Telecom Ru")
+push "route 5.101.113.64 255.255.255.255" # AS198068 - 5.101.113.0/24 - Network for hosting services
+push "route 185.200.240.0 255.255.255.0" # AS9123 (RU-Timeweb_240)
+push "route 77.232.32.0 255.255.254.0" # AS28968 (MSK Eurasia-Telecom)
+
+# tcpu.ru
+push "route 109.111.64.0 255.255.224.0" # AS38917 (INTERCOMTEL Limited Company)
 
 #=== Simple Sites ===
 
