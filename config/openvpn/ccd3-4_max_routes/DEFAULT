@@ -1560,6 +1560,14 @@ push "route 77.232.32.0 255.255.254.0" # AS28968 (MSK Eurasia-Telecom)
 # tcpu.ru
 push "route 109.111.64.0 255.255.224.0" # AS38917 (INTERCOMTEL Limited Company)
 
+# cqham.ru
+push "route 194.186.45.0 255.255.255.0" # AS3216 - 194.186.0.0/16 - PJSC "Vimpelcom"
+push "route 194.67.34.0 255.255.255.0" # AS3216 - 194.67.0.0/18 - PJSC "Vimpelcom"
+push "route 188.225.17.0 255.255.255.0" # AS9123 (timeweb.ru)
+
+# radioscanner.ru
+#push "route 78.110.48.0 255.255.240.0" # AS31240 ("Hosting Telesystems" OOO)
+
 #=== Simple Sites ===
 
 # Zaborona.help
