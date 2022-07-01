@@ -29,3 +29,13 @@
     transition: all .2s;
     cursor: pointer;
 }
+
+/* SPOILER */
+.spoiler > input + label:after{content: "+";float: right;font-family: monospace;font-weight: bold;}
+.spoiler > input:checked + label:after{content: "-";float: right;font-family: monospace;font-weight: bold;}
+.spoiler > input{display:none;}
+.spoiler > input + label , .spoiler > .spoiler_body{background:#CCC;padding:5px 15px;overflow:hidden;width:100%;box-sizing: border-box;display: block;}
+.spoiler > input + label + .spoiler_body{display:none;}
+.spoiler > input:checked + label + .spoiler_body{display: block;}
+.spoiler > .spoiler_body{background: #FFF;border: 3px solid #CCC;border-top: none;}
+/* SPOILER */

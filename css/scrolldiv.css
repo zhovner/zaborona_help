@@ -1,3 +1,5 @@
+@import 'style_custom.css';
+
 .scrolldiv {
 height: 400px; /* высота нашего блока */
 width: auto; /* ширина нашего блока */

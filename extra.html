@@ -61,7 +61,7 @@
                                 <br />
                                 <br /><span style="font-size: 32px;">Ручная настройка OpenVPN</span>
                                 <br />
-                                <br /> Сервер работает на OpenVPN 2.5.6
+                                <br /> Сервер работает на OpenVPN 2.5.7
                                 <br />
                                 <br />
                                <div>
@@ -84,15 +84,21 @@
                                   </style>
 
                                   <ul class="zz-config">
-                                    <li>
-                                      Адреса серверов &mdash;<br>
+                                    <!--//<li>
                                       <span>Основные сервера:</span><br>
-                                      <span class="zz-value">vpn.zaborona.help</span><br><br>
-<!--//                                      <span>Тестовые сервера:</span><br>
-                                      <span class="zz-value">srv7.vpn.zaboronahelp.pp.ua</span><br>
-                                      <span class="zz-value">srv8.vpn.zaboronahelp.pp.ua</span><br>
-                                      <span class="zz-value">srv9.vpn.zaboronahelp.pp.ua</span><br><br>//-->
-                                      <span>Тестовый сервер, Европа:</span><br>
+                                      <span class="zz-value">vpn.zaborona.help</span>
+                                      <span class="zz-note">Доменные имена направлены на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
+
+                                      <span class="zz-note">Доменные имена направлены на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
+                                    </li>
+                                    <li>
+                                      Порт и протокол &mdash;<br>
+                                      <span class="zz-value">TCP 1194/1196</span> (шифрование: auth: sha1; cipher: aes-128-cbc)<br>
+                                      <span class="zz-value">UDP 1194/1196</span> (без шифрования: auth: sha1; cipher: none)
+                                      <span class="zz-note">Лучше использовать TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
+                                    </li>//-->
+                                    <li>
+                                      <span>Сервер, Европа:</span><br>
                                       <span class="zz-value">srv0.vpn.zaboronahelp.pp.ua</span>
                                       <span class="zz-note">Доменные имена направлены на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
                                     </li>
@@ -173,11 +179,21 @@
                                           </style>
 
                                           <ul class="zz-config">
-                                            <li>
-                                              Адрес сервера &mdash;<br>
+<!--//                                            <li>
                                               <span>Основной сервер:</span><br>
-                                              <span class="zz-value">socks.zaborona.help</span><br><br>
-                                              <span>Тестовый сервер, Европа:</span><br>
+                                              <span class="zz-value">socks.zaborona.help</span>
+                                            </li>
+                                            <li>
+                                              Порт &mdash;
+                                              <span class="zz-value">1488</span>
+                                            </li>
+                                            <li>
+                                              Протокол &mdash;
+                                              <span class="zz-value">SOCKS 5</span>
+                                            </li>
+                                            <br><br>//-->
+                                         	<li>
+                                              <span>Сервер, Европа:</span><br>
                                               <span class="zz-value">socks.zaboronahelp.pp.ua</span>
                                             </li>
                                             <li>
