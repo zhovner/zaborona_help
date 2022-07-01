@@ -1568,6 +1568,40 @@ push "route 188.225.17.0 255.255.255.0" # AS9123 (timeweb.ru)
 # radioscanner.ru
 #push "route 78.110.48.0 255.255.240.0" # AS31240 ("Hosting Telesystems" OOO)
 
+# promodj.com
+push "route 91.213.196.0 255.255.255.0" # AS61400 (ATEVE LLC)
+
+# gs-corp.ru
+push "route 87.242.68.0 255.255.252.0" # AS25532 (LLC "MASTERHOST")
+
+# spletnik.ru
+push "route 89.208.144.0 255.255.240.0" # DINET-AS - Russia - spletnik.ru - AS12695 (Hosting and Colocation Services)
+push "route 148.251.206.166 255.255.255.255" # HETZNER-AS - Germany - specials-img.spletnik.ru
+#push "route 95.131.24.0 255.255.248.0" # DTLN - Russia - mirtesen.spletnik.ru - AS49063 (Dataline Ltd)
+push "route 144.76.55.231 255.255.255.255" # HETZNER-AS - Germany - specials.spletnik.ru
+
+# Update!
+# stream.voidboost.cc + *.stream.voidboost.cc
+# stream.voidboost.in + *.stream.voidboost.in
+push "route 5.45.77.201 255.255.255.255" # AS58061 - 5.45.76.0/22 - IROKO Networks Corporation (CLOUD-NETWORK-NL, Belize, USA)
+push "route 176.58.48.0 255.255.255.0" # AS199251 - 176.58.48.0/23 - DigitalOne AG, Netherlands
+#***
+push "route 77.220.184.0 255.255.248.0" # AS42632 (MnogoByte LLC)
+push "route 146.255.198.0 255.255.254.0" # AS42632 (MnogoByte colocation and dedicated)
+#push "route 176.58.39.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
+#push "route 176.58.40.0 255.255.255.0" # AS48158 (DigitalOne AG) Amsterdam, Netherlands, ZeroCDN
+#push "route 176.58.41.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
+#push "route 176.58.42.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
+#push "route 176.58.46.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
+#push "route 176.58.49.0 255.255.255.0" # AS199251 - 176.58.48.0/23 - DigitalOne AG, Amsterdam, Netherlands, ZeroCDN
+push "route 176.58.50.0 255.255.255.0" # AS199251 (MnogoByte CDN)
+#push "route 176.58.53.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
+#push "route 176.58.54.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
+#push "route 176.58.57.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
+#push "route 185.190.188.0 255.255.254.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
+#push "route 185.190.190.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
+#***
+
 #=== Simple Sites ===
 
 # Zaborona.help
