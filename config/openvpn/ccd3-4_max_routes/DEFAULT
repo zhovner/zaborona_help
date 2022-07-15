@@ -567,8 +567,8 @@ push "route 89.108.84.0 255.255.255.0" # AS197695 ("Domain names registrar REG.R
 #push "route 92.53.96.0 255.255.255.0" # AS9123 (Shared hosting) timeweb.ru
 push "route 81.26.147.0 255.255.255.0" # AS8641 - 81.26.144.0 255.255.248.0" - LLC "Nauka-Svyaz"
 push "route 81.163.16.0 255.255.240.0" # AS49505 (OOO "Network of data-centers "Selectel")
-push "route 89.104.64.0 255.255.224.0" # AS39494 (JSC "RU-CENTER")
-push "route 91.217.20.0 255.255.254.0" # AS48287 (JSC "RU-CENTER")
+#push "route 89.104.64.0 255.255.224.0" # AS39494 (JSC "RU-CENTER")
+#push "route 91.217.20.0 255.255.254.0" # AS48287 (JSC "RU-CENTER")
 
 # iptv-content.rv77.pw - 81.28.160.0 - 81.28.191.255 255.255.224.0
 #push "route 81.28.160.0 255.255.224.0"
@@ -864,15 +864,31 @@ push "route 80.93.184.0 255.255.255.0"
 #push "route 82.146.56.0 255.255.248.0"
 #push "route 92.63.96.0 255.255.248.0"
 # === NEW
-push "route 92.63.96.0 255.255.248.0" # AS29182 - 92.63.96.0/21 - CJSC THE FIRST
-push "route 62.109.28.0 255.255.252.0" # AS29182 - 62.109.28.0/22 - CJSC THE FIRST
-push "route 82.146.56.0 255.255.248.0" # AS29182 - 82.146.56.0/21 - CJSC THE FIRST
-push "route 37.230.116.0 255.255.254.0" # AS29182 - 37.230.116.0/23 - CJSC THE FIRST
-push "route 62.109.0.0 255.255.240.0" # AS29182 - 62.109.0.0/20 - JSC IOT
-push "route 80.87.200.0 255.255.254.0" # AS29182 - 80.87.200.0/23 - JSC Server
+#push "route 92.63.96.0 255.255.248.0" # AS29182 - 92.63.96.0/21 - CJSC THE FIRST
+#push "route 62.109.28.0 255.255.252.0" # AS29182 - 62.109.28.0/22 - CJSC THE FIRST
+#push "route 82.146.56.0 255.255.248.0" # AS29182 - 82.146.56.0/21 - CJSC THE FIRST
+#push "route 37.230.116.0 255.255.254.0" # AS29182 - 37.230.116.0/23 - CJSC THE FIRST
+#push "route 62.109.0.0 255.255.240.0" # AS29182 - 62.109.0.0/20 - JSC IOT
+#push "route 80.87.200.0 255.255.254.0" # AS29182 - 80.87.200.0/23 - JSC Server
 #push "route 62.109.16.0 255.255.248.0" # AS29182 - 62.109.16.0/21 - CJSC THE FIRST
 #push "route 5.188.112.0 255.255.248.0" # AS49505 - 5.188.112.0/21 - OOO "Network of data-centers "Selectel"
 # === NEW
+# === NEW2
+# imageban.ru - renew
+#push "route 5.188.112.0 255.255.248.0" # AS49505 (OOO "Network of data-centers "Selectel")
+push "route 37.230.116.0 255.255.254.0" # AS29182 (JSC IOT) (fvds.ru)
+push "route 46.160.240.0 255.255.248.0" # AS35539 (Information and Communication Technologies LLC) (infolink.ru)
+#push "route 62.109.0.0 255.255.240.0" # AS29182 (JSC IOT) (i5.imageban.ru)
+#push "route 62.109.16.0 255.255.248.0" # AS29182 (JSC IOT) (i7.imageban.ru)
+push "route 62.109.28.0 255.255.252.0" # AS29182 (JSC IOT) (fvds.ru)
+push "route 77.88.0.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 80.87.200.0 255.255.254.0" # AS29182 (JSC "Server") (i6.imageban.ru)
+push "route 82.146.56.0 255.255.248.0" # AS29182 (JSC IOT) (i3.imageban.ru)
+#push "route 92.63.96.0 255.255.248.0" # AS29182 (JSC IOT) (i1.imageban.ru)
+#push "route 108.162.193.233 255.255.255.255" # AS13335 - 108.162.192.0/20 - Cloudflare, Inc.
+#push "route 173.245.58.90 255.255.255.255" # AS13335 - 173.245.58.0/24 - Cloudflare, Inc.
+#push "route 192.168.88.252 255.255.255.255" # LAN
+# === NEW2
 
 # artmoney.ru (HCRU-NET) - 91.189.112.0 - 91.189.119.255 255.255.248.0 /21; AS48287 - 91.189.114.0/23;
 push "route 91.189.112.0 255.255.248.0"
@@ -1178,7 +1194,8 @@ push "route 91.194.226.0 255.255.254.0"
 #push "route 195.218.200.227 255.255.255.255"
 
 # css-ms.ru - 193.164.16.191; AS47995 > Apple Technologies LLC
-push "route 193.164.16.191 255.255.255.255"
+push "route 45.8.248.0 255.255.252.0" # AS50340 (OOO "Network of data-centers "Selectel")
+push "route 193.164.16.0 255.255.252.0" # AS47995 - 193.164.16.0/22 - Apple Technologies LLC (RU-AT-20180914)
 
 # 2whois.ru - 194.58.58.15 /32; 194.58.58.0 - 194.58.59.255 255.255.254.0 /23;
 push "route 194.58.58.15 255.255.255.255"
@@ -1500,10 +1517,14 @@ push "route 149.5.241.26 255.255.255.0" # AS174 - 149.5.0.0/16 - PSINet, Inc. (F
 push "route 95.181.181.0 255.255.255.0" # AS210756 (EdgeCenter LLC)
 
 # 3dnews.ru
-push "route 88.212.192.0 255.255.240.0" # AS39134 (United Network LLC)
+push "route 88.212.192.0 255.255.240.0" # AS39134 (United Network LLC) (exepto.ru) (88.212.201.0/24)
+#push "route 89.104.64.0 255.255.224.0" # AS39494 (JSC "RU-CENTER")
 push "route 91.210.107.0 255.255.255.0" # AS50867 (LLC "Server v arendy")
+#push "route 91.217.20.0 255.255.254.0" # AS48287 (JSC "RU-CENTER")
 push "route 141.105.70.0 255.255.255.0" # AS50867
-push "route 185.70.107.0 255.255.255.0" # AS50867 (LLC "Server v arendy")
+push "route 194.67.73.0 255.255.255.0" # AS39561 ("Domain names registrar REG.RU", Ltd)
+push "route 185.70.107.0 255.255.255.0" # AS50867 (LLC "Server v arendy") (3dnews.ru)
+push "route 195.166.180.173 255.255.255.255" # AS8568 - 195.166.176.0/21 - PJSC Rostelecom
 
 # calend.ru
 push "route 31.172.128.0 255.255.252.0" # AS50340 (OOO "Network of data-centers "Selectel")
@@ -1601,6 +1622,57 @@ push "route 176.58.50.0 255.255.255.0" # AS199251 (MnogoByte CDN)
 #push "route 185.190.188.0 255.255.254.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
 #push "route 185.190.190.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
 #***
+
+# start.ru
+push "route 2.58.68.0 255.255.252.0" # AS49505 (OOO "Network of data-centers "Selectel")
+push "route 89.104.64.0 255.255.224.0" # AS39494 (JSC "RU-CENTER")
+push "route 91.217.20.0 255.255.254.0" # AS48287 (JSC "RU-CENTER")
+#push "route 104.47.13.36 255.255.255.255" # AS8075 - 104.40.0.0/13 - Microsoft Corporation
+push "route 185.243.84.0 255.255.252.0" # AS60283 (Start.Ru LLC)
+
+#Trying connect to 88.212.244.156 port 443 failed: Timed out
+#stat.dl.mail.ru
+#dl.mail.ru
+#static.dl.mail.ru
+#stat.dl.mail.ru
+push "route 88.212.244.0 255.255.255.0" # AS39134 (servers.ru hosting services)
+#push "route 178.22.88.0 255.255.248.0" # AS47764 (M100 LLC) (Mail.RU Games)
+#push "route 188.93.56.0 255.255.248.0" # AS47764 (M100 LLC) (Mail.RU Games)
+
+# zen.yandex.ru
+#push "route 213.180.192.0 255.255.224.0" # AS13238 (YANDEX LLC)
+
+# stat5.1internet.tv + ott.teletarget.ru
+push "route 81.211.33.28 255.255.255.255" # AS3216 - 81.211.0.0/17 - PJSC "Vimpelcom"
+push "route 213.248.34.0 255.255.255.0" # AS12695 - 213.248.32.0/19 - LLC Digital Network
+
+# *.ucoz.ru
+push "route 185.178.208.0 255.255.255.0" # AS57724 (DDOS-GUARD LTD)
+#push "route 190.115.16.0 255.255.240.0" # AS262254 (DDOS-GUARD CORP.)
+#push "route 193.109.246.0 255.255.254.0" # AS204343 (Compubyte Limited) (UCOZ-NET)
+#push "route 195.216.243.0 255.255.255.0" # AS57724 (Compubyte Limited) (UCOZ-NET)
+push "route 213.174.157.0 255.255.255.0" # AS39572 - 213.174.128.0/19 - DataWeb Global Group B.V. (Netherlands)
+
+# static.dzeninfra.ru
+push "route 62.217.160.0 255.255.240.0" # AS47764 (LLC VK)
+#push "route 77.88.0.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 87.250.224.0 255.255.224.0" # AS13238 (YANDEX LLC)
+
+# gisclub.tv
+push "route 89.179.73.34 255.255.255.255" # AS8402 - 89.178.0.0/15 - PJSC "Vimpelcom"
+push "route 90.188.37.195 255.255.255.255" # AS12389 - 90.188.0.0/15 - PJSC Rostelecom
+
+# gismeteo.ru
+push "route 37.233.84.0 255.255.255.0" # AS42678 - 37.233.80.0/21 - JSC Meganet
+#push "route 64.233.184.0 255.255.255.0" # AS15169 - 64.233.160.0/19 - Google LLC
+push "route 92.242.43.0 255.255.255.0" # AS49063 (Eldorado, LLC)
+push "route 130.193.66.0 255.255.255.0" # AS49063 - 130.193.64.0/21 - Dataline Ltd
+#push "route 142.250.27.27 255.255.255.255" # AS15169 - 142.250.0.0/15 - Google LLC
+#push "route 172.16.10.0 255.255.255.0" # LAN
+#push "route 172.253.122.27 255.255.255.255" # AS15169 - 172.253.0.0/16 - Google LLC
+push "route 185.134.200.0 255.255.252.0" # AS203444 ("MapMakers Group" Ltd)
+#push "route 209.85.202.27 255.255.255.255" # AS15169 - 209.85.128.0/17 - Google LLC
+push "route 212.24.42.0 255.255.255.0" # AS25227 (JSC Avantel)
 
 #=== Simple Sites ===
 
@@ -2475,4 +2547,4 @@ push "route 77.73.64.0 255.255.248.0"
 #####ROUTES-TEST#####################
 
 # Keenetic - 1100 routes maximum
-# NOW - 1056 routes
+# NOW - 1098 routes
