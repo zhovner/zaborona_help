@@ -1421,15 +1421,15 @@ push "route 109.174.98.0 255.255.255.0" # AS30922 - 109.174.0.0/17 (MTS PJSC)
 #push "route 178.237.16.0 255.255.240.0" # AS47764 (LLC VK)
 
 # *.qrz.ru
-#push "route 92.53.96.0 255.255.255.0" # AS9123 (Shared hosting)
-push "route 62.181.40.0 255.255.252.0" # AS24739 (JSC "Severen-Telecom")
-#push "route 172.67.177.185 255.255.255.255" # AS13335 - 172.67.176.0/20 (Cloudflare, Inc.)
-push "route 62.181.46.0 255.255.254.0" # AS28968 (JSC "Evrasia Telecom Ru")
-push "route 195.128.120.0 255.255.252.0" # AS47196 (Garant-Park-Internet LLC)
-#push "route 185.92.223.216 255.255.255.255" # AS20473 - 185.92.222.0/23 (Vultr Holdings LLC Amsterdam)
-#push "route 84.196.143.6 255.255.255.255" # AS6848 - 84.192.0.0/13 (Telenet BVBA)
-push "route 91.194.2.0 255.255.254.0" # AS51520 ("RealHost" Ltd.)
-push "route 37.18.35.0 255.255.255.0" # AS201468 (Agrosvyaz Ltd)
+##push "route 92.53.96.0 255.255.255.0" # AS9123 (Shared hosting)
+#push "route 62.181.40.0 255.255.252.0" # AS24739 (JSC "Severen-Telecom")
+##push "route 172.67.177.185 255.255.255.255" # AS13335 - 172.67.176.0/20 (Cloudflare, Inc.)
+#push "route 62.181.46.0 255.255.254.0" # AS28968 (JSC "Evrasia Telecom Ru")
+#push "route 195.128.120.0 255.255.252.0" # AS47196 (Garant-Park-Internet LLC)
+##push "route 185.92.223.216 255.255.255.255" # AS20473 - 185.92.222.0/23 (Vultr Holdings LLC Amsterdam)
+##push "route 84.196.143.6 255.255.255.255" # AS6848 - 84.192.0.0/13 (Telenet BVBA)
+#push "route 91.194.2.0 255.255.254.0" # AS51520 ("RealHost" Ltd.)
+#push "route 37.18.35.0 255.255.255.0" # AS201468 (Agrosvyaz Ltd)
 
 # hamsdr.ru
 #push "route 91.189.112.0 255.255.248.0" # AS48287 (JSC "RU-CENTER")
@@ -1502,7 +1502,7 @@ push "route 80.68.64.0 255.255.240.0" # AS12714 (Net By Net Holding LLC)
 #push "route 5.45.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
 #push "route 77.88.0.0 255.255.192.0" # AS13238 (YANDEX LLC)
 #push "route 5.255.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
-push "route 149.5.241.26 255.255.255.0" # AS174 - 149.5.0.0/16 - PSINet, Inc. (France)
+push "route 149.5.241.0 255.255.255.0" # AS174 - 149.5.0.0/16 - PSINet, Inc. (France)
 #push "route 77.88.0.0 255.255.192.0" # AS13238 (YANDEX LLC)
 #push "route 5.45.192.0 255.255.192.0" # AS13238 (YANDEX LLC)
 #push "route 37.9.64.0 255.255.192.0" # AS13238 (YANDEX LLC)
@@ -1582,9 +1582,9 @@ push "route 77.232.32.0 255.255.254.0" # AS28968 (MSK Eurasia-Telecom)
 push "route 109.111.64.0 255.255.224.0" # AS38917 (INTERCOMTEL Limited Company)
 
 # cqham.ru
-push "route 194.186.45.0 255.255.255.0" # AS3216 - 194.186.0.0/16 - PJSC "Vimpelcom"
-push "route 194.67.34.0 255.255.255.0" # AS3216 - 194.67.0.0/18 - PJSC "Vimpelcom"
-push "route 188.225.17.0 255.255.255.0" # AS9123 (timeweb.ru)
+#push "route 194.186.45.0 255.255.255.0" # AS3216 - 194.186.0.0/16 - PJSC "Vimpelcom"
+#push "route 194.67.34.0 255.255.255.0" # AS3216 - 194.67.0.0/18 - PJSC "Vimpelcom"
+#push "route 188.225.17.0 255.255.255.0" # AS9123 (timeweb.ru)
 
 # radioscanner.ru
 #push "route 78.110.48.0 255.255.240.0" # AS31240 ("Hosting Telesystems" OOO)
@@ -1673,6 +1673,21 @@ push "route 130.193.66.0 255.255.255.0" # AS49063 - 130.193.64.0/21 - Dataline L
 push "route 185.134.200.0 255.255.252.0" # AS203444 ("MapMakers Group" Ltd)
 #push "route 209.85.202.27 255.255.255.255" # AS15169 - 209.85.128.0/17 - Google LLC
 push "route 212.24.42.0 255.255.255.0" # AS25227 (JSC Avantel)
+
+# tpu.ru
+push "route 92.53.96.0 255.255.255.0" # AS9123 (Shared hosting) (timeweb.ru)
+push "route 109.123.128.0 255.255.192.0" # AS5567 (National Research Tomsk Polytechnic University)
+#push "route 185.165.123.0 255.255.255.0" # AS64432 (Variti LLC)
+#push "route 192.168.10.0 255.255.255.0" # LAN
+
+# itp.nsc.ru
+push "route 84.237.64.0 255.255.240.0" # AS5387 (Federal Research Center for Information and Computational Technologies)
+push "route 84.237.80.0 255.255.240.0" # AS5387 (Federal Research Center for Information and Computational Technologies)
+push "route 84.237.116.0 255.255.252.0" # AS5387 (Federal Research Center for Information and Computational Technologies)
+#push "route 193.124.243.99 255.255.255.255" # AS39458 - 193.124.240.0/22 - Packet Flip, LLC (USA)
+push "route 194.226.160.0 255.255.255.0" # AS62240 (QWARTA LLC)
+push "route 212.192.187.0 255.255.255.0" # indata.org.ru
+push "route 217.79.60.0 255.255.252.0" # AS5387 (SB RAS Core Network)
 
 #=== Simple Sites ===
 
