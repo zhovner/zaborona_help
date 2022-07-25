@@ -104,8 +104,8 @@ push "route 5.255.196.0 255.255.255.0"
 push "route 5.255.200.0 255.255.255.0"
 push "route 37.9.73.0 255.255.255.0"
 push "route 37.140.136.0 255.255.255.0"
-push "route 77.88.35.0 255.255.255.0"
-push "route 77.88.54.0 255.255.255.0"
+#push "route 77.88.35.0 255.255.255.0"
+#push "route 77.88.54.0 255.255.255.0"
 push "route 93.158.179.0 255.255.255.0"
 push "route 141.8.174.0 255.255.255.0"
 #push "route 213.180.202.0 255.255.255.0"
@@ -119,9 +119,9 @@ push "route 5.255.255.0 255.255.255.0"
 push "route 37.9.95.0 255.255.255.0"
 push "route 37.9.112.0 255.255.255.0"
 push "route 45.87.132.0 255.255.252.0"
-push "route 77.88.8.0 255.255.255.0"
-push "route 77.88.44.0 255.255.255.0"
-push "route 77.88.55.0 255.255.255.0"
+#push "route 77.88.8.0 255.255.255.0"
+#push "route 77.88.44.0 255.255.255.0"
+#push "route 77.88.55.0 255.255.255.0"
 #push "route 84.252.160.0 255.255.224.0"
 push "route 87.250.247.0 255.255.255.0"
 #push "route 178.154.128.0 255.255.224.0"
@@ -482,7 +482,7 @@ push "route 188.120.225.146 255.255.255.255"
 push "route 82.221.104.145 255.255.255.255"
 
 # rezka.ag (cloudns.net)
-push "route 176.58.48.0 255.255.254.0"
+#push "route 176.58.48.0 255.255.254.0"
 
 # drive2.ru
 push "route 146.255.192.0 255.255.255.0"
@@ -881,7 +881,7 @@ push "route 46.160.240.0 255.255.248.0" # AS35539 (Information and Communication
 #push "route 62.109.0.0 255.255.240.0" # AS29182 (JSC IOT) (i5.imageban.ru)
 #push "route 62.109.16.0 255.255.248.0" # AS29182 (JSC IOT) (i7.imageban.ru)
 push "route 62.109.28.0 255.255.252.0" # AS29182 (JSC IOT) (fvds.ru)
-push "route 77.88.0.0 255.255.192.0" # AS13238 (YANDEX LLC)
+#push "route 77.88.0.0 255.255.192.0" # AS13238 (YANDEX LLC)
 #push "route 80.87.200.0 255.255.254.0" # AS29182 (JSC "Server") (i6.imageban.ru)
 push "route 82.146.56.0 255.255.248.0" # AS29182 (JSC IOT) (i3.imageban.ru)
 #push "route 92.63.96.0 255.255.248.0" # AS29182 (JSC IOT) (i1.imageban.ru)
@@ -1605,7 +1605,7 @@ push "route 144.76.55.231 255.255.255.255" # HETZNER-AS - Germany - specials.spl
 # stream.voidboost.cc + *.stream.voidboost.cc
 # stream.voidboost.in + *.stream.voidboost.in
 push "route 5.45.77.201 255.255.255.255" # AS58061 - 5.45.76.0/22 - IROKO Networks Corporation (CLOUD-NETWORK-NL, Belize, USA)
-push "route 176.58.48.0 255.255.255.0" # AS199251 - 176.58.48.0/23 - DigitalOne AG, Netherlands
+#push "route 176.58.48.0 255.255.255.0" # AS199251 - 176.58.48.0/23 - DigitalOne AG, Netherlands
 #***
 push "route 77.220.184.0 255.255.248.0" # AS42632 (MnogoByte LLC)
 push "route 146.255.198.0 255.255.254.0" # AS42632 (MnogoByte colocation and dedicated)
@@ -2313,7 +2313,7 @@ push "route 95.163.144.0 255.255.255.0"
 
 # OOO Network of data-centers Selectel
 push "route 2.56.138.0 255.255.255.0"
-push "route 2.58.68.0 255.255.255.0"
+#push "route 2.58.68.0 255.255.255.0"
 push "route 2.59.49.0 255.255.255.0"
 push "route 2.59.212.0 255.255.255.0"
 push "route 5.8.72.0 255.255.248.0"
