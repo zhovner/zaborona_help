@@ -1663,16 +1663,16 @@ push "route 89.179.73.34 255.255.255.255" # AS8402 - 89.178.0.0/15 - PJSC "Vimpe
 push "route 90.188.37.195 255.255.255.255" # AS12389 - 90.188.0.0/15 - PJSC Rostelecom
 
 # gismeteo.ru
-push "route 37.233.84.0 255.255.255.0" # AS42678 - 37.233.80.0/21 - JSC Meganet
+push "route 37.233.80.0 255.255.248.0" # AS42678 (JSC Meganet)
 #push "route 64.233.184.0 255.255.255.0" # AS15169 - 64.233.160.0/19 - Google LLC
-#push "route 92.242.43.0 255.255.255.0" # AS49063 (Eldorado, LLC)
-push "route 130.193.66.0 255.255.255.0" # AS49063 - 130.193.64.0/21 - Dataline Ltd
+push "route 92.242.43.0 255.255.255.0" # AS49063 (Eldorado, LLC)
+push "route 130.193.64.0 255.255.248.0" # AS49063 (Dataline Ltd)
 #push "route 142.250.27.27 255.255.255.255" # AS15169 - 142.250.0.0/15 - Google LLC
 #push "route 172.16.10.0 255.255.255.0" # LAN
 #push "route 172.253.122.27 255.255.255.255" # AS15169 - 172.253.0.0/16 - Google LLC
 push "route 185.134.200.0 255.255.252.0" # AS203444 ("MapMakers Group" Ltd)
 #push "route 209.85.202.27 255.255.255.255" # AS15169 - 209.85.128.0/17 - Google LLC
-#push "route 212.24.42.0 255.255.255.0" # AS25227 (JSC Avantel)
+push "route 212.24.42.0 255.255.255.0" # AS25227 (JSC Avantel)
 
 # tpu.ru
 #push "route 92.53.96.0 255.255.255.0" # AS9123 (Shared hosting) (timeweb.ru)
@@ -1688,14 +1688,6 @@ push "route 84.237.116.0 255.255.252.0" # AS5387 (Federal Research Center for In
 push "route 194.226.160.0 255.255.255.0" # AS62240 (QWARTA LLC)
 push "route 212.192.187.0 255.255.255.0" # indata.org.ru
 push "route 217.79.60.0 255.255.252.0" # AS5387 (SB RAS Core Network)
-
-# gismeteo.ru
-push "route 37.233.80.0 255.255.248.0" # AS42678 (JSC Meganet)
-push "route 92.242.43.0 255.255.255.0" # AS49063 (Eldorado, LLC)
-push "route 130.193.64.0 255.255.248.0" # AS49063 (Dataline Ltd)
-push "route 185.134.200.0 255.255.254.0" # AS203444 ("MapMakers Group" Ltd)
-push "route 185.134.202.0 255.255.254.0" # AS203444	("MapMakers Group" Ltd)
-push "route 212.24.42.0 255.255.255.0" # AS25227 (JSC Avantel)
 
 # stat.dl.mail.ru
 #push "route 178.22.88.0 255.255.248.0" # AS47764 (M100 LLC)
