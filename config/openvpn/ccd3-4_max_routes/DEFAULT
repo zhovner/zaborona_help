@@ -1018,11 +1018,11 @@ push "route 89.111.128.0 255.255.192.0"
 # driver.ru +
 
 # rezka.ag (grafika)
-push "route 176.58.38.0 255.255.254.0"
-push "route 176.58.40.0 255.255.248.0"
-push "route 176.58.48.0 255.255.248.0"
-push "route 176.58.56.0 255.255.254.0"
-push "route 185.190.188.0 255.255.252.0"
+#push "route 176.58.38.0 255.255.254.0"
+#push "route 176.58.40.0 255.255.248.0"
+#push "route 176.58.48.0 255.255.248.0"
+#push "route 176.58.56.0 255.255.254.0"
+#push "route 185.190.188.0 255.255.252.0"
 
 # proglib.io (SELECTEL-NET) - 109.71.12.0/23
 push "route 109.71.12.0 255.255.254.0"
@@ -1665,17 +1665,17 @@ push "route 90.188.37.195 255.255.255.255" # AS12389 - 90.188.0.0/15 - PJSC Rost
 # gismeteo.ru
 push "route 37.233.84.0 255.255.255.0" # AS42678 - 37.233.80.0/21 - JSC Meganet
 #push "route 64.233.184.0 255.255.255.0" # AS15169 - 64.233.160.0/19 - Google LLC
-push "route 92.242.43.0 255.255.255.0" # AS49063 (Eldorado, LLC)
+#push "route 92.242.43.0 255.255.255.0" # AS49063 (Eldorado, LLC)
 push "route 130.193.66.0 255.255.255.0" # AS49063 - 130.193.64.0/21 - Dataline Ltd
 #push "route 142.250.27.27 255.255.255.255" # AS15169 - 142.250.0.0/15 - Google LLC
 #push "route 172.16.10.0 255.255.255.0" # LAN
 #push "route 172.253.122.27 255.255.255.255" # AS15169 - 172.253.0.0/16 - Google LLC
 push "route 185.134.200.0 255.255.252.0" # AS203444 ("MapMakers Group" Ltd)
 #push "route 209.85.202.27 255.255.255.255" # AS15169 - 209.85.128.0/17 - Google LLC
-push "route 212.24.42.0 255.255.255.0" # AS25227 (JSC Avantel)
+#push "route 212.24.42.0 255.255.255.0" # AS25227 (JSC Avantel)
 
 # tpu.ru
-push "route 92.53.96.0 255.255.255.0" # AS9123 (Shared hosting) (timeweb.ru)
+#push "route 92.53.96.0 255.255.255.0" # AS9123 (Shared hosting) (timeweb.ru)
 push "route 109.123.128.0 255.255.192.0" # AS5567 (National Research Tomsk Polytechnic University)
 #push "route 185.165.123.0 255.255.255.0" # AS64432 (Variti LLC)
 #push "route 192.168.10.0 255.255.255.0" # LAN
@@ -1688,6 +1688,35 @@ push "route 84.237.116.0 255.255.252.0" # AS5387 (Federal Research Center for In
 push "route 194.226.160.0 255.255.255.0" # AS62240 (QWARTA LLC)
 push "route 212.192.187.0 255.255.255.0" # indata.org.ru
 push "route 217.79.60.0 255.255.252.0" # AS5387 (SB RAS Core Network)
+
+# gismeteo.ru
+push "route 37.233.80.0 255.255.248.0" # AS42678 (JSC Meganet)
+push "route 92.242.43.0 255.255.255.0" # AS49063 (Eldorado, LLC)
+push "route 130.193.64.0 255.255.248.0" # AS49063 (Dataline Ltd)
+push "route 185.134.200.0 255.255.254.0" # AS203444 ("MapMakers Group" Ltd)
+push "route 185.134.202.0 255.255.254.0" # AS203444	("MapMakers Group" Ltd)
+push "route 212.24.42.0 255.255.255.0" # AS25227 (JSC Avantel)
+
+# stat.dl.mail.ru
+#push "route 178.22.88.0 255.255.248.0" # AS47764 (M100 LLC)
+
+# pro.p-on.ru
+push "route 62.76.154.0 255.255.255.0" # AS60818 (Scientific-production Association Telemetry LLC)
+
+# ilook.tv, melord.net (It is on the block list, but in fact, not banned)
+push "route 46.19.138.0 255.255.255.0" # AS51852 - 46.19.136.0/21 - Private Layer INC (Ave Cuba, Calidonia)
+
+# netology.ru
+#push "route 5.189.224.0 255.255.240.0" # AS49505 (OOO "Network of data-centers "Selectel")
+#push "route 46.4.70.151 255.255.255.255" # AS24940 - 46.4.0.0/16 - Hetzner Online GmbH
+#push "route 92.53.96.0 255.255.255.0" # AS9123 (Shared hosting) (timeweb.ru)
+#push "route 104.22.41.171 255.255.255.255" # AS13335 - 104.22.32.0/20 - Cloudflare, Inc.
+#push "route 162.159.38.2 255.255.255.255" # AS13335 - 162.159.32.0/20 - Cloudflare, Inc.
+#push "route 172.64.35.18 255.255.255.255" # AS13335 - 172.64.35.0/24 - Cloudflare, Inc.
+#push "route 172.67.21.207 255.255.255.255" # AS13335 - 172.67.16.0/20 - Cloudflare, Inc.
+#push "route 185.215.4.0 255.255.255.0" # AS57724 (Tilda Publishing LLC)
+push "route 185.192.108.0 255.255.255.0" # AS50340 (OOO "Network of data-centers "Selectel")
+push "route 185.175.44.0 255.255.252.0" # AS49505 (OOO "Network of data-centers "Selectel")
 
 #=== Simple Sites ===
 
