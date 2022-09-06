@@ -476,7 +476,7 @@ push "route 109.248.237.0 255.255.255.0"
 push "route 195.9.0.0 255.255.0.0" # PJSC Moscow city telephone network
 
 # sc2tv.ru
-push "route 188.120.224.0/20 255.255.240.0" # JSC IOT
+#push "route 188.120.224.0 255.255.240.0" # JSC IOT
 push "route 82.221.104.145 255.255.255.255" # Advania Island ehf
 
 # rezka.ag (cloudns.net)
@@ -1209,7 +1209,7 @@ push "route 212.109.222.0 255.255.254.0" # AS29182 - 212.109.222.0/23 - JSC Serv
 push "route 80.87.203.0 255.255.255.0" # AS29182 - 80.87.203.0/24 - JSC Server
 #push "route 82.146.56.0 255.255.248.0" # AS29182 - 82.146.56.0/21 - CJSC THE FIRST
 #push "route 186.2.160.0 255.255.240.0" # AS262254 - 186.2.160.0/20 - DDOS-GUARD CORP.
-push "route 188.120.224.0 255.255.240.0" # AS29182 - 188.120.224.0/20 - JSC IOT
+#push "route 188.120.224.0 255.255.240.0" # AS29182 - 188.120.224.0/20 - JSC IOT
 push "route 185.60.134.0 255.255.254.0" # AS29182 - 185.60.134.0/23 - CJSC THE FIRST
 push "route 185.146.158.0 255.255.254.0" # AS29182 - 185.146.158.0/23 - JSC "Server"
 push "route 82.202.170.0 255.255.254.0" # AS29182 - 82.202.170.0/23
