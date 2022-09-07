@@ -395,7 +395,7 @@ push "route 80.68.240.0 255.255.240.0"
 push "route 185.72.228.0 255.255.252.0"
 
 # spotify.com (test only 8 server)
-push "route 35.186.224.25 255.255.255.255"
+#push "route 35.186.224.25 255.255.255.255"
 
 #push "route-ipv6 2600:1901:1:c36::/128"
 
