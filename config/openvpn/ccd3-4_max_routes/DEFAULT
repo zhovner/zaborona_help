@@ -1026,7 +1026,7 @@ push "route 176.53.155.0 255.255.255.0"
 push "route 188.227.124.0 255.255.255.0"
 
 # radiorecord.hostingradio.ru, radiorecord.magonet.ru - AS7979 > Servers.com, Inc. - 23.111.104.0/24 +
-push "route 23.111.104.0 255.255.255.0"
+#push "route 23.111.104.0 255.255.255.0"
 
 # unisound.cdnvideo.ru - AS39572 > DataWeb Global Group B.V. - 213.174.128.0/19 +++
 #push "route 213.174.128.0 255.255.224.0"
@@ -1051,7 +1051,7 @@ push "route 193.201.228.0 255.255.252.0"
 
 # yandex.ru +
 # ilyabirman.ru - AS49505 > OOO "Network of data-centers "Selectel" - 80.93.176.0/20
-push "route 80.93.176.0 255.255.240.0"
+#push "route 80.93.176.0 255.255.240.0"
 
 # kinzhal.media - AS49505 > OOO "Network of data-centers "Selectel" - 31.184.208.0/20
 #push "route 31.184.208.0 255.255.240.0"
@@ -1735,6 +1735,172 @@ push "route 185.70.104.0 255.255.255.0" # LLC "Server v arendy"
 push "route 92.38.128.27 255.255.255.0" # G-Core Labs S.A.
 #push "route 134.195.90.154 255.255.255.255" # HostHatch LLC (C07699001) USA
 #push "route 134.195.89.41 255.255.255.255" # HostHatch LLC (C07699001) USA
+
+# hostingradio.ru ?
+push "route 23.111.96.0 255.255.240.0" # SERVERS - 23.111.96.0/19, 23.111.96.0/20, 23.111.104.0/24
+push "route 23.105.224.0 255.255.224.0" # United Network LLC - 23.105.224.0/19, 23.105.224.0/20
+#push "route 37.130.196.1 255.255.255.255" # ZILORE LLC - 37.130.196.0/24 - United States (not FW)
+#push "route 37.130.197.1 255.255.255.255" # ZILORE LLC - 37.130.197.0/24 - United States (not FW)
+push "route 46.21.248.0 255.255.254.0" # OOO "Network of data-centers "Selectel"
+#push "route 62.210.200.108 255.255.255.255" # ONLINE S.A.S. - 62.210.0.0/16 - Paris (not FW)
+#push "route 64.233.185.27 255.255.255.255" # Google LLC - 64.233.160.0/19 - Mountain View (not FW)
+#push "route 64.233.186.27 255.255.255.255" # Google LLC - 64.233.160.0/19 - Mountain View (not FW)
+push "route 78.155.216.0 255.255.248.0" # OOO "Network of data-centers "Selectel"
+push "route 80.93.176.0 255.255.240.0" # OOO "Network of data-centers "Selectel"
+push "route 88.212.232.0 255.255.248.0" # United Network LLC - 88.212.237.0/24 - 88.212.232.0/21
+push "route 88.212.240.0 255.255.248.0" # servers.ru hosting services - 88.212.240.0/21, 88.212.242.0/24 - RU
+push "route 91.108.34.0 255.255.255.0" # CGNET_NETWORK - 91.108.34.0/24 - RU
+#push "route 91.121.223.119 255.255.255.255" # OVH SAS - 91.121.0.0/16 (not FW)
+#push "route 92.53.64.0 255.255.224.0" # OOO "Network of data-centers "Selectel"
+#push "route 93.189.144.0 255.255.248.0" # Data-center IMAQLIQ Ltd.
+push "route 109.124.64.0 255.255.192.0" # PJSC MegaFon
+#push "route 185.165.123.0 255.255.255.0" # Variti LLC
+#push "route 188.166.203.57 255.255.255.255" # DigitalOcean Network Operations - 188.166.200.0/22 - United States (not FW)
+#push "route 108.177.12.27 255.255.255.255" # Google LLC - 108.177.0.0/17 - Mountain View (not FW)
+#push "route 172.217.197.26 255.255.255.255" # Google LLC - 172.217.0.0/16 - Mountain View (not FW)
+#push "route 172.253.62.26 255.255.255.255" # Google LLC - 172.253.0.0/16 - Mountain View (not FW)
+
+# 101.ru
+#push "route 89.104.64.0 255.255.224.0" # JSC "RU-CENTER"
+#push "route 94.23.219.178 255.255.255.255" # OVH SAS - 94.23.0.0/16 (not FW)
+push "route 91.207.58.0 255.255.254.0" # Limited Liability Company GPM Digital Technologies
+push "route 91.209.91.0 255.255.255.0" # OJSC TNT-Broadcasting Network
+push "route 91.217.20.0 255.255.255.0" # JSC "RU-CENTER"
+push "route 91.217.21.0 255.255.255.0" # JSC "RU-CENTER"
+#push "route 95.131.24.0 255.255.248.0" # Dataline Ltd
+#push "route 193.232.148.0 255.255.252.0" # Limited Liability Company GPM Digital Technologies
+push "route 194.226.176.0 255.255.255.0" # Radiogroup GPM Limited liability Company
+
+# 46.8.210.63
+push "route push "route 46.8.208.0 255.255.252.0" # Contel OOO
+
+### University ru ###
+# osu.ru
+push "route 62.76.152.0 255.255.255.0" # Orenburg State University
+#push "route 79.140.16.0 255.255.240.0" # JSC "Ufanet"
+push "route 95.105.96.0 255.255.224.0" # JSC "Ufanet"
+#push "route 192.209.235.15 255.255.255.255" # Radianz Americas Inc. (not FW)
+push "route 195.2.210.0 255.255.254.0" # Orenburg State University
+push "route 195.209.224.0 255.255.224.0" # Federal Scientific Research Institute for System Analysis of the Russian
+#push "route 195.216.243.0 255.255.255.0" # Compubyte Limited
+
+# og-ti.ru
+push "route 79.140.16.0 255.255.240.0" # JSC "Ufanet"
+push "route 89.237.32.0 255.255.248.0" # Joint Stock Company TransTeleCom
+#push "route 104.47.2.36 255.255.255.255" # Microsoft Corporation (not FW)
+
+# smtu.ru
+#push "route 185.220.193.99 255.255.255.255" # Norsitel GmbH - 185.220.192.0/22 - (ns2.runnet.ru) (not FW)
+#push "route 194.85.32.0 255.255.240.0" # Federal Scientific Research Institute for System Analysis of the Russian
+#push "route 195.209.224.0 255.255.224.0" # Federal Scientific Research Institute for System Analysis of the Russian
+
+# spbstu.ru
+#push "route 10.2.44.22 255.255.255.255" # Reserved (Local Network) (not FW)
+push "route 185.216.204.0 255.255.252.0" # Peter the Great St. Petersburg Polytechnic University
+#push "route 192.168.0.16 255.255.255.255" # Reserved (Local Network) (not FW)
+#push "route 192.168.245.201 255.255.255.255" # Reserved (Local Network) (not FW)
+#push "route 192.168.245.232 255.255.255.255" # Reserved (Local Network) (not FW)
+#push "route 192.168.68.117 255.255.255.255" # Reserved (Local Network) (not FW)
+#push "route 192.168.68.252 255.255.255.255" # Reserved (Local Network) (not FW)
+#push "route 192.168.68.253 255.255.255.255" # Reserved (Local Network) (not FW)
+push "route 194.190.224.0 255.255.224.0" # RUNNet - Russian Federal University Network
+#push "route 195.209.224.0 255.255.224.0" # Federal Scientific Research Institute for System Analysis of the Russian
+#push "route 51.250.0.0 255.255.128.0" # Yandex.Cloud LLC
+#push "route 84.201.128.0 255.255.192.0" # Yandex.Cloud LLC
+
+# etu.ru
+#push "route 185.165.123.0 255.255.255.0" # Variti LLC
+#push "route 185.215.4.0 255.255.255.0" # Tilda Publishing LLC
+push "route 194.85.32.0 255.255.240.0" # Federal Scientific Research Institute for System Analysis of the Russian
+push "route 194.85.160.0 255.255.240.0" # RUNNet - Russian Federal University Network
+#push "route 195.209.224.0 255.255.224.0" # Federal Scientific Research Institute for System Analysis of the Russian
+
+# tyuiu.ru
+#push "route 178.176.0.0 255.252.0.0" # PJSC MegaFon
+push "route 217.116.48.0 255.255.240.0" # "Russian company" LLC
+push "route 77.242.96.0 255.255.240.0" # "Russian company" LLC
+push "route 91.211.192.0 255.255.252.0" # RK LLC
+
+# gubkin.ru
+#push "route 10.22.64.71 255.255.255.255" # Reserved (Local Network) (not FW)
+push "route 185.12.92.0 255.255.252.0" # LLC "RuWeb"
+#push "route 185.165.123.0 255.255.255.0" # Variti LLC
+push "route 185.246.64.0 255.255.254.0" # First JSC Network Operations
+push "route 193.233.5.0 255.255.255.0" # OOO Avantelecom
+push "route 213.85.0.0 255.255.128.0" # "Central Telegraph" Public Joint-stock Company
+push "route 31.41.40.0 255.255.248.0" # Relink LTD
+#push "route 94.100.176.0 255.255.240.0" # LLC VK
+push "route 94.232.136.0 255.255.248.0" # I.M.Gubkin Russian State University of Oil and Gas
+
+# ulstu.ru
+#push "route 10.100.1.38 255.255.255.255" # Reserved (Local Network) (not FW)
+#push "route 10.100.1.39 255.255.255.255" # Reserved (Local Network) (not FW)
+#push "route 185.165.123.0 255.255.255.0" # Variti LLC
+push "route 62.76.32.0 255.255.252.0" # OOO "Post ltd"
+#push "route 68.183.243.42 255.255.255.255" # DigitalOcean, LLC - 68.183.240.0/22 - Germany (not FW)
+push "route 79.132.96.0 255.255.224.0" # Joint Stock Company TransTeleCom
+push "route 89.239.128.0 255.255.192.0" # PJSC Rostelecom
+#push "route 91.217.20.0 255.255.254.0" # JSC "RU-CENTER"
+
+# utmn.ru
+#push "route 104.47.1.36 255.255.255.255" # Microsoft Corporation - 104.40.0.0/13 - Austria (not FW)
+#push "route 13.13.13.13 255.255.255.255" # Xerox Corporation - 13.13.0.0/16 - Canada (not FW)
+#push "route 185.156.65.250 255.255.255.255" # UKFAST - 185.156.65.0/24 - United Kingdom (not FW)
+#push "route 185.215.4.0 255.255.255.0" # Tilda Publishing LLC
+push "route 212.44.128.0 255.255.224.0" # PJSC "Vimpelcom"
+#push "route 213.180.192.0 255.255.224.0" # YANDEX LLC
+push "route 5.1.48.0 255.255.248.0" # "Russian company" LLC
+#push "route 54.194.41.141 255.255.255.255" # Amazon.com, Inc. - 54.194.0.0/16 - Ireland (not FW)
+#push "route 93.158.128.0 255.255.192.0" # YANDEX LLC
+
+# narfu.ru
+#push "route 104.47.6.36 255.255.255.255" # Microsoft Corporation - 104.40.0.0/13 - Austria (not FW)
+push "route 185.179.84.0 255.255.252.0" # Limited Liability Company "RTS-tender"
+push "route 78.36.0.0 255.254.0.0" # PJSC Rostelecom
+push "route 85.172.0.0 255.252.0.0" # PJSC Rostelecom
+push "route 92.100.0.0 255.254.0.0" # PJSC Rostelecom
+
+# npoiskra.ru
+#push "route 176.57.69.92 255.255.255.255" # Zomro B.V. - 176.57.69.0/24 - Server location - Netherlands, Dronten (not FW)
+push "route 178.44.0.0 255.252.0.0" # PJSC Rostelecom
+#push "route 194.67.192.0 255.255.224.0" # Network Management Ltd
+push "route 46.146.0.0 255.255.0.0" # JSC "ER-Telecom Holding"
+
+# kpfu.ru
+push "route 178.213.240.0 255.255.248.0" # Kazan University
+#push "route 185.165.123.0 255.255.255.0" # Variti LLC
+
+# voenmeh.ru
+push "route 185.179.191.0 255.255.255.0" # Webhost LLC
+push "route 185.32.56.0 255.255.254.0" # Megagroup.ru LLC
+#push "route 62.113.114.0 255.255.255.0" # VDSINA VDS Hosting
+push "route 82.137.128.0 255.255.192.0" # Federal Scientific Research Institute for System Analysis of the Russian
+#push "route 85.143.0.0 255.255.0.0" # Federal Scientific Research Institute for System Analysis of the Russian
+push "route 87.248.224.0 255.255.224.0" # SkyNet Ltd.
+
+# mephi.ru
+#push "route 176.99.0.0 255.255.240.0" # "Domain names registrar REG.RU", Ltd
+#push "route 185.215.4.0 255.255.255.0" # Tilda Publishing LLC
+push "route 195.112.96.0 255.255.224.0" # MAXnet Systems Ltd.
+#push "route 45.130.40.0 255.255.252.0" # Beget LLC
+push "route 80.250.160.0 255.255.254.0" # Federal Scientific Research Institute for System Analysis of the Russian
+push "route 85.143.0.0 255.255.0.0" # Federal Scientific Research Institute for System Analysis of the Russian
+#push "route 89.111.128.0 255.255.192.0" # JSC "RU-CENTER"
+
+# mipt.ru
+push "route 192.188.189.0 255.255.255.0" # Educational Scientific and Experimental Center of Moscow Institut
+push "route 194.85.80.0 255.255.252.0" # Russian Scientific-Research Institute for Public Networks
+push "route 81.5.64.0 255.255.192.0" # Educational Scientific and Experimental Center of Moscow Institut
+#push "route 91.217.21.0 255.255.255.0" # JSC "RU-CENTER"
+push "route 93.175.16.0 255.255.240.0" # Educational Scientific and Experimental Center of Moscow Institut
+
+# jiht.ru
+push "route 193.232.146.0 255.255.255.0" # JSC "RU-CENTER"
+#push "route 83.149.192.0 255.255.192.0" # Federal Scientific Research Institute for System Analysis of the Russian
+#push "route 89.104.64.0 255.255.224.0" # JSC "RU-CENTER"
+#push "route 91.217.20.0 255.255.254.0" # JSC "RU-CENTER"
+
+### University ru ###
 
 #=== Simple Sites ===
 
