@@ -709,7 +709,7 @@ push "route 185.12.155.0 255.255.255.0" # 1C LLC, http://www.1c.ru
 #push "route 45.130.40.0 255.255.252.0" # Beget LLC
 
 # freeman42.ru, srv2.freeman42.ru (reg.ru) - 188.254.16.0 - 188.254.31.255 255.255.240.0 /20; 188.254.32.0 - 188.254.47.255 255.255.240.0 /20;
-push "route 188.254.0.0 255.255.128.0" # PJSC Rostelecom
+#push "route 188.254.0.0 255.255.128.0" # PJSC Rostelecom
 
 # starline-online.ru (RNA-STARLINE-SLNET) - 185.129.96.0 - 185.129.97.255 255.255.254.0 /23;
 #push "route 185.129.96.0 255.255.254.0"
@@ -1296,20 +1296,19 @@ push "route 95.183.8.0 255.255.254.0"
 push "route 185.165.123.0 255.255.255.0"
 
 # codenet.ru - 85.142.64.0 255.255.192.0" - AS3267 Federal State Institution
-push "route 85.142.116.0 255.255.255.0"
-push "route 85.142.64.0 255.255.192.0"
+push "route 85.142.64.0 255.255.192.0" # Federal Scientific Research Institute for System Analysis of the Russian
 
 # college.ru - 195.208.1.0 255.255.255.0"
 #push "route 141.101.228.0 255.255.255.0" # AS198770 (Virtual Infrastructures LLC)
 push "route 195.208.1.0 255.255.255.0" # AS48287 (JSC "RU-CENTER")
 
 # aladdin-rd.ru - 195.133.240.0/20
-push "route 195.133.245.0 255.255.255.0"
+push "route 195.133.240.0 255.255.240.0" # JSC Mastertel
 push "route 91.199.251.0 255.255.255.0"
-push "route 173.195.146.62 255.255.255.255"
+push "route 173.195.146.62 255.255.255.255" # Data102 (Colorado Springs)
 
 # live.radioscanner.net - 195.209.32.0/19
-push "route 195.209.49.0 255.255.255.0"
+#push "route 195.209.32.0 255.255.224.0" # RECONN LLC
 push "route 195.10.205.0 255.255.255.0" # AS35813 (Transservice LLC)
 push "route 78.110.48.0 255.255.240.0" # AS31240 ("Hosting Telesystems" OOO)
 
@@ -1389,9 +1388,9 @@ push "route 92.50.128.0 255.255.192.0" # AS24955 (JSC "Ufanet")
 push "route 195.218.128.0 255.255.128.0" # AS3216 (PJSC "Vimpelcom")
 
 # 16-bits.ru - 37.193.245.92 + allunix.ru - 85.118.230.75
-push "route 37.193.245.92 255.255.255.255" # AS31200 - 37.192.0.0/14 (Novotelecom Ltd)
+push "route 37.192.0.0 255.252.0.0" # AS31200 - 37.192.0.0/14 (Novotelecom Ltd)
 push "route 85.118.224.0 255.255.248.0" # AS34757 (Sibirskie Seti Ltd.)
-push "route 109.174.98.0 255.255.255.0" # AS30922 - 109.174.0.0/17 (MTS PJSC)
+push "route 109.174.0.0 255.255.128.0" # AS30922 - 109.174.0.0/17 (MTS PJSC)
 
 #icqapilogin.mail.ru - 178.237.20.117 - 178.237.20.123
 #push "route 178.237.16.0 255.255.240.0" # AS47764 (LLC VK)
@@ -1422,19 +1421,14 @@ push "route 141.8.194.0 255.255.255.0" # AS35278 (SPRINTHOST.RU - shared/premium
 # markupeasy.ru - 194.87.144.0 255.255.255.0"
 push "route 194.87.144.0 255.255.252.0" # AS48347 (JSC Mediasoft ekspert) ruvds.com
 
-# msreview.net !
-#push "route 46.254.16.0 255.255.254.0" # AS210079 (IHC.RU network in Eserver.ru)
-
 # antispamsniper.com !
 push "route 46.30.46.0 255.255.255.0" # AS210079 (Eurobyte VPS)
 
 # playground.ru - AS50313 - 212.42.32.0 255.255.224.0" - TESLATEL LLC
-push "route 212.42.32.0 255.255.255.0"
-push "route 212.42.38.0 255.255.255.0"
-push "route 212.42.63.0 255.255.255.0"
+push "route 212.42.32.0 255.255.224.0"
 
 # 5.45.72.170 # AS58061 - 5.45.72.0 255.255.252.0" - IROKO Networks Corporation - US - iedem.tv
-push "route 5.45.72.170 255.255.255.255"
+push "route 5.45.72.170 255.255.255.255" # Panama city
 
 # devapps.ru
 # ds-assets.cdn.devapps.ru (4pda visual content)
@@ -1500,20 +1494,20 @@ push "route 91.210.107.0 255.255.255.0" # AS50867 (LLC "Server v arendy")
 push "route 141.105.70.0 255.255.255.0" # AS50867
 push "route 194.67.73.0 255.255.255.0" # AS39561 ("Domain names registrar REG.RU", Ltd)
 push "route 185.70.107.0 255.255.255.0" # AS50867 (LLC "Server v arendy") (3dnews.ru)
-push "route 195.166.180.173 255.255.255.255" # AS8568 - 195.166.176.0/21 - PJSC Rostelecom
+push "route 195.166.176.0 255.255.248.0" # AS8568 - 195.166.176.0/21 - PJSC Rostelecom
 
 # calend.ru
 push "route 31.172.128.0 255.255.252.0" # AS50340 (OOO "Network of data-centers "Selectel")
 push "route 77.232.56.0 255.255.248.0" # AS24739 (JSC "Severen-Telecom")
 push "route 82.202.192.0 255.255.192.0" # AS49505 (OOO "Network of data-centers "Selectel")
-push "route 84.204.96.131 255.255.255.255" # AS31133 - 84.204.0.0/16 - PJSC MegaFon
+push "route 84.204.0.0 255.255.0.0" # AS31133 - 84.204.0.0/16 - PJSC MegaFon
 #push "route 95.213.128.0 255.255.128.0" # AS49505 (OOO "Network of data-centers "Selectel")
 
 # tvzvezda.ru
 push "route 79.137.224.0 255.255.240.0" # AS12695 (LLC Digital Network)
 push "route 95.131.24.0 255.255.248.0" # AS49063 (Dataline Ltd)
 #push "route 178.248.232.0 255.255.248.0" # AS197068 (HLL LLC)
-push "route 188.254.0.105 255.255.255.255" # AS12389 - 188.254.0.0/17 - PJSC Rostelecom
+#push "route 188.254.0.0 255.255.128.0" # AS12389 - 188.254.0.0/17 - PJSC Rostelecom
 
 # aliexpress.ru
 #push "route 47.246.133.22 255.255.255.255" # AS45102 - 47.246.132.0/22 - Alibaba.com LLC (United States)
@@ -1528,19 +1522,18 @@ push "route 188.254.0.105 255.255.255.255" # AS12389 - 188.254.0.0/17 - PJSC Ros
 #push "route 185.165.123.0 255.255.255.0" # AS64432 (Variti LLC)
 
 # srv1.freeman42.ru, srv2.freeman42.ru, freeman42.ru
-push "route 176.197.31.0 255.255.255.0" # AS39927 - 176.196.0.0/15 - E-Light-Telecom Ltd.
-push "route 188.254.20.0 255.255.255.0" # AS12389 - 188.254.0.0/17 - PJSC Rostelecom
+push "route 176.196.0.0 255.254.0.0" # AS39927 - 176.196.0.0/15 - E-Light-Telecom Ltd.
+push "route 188.254.0.0 255.255.128.0" # AS12389 - 188.254.0.0/17 - PJSC Rostelecom
 
 # img.imgzona.video
 push "route 95.211.199.194 255.255.255.255" # Netherlands
 push "route 185.22.234.0 255.255.254.0" # AS210079 (IHC.RU network in Eserver.ru)
 
 # thg.ru
-push "route 194.67.128.0 255.255.255.0" # AS5523 - 194.67.128.0/18 - JSC "CREDO-TELECOM"
+push "route 194.67.128.0 255.255.192.0" # AS5523 - 194.67.128.0/18 - JSC "CREDO-TELECOM"
 
 # ideafix.name
-push "route 95.82.227.0 255.255.255.0" # AS12668 - 95.82.192.0/18 - LLC "KomTehCentr"
-# ideafix.name
+push "route 95.82.192.0 255.255.192.0" # AS12668 - 95.82.192.0/18 - LLC "KomTehCentr"
 push "route 178.248.0.0 255.255.248.0" # AS16230 (Company Skynet Ltd)
 
 # krt-club.ru
@@ -1558,8 +1551,8 @@ push "route 77.232.32.0 255.255.254.0" # AS28968 (MSK Eurasia-Telecom)
 push "route 109.111.64.0 255.255.224.0" # AS38917 (INTERCOMTEL Limited Company)
 
 # cqham.ru
-#push "route 194.186.45.0 255.255.255.0" # AS3216 - 194.186.0.0/16 - PJSC "Vimpelcom"
-#push "route 194.67.34.0 255.255.255.0" # AS3216 - 194.67.0.0/18 - PJSC "Vimpelcom"
+#push "route 194.186.0.0 255.255.0.0" # AS3216 - 194.186.0.0/16 - PJSC "Vimpelcom"
+#push "route 194.67.0.0 255.255.192.0" # AS3216 - 194.67.0.0/18 - PJSC "Vimpelcom"
 #push "route 188.225.17.0 255.255.255.0" # AS9123 (timeweb.ru)
 
 # radioscanner.ru
@@ -1619,8 +1612,8 @@ push "route 88.212.244.0 255.255.255.0" # AS39134 (servers.ru hosting services)
 #push "route 213.180.192.0 255.255.224.0" # AS13238 (YANDEX LLC)
 
 # stat5.1internet.tv + ott.teletarget.ru
-push "route 81.211.33.28 255.255.255.255" # AS3216 - 81.211.0.0/17 - PJSC "Vimpelcom"
-push "route 213.248.34.0 255.255.255.0" # AS12695 - 213.248.32.0/19 - LLC Digital Network
+push "route 81.211.0.0 255.255.128.0" # AS3216 - 81.211.0.0/17 - PJSC "Vimpelcom"
+push "route 213.248.32.0 255.255.224.0" # AS12695 - 213.248.32.0/19 - LLC Digital Network
 
 # *.ucoz.ru
 #push "route 185.178.208.0 255.255.255.0" # AS57724 (DDOS-GUARD LTD)
@@ -1635,8 +1628,8 @@ push "route 62.217.160.0 255.255.240.0" # AS47764 (LLC VK)
 #push "route 87.250.224.0 255.255.224.0" # AS13238 (YANDEX LLC)
 
 # gisclub.tv
-push "route 89.179.73.34 255.255.255.255" # AS8402 - 89.178.0.0/15 - PJSC "Vimpelcom"
-push "route 90.188.37.195 255.255.255.255" # AS12389 - 90.188.0.0/15 - PJSC Rostelecom
+push "route 89.178.0.0 255.254.0.0" # AS8402 - 89.178.0.0/15 - PJSC "Vimpelcom"
+push "route 90.188.0.0 255.254.0.0" # AS12389 - 90.188.0.0/15 - PJSC Rostelecom
 
 # gismeteo.ru
 push "route 37.233.80.0 255.255.248.0" # AS42678 (JSC Meganet)
@@ -1693,8 +1686,8 @@ push "route 93.191.8.0 255.255.248.0" # AS28917 (LLC "TRC FIORD")
 push "route 95.141.192.0 255.255.240.0"
 
 # epg.it999.ru (epg.it999.ru)
-push "route 104.21.234.39 255.255.255.255"
-push "route 104.21.234.38 255.255.255.255"
+push "route 104.21.234.39 255.255.255.255" # Cloudflare, Inc.
+push "route 104.21.234.38 255.255.255.255" # Cloudflare, Inc.
 
 # RECONN LLC (pooshock.ru)
 push "route 5.45.80.0 255.255.252.0"
@@ -1705,7 +1698,8 @@ push "route 195.209.32.0 255.255.224.0"
 push "route 91.194.2.0 255.255.254.0"
 
 # cloud.sadmin.io
-push "route 95.165.111.208 255.255.255.255"
+#push "route 95.165.111.208 255.255.255.255"
+push "route 95.165.0.0 255.255.0.0" # PJSC Moscow city telephone network
 
 # UNITEDNET (3dnews.ru)
 #push "route 88.212.192.0 255.255.240.0"
@@ -1715,10 +1709,10 @@ push "route 95.165.111.208 255.255.255.255"
 #push "route 185.70.107.0 255.255.255.0"
 #push "route 141.105.70.0 255.255.255.0"
 #push "route 194.67.73.0 255.255.255.0"
-push "route 195.166.180.0 255.255.255.0"
+#push "route 195.166.176.0 255.255.248.0" # PJSC Rostelecom
 
 # losst.ru
-push "route 87.242.72.0 255.255.248.0"
+push "route 87.242.72.0 255.255.248.0" # Masterhost is a hosting and technical support organization
 push "route 88.212.208.0 255.255.252.0"
 #push "route 185.4.64.0 255.255.252.0"
 push "route 185.22.172.0 255.255.252.0"
@@ -1732,7 +1726,7 @@ push "route 185.238.136.0 255.255.252.0"
 #push "route 62.173.128.0 255.255.224.0"
 
 # vniioeng.ru
-push "route 85.94.33.243 255.255.255.255"
+push "route 85.94.32.0 255.255.224.0" # MSN Telecom LLC
 
 # overclockers.ru
 #push "route 85.10.197.211 255.255.255.255" # Hetzner Online GmbH
