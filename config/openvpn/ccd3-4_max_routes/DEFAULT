@@ -1732,7 +1732,7 @@ push "route 85.94.32.0 255.255.224.0" # MSN Telecom LLC
 #push "route 85.10.197.211 255.255.255.255" # Hetzner Online GmbH
 push "route 185.70.104.0 255.255.255.0" # LLC "Server v arendy"
 #push "route 95.216.43.97 255.255.255.255" # Hetzner Online GmbH
-push "route 92.38.128.27 255.255.255.0" # G-Core Labs S.A.
+push "route 92.38.128.0 255.255.255.0" # G-Core Labs S.A.
 #push "route 134.195.90.154 255.255.255.255" # HostHatch LLC (C07699001) USA
 #push "route 134.195.89.41 255.255.255.255" # HostHatch LLC (C07699001) USA
 
@@ -1765,14 +1765,14 @@ push "route 109.124.64.0 255.255.192.0" # PJSC MegaFon
 #push "route 94.23.219.178 255.255.255.255" # OVH SAS - 94.23.0.0/16 (not FW)
 push "route 91.207.58.0 255.255.254.0" # Limited Liability Company GPM Digital Technologies
 push "route 91.209.91.0 255.255.255.0" # OJSC TNT-Broadcasting Network
-push "route 91.217.20.0 255.255.255.0" # JSC "RU-CENTER"
+#push "route 91.217.20.0 255.255.255.0" # JSC "RU-CENTER"
 push "route 91.217.21.0 255.255.255.0" # JSC "RU-CENTER"
 #push "route 95.131.24.0 255.255.248.0" # Dataline Ltd
 #push "route 193.232.148.0 255.255.252.0" # Limited Liability Company GPM Digital Technologies
 push "route 194.226.176.0 255.255.255.0" # Radiogroup GPM Limited liability Company
 
 # 46.8.210.63
-push "route push "route 46.8.208.0 255.255.252.0" # Contel OOO
+push "route 46.8.208.0 255.255.252.0" # Contel OOO
 
 ### University ru ###
 # osu.ru
