@@ -575,7 +575,7 @@ push "route 193.33.132.0 255.255.254.0" # RuFox Ltd.
 push "route 51.15.0.0 255.255.128.0" # Scaleway
 
 # narodmon.ru
-push "route 185.245.184.0 55.255.252.0" # ForestNet LLC
+push "route 185.245.184.0 255.255.252.0" # ForestNet LLC
 
 # *.goodgame.ru - 195.9.128.0 - 195.9.255.255 255.255.128.0 /17
 #push "route 195.9.128.0 255.255.128.0"
@@ -1773,6 +1773,10 @@ push "route 194.226.176.0 255.255.255.0" # Radiogroup GPM Limited liability Comp
 
 # 46.8.210.63
 push "route 46.8.208.0 255.255.252.0" # Contel OOO
+
+# obu4alka.ru
+push "route 195.234.208.0 255.255.255.0" # e-Style ISP LLC
+push "route 176.99.13.0 255.255.255.0" # "Domain names registrar REG.RU", Ltd
 
 ### University ru ###
 # osu.ru
