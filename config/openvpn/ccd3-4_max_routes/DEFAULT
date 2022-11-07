@@ -1806,6 +1806,61 @@ push "route 46.17.44.0 255.255.254.0" # LLC Baxet
 # t-ru.org
 push "route 195.82.146.0 255.255.255.0" # Dreamtorrent Corp
 
+# vkopt.net
+push "route 79.137.208.0 255.255.240.0" # LLC Digital Network
+
+# des-life.ru
+push "route 185.84.108.0 255.255.254.0" # Majordomo network
+
+# okdk.ru
+push "route 95.142.42.0 255.255.255.0" # ?
+
+# magzdb.org
+push "route 84.39.240.0 255.255.252.0" # JSC "Ufanet"
+
+# metanit.com
+push "route 77.222.60.0 255.255.252.0" # SpaceWeb Ltd
+
+# pressa.ru
+push "route 95.163.64.0 255.255.192.0" # LLC Digital Network
+#push "route 213.248.32.0 255.255.224.0" # LLC Digital Network
+
+# burda.ru
+push "route 141.136.112.0 255.255.248.0" # JSC Avantel
+push "route 173.231.122.42 255.255.255.255" # Montreal
+#push "route 92.53.64.0 255.255.224.0" # OOO "Network of data-centers "Selectel"
+#push "route 95.213.128.0 255.255.128.0" # OOO "Network of data-centers "Selectel"
+push "route 81.95.137.0 255.255.255.0" # JSC Avantel
+push "route 87.251.90.0 255.255.254.0" # Dataline Ltd
+push "route 185.129.100.0 255.255.255.0" # DDOS-GUARD LTD
+# push "route 23.236.48.0 255.255.240.0" # Google LLC
+
+# radio.ru
+#push "route 195.208.0.0 255.255.255.0" # JSC "RU-CENTER"
+##push "route 195.54.192.0 255.255.224.0" # JSC "ER-Telecom Holding"
+#push "route 193.28.46.0 255.255.255.0" # TERSYS COMPANY LLC
+
+# kiozk.ru
+##push "route 84.201.128.0 255.255.192.0" # Yandex.Cloud LLC
+##push "route 185.65.148.0 255.255.252.0" # HLL LLC
+#push "route 188.227.72.0 255.255.252.0" # IT-Grad nets
+#push "route 185.96.84.0 255.255.252.0" # Enterprise Cloud Ltd.
+#push "route 5.200.58.0 255.255.255.0" # Enterprise Cloud Ltd.
+#push "route 5.200.60.0 255.255.252.0" # Enterprise Cloud Ltd.
+
+# rolz.org - Блок на стороне сайта
+##push "route 104.21.6.129 255.255.255.255" #	A		CLOUDFLARENET
+#push "route 172.67.134.222 255.255.255.255" #	A		CLOUDFLARENET
+#push "route 95.217.118.218 255.255.255.255" #	A	static.218.118.217.95.clients.your-server.de	HETZNER-AS
+#push "route 104.21.6.129 255.255.255.255" #	A		CLOUDFLARENET
+
+# local.adguard.org ?
+# push "route 176.103.133.77 255.255.255.255" # Your query for 176.103.133.77 did not return any results
+
+# lolz.guru
+#push "route 188.165.90.184 255.255.255.255"	A		OVH	France
+#push "route 164.132.30.217 255.255.255.255"	A	mail.lolz.guru	OVH	France
+
 ### University ru ###
 # osu.ru
 push "route 62.76.152.0 255.255.255.0" # Orenburg State University
