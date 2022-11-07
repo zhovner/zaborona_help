@@ -99,11 +99,11 @@ push "route 188.72.105.0 255.255.255.0"
 push "route 185.32.84.0 255.255.252.0"
 push "route 5.45.229.0 255.255.255.0"
 push "route 5.45.240.0 255.255.255.0"
-push "route 5.255.195.0 255.255.255.0"
-push "route 5.255.196.0 255.255.255.0"
-push "route 5.255.200.0 255.255.255.0"
-push "route 37.9.73.0 255.255.255.0"
-push "route 37.140.136.0 255.255.255.0"
+#push "route 5.255.195.0 255.255.255.0"
+#push "route 5.255.196.0 255.255.255.0"
+#push "route 5.255.200.0 255.255.255.0"
+#push "route 37.9.73.0 255.255.255.0"
+#push "route 37.140.136.0 255.255.255.0"
 #push "route 77.88.35.0 255.255.255.0"
 #push "route 77.88.54.0 255.255.255.0"
 push "route 93.158.179.0 255.255.255.0"
@@ -113,11 +113,11 @@ push "route 5.45.196.0 255.255.255.0"
 push "route 5.45.202.0 255.255.255.0"
 push "route 5.45.205.0 255.255.255.0"
 push "route 5.45.213.0 255.255.255.0"
-push "route 5.255.197.0 255.255.255.0"
-push "route 5.255.255.0 255.255.255.0"
+#push "route 5.255.197.0 255.255.255.0"
+#push "route 5.255.255.0 255.255.255.0"
 #push "route 37.9.64.0 255.255.255.0"
-push "route 37.9.95.0 255.255.255.0"
-push "route 37.9.112.0 255.255.255.0"
+#push "route 37.9.95.0 255.255.255.0"
+#push "route 37.9.112.0 255.255.255.0"
 push "route 45.87.132.0 255.255.252.0"
 #push "route 77.88.8.0 255.255.255.0"
 #push "route 77.88.44.0 255.255.255.0"
@@ -789,14 +789,14 @@ push "route 188.232.128.0 255.255.192.0" # JSC "ER-Telecom Holding"
 # neosvc.ru (INSOLVERTC6, rtcomm.ru) - 81.177.166.0 - 81.177.167.255 255.255.254.0 /23; AS8342 - 81.177.160.0/20; 81.177.160.0 - 81.177.175.255 255.255.240.0 /20;
 #push "route 81.177.166.0 255.255.240.0"
 # treeone.ru (beget, JSC Server WebDC colocation) - 37.46.132.0 - 37.46.135.255 255.255.252.0 /22; AS8342 - 37.46.134.0/23;
-push "route 37.46.132.0 255.255.252.0" # JSC "Server"
+#push "route 37.46.132.0 255.255.252.0" # JSC "Server"
 # fly-phone.ru (MTW-HOSTING-NET, MTW.RU dedicated/hosting servers) - 37.228.88.0 - 37.228.91.255 255.255.252.0 /22 + 37.228.92.0 - 37.228.93.255 255.255.254.0 /23; AS48347 - 37.228.88.0/22;
-push "route 37.228.88.0 255.255.252.0" # JSC Mediasoft ekspert
-push "route 37.228.92.0 255.255.254.0" # JSC "Internet Tehnologii"
+#push "route 37.228.88.0 255.255.252.0" # JSC Mediasoft ekspert
+#push "route 37.228.92.0 255.255.254.0" # JSC "Internet Tehnologii"
 
 # koroleffsov.ru, infergames.com, fixmypc.ru (reg.ru) - 31.31.192.0 - 31.31.199.255 255.255.248.0 /21; 31.31.200.0 - 31.31.203.255 255.255.252.0 /22; AS197695 - 31.31.198.0/24;
-push "route 31.31.192.0 255.255.248.0" # "Domain names registrar REG.RU", Ltd
-push "route 31.31.200.0 255.255.252.0" # "Domain names registrar REG.RU", Ltd
+#push "route 31.31.192.0 255.255.248.0" # "Domain names registrar REG.RU", Ltd
+#push "route 31.31.200.0 255.255.252.0" # "Domain names registrar REG.RU", Ltd
 
 # secretra.com (ruweb.net) - 185.221.152.0 - 185.221.152.255 255.255.255.0 /24; AS210079 - 185.221.152.0/24;
 #push "route 185.221.152.0 255.255.252.0" # LLC "RuWeb"
@@ -861,11 +861,11 @@ push "route 92.255.176.0 255.255.240.0" # JSC "ER-Telecom Holding"
 # === NEW2
 # imageban.ru - renew
 #push "route 5.188.112.0 255.255.248.0" # AS49505 (OOO "Network of data-centers "Selectel")
-push "route 37.230.116.0 255.255.254.0" # AS29182 (JSC IOT) (fvds.ru)
+#push "route 37.230.116.0 255.255.254.0" # AS29182 (JSC IOT) (fvds.ru)
 push "route 46.160.240.0 255.255.248.0" # AS35539 (Information and Communication Technologies LLC) (infolink.ru)
 #push "route 62.109.0.0 255.255.240.0" # AS29182 (JSC IOT) (i5.imageban.ru)
 #push "route 62.109.16.0 255.255.248.0" # AS29182 (JSC IOT) (i7.imageban.ru)
-push "route 62.109.28.0 255.255.252.0" # AS29182 (JSC IOT) (fvds.ru)
+#push "route 62.109.28.0 255.255.252.0" # AS29182 (JSC IOT) (fvds.ru)
 #push "route 77.88.0.0 255.255.192.0" # AS13238 (YANDEX LLC)
 #push "route 80.87.200.0 255.255.254.0" # AS29182 (JSC "Server") (i6.imageban.ru)
 push "route 82.146.56.0 255.255.248.0" # AS29182 (JSC IOT) (i3.imageban.ru)
@@ -1002,7 +1002,7 @@ push "route 89.111.128.0 255.255.192.0" # JSC "RU-CENTER"
 push "route 109.71.8.0 255.255.248.0" # OOO "Network of data-centers "Selectel"
 
 # radiopotok.ru - AS29182 > JSC IOT - 37.230.114.0/23 +
-push "route 37.230.114.0 255.255.254.0"
+#push "route 37.230.114.0 255.255.254.0"
 
 # cont.ws
 # Data-center IMAQLIQ Ltd.
@@ -1188,7 +1188,7 @@ push "route 83.222.96.0 255.255.252.0"
 
 # 23.105.240.44 - status.qiwi.com - AS7979 > servers.ru hosting services
 # AS16509 > A100 ROW GmbH
-push "route 23.105.240.0 255.255.255.0"
+#push "route 23.105.240.0 255.255.255.0"
 push "route 35.158.215.232 255.255.255.255" # AMAZON-02, Germany
 
 # sysadmins.ru - 95.215.110.0/23 - AS59504 > VPSVILLE-RU VPS HOSTING
@@ -1373,7 +1373,7 @@ push "route 79.133.64.0 255.255.224.0" # AS12389 (PJSC Rostelecom)
 push "route 95.156.64.0 255.255.192.0" # AS12389 (PJSC Rostelecom)
 push "route 193.46.207.0 255.255.255.0" # relcom.com ?
 push "route 185.10.60.0 255.255.255.0" # AS197695 ("Domain names registrar REG.RU", Ltd)
-push "route 31.31.198.0 255.255.255.0" # AS197695 ("Domain names registrar REG.RU", Ltd)
+#push "route 31.31.198.0 255.255.255.0" # AS197695 ("Domain names registrar REG.RU", Ltd)
 push "route 141.101.228.0 255.255.255.0" # AS198770 (Virtual Infrastructures LLC)
 #push "route 84.201.128.0 255.255.192.0" # AS200350 (Yandex.Cloud LLC)
 push "route 195.38.32.0 255.255.224.0" # AS12389 (PJSC Rostelecom)
@@ -1413,7 +1413,7 @@ push "route 109.174.0.0 255.255.128.0" # AS30922 - 109.174.0.0/17 (MTS PJSC)
 push "route 46.254.16.0 255.255.254.0" # AS210079 (IHC.RU network in Eserver.ru)
 
 # pksspb.ru
-push "route 31.31.196.0 255.255.255.0" # AS197695 ("Domain names registrar REG.RU", Ltd)
+#push "route 31.31.196.0 255.255.255.0" # AS197695 ("Domain names registrar REG.RU", Ltd)
 
 # startallback.com
 push "route 141.8.194.0 255.255.255.0" # AS35278 (SPRINTHOST.RU - shared/premium hosting, dedicated servers, VDS)
@@ -1836,30 +1836,30 @@ push "route 185.129.100.0 255.255.255.0" # DDOS-GUARD LTD
 # push "route 23.236.48.0 255.255.240.0" # Google LLC
 
 # radio.ru
-#push "route 195.208.0.0 255.255.255.0" # JSC "RU-CENTER"
-##push "route 195.54.192.0 255.255.224.0" # JSC "ER-Telecom Holding"
-#push "route 193.28.46.0 255.255.255.0" # TERSYS COMPANY LLC
+push "route 195.208.0.0 255.255.255.0" # JSC "RU-CENTER"
+#push "route 195.54.192.0 255.255.224.0" # JSC "ER-Telecom Holding"
+push "route 193.28.46.0 255.255.255.0" # TERSYS COMPANY LLC
 
 # kiozk.ru
-##push "route 84.201.128.0 255.255.192.0" # Yandex.Cloud LLC
-##push "route 185.65.148.0 255.255.252.0" # HLL LLC
-#push "route 188.227.72.0 255.255.252.0" # IT-Grad nets
-#push "route 185.96.84.0 255.255.252.0" # Enterprise Cloud Ltd.
-#push "route 5.200.58.0 255.255.255.0" # Enterprise Cloud Ltd.
-#push "route 5.200.60.0 255.255.252.0" # Enterprise Cloud Ltd.
+#push "route 84.201.128.0 255.255.192.0" # Yandex.Cloud LLC
+#push "route 185.65.148.0 255.255.252.0" # HLL LLC
+push "route 188.227.72.0 255.255.252.0" # IT-Grad nets
+push "route 185.96.84.0 255.255.252.0" # Enterprise Cloud Ltd.
+push "route 5.200.58.0 255.255.255.0" # Enterprise Cloud Ltd.
+push "route 5.200.60.0 255.255.252.0" # Enterprise Cloud Ltd.
 
 # rolz.org - Блок на стороне сайта
-##push "route 104.21.6.129 255.255.255.255" #	A		CLOUDFLARENET
-#push "route 172.67.134.222 255.255.255.255" #	A		CLOUDFLARENET
-#push "route 95.217.118.218 255.255.255.255" #	A	static.218.118.217.95.clients.your-server.de	HETZNER-AS
 #push "route 104.21.6.129 255.255.255.255" #	A		CLOUDFLARENET
+push "route 172.67.134.222 255.255.255.255" #	A		CLOUDFLARENET
+push "route 95.217.118.218 255.255.255.255" #	A	static.218.118.217.95.clients.your-server.de	HETZNER-AS
+push "route 104.21.6.129 255.255.255.255" #	A		CLOUDFLARENET
 
 # local.adguard.org ?
 # push "route 176.103.133.77 255.255.255.255" # Your query for 176.103.133.77 did not return any results
 
 # lolz.guru
-#push "route 188.165.90.184 255.255.255.255"	A		OVH	France
-#push "route 164.132.30.217 255.255.255.255"	A	mail.lolz.guru	OVH	France
+push "route 188.165.90.184 255.255.255.255"	A		OVH	France
+push "route 164.132.30.217 255.255.255.255"	A	mail.lolz.guru	OVH	France
 
 ### University ru ###
 # osu.ru
@@ -2272,7 +2272,7 @@ push "route 95.163.224.0 255.255.240.0"
 push "route 95.163.240.0 255.255.248.0"
 push "route 37.140.192.0 255.255.248.0"
 push "route 176.99.0.0 255.255.240.0"
-push "route 31.31.200.0 255.255.248.0"
+#push "route 31.31.200.0 255.255.248.0"
 
 # OJSC Comcor
 push "route 213.79.64.0 255.255.240.0"
@@ -2384,7 +2384,7 @@ push "route 185.78.31.0 255.255.255.0"
 #push "route 193.176.76.0 255.255.252.0"
 #push "route 217.172.24.0 255.255.252.0"
 #push "route 45.12.16.0 255.255.255.0"
-push "route 45.12.17.0 255.255.255.0"
+#push "route 45.12.17.0 255.255.255.0"
 #push "route 5.101.152.0 255.255.252.0"
 #push "route 81.200.112.0 255.255.252.0"
 #push "route 87.236.16.0 255.255.252.0"
@@ -2418,9 +2418,9 @@ push "route 213.180.192.0 255.255.224.0"
 
 # Yandex cloud
 push "route 51.250.0.0 255.255.128.0"
-push "route 51.250.48.0 255.255.255.0"
-push "route 51.250.50.0 255.255.254.0"
-push "route 51.250.126.0 255.255.255.0"
+#push "route 51.250.48.0 255.255.255.0"
+#push "route 51.250.50.0 255.255.254.0"
+#push "route 51.250.126.0 255.255.255.0"
 push "route 62.84.112.0 255.255.240.0"
 push "route 84.201.128.0 255.255.192.0"
 push "route 84.201.184.0 255.255.252.0"
@@ -2644,8 +2644,8 @@ push "route 45.10.80.0 255.255.252.0"
 push "route 45.10.108.0 255.255.255.0"
 push "route 45.12.64.0 255.255.252.0"
 push "route 45.12.228.0 255.255.252.0"
-push "route 45.15.238.0 255.255.255.0"
-push "route 45.15.239.0 255.255.255.0"
+#push "route 45.15.238.0 255.255.255.0"
+#push "route 45.15.239.0 255.255.255.0"
 push "route 45.81.139.0 255.255.255.0"
 push "route 45.82.83.0 255.255.255.0"
 push "route 45.85.66.0 255.255.255.0"
