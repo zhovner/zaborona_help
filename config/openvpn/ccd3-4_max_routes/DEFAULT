@@ -252,7 +252,7 @@ push "route 154.47.36.14 255.255.255.255"
 
 # Abby.com
 push "route 50.117.0.0 255.255.255.224"
-push "route 62.213.108.142 255.255.255.255"
+#push "route 62.213.108.142 255.255.255.255"
 push "route 88.217.190.96 255.255.255.224"
 push "route 193.84.255.0 255.255.255.0"
 
@@ -541,7 +541,7 @@ push "route 185.5.72.0 255.255.254.0"
 push "route 45.82.101.62 255.255.255.255"
 
 # kp.ru
-push "route 95.163.94.0 255.255.254.0" # AS12695 - 95.163.64.0 255.255.192.0" - LLC Digital Network
+#push "route 95.163.94.0 255.255.254.0" # AS12695 - 95.163.64.0 255.255.192.0" - LLC Digital Network
 push "route 83.69.196.0 255.255.255.0" # AS29226 - 83.69.192.0 255.255.224.0" - JSC Mastertel
 #push "route 178.248.232.0 255.255.248.0" # AS197068 (HLL LLC)
 #push "route 51.250.24.24 255.255.255.255" # AS200350 - 51.250.0.0 255.255.128.0" - Yandex.Cloud LLC
@@ -550,7 +550,7 @@ push "route 84.47.176.0 255.255.255.0" # AS8641 - 84.47.176.0 255.255.255.0" - L
 push "route 89.108.84.0 255.255.255.0" # AS197695 ("Domain names registrar REG.RU", Ltd)
 #push "route 185.165.123.0 255.255.255.0" # AS64432 (Variti LLC)
 #push "route 92.53.96.0 255.255.255.0" # AS9123 (Shared hosting) timeweb.ru
-push "route 81.26.147.0 255.255.255.0" # AS8641 - 81.26.144.0 255.255.248.0" - LLC "Nauka-Svyaz"
+#push "route 81.26.147.0 255.255.255.0" # AS8641 - 81.26.144.0 255.255.248.0" - LLC "Nauka-Svyaz"
 push "route 81.163.16.0 255.255.240.0" # AS49505 (OOO "Network of data-centers "Selectel")
 #push "route 89.104.64.0 255.255.224.0" # AS39494 (JSC "RU-CENTER")
 #push "route 91.217.20.0 255.255.254.0" # AS48287 (JSC "RU-CENTER")
@@ -868,7 +868,7 @@ push "route 46.160.240.0 255.255.248.0" # AS35539 (Information and Communication
 #push "route 62.109.28.0 255.255.252.0" # AS29182 (JSC IOT) (fvds.ru)
 #push "route 77.88.0.0 255.255.192.0" # AS13238 (YANDEX LLC)
 #push "route 80.87.200.0 255.255.254.0" # AS29182 (JSC "Server") (i6.imageban.ru)
-push "route 82.146.56.0 255.255.248.0" # AS29182 (JSC IOT) (i3.imageban.ru)
+#push "route 82.146.56.0 255.255.248.0" # AS29182 (JSC IOT) (i3.imageban.ru)
 #push "route 92.63.96.0 255.255.248.0" # AS29182 (JSC IOT) (i1.imageban.ru)
 #push "route 108.162.193.233 255.255.255.255" # AS13335 - 108.162.192.0/20 - Cloudflare, Inc.
 #push "route 173.245.58.90 255.255.255.255" # AS13335 - 173.245.58.0/24 - Cloudflare, Inc.
@@ -1206,7 +1206,7 @@ push "route 77.66.176.0 255.255.240.0"
 
 # doc.ispsystem.ru
 push "route 212.109.222.0 255.255.254.0" # AS29182 - 212.109.222.0/23 - JSC Server
-push "route 80.87.203.0 255.255.255.0" # AS29182 - 80.87.203.0/24 - JSC Server
+#push "route 80.87.203.0 255.255.255.0" # AS29182 - 80.87.203.0/24 - JSC Server
 #push "route 82.146.56.0 255.255.248.0" # AS29182 - 82.146.56.0/21 - CJSC THE FIRST
 #push "route 186.2.160.0 255.255.240.0" # AS262254 - 186.2.160.0/20 - DDOS-GUARD CORP.
 #push "route 188.120.224.0 255.255.240.0" # AS29182 - 188.120.224.0/20 - JSC IOT
@@ -1860,6 +1860,44 @@ push "route 104.21.6.129 255.255.255.255" #	A		CLOUDFLARENET
 # lolz.guru
 push "route 188.165.90.184 255.255.255.255"	A		OVH	France
 push "route 164.132.30.217 255.255.255.255"	A	mail.lolz.guru	OVH	France
+
+# salam-1-19.rutube.ru
+push "route 188.43.206.245 255.255.255.255" # Joint Stock Company TransTeleCom
+push "route 188.43.0.0 255.255.0.0" # Joint Stock Company TransTeleCom
+
+# link.alfabank.ru
+push "route 217.12.102.0 255.255.255.0" # JSC "Alfa-Bank"
+push "route 217.12.103.0 255.255.255.0" # Test Network
+push "route 217.12.96.0 255.255.254.0" # Alfa-Bank Moscow Russia
+push "route 217.12.104.0 255.255.255.0" #
+push "route 217.12.105.0 255.255.255.0" #
+push "route 217.12.98.0 255.255.255.0" # INTERNET BANKING
+push "route 188.252.13.0 255.255.255.0" # Assigned PA for LIMES-CLI-516
+#push "route 185.165.123.0 255.255.255.0" # Variti LLC
+push "route 217.12.101.0 255.255.255.0" # ALFABANK EXTERNAL SERVICES
+push "route 185.247.194.0 255.255.255.0" #
+push "route 212.24.39.0 255.255.255.0" # Rusonyx, Ltd.
+#push "route 51.250.0.0 255.255.128.0" # Yandex.Cloud LLC
+push "route 193.23.144.0 255.255.252.0" # Dataline Ltd
+push "route 195.68.168.0 255.255.255.0" # PJSC "Vimpelcom" - 195.68.128.0 255.255.192.0"
+#push "route 195.54.192.0 255.255.224.0" # JSC "ER-Telecom Holding"
+#push "route 95.163.64.0 255.255.192.0" # LLC Digital Network
+push "route 134.0.113.0 255.255.255.0" # "Domain names registrar REG.RU", Ltd
+push "route 94.228.116.0 255.255.255.0" # timeweb.ru
+
+# comp.dmkos.ru
+push "route 194.87.92.0 255.255.252.0" # JSC Mediasoft ekspert
+
+# monteon.ru
+push "route 178.57.220.0 255.255.254.0" # IHC.RU network in Digital Hub
+push "route 46.254.20.0 255.255.254.0" # IHC.RU network in Digital Hub
+
+# segodnya.tv
+push "route 178.218.212.0 255.255.252.0" # Hosting Operator eServer.ru Ltd.
+
+# zaycev.net
+push "route 176.58.32.0 255.255.252.0" # MnogoByte LLC
+#push "route 185.165.123.0 255.255.255.0" # Variti LLC
 
 ### University ru ###
 # osu.ru
@@ -2772,7 +2810,7 @@ push "route 77.246.144.0 255.255.248.0"
 push "route 77.246.156.0 255.255.252.0"
 push "route 78.24.216.0 255.255.248.0"
 push "route 79.143.72.0 255.255.252.0"
-push "route 79.174.14.0 255.255.254.0"
+#push "route 79.174.14.0 255.255.254.0"
 push "route 80.87.192.0 255.255.248.0"
 push "route 80.87.200.0 255.255.252.0"
 push "route 82.146.32.0 255.255.224.0"
