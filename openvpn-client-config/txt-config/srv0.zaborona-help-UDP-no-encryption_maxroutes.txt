@@ -1,5 +1,5 @@
 ##############################################
-# Zaborona VPN  Test server                  #
+# Zaborona VPN                               #
 # http://zaborona.help                       #
 ##############################################
 
@@ -8,15 +8,24 @@ client
 
 # Remote server here
 remote srv0.vpn.zaboronahelp.pp.ua 1196
-#remote 185.82.218.84 1194
-proto udp
-#setenv opt block-outside-dns
 
-cipher none
+auth sha1
+
+# --- OpenVPN Client v2.5 and higher ---
+data-ciphers none
+data-ciphers-fallback none
+# --- OpenVPN Client v2.5 and higher ---
+
+# --- OpenVPN Client v2.4 and below ---
+#cipher none
+#setenv opt block-outside-dns
+# --- OpenVPN Client v2.4 and below ---
+
 dev tun
+proto udp
 
 # OpenVPN ROUTE: cannot add more than 100 routes. See: https://bit.ly/3eKmSOc
-#max-routes 980
+#max-routes 25000
 
 <ca>
 -----BEGIN CERTIFICATE-----
