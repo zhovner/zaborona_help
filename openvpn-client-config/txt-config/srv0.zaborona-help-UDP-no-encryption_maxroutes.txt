@@ -12,12 +12,12 @@ remote srv0.vpn.zaboronahelp.pp.ua 1196
 auth sha1
 
 # --- OpenVPN Client v2.5 and higher ---
-data-ciphers none
-data-ciphers-fallback none
+setenv opt data-ciphers BF-CBC
+setenv opt data-ciphers-fallback BF-CBC
 # --- OpenVPN Client v2.5 and higher ---
 
 # --- OpenVPN Client v2.4 and below ---
-#cipher none
+#cipher BF-CBC
 #setenv opt block-outside-dns
 # --- OpenVPN Client v2.4 and below ---
 
