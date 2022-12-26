@@ -94,7 +94,7 @@ push "route 46.243.212.0 255.255.255.0"
 push "route 46.243.211.0 255.255.255.0"
 push "route 46.243.144.0 255.255.255.0"
 push "route 37.230.172.0 255.255.255.0"
-push "route 213.180.223.0 255.255.255.0"
+#push "route 213.180.223.0 255.255.255.0"
 push "route 188.72.105.0 255.255.255.0"
 push "route 185.32.84.0 255.255.252.0"
 push "route 5.45.229.0 255.255.255.0"
@@ -344,7 +344,7 @@ push "route 178.248.236.0 255.255.255.0"
 # 23 - 255.255.252.0
 push "route 178.248.238.0 255.255.254.0"
 # vms.drweb.ru
-push "route 213.79.65.32 255.255.255.224"
+#push "route 213.79.65.32 255.255.255.224"
 
 # rossiyasegodnya.rf, rian.com.ua (rian.ru 195.93.246.0 - 195.93.247.255)
 push "route 195.93.246.0 255.255.254.0"
@@ -831,10 +831,10 @@ push "route 92.255.176.0 255.255.240.0" # JSC "ER-Telecom Holding"
 #push "route 31.31.200.0 255.255.252.0"
 
 # bt.t-ru.org, bt2.t-ru.org, bt3.t-ru.org, bt4.t-ru.org ? (Dreamtorrent Corp)
-#push "route 195.82.146.120 255.255.255.255"
-#push "route 195.82.146.121 255.255.255.255"
-#push "route 195.82.146.122 255.255.255.255"
-#push "route 195.82.146.123 255.255.255.255"
+##push "route 195.82.146.120 255.255.255.255"
+##push "route 195.82.146.121 255.255.255.255"
+##push "route 195.82.146.122 255.255.255.255"
+##push "route 195.82.146.123 255.255.255.255"
 
 ## imageban.ru, api.imageban.ru (SELECTEL-NET) - 5.188.119.0 - 5.188.119.255 255.255.255.0 /24; AS49505 - 5.188.118.0/23;
 #push "route 5.188.118.0 255.255.254.0"
@@ -1804,7 +1804,7 @@ push "route 46.17.44.0 255.255.254.0" # LLC Baxet
 #push "route 185.78.28.0 255.255.252.0" # Beget LLC
 
 # t-ru.org
-push "route 195.82.146.0 255.255.255.0" # Dreamtorrent Corp
+#push "route 195.82.146.0 255.255.255.0" # Dreamtorrent Corp
 
 # vkopt.net
 push "route 79.137.208.0 255.255.240.0" # LLC Digital Network
@@ -1866,15 +1866,15 @@ push "route 188.43.206.245 255.255.255.255" # Joint Stock Company TransTeleCom
 push "route 188.43.0.0 255.255.0.0" # Joint Stock Company TransTeleCom
 
 # link.alfabank.ru
-push "route 217.12.102.0 255.255.255.0" # JSC "Alfa-Bank"
-push "route 217.12.103.0 255.255.255.0" # Test Network
-push "route 217.12.96.0 255.255.254.0" # Alfa-Bank Moscow Russia
-push "route 217.12.104.0 255.255.255.0" #
-push "route 217.12.105.0 255.255.255.0" #
-push "route 217.12.98.0 255.255.255.0" # INTERNET BANKING
+#push "route 217.12.102.0 255.255.255.0" # JSC "Alfa-Bank"
+#push "route 217.12.103.0 255.255.255.0" # Test Network
+#push "route 217.12.96.0 255.255.254.0" # Alfa-Bank Moscow Russia
+#push "route 217.12.104.0 255.255.255.0" #
+#push "route 217.12.105.0 255.255.255.0" #
+#push "route 217.12.98.0 255.255.255.0" # INTERNET BANKING
 push "route 188.252.13.0 255.255.255.0" # Assigned PA for LIMES-CLI-516
 #push "route 185.165.123.0 255.255.255.0" # Variti LLC
-push "route 217.12.101.0 255.255.255.0" # ALFABANK EXTERNAL SERVICES
+#push "route 217.12.101.0 255.255.255.0" # ALFABANK EXTERNAL SERVICES
 push "route 185.247.194.0 255.255.255.0" #
 push "route 212.24.39.0 255.255.255.0" # Rusonyx, Ltd.
 #push "route 51.250.0.0 255.255.128.0" # Yandex.Cloud LLC
@@ -1884,6 +1884,8 @@ push "route 195.68.168.0 255.255.255.0" # PJSC "Vimpelcom" - 195.68.128.0 255.25
 #push "route 95.163.64.0 255.255.192.0" # LLC Digital Network
 push "route 134.0.113.0 255.255.255.0" # "Domain names registrar REG.RU", Ltd
 push "route 94.228.116.0 255.255.255.0" # timeweb.ru
+push "route 217.12.96.0 255.255.248.0" # timeweb.ru
+push "route 217.12.104.0 255.255.254.0" #
 
 # comp.dmkos.ru
 push "route 194.87.92.0 255.255.252.0" # JSC Mediasoft ekspert
@@ -1898,6 +1900,44 @@ push "route 178.218.212.0 255.255.252.0" # Hosting Operator eServer.ru Ltd.
 # zaycev.net
 push "route 176.58.32.0 255.255.252.0" # MnogoByte LLC
 #push "route 185.165.123.0 255.255.255.0" # Variti LLC
+
+# ~~~ NEW 2022-12-26 ~~~ #
+# usbtor.ru
+push "route 185.188.183.0 255.255.255.0" # FIRST SERVER LIMITED
+
+# shareman.tv
+push "route 5.61.56.189 255.255.255.255" # London
+push "route 46.16.210.183 255.255.255.255" # United Kingdom of Great Britain and Northern Ireland
+push "route 95.168.169.11 255.255.255.255" # Amsterdam, NETHERLANDS
+
+# cdnbunny.org
+push "route 185.250.148.217 255.255.255.255" # DataGroup Moldova (London)
+
+# anty.dolphin.ru.com
+push "route 5.23.50.0 255.255.255.0" # TIMEWEB Co Ltd. RU
+push "route 65.108.253.68 255.255.255.255" # HETZNER-AS, Finland
+push "route 138.201.248.211 255.255.255.255" # HETZNER-AS, Germany
+#push "route 185.137.232.0 255.255.252.0" # OOO "Network of data-centers "Selectel"
+push "route 139.162.158.199 255.255.255.255" # LINODE-AP Linode, LLC, Germany (Linode, LLC)
+push "route 139.162.179.117 255.255.255.255" # LINODE-AP Linode, LLC, Germany (Linode, LLC)
+push "route 139.177.179.38 255.255.255.255" # LINODE-AP Linode, LLC, Germany (Linode)
+
+# host-2.pool19.poig.ru
+push "route 178.173.0.0 255.255.248.0" # AS47759 - 178.173.0.0/17 - POIG Ltd. (RU)
+
+local.adguard.org
+#push "route 176.103.133.77 255.255.255.255" # Netherlands (Serveroid LLC, RU)
+
+#4pda.ru, 4pda.to
+#push "route 95.213.128.0 255.255.128.0" # OOO "Network of data-centers "Selectel"
+push "route 104.21.68.2 255.255.255.255" # CLOUDFLARENET
+#push "route 104.22.35.226 255.255.255.255" # CLOUDFLARENET
+#push "route 147.135.254.35 255.255.255.255" # OVH, France
+push "route 172.67.183.145 255.255.255.255" # CLOUDFLARENET, United States
+#push "route 178.162.214.215 255.255.255.255" # LEASEWEB-DE-FRA-10, Germany
+#push "route 178.162.214.219 255.255.255.255" # LEASEWEB-DE-FRA-10, Germany
+#push "route 178.162.214.227 255.255.255.255" # LEASEWEB-DE-FRA-10, Germany
+# ~~~ NEW 2022-12-26 ~~~ #
 
 ### University ru ###
 # osu.ru
@@ -2195,7 +2235,7 @@ push "route 94.198.52.0 255.255.252.0"
 push "route 194.85.18.0 255.255.255.0"
 
 # IT-Grad Ltd
-push "route 212.116.120.0 255.255.252.0"
+#push "route 212.116.120.0 255.255.252.0"
 
 # Xeon LLC
 push "route 91.242.32.0 255.255.248.0"
@@ -2530,8 +2570,8 @@ push "route 188.93.56.0 255.255.248.0"
 push "route 193.203.40.0 255.255.252.0"
 push "route 194.186.63.0 255.255.255.0"
 push "route 195.211.20.0 255.255.252.0"
-push "route 195.218.168.0 255.255.255.0"
-push "route 195.218.190.0 255.255.254.0"
+#push "route 195.218.168.0 255.255.255.0"
+#push "route 195.218.190.0 255.255.254.0"
 push "route 213.219.212.0 255.255.252.0"
 push "route 217.20.144.0 255.255.240.0"
 push "route 217.69.128.0 255.255.240.0"
@@ -2857,7 +2897,7 @@ push "route 109.235.160.0 255.255.248.0"
 push "route 185.71.76.0 255.255.252.0"
 
 # static.t-ru.org (rutracker.org) Dreamtorrent Corp - 195.82.146.0/23
-push "route 195.82.146.0 255.255.254.0"
+#push "route 195.82.146.0 255.255.254.0"
 
 # JSC "ER-Telecom Holding" - AS34533#_prefixes
 #push "route 5.164.128.0 255.255.192.0"
