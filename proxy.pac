@@ -13155,6 +13155,15 @@ d_ad = [
 "178.162.214.227/32",
 "217.12.96.0/21",
 "217.12.104.0/23",
+"95.213.128.0/17",
+"188.246.232.0/22",
+"172.67.214.66/32",
+"185.199.111.153/32",
+"104.21.78.4/32",
+"185.181.164.0/24",
+"37.252.0.0/22",
+"45.93.12.0/22",
+"45.95.28.0/23",
 ];
 
     if (/\.(ru|co|cu|com|info|net|org|gov|edu|int|mil|biz|pp|ne|msk|spb|nnov|od|in|ho|cc|dn|i|tut|v|dp|sl|ddns|livejournal|herokuapp|azurewebsites)\.[^.]+$/.test(host))
@@ -13177,7 +13186,7 @@ d_ad = [
 
   for (var i = 0; i < curarr.length; i++) {
     if (oip === 1 || host === curarr[i]) {
-      return "PROXY socks.zaborona.help:1488; DIRECT";
+      return "PROXY proxy.antizapret.prostovpn.org:3128; DIRECT";
     }
   }
 
