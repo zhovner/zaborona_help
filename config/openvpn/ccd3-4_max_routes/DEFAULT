@@ -598,6 +598,12 @@ push "route 178.34.152.0 255.255.248.0"
 # dtf.ru - 94.26.255.0 - 94.26.255.255 255.255.255.0 /24;
 #push "route 94.26.255.0 255.255.255.0"
 push "route 188.246.232.0 255.255.252.0" # AS49505 (OOO "Network of data-centers "Selectel")
+push "route 95.213.128.0 255.255.128.0" # SELECTEL Russia
+#push "route 188.246.232.0 255.255.252.0" # SELECTEL-MSK Russia
+push "route 172.67.214.66 255.255.255.255" # CLOUDFLARENET United States
+push "route 185.199.111.153 255.255.255.255" # FASTLY United States
+push "route 172.67.214.66 255.255.255.255" # CLOUDFLARENET United States
+push "route 104.21.78.4 255.255.255.255" # CLOUDFLARENET unknown
 #push "route 172.67.214.66 255.255.255.255" # CloudFlare
 #push "route 95.213.128.0 255.255.128.0" # AS49505 (OOO "Network of data-centers "Selectel")
 #push "route 185.199.110.153 255.255.255.255" # GitHub
@@ -2401,8 +2407,9 @@ push "route 193.109.246.0 255.255.254.0"
 
 # RECONN LLC
 push "route 185.4.64.0 255.255.252.0"
-push "route 37.252.0.0 255.255.254.0"
-push "route 37.252.2.0 255.255.255.0"
+#push "route 37.252.0.0 255.255.254.0"
+#push "route 37.252.2.0 255.255.255.0"
+push "route 37.252.0.0 255.255.252.0"
 
 # CJSC THE FIRST
 push "route 79.174.12.0 255.255.252.0"
@@ -2732,13 +2739,15 @@ push "route 45.89.24.0 255.255.252.0"
 push "route 45.89.231.0 255.255.255.0"
 push "route 45.92.172.0 255.255.255.0"
 push "route 45.92.176.0 255.255.252.0"
-push "route 45.93.12.0 255.255.255.0"
-push "route 45.93.14.0 255.255.255.0"
-push "route 45.93.15.0 255.255.255.0"
+#push "route 45.93.12.0 255.255.255.0"
+#push "route 45.93.14.0 255.255.255.0"
+#push "route 45.93.15.0 255.255.255.0"
+push "route 45.93.12.0 255.255.252.0"
 push "route 45.93.80.0 255.255.255.0"
 push "route 45.94.20.0 255.255.255.0"
 push "route 45.94.120.0 255.255.252.0"
-push "route 45.95.28.0 255.255.255.0"
+#push "route 45.95.28.0 255.255.255.0"
+push "route 45.95.28.0 255.255.254.0"
 push "route 45.95.29.0 255.255.255.0"
 push "route 45.128.127.0 255.255.255.0"
 push "route 45.128.129.0 255.255.255.0"
