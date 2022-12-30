@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкция по настройке Zaborona VPN для Windows</title>
+    <meta property="og:url" content="https://zaborona.help">
+    <meta property="og:title" content="Бесплатный способ обхода блокировок сайтов в Украине. Открывает доступ к Вконтакте, Мейл.ру, Яндекс, Касперский. ">
+    <meta property="og:description" content="Работает на всех платформах: Windows, Linux, iOS, Mac, Android. Через VPN идет трафик только к заблокированным сайтам, остальные сайты работают напрямую. Не влияет на скорость остальных сайтов. Поддержка IPv6. Работает с большинством провайдеров Украины* ">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/img/s9qbuiL1.png">
+    <meta property="fb:app_id" content="">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Assets -->
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/tilda-grid-3.0.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/tilda-blocks-2.11.css?v=2" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/tilda-zoom-1.0.min.css" type="text/css" media="all">
+</head>
+
+<body class="t-body" style="margin: 0px; padding-bottom:0;" data-gr-c-s-loaded="true">
+    <!--allrecords-->
+    <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="16871" data-tilda-page-id="914692" data-tilda-page-alias="windows" data-tilda-formskey="bb001967799ba6bb8ec72c53c21ec135">
+        <div id="rec20208744" class="r" style="padding-top:0px;padding-bottom:0px;background-color:#ededed; " data-record-type="106" data-bg-color="#ededed" data-animationappear="off">
+            <!-- T004 -->
+            <div class="t004">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_12">
+                        <div field="text" class="t-text t-text_md ">
+                            <div field="text" class="t-text t-text_md "><a href="/"  rel="">Zaborona VPN</a> | Windows | <a href="/apple.html"  rel="">Apple</a> | <a href="/android.html"  rel="">Android</a> | <a href="/extra.html">Ручная настройка</a> | <a href="/faq.html"  rel="">Помощь</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--# include file="_includes/header.html" -->
+        <div id="rec20208756" class="r r_showed r_anim" style="padding-top:60px;padding-bottom:60px; " data-record-type="255">
+            <!-- T225 -->
+            <div class="t225">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <div class="t225__title t-title t-title_md" field="title" >DNS тест:</div>
+                        <div class="t225__descr t-descr t-descr_xxl" field="descr" id="dnstest">ждите...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--# include file="_includes/footer.html" -->
+    </div>
+
+    <script>
+       var dnstest_text = document.getElementById('dnstest'),
+	   text_ok = "Используются DNS сервера Zaborona.help",
+	   text_er = "Не используются DNS сервера Zaborona.help",
+	   imgtest = new Image();
+
+       imgtest.src = 'http://dns-test.zaborona/imgtest.gif?' + new Date().getTime();
+
+       imgtest.onerror = function(){
+           dnstest_text.innerHTML = text_er;
+           dnstest_text.style.color = "red";
+       }
+
+       imgtest.onload=function() {
+           if (this.width + this.height == 0) {
+              this.onerror();
+              return;
+           }
+           dnstest_text.innerHTML = text_ok;
+           dnstest_text.style.color = "green";
+       }
+
+    </script>
+
+</body>
+
+</html>

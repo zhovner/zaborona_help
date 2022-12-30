@@ -1,0 +1,86 @@
+# DNS
+push "route 145.239.93.168"
+push "persist-tun"
+
+#-------------------------------------------------------------------------------
+
+push "route 104.21.6.148" # librusec.pro
+push "route 18.165.122.88" # explore.api.viber.com
+push "route 35.186.224.25" # login5.spotify.com
+push "route 151.115.47.200" # meduza.io
+push "route 104.88.2.246" # golosameriki.com
+push "route 139.45.207.50" # svoboda.org
+push "route 82.221.104.145" # rezka.ag
+push "route 179.43.190.254" # gidonline.io
+push "route 196.245.156.22" # rutor.info
+push "route 13.107.42.14" # linkedin.com
+push "route 212.1.76.113" # portal.pfu.gov.ua
+push "route 178.20.154.239" # iz.com.ua
+push "route 188.114.97.1" # lostfilm.tv | hd-rezka.fun | rutracker.org | zona.media | kinogo.biz | liveuamap.com | ria-m.tv
+
+push "route 151.101.0.81" # bbc.com
+push "route 18.64.103.52" # gn-web-assets.api.bbc.com
+push "route 184.51.132.158" # static.files.bbci.co.uk | nav.files.bbci.co.uk | static.bbci.co.uk
+
+push "route 82.221.104.146" # hdrezka.ag
+push "route 179.43.163.206" # static.hdrezka.ac
+
+push "route 151.101.244.158" # video.twimg.com
+push "route 192.229.233.50" # pbs.twimg.com
+
+push "route 52.223.9.160" # mob2.privat24.ua
+push "route 76.223.63.39" # next.privat24.ua
+
+push "route 108.156.22.20" # ws.chat.olx.ua
+push "route 108.156.60.10" # jobs-api.olx.ua
+push "route 108.156.22.40" # cdn.slots.baxter.olx.org
+push "route 18.165.122.106" # olx.ua
+
+push "route 64.233.164.93" # youtube.com
+push "route 216.58.209.174" # play.google.com
+push "route 173.194.0.0 255.255.0.0" # i1.ytimg.com | yt3.ggpht.com | google.com | google.com.ua | googlevideo.com
+push "route 74.125.0.0 255.255.0.0" # i.ytimg.com | yt4.ggpht.com | googlevideo.com
+
+#-------------------------------------------------------------------------------
+
+# facebook.com | instagram.com
+push "route 66.220.144.0 255.255.240.0"
+push "route 157.240.192.0 255.255.192.0"
+push "route 31.13.64.0 255.255.192.0"
+push "route 179.60.192.0 255.255.252.0"
+push "route 69.171.224.0 255.255.224.0"
+push "route 204.15.20.0 255.255.252.0"
+push "route 173.252.96.0 255.255.224.0"
+push "route 74.119.76.0 255.255.252.0"
+push "route 173.252.64.0 255.255.224.0"
+push "route 102.132.96.0 255.255.240.0"
+push "route 45.64.40.0 255.255.252.0"
+push "route 185.89.218.0 255.255.254.0"
+push "route 129.134.0.0 255.255.128.0"
+push "route 157.240.0.0 255.255.128.0"
+push "route 103.4.96.0 255.255.252.0"
+push "route 69.63.176.0 255.255.240.0"
+push "route 185.60.216.0 255.255.252.0"
+push "route 31.13.24.0 255.255.248.0"
+
+# twitter.com
+push "route 103.252.112.0 255.255.254.0"
+push "route 103.252.114.0 255.255.254.0"
+push "route 104.244.40.0 255.255.248.0"
+push "route 185.45.5.0 255.255.255.0"
+push "route 185.45.6.0 255.255.254.0"
+push "route 188.64.224.0 255.255.248.0"
+push "route 192.133.76.0 255.255.252.0"
+push "route 192.44.69.0 255.255.255.0"
+push "route 199.16.156.0 255.255.252.0"
+push "route 199.59.148.0 255.255.252.0"
+push "route 199.96.56.0 255.255.254.0"
+push "route 199.96.58.0 255.255.254.0"
+push "route 199.96.60.0 255.255.254.0"
+push "route 199.96.62.0 255.255.254.0"
+push "route 202.160.128.0 255.255.252.0"
+push "route 209.237.192.0 255.255.224.0"
+push "route 64.63.0.0 255.255.192.0"
+push "route 69.195.160.0 255.255.224.0"
+
+#-------------------------------------------------------------------------------

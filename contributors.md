@@ -1,5 +1,5 @@
 ## Файл чтобы стать контрибьютером
-## Файл чтоб не заблочили
+
 Напишите что-то в этот файл и отправьте pull request с изменениями.
 Дождитесь когда pull request будет принят владельцем репозитория.
 
@@ -20,7 +20,6 @@ openwrt very simple script
 На Mikrotik работает!
 Всем чмоки в этом чяти
 Wiki для Ubuntu
-
 * Seems like 'Обход блокировок без VPN' wiki entry is wrong (links to https://github.com/ValdikSS/GoodbyeDPI which is completely different issue).
 =======
 Hello world!  
@@ -42,3 +41,6 @@ Hi!
 ======= . 
 Да!  
 Good!!  
+=======
++
+UniFi Controller Works!+

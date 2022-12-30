@@ -35,12 +35,21 @@
         </div>
         <!--# include file="_includes/header.html" -->
         <div id="rec20208756" class="r r_showed r_anim" style="padding-top:60px;padding-bottom:60px; " data-record-type="255">
+			<!-- T004 -->
+            <!--//<div class="t004">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_8 t-prefix_2">
+                        <div field="text" class="t-text t-text_lg ">
+                            OpenVPN &nbsp; <a href="/windows_rip.html"  rel="">RIP</a> &nbsp; <a href="/windows_pptp.html"  rel="">PPTP</a> &nbsp; <a href="/windows_l2tp_ipsec.html"  rel="">L2TP+IPsec</a> &nbsp; <a href="/windows_ikev2_ipsec.html"  rel="">IKEv2+IPsec</a> &nbsp; <a href="/windows_wireguard.html"  rel="">WireGuard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>//-->
             <!-- T225 -->
             <div class="t225">
                 <div class="t-container t-align_center">
                     <div class="t-col t-col_10 t-prefix_1">
-                        <div class="t225__title t-title t-title_md" field="title" >Инструкция по настройке
-                            <br>Zaborona VPN для windows</div>
+                        <div class="t225__title t-title t-title_md" field="title" >Инструкция по настройке <br>Zaborona VPN для windows</div>
                         <div class="t225__descr t-descr t-descr_xxl" field="descr" >Рекомендуется использовать систему Windows 7 или 10</div>
                     </div>
                 </div>
@@ -61,7 +70,7 @@
                                       <span class="zz-note"><a href="https://build.openvpn.net/downloads/releases/latest/openvpn-install-latest-stable-win7.exe">WINDOWS 7/8/8.1/SERVER 2012R2 INSTALLER (NSIS)</a></span><br />
                                       <!--//<span class="zz-note"><a href="https://swupdate.openvpn.org/community/releases/openvpn-install-2.4.8-I602-Win10.exe">WINDOWS 10/SERVER 2016/SERVER 2019 INSTALLER (NSIS)</a></span>//-->
                                       <span class="zz-note"><a href="https://build.openvpn.net/downloads/releases/latest/openvpn-install-latest-stable-win10.exe">WINDOWS 10/SERVER 2016/SERVER 2019 INSTALLER (NSIS)</a></span><br />
-                                      <span class="zz-note">Обратите внимание, что установщики OpenVPN 2.4 не будут работать в Windows XP. Последняя версия OpenVPN, которая поддерживает Windows XP, - это 2.3.18, которую можно загрузить как в <a href="https://build.openvpn.net/downloads/releases/openvpn-install-2.3.18-I001-i686.exe">32-разрядной</a>, так и в <a href="https://build.openvpn.net/downloads/releases/openvpn-install-2.3.18-I001-x86_64.exe">64-разрядной</a> версиях.</span><br />
+                                      <span class="zz-note">Обратите внимание, что установщики OpenVPN 2.4 не будут работать в Windows XP. Последняя версия OpenVPN, которая поддерживает Windows XP, - это 2.3.18, которую можно загрузить как в <a href="https://build.openvpn.net/downloads/releases/openvpn-install-2.3.18-I001-i686.exe">32-разрядной</a>, так и в <a href="https://build.openvpn.net/downloads/releases/openvpn-install-2.3.18-I001-x86_64.exe">64-разрядной</a> версиях.</span> Конфиг специально для Windows XP: <a href="https://zaborona.help/zaborona-help-WinXP.ovpn">zaborona-help-WinXP.ovpn</a> (TCP).<br />
 <span class="zz-note">Обратите так же внимание на то что, нужен именно <b>OpenVPN Community Клиент</b>. Если у Вас есть <b>OpenVPN Connect клиент</b>, то он может отказаться работать на нестандартных портах.</span>
 <br /><br />
                                       Скачайте TAP-Windows Adapter V9 (Драйвер виртуальной сетевой карты):<br />
@@ -78,8 +87,13 @@
                         </div>
                         <div class="t510__textwrapper t-cell t-valign_top" >
                             <div class="t-descr t-descr_sm"  field="li_descr__1476966593578">Скачайте файл конфигурации Zaborona VPN
+                            	<!--//<br>Подключение к серверам Zaborona.help напрямую (у кого работает прямое подключение):
                                 <br><a href="https://zaborona.help/zaborona-help.ovpn">zaborona-help.ovpn</a> (только для доступа к Mail.ru, ОК, ВК, Касперский, Dr. Web)
                                 <br><a href="https://zaborona.help/openvpn-client-config/zaborona-help_maxroutes.ovpn">zaborona-help_maxroutes.ovpn</a> (расширенный, для доступа к Mail.ru, ОК, ВК, Касперский, Dr. Web, WebMoney и другим сайтам)
+                                <hr />//-->
+                                <br>Подключение к серверам Zaborona.help через Европу (у кого не работает прямое подключение):
+                                <br><a href="https://zaborona.help/openvpn-client-config/srv0.zaborona-help_maxroutes.ovpn">srv0.zaborona-help_maxroutes.ovpn</a> TCP
+                                <br><a href="https://zaborona.help/openvpn-client-config/srv0.zaborona-help-UDP-no-encryption_maxroutes.ovpn">srv0.zaborona-help-UDP-no-encryption_maxroutes.ovpn</a> UDP<br> (расширенный Европа (тестовый), для доступа к Mail.ru, ОК, ВК, Касперский, Dr. Web, WebMoney и другим сайтам). Данная конфигурация рассчитана больше для тех, у кого не работает прямое подключение к серверам Zaborona.help.
                                 <br>
                             </div>
                         </div>
@@ -97,7 +111,7 @@
                             <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">3</div>
                         </div>
                         <div class="t510__textwrapper t-cell t-valign_top" >
-                            <div class="t-descr t-descr_sm"  field="li_descr__1476966597622">Запустите OpenVPN. Нажмите правой кнопкой на OpenVPN в трее (значок компьютера внизу справа около часов). Нажмите "Импорт конфигурации" и выберите скачанный файл <em>zaborona-help.ovpn</em> либо <em>zaborona-help_maxroutes.ovpn</em>.</div>
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966597622">Запустите OpenVPN. Нажмите правой кнопкой на OpenVPN в трее (значок компьютера внизу справа около часов). Нажмите "Импорт конфигурации" и выберите скачанный файл <em>zaborona-help.ovpn</em>, <em>zaborona-help_maxroutes.ovpn</em>, <em>srv0.zaborona-help_maxroutes.ovpn</em> либо <em>srv0.zaborona-help-UDP-no-encryption_maxroutes.ovpn</em>.</div>
                         </div>
                     </div>
                     <div class="t-clear t510__separator" ></div>

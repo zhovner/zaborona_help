@@ -61,7 +61,7 @@
                                 <br />
                                 <br /><span style="font-size: 32px;">Ручная настройка OpenVPN</span>
                                 <br />
-                                <br /> Сервер работает на OpenVPN 2.4.9
+                                <br /> Сервер работает на OpenVPN 2.5.8
                                 <br />
                                 <br />
                                <div>
@@ -84,29 +84,44 @@
                                   </style>
 
                                   <ul class="zz-config">
-                                    <li>
-                                      Адрес сервера &mdash;
+                                    <!--//<li>
+                                      <span>Основные сервера:</span><br>
                                       <span class="zz-value">vpn.zaborona.help</span>
-                                      <span class="zz-note">Доменное имя направлено на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
+                                      <span class="zz-note">Доменные имена направлены на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
+
+                                      <span class="zz-note">Доменные имена направлены на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
                                     </li>
                                     <li>
-                                      Порт &mdash;
-                                      <span class="zz-value">1194</span>
+                                      Порт и протокол &mdash;<br>
+                                      <span class="zz-value">TCP 1194/1196</span> (шифрование: auth: sha1; cipher: aes-128-cbc)<br>
+                                      <span class="zz-value">UDP 1194/1196</span> (без шифрования: auth: sha1; cipher: none)
+                                      <span class="zz-note">Лучше использовать TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
+                                    </li>//-->
+                                    <li>
+                                      <span>Сервер, Европа:</span><br>
+                                      <span class="zz-value">srv0.vpn.zaboronahelp.pp.ua</span>
+                                      <span class="zz-note">Доменные имена направлены на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
                                     </li>
                                     <li>
+                                      Порт и протокол &mdash;<br>
+                                      <span class="zz-value">TCP 1194/1196</span> (мин. шифрование: auth: sha1; cipher: BF-CBC)<br>
+                                      <span class="zz-value">UDP 1194/1196</span> (мин. шифрование: auth: sha1; cipher: BF-CBC)
+                                      <span class="zz-note">Лучше использовать TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
+                                    </li>
+<!--//                                    <li>
                                       Протокол &mdash;
-                                      <span class="zz-value">TCP</span>
-                                      <span class="zz-note">Мы используем TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
-                                    </li>
+                                      <span class="zz-value">TCP/UDP</span>
+                                      <span class="zz-note">Лучше использовать TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
+                                    </li>//-->
                                     <li>
                                       Протокол инкапсулирования/device type &mdash;
                                       <span class="zz-value">L3 (tun)</span>
                                     </li>
                                     <li>
                                       Алгоритм шифрования &mdash;
-                                      <span class="zz-value">AES-128-GCM</span>
-                                      (рекомендуется), или
-                                      <span class="zz-value">AES-128-CBC</span>
+                                      <span class="zz-value">BF-CBC (Blowfish)</span>
+                                      <!--// (рекомендуется), или
+                                       <span class="zz-value">AES-128-CBC/AES-128-GCM</span> //-->
                                     </li>
                                     <li>
                                       Корневой сертификат &mdash;
@@ -121,12 +136,20 @@
                                       <a href="https://zaborona.help/zaborona-help.key" download="zaborona-help.key">zaborona-help.key</a>
                                     </li>
                                     <li>
-                                      Первичный DNS &mdash;
-                                      <span class="zz-value">74.82.42.42</span>
+                                      Первичный DNS (Yandex.DNS) &mdash;
+                                      <span class="zz-value">77.88.8.8</span>
                                     </li>
                                     <li>
-                                      Вторичный DNS &mdash;
-                                      <span class="zz-value">77.88.8.8</span>
+                                      Вторичный DNS (Yandex.DNS) &mdash;
+                                      <span class="zz-value">77.88.8.1</span>
+                                    </li>
+                                    <li>
+                                      Первичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.222.222</span> (альтернативный, нужно прописывать маршрутизацию через VPN вручную)
+                                    </li>
+                                    <li>
+                                      Вторичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.220.220</span> (альтернативный, нужно прописывать маршрутизацию через VPN вручную)
                                     </li>
                                   </ul>
                                 </div>
@@ -156,9 +179,22 @@
                                           </style>
 
                                           <ul class="zz-config">
-                                            <li>
-                                              Адрес сервера &mdash;
+<!--//                                            <li>
+                                              <span>Основной сервер:</span><br>
                                               <span class="zz-value">socks.zaborona.help</span>
+                                            </li>
+                                            <li>
+                                              Порт &mdash;
+                                              <span class="zz-value">1488</span>
+                                            </li>
+                                            <li>
+                                              Протокол &mdash;
+                                              <span class="zz-value">SOCKS 5</span>
+                                            </li>
+                                            <br><br>//-->
+                                         	<li>
+                                              <span>Сервер, Европа:</span><br>
+                                              <span class="zz-value">socks.zaboronahelp.pp.ua</span>
                                             </li>
                                             <li>
                                               Порт &mdash;
@@ -211,6 +247,8 @@
                                         <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/OpenVPN-ROUTE:-cannot-add-more-than-100-routes.-Please-increase-the-max-routes-option-in-the-client-configuration-file">OpenVPN ROUTE: cannot add more than 100 routes. Please increase the max routes option in the client configuration file</a>
                                         <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D1%8B-%D0%BE%D0%B1%D1%80%D1%8B%D0%B2%D0%B0-VPN-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%B0-(Padavan)--RESOLVE:-Cannot-resolve-host-address:-vpn.zaborona.help:-Name-or-service-not-known">RESOLVE: Cannot resolve host address: vpn.zaborona.help: Name or service not known</a>
                                         <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/%D0%A3-%D0%BC%D0%B5%D0%BD%D1%8F-%D0%BD%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-Webmoney,-%D0%BF%D1%80%D0%B8-%D1%8D%D1%82%D0%BE%D0%BC-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82-Mail.ru,-%D0%9E%D0%9A,-%D0%92%D0%9A,-%D0%9A%D0%B0%D1%81%D0%BF%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B9,-Dr.-Web.-%D0%A7%D1%82%D0%BE-%D0%BC%D0%BD%D0%B5-%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%3F">У меня не работает Webmoney, при этом работают Mail.ru, ОК, ВК, Касперский, Dr. Web. Что мне делать?</a>
+                                        <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%B2:-RouterOS-7.1-wrong-OVPN-data">Ошибка получения маршрутов: RouterOS 7.1 wrong OVPN data</a>
+                                        <br /> <a href="https://github.com/zhovner/zaborona_help/wiki/failed-to-receive-an-answer-from-the-NDM-core">Ошибка получения маршрутов: KeeneticOS - failed to receive an answer from the NDM core</a>
 
                                     </div>
                                 </div>

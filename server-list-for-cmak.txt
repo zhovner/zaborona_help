@@ -1,0 +1,15 @@
+[Settings]
+default=My VPN Server All
+UpdateURL=https://zaborona.help/server-list-for-smak.txt
+Message=Пожалуйста, выберите сервер для подключения
+
+[VPN Servers]
+My VPN Server All=vpn.zaborona.help
+My VPN Server 1=srv1.vpn.zaborona.help
+My VPN Server 2=srv2.vpn.zaborona.help
+My VPN Server 3=srv3.vpn.zaborona.help
+My VPN Server 4=srv4.vpn.zaborona.help
+My VPN Server 5=srv5.vpn.zaborona.help
+My VPN Server 6=srv6.vpn.zaborona.help
+My VPN Server 7 (offline111)=srv7.vpn.zaborona.help
+My VPN Server 8 (test server)=srv8.vpn.zaborona.help
