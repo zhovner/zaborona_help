@@ -50,7 +50,7 @@
                 <div class="t-container t-align_center">
                     <div class="t-col t-col_10 t-prefix_1">
                         <div class="t225__title t-title t-title_md" field="title" >Инструкция по настройке <br>Zaborona VPN для windows</div>
-                        <div class="t225__descr t-descr t-descr_xxl" field="descr" >Рекомендуется использовать систему Windows 7 или 10</div>
+                        <div class="t225__descr t-descr t-descr_xxl" field="descr" >Рекомендуется использовать систему Windows 7/8/8.1/10/11</div>
                     </div>
                 </div>
             </div>
@@ -65,18 +65,8 @@
                         </div>
                         <div class="t510__textwrapper t-cell t-valign_top" >
                             <div class="t-descr t-descr_sm"  field="li_descr__1476966581869">
-                                      Скачайте OpenVPN Community-клиент:<br />
-                                      <!--//<span class="zz-note"><a href="https://swupdate.openvpn.org/community/releases/openvpn-install-2.4.9-I601-Win7.exe">WINDOWS 7/8/8.1/SERVER 2012R2 INSTALLER (NSIS)</a></span>//-->
-                                      <span class="zz-note"><a href="https://build.openvpn.net/downloads/releases/latest/openvpn-install-latest-stable-win7.exe">WINDOWS 7/8/8.1/SERVER 2012R2 INSTALLER (NSIS)</a></span><br />
-                                      <!--//<span class="zz-note"><a href="https://swupdate.openvpn.org/community/releases/openvpn-install-2.4.8-I602-Win10.exe">WINDOWS 10/SERVER 2016/SERVER 2019 INSTALLER (NSIS)</a></span>//-->
-                                      <span class="zz-note"><a href="https://build.openvpn.net/downloads/releases/latest/openvpn-install-latest-stable-win10.exe">WINDOWS 10/SERVER 2016/SERVER 2019 INSTALLER (NSIS)</a></span><br />
-                                      <span class="zz-note">Обратите внимание, что установщики OpenVPN 2.4 не будут работать в Windows XP. Последняя версия OpenVPN, которая поддерживает Windows XP, - это 2.3.18, которую можно загрузить как в <a href="https://build.openvpn.net/downloads/releases/openvpn-install-2.3.18-I001-i686.exe">32-разрядной</a>, так и в <a href="https://build.openvpn.net/downloads/releases/openvpn-install-2.3.18-I001-x86_64.exe">64-разрядной</a> версиях.</span> Конфиг специально для Windows XP: <a href="https://zaborona.help/zaborona-help-WinXP.ovpn">zaborona-help-WinXP.ovpn</a> (TCP).<br />
-<span class="zz-note">Обратите так же внимание на то что, нужен именно <b>OpenVPN Community Клиент</b>. Если у Вас есть <b>OpenVPN Connect клиент</b>, то он может отказаться работать на нестандартных портах.</span>
-<br /><br />
-                                      Скачайте TAP-Windows Adapter V9 (Драйвер виртуальной сетевой карты):<br />
-                                      <span class="zz-note"><a href="https://build.openvpn.net/downloads/releases/latest/tap-windows-latest-stable.exe">TAP-Windows Adapter V9 INSTALLER (NSIS)</a></span><br />
-                                      <span class="zz-note">Данный драйвер необходим для нормальной работы программы OpenVPN. Как правило, драйверы устанавливаются вместе с программным обеспечением OpenVPN, однако в редких случаях может потребоваться отдельная установка драйвера TAP-Windows Adapter V9.</span>
-                                <br>
+                                      Скачайте OpenVPN Community-клиент 
+                                      <span class="zz-note"><a href="https://openvpn.net/community-downloads" target="_blank">для Windows 7/8/8.1/10/11</a>. Можно так же использовать версию <a href="https://openvpn.net" target="_blank">OpenVPN Connect</a>.</span>
                             </div>
                         </div>
                     </div>
@@ -86,14 +76,14 @@
                             <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">2</div>
                         </div>
                         <div class="t510__textwrapper t-cell t-valign_top" >
-                            <div class="t-descr t-descr_sm"  field="li_descr__1476966593578">Скачайте файл конфигурации Zaborona VPN
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966593578">Скачайте файл конфигурации Zaborona VPN:
                             	<!--//<br>Подключение к серверам Zaborona.help напрямую (у кого работает прямое подключение):
                                 <br><a href="https://zaborona.help/zaborona-help.ovpn">zaborona-help.ovpn</a> (только для доступа к Mail.ru, ОК, ВК, Касперский, Dr. Web)
                                 <br><a href="https://zaborona.help/openvpn-client-config/zaborona-help_maxroutes.ovpn">zaborona-help_maxroutes.ovpn</a> (расширенный, для доступа к Mail.ru, ОК, ВК, Касперский, Dr. Web, WebMoney и другим сайтам)
                                 <hr />//-->
-                                <br>Подключение к серверам Zaborona.help через Европу (у кого не работает прямое подключение):
+                                <!--//<br>Подключение к серверам Zaborona.help через Европу (у кого не работает прямое подключение)://-->
                                 <br><a href="https://zaborona.help/openvpn-client-config/srv0.zaborona-help_maxroutes.ovpn">srv0.zaborona-help_maxroutes.ovpn</a> TCP
-                                <br><a href="https://zaborona.help/openvpn-client-config/srv0.zaborona-help-UDP-no-encryption_maxroutes.ovpn">srv0.zaborona-help-UDP-no-encryption_maxroutes.ovpn</a> UDP<br> (расширенный Европа (тестовый), для доступа к Mail.ru, ОК, ВК, Касперский, Dr. Web, WebMoney и другим сайтам). Данная конфигурация рассчитана больше для тех, у кого не работает прямое подключение к серверам Zaborona.help.
+                                <br><a href="https://zaborona.help/openvpn-client-config/srv0.zaborona-help-UDP-no-encryption_maxroutes.ovpn">srv0.zaborona-help-UDP-no-encryption_maxroutes.ovpn</a> UDP<br> (расширенный Европа (тестовый), для доступа к Mail.ru, ОК, ВК, Касперский, Dr. Web, WebMoney и другим сайтам).
                                 <br>
                             </div>
                         </div>
@@ -147,6 +137,36 @@
             <div class="t107">
                 <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
                     <img src="/img/openvpn_windows_2.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
+                </div>
+            </div>
+        </div>
+		
+        <div id="rec20209340" class="r r_showed r_anim" style="padding-top:0px;padding-bottom:0px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966581869"><hr />
+                                      <span class="zz-note"><b><font color="red">Пользователям Windows XP!:</font></b> Обратите внимание, что последняя версия OpenVPN, которая поддерживает Windows XP, - это 2.3.18, которую можно загрузить как в <a href="https://build.openvpn.net/downloads/releases/openvpn-install-2.3.18-I001-i686.exe">32-разрядной</a>, так и в <a href="https://build.openvpn.net/downloads/releases/openvpn-install-2.3.18-I001-x86_64.exe">64-разрядной</a> версиях.</span> Конфиг специально для Windows XP: <a href="https://zaborona.help/zaborona-help-WinXP.ovpn">zaborona-help-WinXP.ovpn</a> (TCP).<br />
+<span class="zz-note">Обратите так же внимание на то что, нужен именно <b>OpenVPN Community Клиент</b>.</span>
+<br /><br />
+                                      Скачайте TAP-Windows Adapter V9 (Драйвер виртуальной сетевой карты):<br />
+                                      <span class="zz-note"><a href="https://build.openvpn.net/downloads/releases/latest/tap-windows-latest-stable.exe">TAP-Windows Adapter V9 INSTALLER (NSIS)</a></span><br />
+                                      <span class="zz-note">Данный драйвер необходим для нормальной работы программы OpenVPN. Как правило, драйверы устанавливаются вместе с программным обеспечением OpenVPN, однако в редких случаях может потребоваться отдельная установка драйвера TAP-Windows Adapter V9.</span>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" ></div>
+                    <div class="t-col t-col_8 t-prefix_2 t-item ">
+                        <div class="t510__textwrapper t-cell t-valign_top" >
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966593578"><hr />
+								<span class="zz-note"><b><font color="red">Пользователям OpenVPN версии 2.4 и ниже!:</font></b> Конфиг специально для старых версий OpenVPN 2.4 и ниже можно скачать <a href="https://zaborona.help/zaborona-help-WinXP.ovpn">здесь</a> (TCP).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" ></div>
                 </div>
             </div>
         </div>
