@@ -104,8 +104,8 @@
                                     </li>
                                     <li>
                                       Порт и протокол &mdash;<br>
-                                      <span class="zz-value">TCP 1194/1196</span> (мин. шифрование: auth: sha1; cipher: BF-CBC)<br>
-                                      <span class="zz-value">UDP 1194/1196</span> (мин. шифрование: auth: sha1; cipher: BF-CBC)
+                                      <span class="zz-value">TCP 1194/1196</span> (мин. шифрование: auth: sha1; cipher: AES-128-CBC)<br>
+                                      <span class="zz-value">UDP 1194/1196</span> (мин. шифрование: auth: sha1; cipher: AES-128-CBC)
                                       <span class="zz-note">Лучше использовать TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
                                     </li>
 <!--//                                    <li>
@@ -119,9 +119,9 @@
                                     </li>
                                     <li>
                                       Алгоритм шифрования &mdash;
-                                      <span class="zz-value">BF-CBC (Blowfish)</span>
-                                      <!--// (рекомендуется), или
-                                       <span class="zz-value">AES-128-CBC/AES-128-GCM</span> //-->
+                                      <!--//<span class="zz-value">BF-CBC (Blowfish)</span>
+                                       (рекомендуется), или//-->
+                                      <span class="zz-value">AES-128-CBC/AES-128-GCM</span> 
                                     </li>
                                     <li>
                                       Корневой сертификат &mdash;
