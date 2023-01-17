@@ -598,11 +598,10 @@ push "route 178.34.152.0 255.255.248.0"
 # dtf.ru - 94.26.255.0 - 94.26.255.255 255.255.255.0 /24;
 #push "route 94.26.255.0 255.255.255.0"
 push "route 188.246.232.0 255.255.252.0" # AS49505 (OOO "Network of data-centers "Selectel")
-push "route 95.213.128.0 255.255.128.0" # SELECTEL Russia
+#push "route 95.213.128.0 255.255.128.0" # SELECTEL Russia
 #push "route 188.246.232.0 255.255.252.0" # SELECTEL-MSK Russia
 push "route 172.67.214.66 255.255.255.255" # CLOUDFLARENET United States
 push "route 185.199.111.153 255.255.255.255" # FASTLY United States
-push "route 172.67.214.66 255.255.255.255" # CLOUDFLARENET United States
 push "route 104.21.78.4 255.255.255.255" # CLOUDFLARENET unknown
 #push "route 172.67.214.66 255.255.255.255" # CloudFlare
 #push "route 95.213.128.0 255.255.128.0" # AS49505 (OOO "Network of data-centers "Selectel")
@@ -1306,7 +1305,7 @@ push "route 85.142.64.0 255.255.192.0" # Federal Scientific Research Institute f
 
 # college.ru - 195.208.1.0 255.255.255.0"
 #push "route 141.101.228.0 255.255.255.0" # AS198770 (Virtual Infrastructures LLC)
-push "route 195.208.1.0 255.255.255.0" # AS48287 (JSC "RU-CENTER")
+#push "route 195.208.1.0 255.255.255.0" # AS48287 (JSC "RU-CENTER")
 
 # aladdin-rd.ru - 195.133.240.0/20
 push "route 195.133.240.0 255.255.240.0" # JSC Mastertel
@@ -1838,11 +1837,11 @@ push "route 173.231.122.42 255.255.255.255" # Montreal
 #push "route 95.213.128.0 255.255.128.0" # OOO "Network of data-centers "Selectel"
 push "route 81.95.137.0 255.255.255.0" # JSC Avantel
 push "route 87.251.90.0 255.255.254.0" # Dataline Ltd
-push "route 185.129.100.0 255.255.255.0" # DDOS-GUARD LTD
+#push "route 185.129.100.0 255.255.255.0" # DDOS-GUARD LTD
 # push "route 23.236.48.0 255.255.240.0" # Google LLC
 
 # radio.ru
-push "route 195.208.0.0 255.255.255.0" # JSC "RU-CENTER"
+push "route 195.208.0.0 255.255.254.0" # JSC "RU-CENTER"
 #push "route 195.54.192.0 255.255.224.0" # JSC "ER-Telecom Holding"
 push "route 193.28.46.0 255.255.255.0" # TERSYS COMPANY LLC
 
@@ -2070,6 +2069,19 @@ push "route 193.232.146.0 255.255.255.0" # JSC "RU-CENTER"
 #push "route 83.149.192.0 255.255.192.0" # Federal Scientific Research Institute for System Analysis of the Russian
 #push "route 89.104.64.0 255.255.224.0" # JSC "RU-CENTER"
 #push "route 91.217.20.0 255.255.254.0" # JSC "RU-CENTER"
+
+### 2023-01-17 ###
+# qiwi
+push "route 79.142.16.0 255.255.240.0" # QIWI JSC
+push "route 91.232.230.0 255.255.254.0" # QIWI JSC
+push "route 195.189.100.0 255.255.252.0" # Obyedinennaya sistema momentalnih platejey CJSC
+
+# slurm.io
+#push "route 185.129.100.0 255.255.255.0" # DDOS-GUARD LTD
+push "route 188.246.224.0 255.255.248.0" # OOO "Network of data-centers "Selectel"
+push "route 217.73.56.0 255.255.248.0" # Closed Joint Stock Company CROC incorporated
+#push "route 37.139.60.0 255.255.252.0" # OOO "Network of data-centers "Selectel"
+### 2023-01-17 ###
 
 ### University ru ###
 
