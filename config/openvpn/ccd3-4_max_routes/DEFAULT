@@ -545,7 +545,7 @@ push "route 45.82.101.62 255.255.255.255"
 push "route 83.69.196.0 255.255.255.0" # AS29226 - 83.69.192.0 255.255.224.0" - JSC Mastertel
 #push "route 178.248.232.0 255.255.248.0" # AS197068 (HLL LLC)
 #push "route 51.250.24.24 255.255.255.255" # AS200350 - 51.250.0.0 255.255.128.0" - Yandex.Cloud LLC
-push "route 195.133.249.0 255.255.255.0" # AS29226 - 195.133.240.0 255.255.240.0" - JSC Mastertel
+#push "route 195.133.249.0 255.255.255.0" # AS29226 - 195.133.240.0 255.255.240.0" - JSC Mastertel
 push "route 84.47.176.0 255.255.255.0" # AS8641 - 84.47.176.0 255.255.255.0" - LLC "Nauka-Svyaz"
 push "route 89.108.84.0 255.255.255.0" # AS197695 ("Domain names registrar REG.RU", Ltd)
 #push "route 185.165.123.0 255.255.255.0" # AS64432 (Variti LLC)
@@ -1802,7 +1802,7 @@ push "route 194.186.207.0 255.255.255.0" # Savings Bank of the Russian Federatio
 push "route 194.67.0.0 255.255.192.0" # PJSC "Vimpelcom"
 
 # finttv.ga
-push "route 194.87.216.0 255.255.255.0" # Partner LLC
+push "route 194.87.216.0 255.255.254.0" # Partner LLC
 
 # visionbot.ru
 push "route 46.17.44.0 255.255.254.0" # LLC Baxet
@@ -1863,8 +1863,8 @@ push "route 104.21.6.129 255.255.255.255" #	A		CLOUDFLARENET
 # push "route 176.103.133.77 255.255.255.255" # Your query for 176.103.133.77 did not return any results
 
 # lolz.guru
-push "route 188.165.90.184 255.255.255.255"	A		OVH	France
-push "route 164.132.30.217 255.255.255.255"	A	mail.lolz.guru	OVH	France
+push "route 188.165.90.184 255.255.255.255" #	A		OVH	France
+push "route 164.132.30.217 255.255.255.255" #	A	mail.lolz.guru	OVH	France
 
 # salam-1-19.rutube.ru
 push "route 188.43.206.245 255.255.255.255" # Joint Stock Company TransTeleCom
@@ -1930,7 +1930,7 @@ push "route 139.177.179.38 255.255.255.255" # LINODE-AP Linode, LLC, Germany (Li
 # host-2.pool19.poig.ru
 push "route 178.173.0.0 255.255.248.0" # AS47759 - 178.173.0.0/17 - POIG Ltd. (RU)
 
-local.adguard.org
+# local.adguard.org
 #push "route 176.103.133.77 255.255.255.255" # Netherlands (Serveroid LLC, RU)
 
 #4pda.ru, 4pda.to
@@ -2197,7 +2197,7 @@ push "route 194.87.104.0 255.255.255.0"
 push "route 194.87.200.0 255.255.255.0"
 push "route 194.87.202.0 255.255.255.0"
 push "route 194.87.213.0 255.255.255.0"
-push "route 194.87.217.0 255.255.255.0"
+#push "route 194.87.217.0 255.255.255.0"
 
 # Partner LLC
 #push "route 185.112.83.0 255.255.255.0"
