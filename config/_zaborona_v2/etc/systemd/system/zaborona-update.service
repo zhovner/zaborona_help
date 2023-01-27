@@ -1,0 +1,11 @@
+[Unit]
+Description=zaborona-vpn update
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/root/antizapret
+ExecStart=/root/zaborona-vpn/doall.sh
+
+[Install]
+WantedBy=multi-user.target
