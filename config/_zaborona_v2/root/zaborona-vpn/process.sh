@@ -5,23 +5,26 @@ set -e
 #systemctl restart kresd@1.service
 
 cp result/dnsmasq-aliases-alt.conf /etc/dnsmasq.d/zaborona-dns-resovler
-systemctl restart dnsmasq
+#systemctl restart dnsmasq
 
 cp result/openvpn-blocked-ranges.txt /etc/openvpn/server/ccd/DEFAULT
 
 iptables -F zbrnhlpvpnwhitelist
 
-echo "" > result/openvpn-blocked-ranges-ferm-whitelist.conf
-echo "# dummy file. Filled by zaboronahelp script." >> result/openvpn-blocked-ranges-ferm-whitelist.conf
-echo "@def $WHITELIST = (" >> result/openvpn-blocked-ranges-ferm-whitelist.conf
+echo "" > result/ferm-whitelist-blocked-ranges.conf
+echo "# dummy file. Filled by zaboronahelp script." >> result/ferm-whitelist-blocked-ranges.conf
+echo "@def $WHITELIST = (" >> result/ferm-whitelist-blocked-ranges.conf
 
 while read -r line
 do
     iptables -w -A zbrnhlpvpnwhitelist -d "$line" -j ACCEPT
-    echo "$line" >> result/openvpn-blocked-ranges-ferm-whitelist.conf
+    echo "$line" >> result/ferm-whitelist-blocked-ranges.conf
 
 done < result/blocked-ranges.txt
 
-echo ");" >> result/openvpn-blocked-ranges-ferm-whitelist.conf
+echo ");" >> result/ferm-whitelist-blocked-ranges.conf
+
+cp result/ferm-whitelist-blocked-ranges.conf /etc/ferm/whitelist.conf
+#systemctl restart ferm
 
 exit 0
