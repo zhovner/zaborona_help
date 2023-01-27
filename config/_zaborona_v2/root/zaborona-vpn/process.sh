@@ -11,20 +11,20 @@ cp result/openvpn-blocked-ranges.txt /etc/openvpn/server/ccd/DEFAULT
 
 iptables -F zbrnhlpvpnwhitelist
 
-echo "" > result/ferm-whitelist-blocked-ranges.conf
-echo "# dummy file. Filled by zaboronahelp script." >> result/ferm-whitelist-blocked-ranges.conf
-echo "@def $WHITELIST = (" >> result/ferm-whitelist-blocked-ranges.conf
+#echo "" > result/ferm-whitelist-blocked-ranges.conf
+#echo "# dummy file. Filled by zaboronahelp script." >> result/ferm-whitelist-blocked-ranges.conf
+#echo "@def $WHITELIST = (" >> result/ferm-whitelist-blocked-ranges.conf
 
 while read -r line
 do
     iptables -w -A zbrnhlpvpnwhitelist -d "$line" -j ACCEPT
-    echo "$line" >> result/ferm-whitelist-blocked-ranges.conf
+#    echo "$line" >> result/ferm-whitelist-blocked-ranges.conf
 
 done < result/blocked-ranges.txt
 
-echo ");" >> result/ferm-whitelist-blocked-ranges.conf
+#echo ");" >> result/ferm-whitelist-blocked-ranges.conf
 
-cp result/ferm-whitelist-blocked-ranges.conf /etc/ferm/whitelist.conf
+#cp result/ferm-whitelist-blocked-ranges.conf /etc/ferm/whitelist.conf
 #systemctl restart ferm
 
 exit 0
