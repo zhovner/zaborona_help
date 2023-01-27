@@ -4,8 +4,14 @@ set -e
 HERE="$(dirname "$(readlink -f "${0}")")"
 cd "$HERE"
 
+FILENAMEDOMAINS="domains.txt"
+FILENAMEDOMAINS_CUSTOM="domains_custom.txt"
+FILENAMENXDOMAIN="nxdomain.txt"
+FILENAMENXDOMAIN_CUSTOM="nxdomain_custom.txt"
+WORKFOLDERNAME="temp"
+
 # Extract domains from list
-awk -F ';' '{print $2}' temp/list.csv | sort -u | awk '/^$/ {next} /\\/ {next} /^[а-яА-Яa-zA-Z0-9\-\_\.\*]*+$/ {gsub(/\*\./, ""); gsub(/\.$/, ""); print}' | idn > result/hostlist_original.txt
+#awk -F ';' '{print $2}' temp/list.csv | sort -u | awk '/^$/ {next} /\\/ {next} /^[а-яА-Яa-zA-Z0-9\-\_\.\*]*+$/ {gsub(/\*\./, ""); gsub(/\.$/, ""); print}' | idn > result/hostlist_original.txt
 
 # Generate zones from domains
 # FIXME: nxdomain list parsing is disabled due to its instability on z-i
@@ -15,7 +21,7 @@ sort -u config/exclude-hosts-{dist,custom}.txt > temp/exclude-hosts.txt
 sort -u config/exclude-ips-{dist,custom}.txt > temp/exclude-ips.txt
 sort -u config/include-hosts-{dist,custom}.txt > temp/include-hosts.txt
 sort -u config/include-ips-{dist,custom}.txt > temp/include-ips.txt
-sort -u temp/include-hosts.txt result/hostlist_original.txt > temp/hostlist_original_with_include.txt
+#sort -u temp/include-hosts.txt result/hostlist_original.txt > temp/hostlist_original_with_include.txt
 
 awk -f scripts/getzones.awk temp/hostlist_original_with_include.txt | grep -v -F -x -f temp/exclude-hosts.txt | sort -u > result/hostlist_zones.txt
 
