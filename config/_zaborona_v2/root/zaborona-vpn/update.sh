@@ -25,6 +25,7 @@ curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILEN
 #curl -f --fail-early --compressed -o $WORKFOLDERNAME/$FILENAMENXDOMAIN "$NXDOMAINLINK" || exit 1
 #curl -f --fail-early --compressed -o $WORKFOLDERNAME/$FILENAMENXDOMAIN_CUSTOM "$NXDOMAINLINK_CUSTOM" || exit 1
 
+# Сверяем файл, не побился ли он при загрузке. Актуально для больших файлов
 #LISTSIZE="$(curl -sI --connect-timeout 15 "$LISTLINK" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
 #[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEDOMAINS)" ]] && echo "List 1 size differs" && exit 2
 
