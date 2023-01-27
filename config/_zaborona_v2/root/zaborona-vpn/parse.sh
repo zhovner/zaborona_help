@@ -39,7 +39,7 @@ grep -F -v 'Ид2971-18' $WORKFOLDERNAME/$FILENAMERESULT | \
     awk -F ';' '($1 ~ /^([0-9]{1,3}\.){3}[0-9]{1,3}/) && (($2 == "" && $3 == "") || ($1 == $2)) {gsub(/ \| /, RS); print $1}' | \
     awk '/^([0-9]{1,3}\.){3}[0-9]{1,3}$/' | sort -u > result/iplist_blockedbyip_noid2971.txt
 
-awk -F ';' '$1 ~ /\// {print $1}' temp/list.csv | egrep -o '([0-9]{1,3}\.){3}[0-9]{1,3}\/[0-9]{1,2}' | sort -u > result/blocked-ranges.txt
+awk -F ';' '$1 ~ /\// {print $1}' $WORKFOLDERNAME/$FILENAMERESULT | egrep -o '([0-9]{1,3}\.){3}[0-9]{1,3}\/[0-9]{1,2}' | sort -u > result/blocked-ranges.txt
 
 
 # Generate OpenVPN route file
