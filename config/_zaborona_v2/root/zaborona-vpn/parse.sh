@@ -9,9 +9,10 @@ FILENAMEDOMAINS_CUSTOM="domains_custom.txt"
 FILENAMENXDOMAIN="nxdomain.txt"
 FILENAMENXDOMAIN_CUSTOM="nxdomain_custom.txt"
 WORKFOLDERNAME="temp"
+FILENAMERESULT="list.csv"
 
 # Extract domains from list
-#awk -F ';' '{print $2}' temp/list.csv | sort -u | awk '/^$/ {next} /\\/ {next} /^[а-яА-Яa-zA-Z0-9\-\_\.\*]*+$/ {gsub(/\*\./, ""); gsub(/\.$/, ""); print}' | idn > result/hostlist_original.txt
+awk -F ';' '{print $2}' $WORKFOLDERNAME/$FILENAMERESULT | sort -u | awk '/^$/ {next} /\\/ {next} /^[а-яА-Яa-zA-Z0-9\-\_\.\*]*+$/ {gsub(/\*\./, ""); gsub(/\.$/, ""); print}' | idn > result/hostlist_original.txt
 
 # Generate zones from domains
 # FIXME: nxdomain list parsing is disabled due to its instability on z-i
@@ -21,20 +22,20 @@ sort -u config/exclude-hosts-{dist,custom}.txt > temp/exclude-hosts.txt
 sort -u config/exclude-ips-{dist,custom}.txt > temp/exclude-ips.txt
 sort -u config/include-hosts-{dist,custom}.txt > temp/include-hosts.txt
 sort -u config/include-ips-{dist,custom}.txt > temp/include-ips.txt
-#sort -u temp/include-hosts.txt result/hostlist_original.txt > temp/hostlist_original_with_include.txt
+sort -u temp/include-hosts.txt result/hostlist_original.txt > temp/hostlist_original_with_include.txt
 
 awk -f scripts/getzones.awk temp/hostlist_original_with_include.txt | grep -v -F -x -f temp/exclude-hosts.txt | sort -u > result/hostlist_zones.txt
 
 # Generate a list of IP addresses
-awk -F';' '$1 ~ /\// {print $1}' temp/list.csv | grep -P '([0-9]{1,3}\.){3}[0-9]{1,3}\/[0-9]{1,2}' -o | sort -Vu > result/iplist_special_range.txt
+awk -F';' '$1 ~ /\// {print $1}' $WORKFOLDERNAME/$FILENAMERESULT | grep -P '([0-9]{1,3}\.){3}[0-9]{1,3}\/[0-9]{1,2}' -o | sort -Vu > result/iplist_special_range.txt
 
-awk -F ';' '($1 ~ /^([0-9]{1,3}\.){3}[0-9]{1,3}/) {gsub(/ \| /, RS, $1); print $1}' temp/list.csv | \
+awk -F ';' '($1 ~ /^([0-9]{1,3}\.){3}[0-9]{1,3}/) {gsub(/ \| /, RS, $1); print $1}' $WORKFOLDERNAME/$FILENAMERESULT | \
     awk '/^([0-9]{1,3}\.){3}[0-9]{1,3}$/' | sort -u > result/iplist_all.txt
 
-awk -F ';' '($1 ~ /^([0-9]{1,3}\.){3}[0-9]{1,3}/) && (($2 == "" && $3 == "") || ($1 == $2)) {gsub(/ \| /, RS); print $1}' temp/list.csv | \
+awk -F ';' '($1 ~ /^([0-9]{1,3}\.){3}[0-9]{1,3}/) && (($2 == "" && $3 == "") || ($1 == $2)) {gsub(/ \| /, RS); print $1}' $WORKFOLDERNAME/$FILENAMERESULT | \
     awk '/^([0-9]{1,3}\.){3}[0-9]{1,3}$/' | sort -u > result/iplist_blockedbyip.txt
 
-grep -F -v 'Ид2971-18' temp/list.csv | \
+grep -F -v 'Ид2971-18' $WORKFOLDERNAME/$FILENAMERESULT | \
     awk -F ';' '($1 ~ /^([0-9]{1,3}\.){3}[0-9]{1,3}/) && (($2 == "" && $3 == "") || ($1 == $2)) {gsub(/ \| /, RS); print $1}' | \
     awk '/^([0-9]{1,3}\.){3}[0-9]{1,3}$/' | sort -u > result/iplist_blockedbyip_noid2971.txt
 
