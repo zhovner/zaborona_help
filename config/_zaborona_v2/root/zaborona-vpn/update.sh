@@ -12,10 +12,14 @@ WORKFOLDERNAME="temp"
 WORKFOLDERNAME2="result"
 FILENAMERESULT="list.csv"
 
+#
 #LISTLINK='https://raw.githubusercontent.com/zapret-info/z-i/master/dump.csv'
 #NXDOMAINLINK='https://raw.githubusercontent.com/zapret-info/z-i/master/nxdomain.txt'
+
 LISTLINK='https://uablacklist.net/'$FILENAMEDOMAINS
 LISTLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMEDOMAINS_CUSTOM
+
+# NXDOMAIN = Non-Existing Domain
 NXDOMAINLINK='https://uablacklist.net/'$FILENAMENXDOMAIN
 NXDOMAINLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMENXDOMAIN_CUSTOM
 
