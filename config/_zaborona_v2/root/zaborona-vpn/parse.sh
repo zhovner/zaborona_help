@@ -27,6 +27,13 @@ sort -u temp/include-hosts.txt result/hostlist_original.txt > temp/hostlist_orig
 # 
 awk -f scripts/getzones.awk temp/hostlist_original_with_include.txt | grep -v -F -x -f temp/exclude-hosts.txt | sort -u > result/hostlist_zones.txt
 
+# Check for NXDOMAIN = Non-Existing Domain
+if [[ "$RESOLVE_NXDOMAIN" == "yes" ]];
+then
+    scripts/resolve-dns-nxdomain.py result/hostlist_zones.txt >> temp/exclude-hosts.txt
+    awk -f scripts/getzones.awk temp/hostlist_original_with_include.txt | grep -v -F -x -f temp/exclude-hosts.txt | sort -u > result/hostlist_zones.txt
+fi
+
 # Generate a list of IP addresses
 awk -F';' '$1 ~ /\// {print $1}' $WORKFOLDERNAME/$FILENAMERESULT | grep -P '([0-9]{1,3}\.){3}[0-9]{1,3}\/[0-9]{1,2}' -o | sort -Vu > result/iplist_special_range.txt
 
