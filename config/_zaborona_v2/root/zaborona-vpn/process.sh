@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+# Generate knot-resolver aliases
 #cp result/knot-aliases-alt.conf /etc/knot-resolver/knot-aliases-alt.conf
 #systemctl restart kresd@1.service
 
