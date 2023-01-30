@@ -5,6 +5,15 @@ WAN_6="ens3"
 VPN_ADDR_4=""
 VPN_ADDR_6=""
 
+# 
+VPNUDP_RANGE="192.168.100.0/22"
+VPNUDP_DNS="192.168.100.1/32"
+VPNTCP_RANGE="192.168.104.0/22"
+VPNTCP_DNS="192.168.104.1/32"
+DNSMAP_RANGE="10.224.0.0/15"
+##EXT_INTERFACE="host0 eth0"
+#
+
 ### DROP TORRENTS ###
 iptables -I FORWARD 1 -m string --string "BitTorrent" --algo bm --to 65535 -j DROP
 iptables -I FORWARD 1 -m string --string "BitTorrent protocol" --algo bm --to 65535 -j DROP
