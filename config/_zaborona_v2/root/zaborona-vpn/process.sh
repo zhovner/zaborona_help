@@ -38,6 +38,14 @@ cp result/ferm-whitelist-blocked-ranges.conf /etc/ferm/whitelist.conf
 
 # Generate ferm file - Block Port
 cp config/ferm-blockport.conf result/ferm-blockport.conf
+
+while read -r line
+do
+    iptables -w -A zbrnhlpvpnwhitelist -d "$line" -j ACCEPT
+    echo "$line" >> result/ferm-blockport.conf
+
+done < result/blocked-ranges.txt
+
 echo ");" >> result/ferm-blockport.conf
 
 cp result/ferm-blockport.conf /etc/ferm/blockport.conf
@@ -45,6 +53,14 @@ cp result/ferm-blockport.conf /etc/ferm/blockport.conf
 
 # Generate ferm file - Block String
 cp config/ferm-blockstring.conf result/ferm-blockstring.conf
+
+while read -r line
+do
+    iptables -w -A zbrnhlpvpnwhitelist -d "$line" -j ACCEPT
+    echo "$line" >> result/ferm-blockstring.conf
+
+done < result/blocked-ranges.txt
+
 echo ");" >> result/ferm-blockstring.conf
 
 cp result/ferm-blockstring.conf /etc/ferm/blockstring.conf
