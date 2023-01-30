@@ -13,7 +13,7 @@ cp result/dnsmasq-aliases-alt.conf /etc/dnsmasq.d/zaborona-dns-resovler
 cp result/openvpn-blocked-ranges.txt /etc/openvpn/server/ccd/DEFAULT
 
 # Generate squid zone file
-cp result/squid-whitelist-zones.conf /etc/squid/conf.d/DEFAULT
+#cp result/squid-whitelist-zones.conf /etc/squid/conf.d/DEFAULT
 
 iptables -F zbrnhlpvpnwhitelist
 
@@ -21,8 +21,8 @@ iptables -F zbrnhlpvpnwhitelist
 #echo "# dummy file. Filled by zaboronahelp script." >> result/ferm-whitelist-blocked-ranges.conf
 #echo "@def $WHITELIST = (" >> result/ferm-whitelist-blocked-ranges.conf
 
-# Generate ferm file
-cp config/squid-whitelist-zones.conf result/ferm-whitelist-blocked-ranges.conf
+# Generate ferm file - IP ACCEPT
+cp config/ferm-whitelist-blocked-ranges.conf result/ferm-whitelist-blocked-ranges.conf
 
 while read -r line
 do
@@ -34,6 +34,15 @@ done < result/blocked-ranges.txt
 echo ");" >> result/ferm-whitelist-blocked-ranges.conf
 
 cp result/ferm-whitelist-blocked-ranges.conf /etc/ferm/whitelist.conf
+# Generate ferm file - IP ACCEPT
+
+# Generate ferm file - Block Port
+cp config/ferm-blockport.conf result/ferm-blockport.conf
+echo ");" >> result/ferm-blockport.conf
+
+cp result/ferm-blockport.conf /etc/ferm/blockport.conf
+# Generate ferm file - Block Port
+
 #systemctl restart ferm
 
 exit 0
