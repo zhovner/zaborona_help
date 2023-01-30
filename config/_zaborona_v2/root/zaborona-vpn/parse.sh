@@ -8,6 +8,10 @@ FILENAMEDOMAINS="domains.txt"
 FILENAMEDOMAINS_CUSTOM="domains_custom.txt"
 FILENAMENXDOMAIN="nxdomain.txt"
 FILENAMENXDOMAIN_CUSTOM="nxdomain_custom.txt"
+FILENAMEBLOCKPORT="blockport.txt"
+FILENAMEBLOCKPORT_CUSTOM="blockport_custom.txt"
+FILENAMEBLOCKSTRING="blockstring.txt"
+FILENAMEBLOCKSTRING_CUSTOM="blockstring_custom.txt"
 WORKFOLDERNAME="temp"
 FILENAMERESULT="list.csv"
 
@@ -22,6 +26,8 @@ sort -u config/exclude-hosts-{dist,custom}.txt > temp/exclude-hosts.txt
 sort -u config/exclude-ips-{dist,custom}.txt > temp/exclude-ips.txt
 sort -u config/include-hosts-{dist,custom}.txt > temp/include-hosts.txt
 sort -u config/include-ips-{dist,custom}.txt > temp/include-ips.txt
+sort -u config/blockport-{dist,custom}.txt temp/$FILENAMEBLOCKPORT temp/$FILENAMEBLOCKPORT_CUSTOM > result/blockport.txt
+sort -u config/blockstring-{dist,custom}.txt temp/$FILENAMEBLOCKSTRING temp/$FILENAMEBLOCKSTRING_CUSTOM > result/blockstring.txt
 sort -u temp/include-hosts.txt result/hostlist_original.txt > temp/hostlist_original_with_include.txt
 
 # 
