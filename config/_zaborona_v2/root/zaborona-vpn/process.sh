@@ -43,6 +43,13 @@ echo ");" >> result/ferm-blockport.conf
 cp result/ferm-blockport.conf /etc/ferm/blockport.conf
 # Generate ferm file - Block Port
 
+# Generate ferm file - Block String
+cp config/ferm-blockstring.conf result/ferm-blockstring.conf
+echo ");" >> result/ferm-blockstring.conf
+
+cp result/ferm-blockstring.conf /etc/ferm/blockstring.conf
+# Generate ferm file - Block String
+
 #systemctl restart ferm
 
 exit 0
