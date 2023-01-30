@@ -1,0 +1,14 @@
+[Unit]
+Description=firewall-config-script-custom.
+#Requires=network.target
+#After=network.target
+Wants=ferm.service
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /root/zaborona-vpn/iptables-custom.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
