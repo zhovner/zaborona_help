@@ -5,14 +5,21 @@ WAN_6="ens3"
 VPN_ADDR_4=""
 VPN_ADDR_6=""
 
-# 
-VPNUDP_RANGE="192.168.100.0/22"
-VPNUDP_DNS="192.168.100.1/32"
-VPNTCP_RANGE="192.168.104.0/22"
-VPNTCP_DNS="192.168.104.1/32"
-DNSMAP_RANGE="10.224.0.0/15"
+### NO FERM - If you are not using ferm, then uncomment the following block of code ### 
+#VPNUDP_RANGE="192.168.100.0/22"
+#VPNUDP_DNS="192.168.100.1/32"
+#VPNTCP_RANGE="192.168.104.0/22"
+#VPNTCP_DNS="192.168.104.1/32"
+#DNSMAP_RANGE="10.224.0.0/15"
 ##EXT_INTERFACE="host0 eth0"
-#
+#VPN_NAME_INTERFACE="zaborona+"
+
+#iptables -t filter -N zbrnhlpvpnwhitelist
+#iptables -t filter -A FORWARD -i $VPN_NAME_INTERFACE -o $WAN_4 -m state --state ESTABLISHED,RELATED,DNAT -j ACCEPT
+#iptables -t filter -A FORWARD -i $VPN_NAME_INTERFACE --match connmark --mark 1 -j zbrnhlpvpnwhitelist
+#iptables -t filter -A FORWARD -i $VPN_NAME_INTERFACE --match connmark --mark 1 -j REJECT
+##iptables -t filter -A FORWARD -i $WAN_4 -o $VPN_NAME_INTERFACE -j ACCEPT
+### NO FERM - If you are not using ferm, then uncomment the following block of code ### 
 
 ### DROP TORRENTS ###
 iptables -I FORWARD 1 -m string --string "BitTorrent" --algo bm --to 65535 -j DROP
