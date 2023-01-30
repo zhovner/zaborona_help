@@ -32,6 +32,17 @@ VPN_ADDR_6=""
 #iptables -t nat -A POSTROUTING -s $VPNUDP_RANGE -j MASQUERADE
 #iptables -t nat -A POSTROUTING -s $VPNTCP_RANGE -j MASQUERADE
 
+# IKEv2-IPsec
+#iptables -t filter -A INPUT -i $WAN_4 -p esp -j ACCEPT
+
+#iptables -A FORWARD -p gre -j ACCEPT
+#iptables -A INPUT -p gre -j ACCEPT
+#iptables -t filter -A INPUT -i $WAN_4 -p udp --dport 500 -j ACCEPT
+#iptables -t filter -A INPUT -i $WAN_4 -p tcp --dport 500 -j ACCEPT
+#iptables -t filter -A INPUT -i $WAN_4 -p udp --dport 4500 -j ACCEPT
+#iptables -t filter -A INPUT -i $WAN_4 -p udp --dport 1701 -j ACCEPT
+#iptables -t filter -A INPUT -i $WAN_4 -p tcp --dport 1723 -j ACCEPT
+
 ### NO FERM - If you are not using ferm, then uncomment the following block of code ###
 
 ### DROP NETWORKS ###
@@ -115,21 +126,21 @@ iptables -I FORWARD -i ppp+ -o $WAN_4 -d 0.0.0.0/0 -j ACCEPT
 # L2TP-IPsec
 #iptables -t nat -I POSTROUTING -p tcp -s 192.168.212.0/22 -d 0.0.0.0/0 -o $WAN_4 -j MASQUERADE
 # IKEv2-IPsec
-iptables -I INPUT -i $WAN_4 -p esp -j ACCEPT
+#iptables -I INPUT -i $WAN_4 -p esp -j ACCEPT
 #iptables -t nat -I POSTROUTING -p tcp -s 192.168.208.0/22 -d 0.0.0.0/0 -o $WAN_4 -j MASQUERADE
 # WireGuard
 #iptables -t nat -I POSTROUTING -p tcp -s 192.168.220.0/22 -d 0.0.0.0/0 -o $WAN_4 -j MASQUERADE
 #iptables -t nat -I POSTROUTING -p udp -s 192.168.220.0/22 -d 0.0.0.0/0 -o $WAN_4 -j MASQUERADE
 
 #iptables -I FORWARD -i $WAN_4 -p tcp --dport 1723 -j ACCEPT
-iptables -I FORWARD -p gre -j ACCEPT
-iptables -I INPUT -p gre -j ACCEPT
+#iptables -I FORWARD -p gre -j ACCEPT
+#iptables -I INPUT -p gre -j ACCEPT
 
-iptables -I INPUT -i $WAN_4 -p udp --dport 500 -j ACCEPT
-iptables -I INPUT -i $WAN_4 -p tcp --dport 500 -j ACCEPT
-iptables -I INPUT -i $WAN_4 -p udp --dport 4500 -j ACCEPT
-iptables -I INPUT -i $WAN_4 -p udp --dport 1701 -j ACCEPT
-iptables -I INPUT -i $WAN_4 -p tcp --dport 1723 -j ACCEPT
+#iptables -I INPUT -i $WAN_4 -p udp --dport 500 -j ACCEPT
+#iptables -I INPUT -i $WAN_4 -p tcp --dport 500 -j ACCEPT
+#iptables -I INPUT -i $WAN_4 -p udp --dport 4500 -j ACCEPT
+#iptables -I INPUT -i $WAN_4 -p udp --dport 1701 -j ACCEPT
+#iptables -I INPUT -i $WAN_4 -p tcp --dport 1723 -j ACCEPT
 
 #iptables -I FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
 #iptables -I FORWARD -s 192.168.115.0/24  -j ACCEPT
