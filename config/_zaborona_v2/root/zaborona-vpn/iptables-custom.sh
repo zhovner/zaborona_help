@@ -95,14 +95,14 @@ iptables -t mangle -A POSTROUTING -p udp -m string --algo bm --string "tracker" 
 # DROP CONN PORTS #
 #iptables -t mangle -I POSTROUTING -s 192.168.0.0/16 -o $WAN_4 -d 0.0.0.0/0 -p tcp --dport 22 -j LOG log-prefix ' IP address tried to connect to blocked ports!';
 
-iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 22 -j DROP
+#iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 22 -j DROP
 
-iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 25 -j DROP
-iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 465 -j DROP
-iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 587 -j DROP
+#iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 25 -j DROP
+#iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 465 -j DROP
+#iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 587 -j DROP
 
-iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 1337 -j DROP
-iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 6969 -j DROP
+#iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 1337 -j DROP
+#iptables -t mangle -I POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 6969 -j DROP
 
 # DROP CONN PORTS #
 
