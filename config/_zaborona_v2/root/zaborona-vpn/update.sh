@@ -6,12 +6,12 @@ cd "$HERE"
 
 FILENAMEDOMAINS="domains.txt"
 FILENAMEDOMAINS_CUSTOM="domains_custom.txt"
-FILENAMENXDOMAIN="nxdomain.txt"
-FILENAMENXDOMAIN_CUSTOM="nxdomain_custom.txt"
-FILENAMEBLOCKPORT="blockport.txt"
-FILENAMEBLOCKPORT_CUSTOM="blockport_custom.txt"
-FILENAMEBLOCKSTRING="blockstring.txt"
-FILENAMEBLOCKSTRING_CUSTOM="blockstring_custom.txt"
+FILENAMENXDOMAIN="include-nxdomain-dist.txt"
+FILENAMENXDOMAIN_CUSTOM="include-nxdomain-custom.txt"
+FILENAMEBLOCKPORT="include-blockport-dist.txt"
+FILENAMEBLOCKPORT_CUSTOM="include-blockport-custom.txt"
+FILENAMEBLOCKSTRING="include-blockstring-dist.txt"
+FILENAMEBLOCKSTRING_CUSTOM="include-blockstring-custom.txt"
 WORKFOLDERNAME="temp"
 WORKFOLDERNAME2="result"
 FILENAMERESULT="list.csv"
@@ -30,19 +30,19 @@ touch $WORKFOLDERNAME/$FILENAMEBLOCKSTRING_CUSTOM
 #NXDOMAINLINK='https://raw.githubusercontent.com/zapret-info/z-i/master/nxdomain.txt'
 
 LISTLINK='https://uablacklist.net/'$FILENAMEDOMAINS
-LISTLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMEDOMAINS_CUSTOM
+LISTLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/root/zaborona-vpn/config/'$FILENAMEDOMAINS_CUSTOM
 
 # NXDOMAIN = Non-Existing Domain
 NXDOMAINLINK='https://uablacklist.net/'$FILENAMENXDOMAIN
-NXDOMAINLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMENXDOMAIN_CUSTOM
+NXDOMAINLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/root/zaborona-vpn/config/'$FILENAMENXDOMAIN_CUSTOM
 
 # ferm file - Block Port
-FILENAMEBLOCKPORTLINK='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMEBLOCKPORT
-#FILENAMEBLOCKPORTLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMEBLOCKPORT_CUSTOM
+FILENAMEBLOCKPORTLINK='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/root/zaborona-vpn/config/'$FILENAMEBLOCKPORT
+#FILENAMEBLOCKPORTLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/root/zaborona-vpn/config/'$FILENAMEBLOCKPORT_CUSTOM
 
 # ferm file - Block String
-FILENAMEBLOCKSTRINGLINK='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMEBLOCKSTRING
-#FILENAMEBLOCKSTRINGLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMEBLOCKSTRING_CUSTOM
+FILENAMEBLOCKSTRINGLINK='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/root/zaborona-vpn/config/'$FILENAMEBLOCKSTRING
+#FILENAMEBLOCKSTRINGLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/root/zaborona-vpn/config/'$FILENAMEBLOCKSTRING_CUSTOM
 
 curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEDOMAINS "$LISTLINK" ||
 curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEDOMAINS_CUSTOM "$LISTLINK_CUSTOM" ||
