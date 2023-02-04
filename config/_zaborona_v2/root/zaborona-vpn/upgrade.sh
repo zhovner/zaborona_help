@@ -12,10 +12,10 @@ WORKFOLDERNAME="/root"
 # Если файл zaborona-vpn-config-archive-MD5.tar.gz отсутствует, то загружаем его и переименовываем для проверки MD5
 if [ -f $WORKFOLDERNAME/$FILENAMEALLCONFIG_ARCHIVE_MD5 ]; then 
     echo "Update process. Wait for the process to complete. This may take several minutes."
-	curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEALLCONFIG_ARCHIVE "$LISTLINK_ALLCONFIG_ARCHIVE/FILENAMEALLCONFIG_ARCHIVE" || exit 1
+	curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEALLCONFIG_ARCHIVE "$LISTLINK_ALLCONFIG_ARCHIVE/$FILENAMEALLCONFIG_ARCHIVE" || exit 1
 else
     echo "Getting a file for MD5 verification."
-	curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEALLCONFIG_ARCHIVE "$LISTLINK_ALLCONFIG_ARCHIVE/FILENAMEALLCONFIG_ARCHIVE" || exit 1
+	curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEALLCONFIG_ARCHIVE "$LISTLINK_ALLCONFIG_ARCHIVE/$FILENAMEALLCONFIG_ARCHIVE" || exit 1
 
 	echo "Renaming the archive for counting MD5"
 	# Переименовываем архив для подсчета MD5
