@@ -10,12 +10,21 @@ cp result/dnsmasq-aliases-alt.conf /etc/dnsmasq.d/zaborona-dns-resovler
 #systemctl restart dnsmasq
 
 # Generate OpenVPN route file
-cp result/openvpn-blocked-ranges.txt /etc/openvpn/server/ccd/DEFAULT
+cp config/openvpn-ccd-DEFAULT.txt result/openvpn-blocked-ranges_ext.txt
+#cp result/openvpn-blocked-ranges.txt /etc/openvpn/server/ccd/DEFAULT
+while read -r line0
+do
+
+    echo "$line0" >> result/openvpn-blocked-ranges_ext.txt
+
+done < result/openvpn-blocked-ranges.txt
+
+cp result/openvpn-blocked-ranges_ext.txt /etc/openvpn/server/ccd/DEFAULT
 
 # Generate squid zone file
 #cp result/squid-whitelist-zones.conf /etc/squid/conf.d/DEFAULT
 
-iptables -F zbrnhlpvpnwhitelist
+iptables -F ZABORONA_V4
 
 #echo "" > result/ferm-whitelist-blocked-ranges.conf
 #echo "# dummy file. Filled by zaboronahelp script." >> result/ferm-whitelist-blocked-ranges.conf
@@ -26,7 +35,7 @@ cp config/ferm-whitelist-blocked-ranges.conf result/ferm-whitelist-blocked-range
 
 while read -r line
 do
-    iptables -w -A zbrnhlpvpnwhitelist -d "$line" -j ACCEPT
+    iptables -w -A ZABORONA_V4 -d "$line" -j ACCEPT
     echo "$line" >> result/ferm-whitelist-blocked-ranges.conf
 
 done < result/blocked-ranges.txt

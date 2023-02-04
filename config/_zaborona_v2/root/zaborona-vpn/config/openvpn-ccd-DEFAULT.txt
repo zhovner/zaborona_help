@@ -1,0 +1,7 @@
+# Def Config
+# push "dhcp-option DNS 192.168.XXX.1"
+push "route 10.224.0.0 255.254.0.0"
+push "block-outside-dns"
+# Def Config
+
+# IP Routes

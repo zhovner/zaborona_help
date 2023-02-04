@@ -54,10 +54,10 @@ build_pki() {
 }
 
 copy_keys() {
-    cp ./pki/ca.crt /etc/openvpn/server/keys/zaborona-vpn-ca.crt
-    cp ./pki/issued/zaborona-vpn-server.crt /etc/openvpn/server/keys/zaborona-vpn-server.crt
-    cp ./pki/private/zaborona-vpn-server.key /etc/openvpn/server/keys/zaborona-vpn-server.key
-    cp ./pki/dh2048.pem /etc/openvpn/server/keys/dh2048.pem
+    cp ./pki/ca.crt /etc/openvpn/zaborona-vpn-ca.crt
+    cp ./pki/issued/zaborona-vpn-server.crt /etc/openvpn/zaborona-vpn-server.crt
+    cp ./pki/private/zaborona-vpn-server.key /etc/openvpn/zaborona-vpn-server.key
+    cp ./pki/dh2048.pem /etc/openvpn/dh2048.pem
 }
 
 if [[ ! -f ./pki/ca.crt ]]
@@ -65,10 +65,10 @@ then
     build_pki
 fi
 
-if [[ ! -f "/etc/openvpn/server/keys/zaborona-vpn-ca.crt" ]] && \
-   [[ ! -f "/etc/openvpn/server/keys/zaborona-vpn-server.crt" ]] && \
-   [[ ! -f "/etc/openvpn/server/keys/zaborona-vpn-server.key" ]] && \
-   [[ ! -f "/etc/openvpn/server/keys/dh2048.pem" ]] 
+if [[ ! -f "/etc/openvpn/zaborona-vpn-ca.crt" ]] && \
+   [[ ! -f "/etc/openvpn/zaborona-vpn-server.crt" ]] && \
+   [[ ! -f "/etc/openvpn/zaborona-vpn-server.key" ]] && \
+   [[ ! -f "/etc/openvpn/dh2048.pem" ]] 
 then
     copy_keys
 
