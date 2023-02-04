@@ -11,7 +11,7 @@ cp result/dnsmasq-aliases-alt.conf /etc/dnsmasq.d/zaborona-dns-resovler
 
 # Generate OpenVPN route file
 cp config/openvpn-ccd-DEFAULT.txt result/openvpn-blocked-ranges_ext.txt
-#cp result/openvpn-blocked-ranges.txt /etc/openvpn/server/ccd/DEFAULT
+#cp result/openvpn-blocked-ranges.txt /etc/openvpn/ccd/DEFAULT
 while read -r line0
 do
 
@@ -19,7 +19,7 @@ do
 
 done < result/openvpn-blocked-ranges.txt
 
-cp result/openvpn-blocked-ranges_ext.txt /etc/openvpn/server/ccd/DEFAULT
+cp result/openvpn-blocked-ranges_ext.txt /etc/openvpn/ccd/DEFAULT
 
 # Generate squid zone file
 #cp result/squid-whitelist-zones.conf /etc/squid/conf.d/DEFAULT
