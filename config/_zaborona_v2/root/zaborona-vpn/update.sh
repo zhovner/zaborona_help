@@ -4,84 +4,76 @@ set -e
 HERE="$(dirname "$(readlink -f "${0}")")"
 cd "$HERE"
 
-FILENAMEDOMAINS="domains.txt"
-FILENAMEDOMAINS_CUSTOM="domains_custom.txt"
-FILENAMENXDOMAIN="nxdomain.txt"
-FILENAMENXDOMAIN_CUSTOM="nxdomain_custom.txt"
-FILENAMEBLOCKPORT="blockport.txt"
-FILENAMEBLOCKPORT_CUSTOM="blockport_custom.txt"
-FILENAMEBLOCKSTRING="blockstring.txt"
-FILENAMEBLOCKSTRING_CUSTOM="blockstring_custom.txt"
+### OFFICIAL LIST SITE ###
+LISTLINK_OFFICIAL="https://uablacklist.net"
+FILENAMEDOMAINS_OFFICIAL="domains.txt"
+### OFFICIAL LIST SITE ###
+
+LISTLINK_ALLCONFIG="https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/root/zaborona-vpn/config"
+
+### INCLUDE ###
+FILENAMEALLCONFIG_INCLUDE="include-hosts-dist.txt include-ips-dist.txt include-nxdomain-dist.txt include-blockport-dist.txt include-blockstring-dist.txt"
+FILENAMEALLCONFIG_INCLUDE_CUSTOM="include-hosts-custom.txt include-ips-custom.txt include-nxdomain-custom.txt include-blockport-custom.txt include-blockstring-custom.txt"
+### INCLUDE ###
+
+### EXCLUDE ###
+FILENAMEALLCONFIG_EXCLUDE="exclude-hosts-dist.txt exclude-ips-dist.txt exclude-nxdomain-dist.txt exclude-blockport-dist.txt exclude-blockstring-dist.txt"
+FILENAMEALLCONFIG_EXCLUDE_CUSTOM="exclude-hosts-custom.txt exclude-ips-custom.txt exclude-nxdomain-custom.txt exclude-blockport-custom.txt exclude-blockstring-custom.txt"
+### EXCLUDE ###
+
 WORKFOLDERNAME="temp"
 WORKFOLDERNAME2="result"
 FILENAMERESULT="list.csv"
+FILENAMERESULT_TMP1="list_tmp1.csv"
+FILENAMERESULT_TMP2="list_tmp2.csv"
+FILENAMERESULT_TMP3="list_tmp3.csv"
+FILENAMERESULT_TMP4="list_tmp4.csv"
+FILENAMERESULT_TMP5="list_tmp5.csv"
 
-touch $WORKFOLDERNAME/$FILENAMEDOMAINS
-touch $WORKFOLDERNAME/$FILENAMEDOMAINS_CUSTOM
-touch $WORKFOLDERNAME/$FILENAMENXDOMAIN
-touch $WORKFOLDERNAME/$FILENAMENXDOMAIN_CUSTOM
-touch $WORKFOLDERNAME/$FILENAMEBLOCKPORT
-touch $WORKFOLDERNAME/$FILENAMEBLOCKPORT_CUSTOM
-touch $WORKFOLDERNAME/$FILENAMEBLOCKSTRING
-touch $WORKFOLDERNAME/$FILENAMEBLOCKSTRING_CUSTOM
+touch $WORKFOLDERNAME/$FILENAMEDOMAINS_OFFICIAL
+LISTLINK_OFFICIAL_DONE=$LISTLINK_OFFICIAL/$FILENAMEDOMAINS_OFFICIAL
+curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEDOMAINS "LISTLINK_OFFICIAL_DONE" ||
+#LISTSIZE="$(curl -sI --connect-timeout 15 "$LISTLINK_OFFICIAL_DONE" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
+#[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEDOMAINS_OFFICIAL)" ]] && echo "List 1 size differs" && exit 2
+sort -u $WORKFOLDERNAME/$FILENAMEDOMAINS_OFFICIAL >> $WORKFOLDERNAME/$FILENAMERESULT_TMP1
 
-#
-#LISTLINK='https://raw.githubusercontent.com/zapret-info/z-i/master/dump.csv'
-#NXDOMAINLINK='https://raw.githubusercontent.com/zapret-info/z-i/master/nxdomain.txt'
+for FILENAMEALLCONFIG_INCLUDE1 in $FILENAMEALLCONFIG_INCLUDE; do
+	touch $WORKFOLDERNAME/$FILENAMEALLCONFIG_INCLUDE1
+	LISTLINK_ALLCONFIG_DONE=$LISTLINK_ALLCONFIG/$FILENAMEALLCONFIG_INCLUDE1
+	curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEALLCONFIG_INCLUDE1 "$LISTLINK_ALLCONFIG_DONE" ||
+LISTSIZE="$(curl -sI --connect-timeout 15 "$LISTLINK_ALLCONFIG_DONE" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
+[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEALLCONFIG_INCLUDE1)" ]] && echo "List 2 size differs" && exit 2
+sort -u $WORKFOLDERNAME/$FILENAMEALLCONFIG_INCLUDE1 >> $WORKFOLDERNAME/$FILENAMERESULT_TMP2
+done
 
-LISTLINK='https://uablacklist.net/'$FILENAMEDOMAINS
-LISTLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMEDOMAINS_CUSTOM
+#for FILENAMEALLCONFIG_INCLUDE_CUSTOM1 in $FILENAMEALLCONFIG_INCLUDE_CUSTOM; do
+#	touch $WORKFOLDERNAME/$FILENAMEALLCONFIG_INCLUDE_CUSTOM1
+#	LISTLINK_ALLCONFIG_DONE=$LISTLINK_ALLCONFIG/$FILENAMEALLCONFIG_INCLUDE_CUSTOM1
+#	curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEALLCONFIG_INCLUDE_CUSTOM1 "$LISTLINK_ALLCONFIG_DONE" ||
+#LISTSIZE="$(curl -sI --connect-timeout 15 "$LISTLINK_ALLCONFIG_DONE" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
+#[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEALLCONFIG_INCLUDE_CUSTOM1)" ]] && echo "List 2 size differs" && exit 2
+#sort -u $WORKFOLDERNAME/$FILENAMEALLCONFIG_INCLUDE_CUSTOM1 >> $WORKFOLDERNAME/$FILENAMERESULT_TMP3
+#done
 
-# NXDOMAIN = Non-Existing Domain
-NXDOMAINLINK='https://uablacklist.net/'$FILENAMENXDOMAIN
-NXDOMAINLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMENXDOMAIN_CUSTOM
+for FILENAMEALLCONFIG_EXCLUDE1 in $FILENAMEALLCONFIG_EXCLUDE; do
+	touch $WORKFOLDERNAME/$FILENAMEALLCONFIG_EXCLUDE1
+	LISTLINK_ALLCONFIG_DONE=$LISTLINK_ALLCONFIG/$FILENAMEALLCONFIG_EXCLUDE1
+	curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEALLCONFIG_EXCLUDE1 "$LISTLINK_ALLCONFIG_DONE" ||
+LISTSIZE="$(curl -sI --connect-timeout 15 "$LISTLINK_ALLCONFIG_DONE" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
+[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEALLCONFIG_EXCLUDE1)" ]] && echo "List 2 size differs" && exit 2
+sort -u $WORKFOLDERNAME/$FILENAMEALLCONFIG_EXCLUDE1 >> $WORKFOLDERNAME/$FILENAMERESULT_TMP4
+done
 
-# ferm file - Block Port
-FILENAMEBLOCKPORTLINK='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMEBLOCKPORT
-#FILENAMEBLOCKPORTLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMEBLOCKPORT_CUSTOM
-
-# ferm file - Block String
-FILENAMEBLOCKSTRINGLINK='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMEBLOCKSTRING
-#FILENAMEBLOCKSTRINGLINK_CUSTOM='https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/'$FILENAMEBLOCKSTRING_CUSTOM
-
-curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEDOMAINS "$LISTLINK" ||
-curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEDOMAINS_CUSTOM "$LISTLINK_CUSTOM" ||
-#curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEBLOCKPORT_CUSTOM "$FILENAMEBLOCKPORTLINK_CUSTOM" ||
-#curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEBLOCKSTRING_CUSTOM "$FILENAMEBLOCKSTRINGLINK_CUSTOM" ||
-curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEBLOCKPORT "$FILENAMEBLOCKPORTLINK" ||
-curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEBLOCKSTRING "$FILENAMEBLOCKSTRINGLINK" || exit 1
-
-#iconv -f cp1251 -t utf8 $WORKFOLDERNAME/list_orig.csv > temp/list.csv
-
-#curl -f --fail-early --compressed -o $WORKFOLDERNAME/$FILENAMENXDOMAIN "$NXDOMAINLINK" || exit 1
-#curl -f --fail-early --compressed -o $WORKFOLDERNAME/$FILENAMENXDOMAIN_CUSTOM "$NXDOMAINLINK_CUSTOM" || exit 1
-
-# Сверяем файл, не побился ли он при загрузке. Актуально для больших файлов
-#LISTSIZE="$(curl -sI --connect-timeout 15 "$LISTLINK" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
-#[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEDOMAINS)" ]] && echo "List 1 size differs" && exit 2
-
-LISTSIZE="$(curl -sI --connect-timeout 15 "$LISTLINK_CUSTOM" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
-[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEDOMAINS_CUSTOM)" ]] && echo "List 2 size differs" && exit 2
-
-#LISTSIZE="$(curl -sI --connect-timeout 15 "$NXDOMAINLINK" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
-#[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMENXDOMAIN)" ]] && echo "List 1 size differs" && exit 2
-
-#LISTSIZE="$(curl -sI --connect-timeout 15 "$NXDOMAINLINK" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
-#[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMENXDOMAIN_CUSTOM)" ]] && echo "List 2 size differs" && exit 2
-
-LISTSIZE="$(curl -sI --connect-timeout 15 "$FILENAMEBLOCKPORTLINK" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
-[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEBLOCKPORT)" ]] && echo "List 2 size differs" && exit 2
-
-LISTSIZE="$(curl -sI --connect-timeout 15 "$FILENAMEBLOCKSTRINGLINK" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
-[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEBLOCKSTRING)" ]] && echo "List 2 size differs" && exit 2
-
-#LISTSIZE="$(curl -sI --connect-timeout 15 "$FILENAMEBLOCKPORTLINK_CUSTOM" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
-#[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEBLOCKPORT_CUSTOM)" ]] && echo "List 2 size differs" && exit 2
-
-#LISTSIZE="$(curl -sI --connect-timeout 15 "$FILENAMEBLOCKSTRINGLINK_CUSTOM" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
-#[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEBLOCKSTRING_CUSTOM)" ]] && echo "List 2 size differs" && exit 2
+#for FILENAMEALLCONFIG_EXCLUDE_CUSTOM1 in $FILENAMEALLCONFIG_EXCLUDE_CUSTOM; do
+#	touch $WORKFOLDERNAME/$FILENAMEALLCONFIG_EXCLUDE_CUSTOM1
+#	LISTLINK_ALLCONFIG_DONE=$LISTLINK_ALLCONFIG/$FILENAMEALLCONFIG_EXCLUDE_CUSTOM1
+#	curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEALLCONFIG_EXCLUDE_CUSTOM1 "$LISTLINK_ALLCONFIG_DONE" ||
+#LISTSIZE="$(curl -sI --connect-timeout 15 "$LISTLINK_ALLCONFIG_DONE" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
+#[[ "$LISTSIZE" != "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMEALLCONFIG_EXCLUDE_CUSTOM1)" ]] && echo "List 2 size differs" && exit 2
+#sort -u $WORKFOLDERNAME/$FILENAMEALLCONFIG_EXCLUDE_CUSTOM1 > $WORKFOLDERNAME/$FILENAMERESULT_TMP5
+#done
 
 # Собираем все в один файл, чтобы за один раз прогнать все записи и не плодить много парсинга
-sort -u $WORKFOLDERNAME/$FILENAMEDOMAINS $WORKFOLDERNAME/$FILENAMEDOMAINS_CUSTOM > $WORKFOLDERNAME/$FILENAMERESULT
+sort -u $WORKFOLDERNAME/$FILENAMERESULT_TMP1 $WORKFOLDERNAME/$FILENAMERESULT_TMP2 $WORKFOLDERNAME/$FILENAMERESULT_TMP3 $WORKFOLDERNAME/$FILENAMERESULT_TMP4 $WORKFOLDERNAME/$FILENAMERESULT_TMP5 > $WORKFOLDERNAME/$FILENAMERESULT
 
 exit 0
