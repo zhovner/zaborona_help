@@ -4,21 +4,26 @@ set -e
 HERE="$(dirname "$(readlink -f "${0}")")"
 cd "$HERE"
 
-FILENAMEDOMAINS="domains.txt"
-FILENAMEDOMAINS_CUSTOM="domains_custom.txt"
-FILENAMENXDOMAIN="nxdomain.txt"
-FILENAMENXDOMAIN_CUSTOM="nxdomain_custom.txt"
-FILENAMEBLOCKPORT="blockport.txt"
-FILENAMEBLOCKPORT_CUSTOM="blockport_custom.txt"
-FILENAMEBLOCKSTRING="blockstring.txt"
-FILENAMEBLOCKSTRING_CUSTOM="blockstring_custom.txt"
+FILENAMEDOMAINS_OFFICIAL="domains.txt"
+FILENAME_INCLUDE_HOSTS_DIST="include-hosts-dist.txt"
+FILENAME_INCLUDE_IPS_DIST="include-ips-dist.txt"
+FILENAME_INCLUDE_NXDOMAIN_DIST="include-nxdomain-dist.txt"
+FILENAME_INCLUDE_BLOCKPORT_DIST="include-blockport-dist.txt"
+FILENAME_INCLUDE_BLOCKSTRING_DIST="include-blockstring-dist.txt"
+FILENAME_EXCLUDE_HOSTS_DIST="exclude-hosts-dist.txt"
+FILENAME_EXCLUDE_IPS_DIST="exclude-ips-dist.txt"
+FILENAME_EXCLUDE_NXDOMAIN_DIST="exclude-nxdomain-dist.txt"
+FILENAME_EXCLUDE_BLOCKPORT_DIST="exclude-blockport-dist.txt"
+FILENAME_EXCLUDE_BLOCKSTRING_DIST="exclude-blockstring-dist.txt"
 WORKFOLDERNAME="temp"
 FILENAMERESULT="list.csv"
 
 # Extract domains from list
+echo "Extract domains from list"
 awk -F ';' '{print $2}' $WORKFOLDERNAME/$FILENAMERESULT | sort -u | awk '/^$/ {next} /\\/ {next} /^[а-яА-Яa-zA-Z0-9\-\_\.\*]*+$/ {gsub(/\*\./, ""); gsub(/\.$/, ""); print}' | idn > result/hostlist_original.txt
 
 # Generate zones from domains
+echo "Generate zones from domains"
 # FIXME: nxdomain list parsing is disabled due to its instability on z-i
 ###cat exclude.txt temp/nxdomain.txt > temp/exclude.txt
 
@@ -26,8 +31,12 @@ sort -u config/exclude-hosts-{dist,custom}.txt > temp/exclude-hosts.txt
 sort -u config/exclude-ips-{dist,custom}.txt > temp/exclude-ips.txt
 sort -u config/include-hosts-{dist,custom}.txt > temp/include-hosts.txt
 sort -u config/include-ips-{dist,custom}.txt > temp/include-ips.txt
-sort -u config/blockport-{dist,custom}.txt temp/$FILENAMEBLOCKPORT temp/$FILENAMEBLOCKPORT_CUSTOM > result/blockport.txt
-sort -u config/blockstring-{dist,custom}.txt temp/$FILENAMEBLOCKSTRING temp/$FILENAMEBLOCKSTRING_CUSTOM > result/blockstring.txt
+sort -u config/exclude-blockport-{dist,custom}.txt temp/$FILENAMEBLOCKPORT temp/$FILENAMEBLOCKPORT_CUSTOM > result/exclude-blockport.txt
+sort -u config/exclude-blockstring-{dist,custom}.txt temp/$FILENAMEBLOCKSTRING temp/$FILENAMEBLOCKSTRING_CUSTOM > result/exclude-blockstring.txt
+sort -u config/include-blockport-{dist,custom}.txt temp/$FILENAMEBLOCKPORT temp/$FILENAMEBLOCKPORT_CUSTOM > result/include-blockport.txt
+sort -u config/include-blockstring-{dist,custom}.txt temp/$FILENAMEBLOCKSTRING temp/$FILENAMEBLOCKSTRING_CUSTOM > result/include-blockstring.txt
+sort -u config/exclude-bgp-ips-{dist,custom}.txt temp/$FILENAMEBLOCKPORT temp/$FILENAMEBLOCKPORT_CUSTOM > result/exclude-bgp-ips.txt
+sort -u config/include-bgp-ips-{dist,custom}.txt temp/$FILENAMEBLOCKSTRING temp/$FILENAMEBLOCKSTRING_CUSTOM > result/include-bgp-ips.txt
 sort -u temp/include-hosts.txt result/hostlist_original.txt > temp/hostlist_original_with_include.txt
 
 # 
