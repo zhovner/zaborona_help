@@ -1,0 +1,48 @@
+listen-address=127.0.0.1,192.168.224.1,192.168.228.1,192.168.232.1,192.168.236.1,192.168.240.1,192.168.244.1,192.168.248.1,192.168.252.1,192.168.220.1,192.168.216.1,192.168.212.1,192.168.208.1,192.168.111.129,192.168.111.1,10.14.20.1,192.168.17.1,10.14.20.1
+
+resolv-file=/etc/resolv.dnsmasq.conf
+# CloudFlare DOH
+#server=127.0.0.1#5553
+# ADGuard Private DNS
+server=57.128.195.123
+server=1.1.1.1
+server=1.0.0.1
+#server=8.8.8.8
+#server=8.8.4.4
+strict-order
+no-resolv
+cache-size=20000
+dns-forward-max=1000000
+# --min-cache-ttl=[seconds] (-- minimum TTL = 2 minutes)
+min-cache-ttl=120
+#domain=*.onion,10.0.0.0/8
+#address=/dns-test.zaborona/94.242.59.156
+
+# DNSMAP Custom
+#
+# spotify.com, netflix.com
+#server=/pandora.com/107.170.15.247
+#server=/tuner.pandora.com/107.170.15.247
+#server=/www.spotify.com/107.170.15.247
+#server=/play.spotify.com/107.170.15.247
+#server=/apresolve.spotify.com/107.170.15.247
+#server=/weblb-wg.gslb.spotify.com/107.170.15.247
+#server=/lon3-weblb-a2.lon3.spotify.com/107.170.15.247
+#server=/ip2location.com/107.170.15.247
+#server=/atv-ext.amazon.com/107.170.15.247
+#server=/atv-ps.amazon.com/107.170.15.247
+#server=/netflix.com/107.170.15.247
+#server=/uiboot.netflix.com/107.170.15.247
+#server=/secure.netflix.com/107.170.15.247
+#server=/api-global.netflix.com/107.170.15.247
+#server=/nrdp.nccp.netflix.com/107.170.15.247
+#server=/ios.nccp.netflix.com/107.170.15.247
+#server=/android.nccp.netflix.com/107.170.15.247
+#server=/tunein.com/107.170.15.247
+#server=/radio.com/107.170.15.247
+#server=/streamtheworld.com/107.170.15.247
+#server=/hbogo.com/107.170.15.247
+#server=/hbo.com/107.170.15.247
+#server=/hbonow.com/107.170.15.247
+
+# DNSMAP
