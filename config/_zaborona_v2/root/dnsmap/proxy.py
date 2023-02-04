@@ -118,7 +118,7 @@ class ProxyResolver(BaseResolver):
                         return reply
 
                     record.rdata = A(fake_addr)
-                    record.ttl = 300
+                    #record.ttl = 120
                     #print(a.rdata)
                 return reply
 
