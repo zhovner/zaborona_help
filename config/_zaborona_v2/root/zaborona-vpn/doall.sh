@@ -9,7 +9,8 @@ chmod +x *.sh
 chmod +x ./config/*.sh
 chmod +x ./scripts/*.py
 
-./upgrade.sh
+# Update manually. This option is under development.
+#./upgrade.sh
 ./iptables-custom.sh
 ./update.sh
 ./parse.sh

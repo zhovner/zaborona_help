@@ -1,4 +1,4 @@
-Zaborona.help VPN Container
+Zaborona.help VPN Script
 ========================
 
 #### Создайте свой личный VPN Заборона.хелп за 10 минут!

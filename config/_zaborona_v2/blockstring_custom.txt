@@ -1,8 +1,0 @@
-BitTorrent
-BitTorrent protocol
-peer_id=
-.torrent
-announce.php?passkey=
-torrent
-announce
-info_hash
