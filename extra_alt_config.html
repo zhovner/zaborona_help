@@ -1,0 +1,145 @@
+                                  <ul class="zz-config">
+                                    <li>
+                                      <span>Альтернативная конфигурация:</span><br>
+                                      <span class="zz-value">ovpn1.srv00.com</span>
+                                      <span class="zz-note">Доменные имена направлены на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
+                                    </li>
+                                    <li>
+                                      Порт и протокол &mdash;<br>
+                                      <span class="zz-value">TCP 150</span> (мин. шифрование: auth: sha1; cipher: AES-128-CBC)<br>
+                                    </li>
+                                    <li>
+                                      Протокол инкапсулирования/device type &mdash;
+                                      <span class="zz-value">L3 (tun)</span>
+                                    </li>
+                                    <li>
+                                      Алгоритм шифрования &mdash;
+                                      <span class="zz-value">AES-128-CBC/AES-128-GCM</span> 
+                                    </li>
+                                    <li>
+                                      Корневой сертификат &mdash;
+                                      <a href="/openvpn-client-config/alt-config/ovpn-srv1_ua_ca.crt">ovpn-srv1_ua_ca.crt</a>
+                                    </li>
+                                    <li>
+                                      Клиентский сертификат &mdash;
+                                      <a href="/openvpn-client-config/alt-config/ovpn-srv1_ua.crt">ovpn-srv1_ua.crt</a>
+                                    </li>
+                                    <li>
+                                      Приватный ключ &mdash;
+                                      <a href="/openvpn-client-config/alt-config/ovpn-srv1_ua.key" download="ovpn-srv1_ua.key">ovpn-srv1_ua.key</a>
+                                    </li>
+                                    <li>
+                                      Первичный DNS &mdash;
+                                      <span class="zz-value">57.128.195.123</span>
+                                    </li>
+                                    <li>
+                                      Вторичный DNS &mdash;
+                                      <span class="zz-value">8.8.8.8</span>
+                                    </li>
+                                    <li>
+                                      Первичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.222.222</span> (альтернативный, нужно прописывать маршрутизацию через VPN вручную)
+                                    </li>
+                                    <li>
+                                      Вторичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.220.220</span> (альтернативный, нужно прописывать маршрутизацию через VPN вручную)
+                                    </li>
+                                  </ul>
+                                  <ul class="zz-config">
+                                    <li>
+                                      <span>Альтернативная конфигурация:</span><br>
+                                      <span class="zz-value">80.89.234.21</span>
+                                    </li>
+                                    <li>
+                                      Порт и протокол &mdash;<br>
+                                      <span class="zz-value">UDP 1194</span> (auth: SHA512; cipher: AES-256-CBC)
+                                    </li>
+<!--//                                    <li>
+                                      Протокол &mdash;
+                                      <span class="zz-value">TCP/UDP</span>
+                                      <span class="zz-note">Лучше использовать TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
+                                    </li>//-->
+                                    <li>
+                                      Протокол инкапсулирования/device type &mdash;
+                                      <span class="zz-value">L3 (tun)</span>
+                                    </li>
+                                    <li>
+                                      Алгоритм шифрования &mdash;
+                                      <span class="zz-value">AES-256-CBC</span> 
+                                    </li>
+                                    <li>
+                                      Корневой сертификат &mdash;
+                                      <a href="/openvpn-client-config/alt-config/zm_ua_ca.crt">zm_ua_ca.crt</a>
+                                    </li>
+                                    <li>
+                                      Клиентский сертификат &mdash;
+                                      <a href="/openvpn-client-config/alt-config/zm_ua.crt">zm_ua.crt</a>
+                                    </li>
+                                    <li>
+                                      Приватный ключ &mdash;
+                                      <a href="/openvpn-client-config/alt-config/zm_ua.key" download="zm_ua.key">zm_ua.key</a>
+                                    </li>
+                                    <li>
+                                      Первичный DNS &mdash;
+                                      <span class="zz-value">8.8.8.8</span>
+                                    </li>
+                                    <li>
+                                      Вторичный DNS &mdash;
+                                      <span class="zz-value">1.1.1.1</span>
+                                    </li>
+                                    <li>
+                                      Первичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.222.222</span> (альтернативный, нужно прописывать маршрутизацию через VPN вручную)
+                                    </li>
+                                    <li>
+                                      Вторичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.220.220</span> (альтернативный, нужно прописывать маршрутизацию через VPN вручную)
+                                    </li>
+                                  </ul>
+                                  <ul class="zz-config">
+                                    <li>
+                                      <span><font color="red">Конфигурация для оккупированных территорий</font>:</span><br>
+                                      <span class="zz-value">ovpn2.srv00.com</span>
+                                      <span class="zz-note">Доменные имена направлены на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
+                                    </li>
+                                    <li>
+                                      Порт и протокол &mdash;<br>
+                                      <span class="zz-value">TCP 151</span> (auth: sha1; cipher: AES-128-CBC)<br>
+                                    </li>
+                                    <li>
+                                      Протокол инкапсулирования/device type &mdash;
+                                      <span class="zz-value">L3 (tun)</span>
+                                    </li>
+                                    <li>
+                                      Алгоритм шифрования &mdash;
+                                      <span class="zz-value">AES-128-CBC/AES-128-GCM</span> 
+                                    </li>
+                                    <li>
+                                      Корневой сертификат &mdash;
+                                      <a href="/openvpn-client-config/alt-config/ovpn-srv2_otr_ca.crt">ovpn-srv2_otr_ca.crt</a>
+                                    </li>
+                                    <li>
+                                      Клиентский сертификат &mdash;
+                                      <a href="/openvpn-client-config/alt-config/ovpn-srv2_otr.crt">ovpn-srv2_otr.crt</a>
+                                    </li>
+                                    <li>
+                                      Приватный ключ &mdash;
+                                      <a href="/openvpn-client-config/alt-config/zaborona-help.key" download="ovpn-srv2_otr.key">ovpn-srv2_otr.key</a>
+                                    </li>
+                                    <li>
+                                      Первичный DNS &mdash;
+                                      <span class="zz-value">57.128.195.123</span>
+                                    </li>
+                                    <li>
+                                      Вторичный DNS &mdash;
+                                      <span class="zz-value">8.8.8.8</span>
+                                    </li>
+                                    <li>
+                                      Первичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.222.222</span> (альтернативный, нужно прописывать маршрутизацию через VPN вручную)
+                                    </li>
+                                    <li>
+                                      Вторичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.220.220</span> (альтернативный, нужно прописывать маршрутизацию через VPN вручную)
+                                    </li>
+                                  </ul>
