@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостійне налаштування Zaborona VPN</title>
+    <meta property="og:url" content="https://zaborona.help">
+    <meta property="og:title" content="Самостійне налаштування Zaborona VPN">
+    <meta property="og:description" content="Налаштування клієнта OpenVPN для роутерів OpenWRT, AsusWRT Merlin, Padavan, Tomato, Mikrotik, Ubuntu Linux, FreeBSD та інших">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/img/cog.png">
+    <meta property="fb:app_id" content="">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Assets -->
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/tilda-grid-3.0.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/tilda-blocks-2.11.css?v=2" type="text/css" media="all">
+    <link rel="stylesheet" href="/css/tilda-zoom-1.0.min.css" type="text/css" media="all">
+</head>
+
+<body class="t-body" style="margin: 0px;" data-gr-c-s-loaded="true">
+    <!--allrecords-->
+    <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/zhovner/zaborona_help/">Edit on GitHub</a>
+        </div>
+    </div>
+    <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="16871" data-tilda-page-id="914548" data-tilda-page-alias="apple" data-tilda-formskey="bb001967799ba6bb8ec72c53c21ec135">
+        <div id="rec20207450" class="r" style="padding-top:0px;padding-bottom:0px;background-color:#ededed; " data-record-type="106" data-bg-color="#ededed" data-animationappear="off">
+            <!-- T004 -->
+            <div class="t004">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_12">
+                        <div field="text" class="t-text t-text_md "><a href="/ua/"  rel="">Zaborona VPN</a> | <a href="/ua/windows.html"  rel="">Windows</a> | <a href="/ua/apple.html">Apple</a> | <a href="/ua/android.html"  rel="">Android</a> | Самостійне налаштування | <a href="/ua/faq.html"  rel="">Допомога</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--# include file="_includes/header.html" -->
+        <div id="rec20206444" class="r r_showed r_anim" style="padding-top:60px;padding-bottom:60px; " data-record-type="255">
+            <div class="t004">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_8 t-prefix_2">
+                        <div field="text" class="t-text t-text_lg ">
+                            <a href="/ua/extra.html"  rel="">OpenVPN</a> &nbsp; Socks5
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- T225 -->
+            <div class="t225">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_8 t-prefix_2">
+                        <div class="t225__title t-title t-title_md" field="title" >Самостійне налаштування<br> Zaborona VPN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec20206444" class="r r_showed r_anim" style="padding-top:0;padding-bottom:0; " data-record-type="255">
+            <!-- T225 -->
+            <div class="t225">
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2">
+                        <div class="t512__textwrapper t-cell t-valign_top" style="">
+                            <div field="text" class="t-text t-text_md ">
+                                <br />
+                                <br /> Налаштування серверу та код сайту доступний на <a href="https://github.com/zhovner/zaborona_help/tree/master/config">GitHub</a>.
+                                <br />
+                                <br /> Якщо ви знайшли помилку на сайті або хочете щось доповнити, це можна зробити відправивши <a href="https://git-scm.com/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B">pull request</a>
+                                <div field="text" class="t-text t-text_md ">
+                                    <br /><span style="font-size: 32px;">SOCKS 5 проксі</span>
+                                    <br />
+                                    <br />
+                                   <div>
+                                      <div>
+                                          <style type="text/css">
+                                            .zz-config {
+                                              margin-top: 10px;
+                                            }
+                                            .zz-config li {
+                                              /*margin-bottom: 5px*/
+                                              margin-left: 10px;
+                                            }
+                                            .zz-value {
+                                              font-family: monospace;
+                                              font-weight: bold;
+                                            }
+                                            .zz-note {
+                                              display: block;
+                                              font-size: 14px;
+                                            }
+                                          </style>
+
+                                          <ul class="zz-config">
+                                            <li>
+                                              <span>Сервер, Європа:</span><br>
+                                              <span class="zz-value">socks.zaboronahelp.pp.ua</span>
+                                            </li>
+                                            <li>
+                                              Порт &mdash;
+                                              <span class="zz-value">1488</span>
+                                            </li>
+                                            <li>
+                                              Протокол &mdash;
+                                              <span class="zz-value">SOCKS 5</span>
+                                            </li>
+                                          </ul>
+                                            <span class="zz-note">Проксі пропускає запити лише до IP-адрес перелічених у цьому <a href="https://zaborona.help/ips.txt">списку</a>. Тому його не вдасться використовувати для доступу до будь-яких ресурсів в Інтернеті.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--# include file="_includes/footer.html" -->
+    </div>
+</body>
+
+</html>
