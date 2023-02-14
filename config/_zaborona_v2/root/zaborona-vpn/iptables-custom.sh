@@ -9,10 +9,10 @@ VPN_ADDR_6=""
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
 # Сбрасываем настройки брандмауэра
-#iptables -F
-#iptables -X
-#iptables -t nat -F
-#iptables -t nat -X
+iptables -F
+iptables -X
+iptables -t nat -F
+iptables -t nat -X
 
 # Разрешаем инициированные нами подключения извне
 iptables -t filter -A INPUT -i $WAN_4 -m state --state ESTABLISHED,RELATED -j ACCEPT
