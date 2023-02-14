@@ -275,8 +275,8 @@ iptables -t mangle -A POSTROUTING -p udp -m string --algo bm --string "tracker" 
 #iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 1337 -j DROP
 #iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 6969 -j DROP
 for VPN_NAME_INTERFACE1 in $VPN_NAME_INTERFACE; do
-#	iptables -t mangle -A POSTROUTING -s 192.168.0.0/16 -o $WAN_4 -d 0.0.0.0/0 -p tcp -m mport --dports 22,25,465,587,1337,6969 -j LOG log-prefix ' IP address tried to connect to blocked ports!';
-	iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE1 -o $WAN_4 -p tcp -m tcp -m mport --dports 22,25,465,587,1337,6969 -j REJECT
+#	iptables -t mangle -A POSTROUTING -s 192.168.0.0/16 -o $WAN_4 -d 0.0.0.0/0 -p tcp -m multiport --dports 22,25,465,587,1337,6969 -j LOG log-prefix ' IP address tried to connect to blocked ports!';
+	iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE1 -o $WAN_4 -p tcp -m tcp -m multiport --dports 22,25,465,587,1337,6969 -j REJECT
 done
 # DROP CONN PORTS #
 
