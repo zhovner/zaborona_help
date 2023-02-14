@@ -76,12 +76,12 @@ VPN_ADDR_4_DNS18="192.168.15.1/24"
 iptables -t filter -N ZABORONA_V4
 
 for VPN_NAME_INTERFACE1 in $VPN_NAME_INTERFACE; do
-	##iptables -t filter -A FORWARD -i $VPN_NAME_INTERFACE -o $WAN_4 -m state --state ESTABLISHED,RELATED,DNAT -j ACCEPT
-	iptables -t filter -A FORWARD -i $WAN_4 -o $VPN_NAME_INTERFACE1 -m state --state ESTABLISHED,RELATED,DNAT -j ACCEPT
+#	iptables -t filter -A FORWARD -i $VPN_NAME_INTERFACE1 -o $WAN_4 -m state --state ESTABLISHED,RELATED,DNAT -j ACCEPT
+	iptables -t filter -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED,DNAT -j ACCEPT
 	# ACCEPT marked "invalid" packet if it's for zapret set
 	iptables -t filter -A FORWARD -i $VPN_NAME_INTERFACE1 --match connmark --mark 1 -j ZABORONA_V4
 	iptables -t filter -A FORWARD -i $VPN_NAME_INTERFACE1 --match connmark --mark 1 -j REJECT
-	iptables -t filter -A FORWARD -i $WAN_4 -o $VPN_NAME_INTERFACE1 -j ACCEPT
+	iptables -t filter -A FORWARD -i $VPN_NAME_INTERFACE1 -o $WAN_4 -j ACCEPT
 	iptables -t filter -A FORWARD -o $VPN_NAME_INTERFACE1 -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
 done
 
@@ -90,6 +90,7 @@ iptables -t filter -A FORWARD -p esp -j ACCEPT
 iptables -t filter -A FORWARD -j REJECT
 
 iptables -t nat -N dnsmap
+#iptables -t nat -A PREROUTING -m state --state DNAT -j ACCEPT
 ##iptables -t nat -A PREROUTING -s $VPNUDP_RANGE !-d $VPNUDP_DNS -p udp --dport 53 -m u32 --u32 '0x1C & 0xFFCF = 0x0100 && 0x1E & 0xFFFF = 0x0001' -j REDIRECT --to-ports 53
 ##iptables -t nat -A PREROUTING -s $VPNTCP_RANGE !-d $VPNTCP_DNS -p tcp --dport 53 -m u32 --u32 '0x1C & 0xFFCF = 0x0100 && 0x1E & 0xFFFF = 0x0001' -j REDIRECT --to-ports 53
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 ! -d $VPN_ADDR_4_DNS01 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -276,7 +277,7 @@ iptables -t mangle -A POSTROUTING -p udp -m string --algo bm --string "tracker" 
 #iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 6969 -j DROP
 for VPN_NAME_INTERFACE1 in $VPN_NAME_INTERFACE; do
 #	iptables -t mangle -A POSTROUTING -s 192.168.0.0/16 -o $WAN_4 -d 0.0.0.0/0 -p tcp -m multiport --dports 22,25,465,587,1337,6969 -j LOG log-prefix ' IP address tried to connect to blocked ports!';
-	iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE1 -o $WAN_4 -p tcp -m tcp -m multiport --dports 22,25,465,587,1337,6969 -j REJECT
+	iptables -t filter -A FORWARD -i $VPN_NAME_INTERFACE1 -o $WAN_4 -p tcp -m tcp -m multiport --dports 22,25,465,587,1337,6969 -j REJECT
 done
 # DROP CONN PORTS #
 
