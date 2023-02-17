@@ -6,8 +6,12 @@
 
 # Installing software for the correct work of the resolver ( Устанавливаем софт для корректрой работы резолвера )
 echo "Installing software for the correct work of the resolver ( Устанавливаем софт для корректрой работы резолвера )"
-apt install -y iptables curl pip python3 dnsmasq htop iftop net-tools git openvpn ferm idn zip unzip python3-pip
+apt install -y iptables curl pip python3 dnsmasq htop iftop net-tools git openvpn idn zip unzip python3-pip
 pip install dnslib
+# apt install -y ferm
+# apt install -y wireguard
+# apt install -y pptpd
+# apt install -y ikev2
 
 ### INSTALL FILES ###
 LISTLINK_ALLCONFIG_ARCHIVE="https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2"
