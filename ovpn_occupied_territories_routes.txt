@@ -1,47 +1,405 @@
-# DNS
-push "route 145.239.93.168"
+#-------------------------------------------------------------------------------
+
+push "route 5.196.28.76"
 push "persist-tun"
 
 #-------------------------------------------------------------------------------
 
-push "route 104.21.6.148" # librusec.pro
-push "route 18.165.122.88" # explore.api.viber.com
-push "route 35.186.224.25" # login5.spotify.com
-push "route 151.115.47.200" # meduza.io
-push "route 104.88.2.246" # golosameriki.com
-push "route 139.45.207.50" # svoboda.org
-push "route 82.221.104.145" # rezka.ag
-push "route 179.43.190.254" # gidonline.io
-push "route 196.245.156.22" # rutor.info
-push "route 13.107.42.14" # linkedin.com
-push "route 212.1.76.113" # portal.pfu.gov.ua
-push "route 178.20.154.239" # iz.com.ua
-push "route 188.114.97.1" # lostfilm.tv | hd-rezka.fun | rutracker.org | zona.media | kinogo.biz | liveuamap.com | ria-m.tv
+# rozetka.ua
+push "route 45.128.216.200"
 
-push "route 151.101.0.81" # bbc.com
-push "route 18.64.103.52" # gn-web-assets.api.bbc.com
-push "route 184.51.132.158" # static.files.bbci.co.uk | nav.files.bbci.co.uk | static.bbci.co.uk
+# ukrinform.ua
+push "route 35.186.242.75"
 
-push "route 82.221.104.146" # hdrezka.ag
-push "route 179.43.163.206" # static.hdrezka.ac
+# pravda.com.ua
+push "route 107.178.251.122"
 
-push "route 151.101.244.158" # video.twimg.com
-push "route 192.229.233.50" # pbs.twimg.com
+# filmix.ac
+push "route 212.162.153.94"
 
-push "route 52.223.9.160" # mob2.privat24.ua
-push "route 76.223.63.39" # next.privat24.ua
+# allo.ua
+push "route 195.13.253.228"
 
-push "route 108.156.22.20" # ws.chat.olx.ua
-push "route 108.156.60.10" # jobs-api.olx.ua
-push "route 108.156.22.40" # cdn.slots.baxter.olx.org
-push "route 18.165.122.106" # olx.ua
+# t.me
+push "route 149.154.167.99"
 
-push "route 64.233.164.93" # youtube.com
-push "route 216.58.209.174" # play.google.com
-push "route 173.194.0.0 255.255.0.0" # i1.ytimg.com | yt3.ggpht.com | google.com | google.com.ua | googlevideo.com
-push "route 74.125.0.0 255.255.0.0" # i.ytimg.com | yt4.ggpht.com | googlevideo.com
+# img.pravda.com
+push "route 34.111.239.200"
+
+# prom.ua
+push "route 193.34.169.6"
+
+# rgfootball.net
+push "route 5.45.76.150"
+
+# fast-torrent.ru
+push "route 5.61.48.83"
+
+# rarbg.to
+push "route 185.37.100.122"
+
+# api.lifecell.com.ua
+push "route 212.58.160.166"
+
+# login5.spotify.com
+push "route 35.186.224.25"
+
+# rezka.ag
+push "route 82.221.104.145"
+
+# gidonline.io
+push "route 179.43.190.254"
+
+# rutor.info
+push "route 196.245.156.22"
+
+# pornhub.com
+push "route 66.254.114.41"
+
+# linkedin.com
+push "route 13.107.42.14"
+
+# portal.pfu.gov.ua
+push "route 212.1.76.113"
+
+# iz.com.ua
+push "route 178.20.154.239"
+
+# hdrezka.ag
+push "route 82.221.104.146"
+
+# static.hdrezka.ac
+push "route 179.43.163.206"
+
+# epravda.com.ua
+push "route 130.211.41.16"
+
+# ukrinform.ru
+push "route 130.211.35.140"
+
+# hotline.ua
+push "route 77.222.150.22"
+
+# pravda.com.ua
+push "route 107.178.251.122"
+
+# kharkivoda.gov.ua
+push "route 162.55.244.53"
+
+# eurointegration.com.ua
+push "route 130.211.29.18"
+
+# kyivstar.ua
+push "route 94.153.166.201"
+
+# shop.kyivstar.ua
+push "route 94.153.165.20"
+
+# cdn.kyivstar.ua
+push "route 94.153.204.0 255.255.255.0"
+
+# diia.gov.ua
+push "route 195.189.240.0 255.255.255.0"
+push "route 91.233.100.0 255.255.255.0"
 
 #-------------------------------------------------------------------------------
+
+# favoritua.com
+push "route 195.137.167.4"
+
+# auto.ria.com
+push "route 213.95.148.55"
+
+# et.megogo.net
+push "route 52.57.206.10"
+
+# megogo.net
+push "route 91.214.126.236"
+
+# radiosvoboda.org
+push "route 87.245.212.9"
+
+# pandora.com
+push "route 208.85.41.59"
+
+# ww1.soundpark.best
+push "route 35.186.238.101"
+
+# soundpark.best
+push "route 37.48.65.144"
+
+# thepiratebay.org
+push "route 162.159.136.6"
+
+# rss.unian.net
+push "route 195.137.240.83"
+
+# tv.kyivstar.ua
+push "route 13.227.219.20"
+
+# meduza.io
+push "route 151.115.47.200"
+
+# svoboda.org
+push "route 139.45.207.50"
+
+# tsn.ua
+push "route 195.137.240.105"
+
+# dw.com
+push "route 184.51.235.11"
+
+# kp.ua
+push "route 18.165.122.71"
+
+# president.gov.ua
+push "route 2.22.89.181"
+
+#-------------------------------------------------------------------------------
+
+# teleportal.ua
+push "route 104.26.3.234"
+
+# rozetka.com.ua
+push "route 104.18.18.199"
+
+# rbc.ua
+push "route 104.26.3.47"
+
+# censor.net
+push "route 104.22.73.106"
+
+# obozrevatel.com
+push "route 104.27.203.89"
+
+# unian.net
+push "route 104.18.24.128"
+
+# naurok.com.ua
+push "route 104.26.0.20"
+
+# unian.ua
+push "route 104.18.30.169"
+
+# parimatch.com
+push "route 104.18.96.26"
+
+# patreon.com
+push "route 104.16.7.49"
+
+# limetorrents.info
+push "route 104.31.16.4"
+
+# 1337x.to
+push "route 104.31.16.11"
+
+# golosameriki.com
+push "route 104.88.2.246"
+
+# ukr.net
+push "route 104.18.9.128"
+
+# biz.liga.net
+push "route 104.18.7.71"
+
+# epicentrk.ua
+push "route 104.20.125.68"
+
+# zaxid.net
+push "route 104.18.13.125"
+
+# hromadske.radio
+push "route 104.22.75.168"
+
+# segodnya.ua
+push "route 104.19.132.96"
+
+# librusec.pro | zn.ua | unn.com.ua | focus.ua | itc.ua
+push "route 104.21.6.148"
+
+# lostfilm.tv | ria-m.tv | liveuamap.com | kinogo.biz | zona.media | rutracker.org | hd-rezka.fun | gidonline.eu | korrespondent.net | gordonua.com | rbc.ua | unian.net | nv.ua | liga.net | thepage.ua | minfin.com.ua | finance.ua | kurs.com.ua | meta.ua | slovoidilo.ua | hromadske.ua | vesti.ua | visitukraine.today | lb.ua | nnmclub.to | kinozal.tv | deepstatemap.live
+push "route 188.114.97.1"
+
+#-------------------------------------------------------------------------------
+
+# bbc.com
+push "route 151.101.0.81"
+
+# gn-web-assets.api.bbc.com
+push "route 18.64.103.52"
+
+# static.files.bbci.co.uk | nav.files.bbci.co.uk | static.bbci.co.uk
+push "route 184.51.132.158"
+
+#-------------------------------------------------------------------------------
+
+# ws.chat.olx.ua
+push "route 108.156.22.20"
+
+# jobs-api.olx.ua
+push "route 108.156.60.10"
+
+# cdn.slots.baxter.olx.org
+push "route 108.156.22.40"
+
+# olx.ua
+push "route 18.165.122.106"
+
+#-------------------------------------------------------------------------------
+
+# aloha46.viber.com
+push "route 52.0.252.0 255.255.255.0"
+push "route 44.192.201.128 255.255.255.128"
+push "route 44.192.202.0 255.255.255.128"
+
+# market.viber.com
+push "route 184.85.152.225"
+
+# content.cdn.viber.com
+push "route 108.156.22.112"
+
+# update.viber.com
+push "route 52.72.179.134"
+push "route 52.203.21.219"
+
+# download.viber.com
+push "route 108.157.214.7"
+
+# media.cdn.viber.com
+push "route 108.156.22.53"
+
+# pg.cdn.viber.com
+push "route 13.32.123.101"
+
+# www.cdn.viber.com
+push "route 104.102.87.16"
+
+# explore.api.viber.com
+push "route 18.165.122.88"
+
+# dl-media.viber.com
+push "route 18.165.122.93"
+
+# secure.viber.com
+push "route 54.86.89.65"
+push "route 52.203.21.219"
+
+# abtest.api.viber.com
+push "route 3.214.238.32"
+
+# lp.viber.com
+push "route 107.178.254.45"
+
+# custom-sticker-pack.cdn.viber.com
+push "route 13.33.243.70"
+
+# market.api.viber.com
+push "route 52.44.54.154"
+push "route 52.206.51.16"
+push "route 52.86.166.41"
+
+# share.cdn.viber.com
+push "route 184.85.152.225"
+
+# account.viber.com
+push "route 3.219.203.66"
+
+# clients-content.viber.com
+push "route 13.32.123.80"
+
+# support.viber.com
+push "route 13.33.243.48"
+
+# viber.com
+push "route 23.2.211.237"
+
+# s-bid.rmp.rakuten.com
+push "route 34.95.80.122"
+
+# s-cdn.rmp.rakuten.com
+push "route 34.95.79.188"
+
+# s-imp.rmp.rakuten.com
+push "route 34.95.78.74"
+
+# images.fr.shopping.rakuten.com
+push "route 152.199.23.20"
+
+# fr.shopping.rakuten.com
+push "route 13.32.123.39"
+
+#-------------------------------------------------------------------------------
+
+# mob2.privat24.ua
+push "route 52.223.9.160"
+
+# next.privat24.ua
+push "route 76.223.63.39"
+
+# cdn.privat24.ua
+push "route 35.71.152.10"
+
+# login-widget.privat24.ua
+push "route 99.83.190.49"
+
+# socauth.privatbank.ua
+push "route 99.83.155.51"
+
+# privatbank.ua
+push "route 99.83.167.35"
+
+#-------------------------------------------------------------------------------
+
+# abs.twimg.com
+push "route 152.199.21.141"
+
+# video.twimg.com
+push "route 151.101.244.158"
+
+# pbs.twimg.com
+push "route 192.229.233.50"
+
+#-------------------------------------------------------------------------------
+
+# *.googlevideo.com
+push "route 172.217.0.0 255.255.0.0"
+
+# *.googlevideo.com | redirector.googlevideo.com | i1.ytimg.com | yt3.ggpht.com | google.com | google.com.ua | googleadservices.com
+push "route 173.194.0.0 255.255.0.0"
+
+# youtubei.googleapis.com | s.youtube.com | i.ytimg.com | yt4.ggpht.com | youtube.com | youtu.be
+push "route 74.125.0.0 255.255.0.0"
+
+#-------------------------------------------------------------------------------
+
+# telegram.org
+push "route 91.108.4.0 255.255.252.0"
+push "route 91.108.8.0 255.255.252.0"
+push "route 91.108.56.0 255.255.252.0"
+push "route 95.161.64.0 255.255.240.0"
+push "route 149.154.160.0 255.255.252.0"
+push "route 149.154.164.0 255.255.252.0"
+
+# vcdn.biz
+push "route 193.142.213.0 255.255.255.0"
+push "route 193.187.76.0 255.255.255.0"
+push "route 193.187.77.0 255.255.255.0"
+push "route 193.187.78.0 255.255.255.0"
+push "route 193.187.79.0 255.255.255.0"
+push "route 195.182.7.0 255.255.255.0"
+
+# hdrzk.org
+push "route 45.10.217.101"
+push "route 5.45.70.40"
+push "route 179.43.163.206"
+
+# stream.voidboost.cc
+push "route 176.58.38.0 255.255.254.0"
+push "route 176.58.40.0 255.255.248.0"
+push "route 176.58.48.0 255.255.248.0"
+push "route 176.58.56.0 255.255.254.0"
+push "route 185.190.188.0 255.255.255.0"
+push "route 185.190.190.0 255.255.255.0"
 
 # facebook.com | instagram.com
 push "route 66.220.144.0 255.255.240.0"
