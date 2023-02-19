@@ -67,6 +67,11 @@
                                 <br />
                                 <br /> Если вы нашли ошибку на сайте или хотите что-то дополнить, это можно сделать отправив <a href="https://git-scm.com/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B">pull request</a>
                                 <br />
+								<br />
+								<div>
+                                      <span>Внимание! Для корректной работы "Заборона VPN", у Вас должны быть прописаны наши ДНС сервера. Во время активного VPN соединения, все DNS-запросы уходят на наш VPN-сервер и обрабатываются на нем, не уходя дальше. Если VPN-соединение разрывается, то у Вас интернет продолжит работать, используя публичные сервера. После подключения к "Заборона VPN", у Вас автоматически установится ДНС-сервер нашей внутренней сети. Обычно его достаточно и дополнительных манипуляций не требуется для корректной работы обхода блокировок на ОС Windows, macOS и Android. Для роутеров и ОС Линукс, ДНС-сервера, указанные ниже, <u>необходимо</u> прописать вручную (в настройках DHCP-сервера либо в настройках WAN-подключения), так как эти системы не поддерживают автоматическое получение ДНС-серверов из конфигурационного файла. Прописывание наших ДНС-серверов необходимо для корректной работы обхода блокировок сайтов. При использовании любых других ДНС-серверов, не указанных здесь - обход блокировок будет работать не корректно либо не будет работать вообще.</span>
+                                </div>
+								<br />
                                 <br /><span style="font-size: 32px;">Ручная настройка OpenVPN</span>
                                 <br />
                                 <br /> Сервер работает на OpenVPN 2.5.8
@@ -144,21 +149,51 @@
                                       <a href="https://zaborona.help/zaborona-help.key" download="zaborona-help.key">zaborona-help.key</a>
                                     </li>
                                     <li>
+                                      <span>Основные ДНС-сервера:</span>
+                                    </li>
+                                    <li>
+                                      Первичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.222.222</span>
+                                    </li>
+                                    <li>
+                                      Вторичный DNS (OpenDNS) &mdash;
+                                      <span class="zz-value">208.67.220.220</span>
+                                    </li>
+                                    <li>
+                                      <span>Дополнительные:</span>
+                                    </li>
+                                    <li>
+                                      Первичный DNS (Comodo Secure DNS) &mdash;
+                                      <span class="zz-value">8.26.56.26</span>
+                                    </li>
+                                    <li>
+                                      Вторичный DNS (Comodo Secure DNS) &mdash;
+                                      <span class="zz-value">8.20.247.20</span>
+                                    </li>
+                                    <li>
+                                      Первичный DNS (DNS.Watch) &mdash;
+                                      <span class="zz-value">84.200.69.80</span>
+                                    </li>
+                                    <li>
+                                      Вторичный DNS (DNS.Watch) &mdash;
+                                      <span class="zz-value">84.200.70.40</span>
+                                    </li>
+                                    <li>
+                                      Первичный DNS (Level3DNS) &mdash;
+                                      <span class="zz-value">4.2.2.1</span>
+                                    </li>
+                                    <li>
+                                      Вторичный DNS (Level3DNS) &mdash;
+                                      <span class="zz-value">4.2.2.2</span>
+                                    </li>
+<!--//                                    <li>
                                       Первичный DNS (Yandex.DNS) &mdash;
                                       <span class="zz-value">77.88.8.8</span>
                                     </li>
                                     <li>
                                       Вторичный DNS (Yandex.DNS) &mdash;
                                       <span class="zz-value">77.88.8.1</span>
-                                    </li>
-                                    <li>
-                                      Первичный DNS (OpenDNS) &mdash;
-                                      <span class="zz-value">208.67.222.222</span> (альтернативный, нужно прописывать маршрутизацию через VPN вручную)
-                                    </li>
-                                    <li>
-                                      Вторичный DNS (OpenDNS) &mdash;
-                                      <span class="zz-value">208.67.220.220</span> (альтернативный, нужно прописывать маршрутизацию через VPN вручную)
-                                    </li>
+                                    </li>//-->
                                   </ul>
 								<!--# include file="extra_alt_config.html" -->
                                 </div>
