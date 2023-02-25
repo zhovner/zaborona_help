@@ -18,6 +18,7 @@ statistic
 statistic/*
 ipsec
 ipsec/*
+en/*
 config/dnsmasq.d/zaborona.new
 img/zaborona_vpn_scheme-tmpl.pdn
 img/openvpn-client-config/srv7.zaborona-help_maxroutes_defGW.ovpn
