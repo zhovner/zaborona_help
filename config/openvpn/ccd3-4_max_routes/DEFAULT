@@ -47,6 +47,24 @@ push "route 208.67.220.220" # Route to OpenDNS
 #push "route-ipv6 2001:4860:4860::8844"
 ### Google DNS ###
 
+# Comodo Secure DNS
+#push "dhcp-option DNS 8.26.56.26" # First DNS Comodo Secure DNS
+#push "dhcp-option DNS 8.20.247.20" # Second DNS Comodo Secure DNS
+#push "route 8.26.56.26" # Route to Comodo Secure DNS
+#push "route 8.20.247.20" # Route to Comodo Secure DNS
+
+# DNS.Watch
+#push "dhcp-option DNS 84.200.69.80" # First DNS DNS.Watch
+#push "dhcp-option DNS 84.200.70.40" # Second DNS DNS.Watch
+#push "route 84.200.69.80" # Route to DNS.Watch
+#push "route 84.200.70.40" # Route to DNS.Watch
+
+# Level3DNS
+#push "dhcp-option DNS 4.2.2.1" # First DNS Level3DNS
+#push "dhcp-option DNS 4.2.2.2" # Second DNS Level3DNS
+#push "route 4.2.2.1" # Route to Level3DNS
+#push "route 4.2.2.2" # Route to Level3DNS
+
 #Persist TUN
 push "persist-tun"
 
@@ -308,8 +326,8 @@ push "route 52.28.234.188 255.255.255.255"
 #push "route 104.31.95.209 255.255.255.255"
 
 # Webmoney CloudFlare (paymaster.ua) + WebSite: Lutik.tv
-push "route 104.24.104.202 255.255.255.255"
-push "route 104.24.105.202 255.255.255.255"
+#push "route 104.24.104.202 255.255.255.255"
+#push "route 104.24.105.202 255.255.255.255"
 
 # Webmoney CloudFlare (paymaster.ua)
 #push "route 104.28.30.164 255.255.255.255"
@@ -378,9 +396,9 @@ push "route 194.84.120.160 255.255.255.224"
 push "route 193.232.151.138 255.255.255.255"
 
 # combot.org + enigma.ua (only 8 server) (cloudflare.com)
-push "route 104.26.2.111 255.255.255.255"
-push "route 104.26.3.111 255.255.255.255"
-push "route 172.67.70.154 255.255.255.255"
+#push "route 104.26.2.111 255.255.255.255"
+#push "route 104.26.3.111 255.255.255.255"
+#push "route 172.67.70.154 255.255.255.255"
 
 #push "route-ipv6 2606:4700:20::ac43:469a/128"
 #push "route-ipv6 2606:4700:20::681a:26f/128"
@@ -488,7 +506,7 @@ push "route 146.255.192.0 255.255.252.0" # MnogoByte colocation and dedicated
 #=== Simple Sites ===
 
 # 4pda.to (CloudFlare)
-push "route 172.67.6.182 255.255.255.255"
+#push "route 172.67.6.182 255.255.255.255"
 ##push "route 104.22.34.226 255.255.255.255"
 ##push "route 104.22.35.226 255.255.255.255"
 ## s.4pda.to - SELECTEL
@@ -501,11 +519,11 @@ push "route 172.67.6.182 255.255.255.255"
 #push "route 178.162.214.227 255.255.255.255"
 ## cs6-1.4pda.to - OVH France
 #push "route 147.135.254.35 255.255.255.255"
-push "route 104.22.35.226 255.255.255.255" # CloudFlare 4pda.to
-push "route 178.162.214.215 255.255.255.255" # Germany cs5-1.4pda.to
-push "route 147.135.254.35 255.255.255.255" # OVH cs6-1.4pda.to
-push "route 178.162.214.219 255.255.255.255" # Germany cs5-2.4pda.to
-push "route 178.162.214.227 255.255.255.255" # Germany cs5-3.4pda.to
+#push "route 104.22.35.226 255.255.255.255" # CloudFlare 4pda.to
+#push "route 178.162.214.215 255.255.255.255" # Germany cs5-1.4pda.to
+#push "route 147.135.254.35 255.255.255.255" # OVH cs6-1.4pda.to
+#push "route 178.162.214.219 255.255.255.255" # Germany cs5-2.4pda.to
+#push "route 178.162.214.227 255.255.255.255" # Germany cs5-3.4pda.to
 #push "route 95.213.128.0 255.255.128.0" # AS49505 (OOO "Network of data-centers "Selectel") s.4pda.to
 
 #push "route-ipv6 2606:4700:10::6816:23e2/128"
@@ -600,9 +618,9 @@ push "route 178.34.152.0 255.255.248.0"
 push "route 188.246.232.0 255.255.252.0" # AS49505 (OOO "Network of data-centers "Selectel")
 #push "route 95.213.128.0 255.255.128.0" # SELECTEL Russia
 #push "route 188.246.232.0 255.255.252.0" # SELECTEL-MSK Russia
-push "route 172.67.214.66 255.255.255.255" # CLOUDFLARENET United States
-push "route 185.199.111.153 255.255.255.255" # FASTLY United States
-push "route 104.21.78.4 255.255.255.255" # CLOUDFLARENET unknown
+#push "route 172.67.214.66 255.255.255.255" # CLOUDFLARENET United States
+#push "route 185.199.111.153 255.255.255.255" # FASTLY United States
+#push "route 104.21.78.4 255.255.255.255" # CLOUDFLARENET unknown
 #push "route 172.67.214.66 255.255.255.255" # CloudFlare
 #push "route 95.213.128.0 255.255.128.0" # AS49505 (OOO "Network of data-centers "Selectel")
 #push "route 185.199.110.153 255.255.255.255" # GitHub
@@ -891,12 +909,12 @@ push "route 91.189.112.0 255.255.248.0" # JSC "RU-CENTER"
 #push "route 5.188.128.0 255.255.252.0" # OOO "Network of data-centers "Selectel"
 
 # zoneofgames.ru (cloudflare.com Russia)
-push "route 172.67.132.131 255.255.255.255"
-push "route 188.114.96.2 255.255.255.255"
-push "route 188.114.97.2 255.255.255.255"
-push "route 188.114.97.7 255.255.255.255"
+#push "route 172.67.132.131 255.255.255.255"
+#push "route 188.114.96.2 255.255.255.255"
+#push "route 188.114.97.2 255.255.255.255"
+#push "route 188.114.97.7 255.255.255.255"
 # zoneofgames.ru (CLOUDFLARENET)
-push "route 104.21.4.215 255.255.255.255"
+#push "route 104.21.4.215 255.255.255.255"
 # krl1.files.zoneofgames.ru (MTW-AS)
 #push "route 185.41.185.0 255.255.255.0"
 # lt1.files.zoneofgames.ru (INTERNETO-VIZIJA)
@@ -1688,11 +1706,11 @@ push "route 185.175.44.0 255.255.252.0" # AS49505 (OOO "Network of data-centers 
 push "route 93.191.8.0 255.255.248.0" # AS28917 (LLC "TRC FIORD")
 
 # "Altura" ltd. (rsload.net)
-push "route 95.141.192.0 255.255.240.0"
+#push "route 95.141.192.0 255.255.240.0"
 
 # epg.it999.ru (epg.it999.ru)
-push "route 104.21.234.39 255.255.255.255" # Cloudflare, Inc.
-push "route 104.21.234.38 255.255.255.255" # Cloudflare, Inc.
+#push "route 104.21.234.39 255.255.255.255" # Cloudflare, Inc.
+#push "route 104.21.234.38 255.255.255.255" # Cloudflare, Inc.
 
 # RECONN LLC (pooshock.ru)
 push "route 5.45.80.0 255.255.252.0"
@@ -1855,9 +1873,9 @@ push "route 5.200.60.0 255.255.252.0" # Enterprise Cloud Ltd.
 
 # rolz.org - Блок на стороне сайта
 #push "route 104.21.6.129 255.255.255.255" #	A		CLOUDFLARENET
-push "route 172.67.134.222 255.255.255.255" #	A		CLOUDFLARENET
-push "route 95.217.118.218 255.255.255.255" #	A	static.218.118.217.95.clients.your-server.de	HETZNER-AS
-push "route 104.21.6.129 255.255.255.255" #	A		CLOUDFLARENET
+#push "route 172.67.134.222 255.255.255.255" #	A		CLOUDFLARENET
+#push "route 95.217.118.218 255.255.255.255" #	A	static.218.118.217.95.clients.your-server.de	HETZNER-AS
+#push "route 104.21.6.129 255.255.255.255" #	A		CLOUDFLARENET
 
 # local.adguard.org ?
 # push "route 176.103.133.77 255.255.255.255" # Your query for 176.103.133.77 did not return any results
@@ -1935,10 +1953,10 @@ push "route 178.173.0.0 255.255.248.0" # AS47759 - 178.173.0.0/17 - POIG Ltd. (R
 
 #4pda.ru, 4pda.to
 #push "route 95.213.128.0 255.255.128.0" # OOO "Network of data-centers "Selectel"
-push "route 104.21.68.2 255.255.255.255" # CLOUDFLARENET
+#push "route 104.21.68.2 255.255.255.255" # CLOUDFLARENET
 #push "route 104.22.35.226 255.255.255.255" # CLOUDFLARENET
 #push "route 147.135.254.35 255.255.255.255" # OVH, France
-push "route 172.67.183.145 255.255.255.255" # CLOUDFLARENET, United States
+#push "route 172.67.183.145 255.255.255.255" # CLOUDFLARENET, United States
 #push "route 178.162.214.215 255.255.255.255" # LEASEWEB-DE-FRA-10, Germany
 #push "route 178.162.214.219 255.255.255.255" # LEASEWEB-DE-FRA-10, Germany
 #push "route 178.162.214.227 255.255.255.255" # LEASEWEB-DE-FRA-10, Germany
@@ -2678,7 +2696,7 @@ push "route 185.32.248.0 255.255.252.0" # VKontakte Ltd
 # Qiwi JSC
 push "route 79.142.17.142 255.255.255.255"
 push "route 87.236.19.238 255.255.255.255"
-push "route 91.232.230.0 255.255.255.0"
+#push "route 91.232.230.0 255.255.255.0"
 push "route 91.239.233.254 255.255.255.255"
 push "route 185.146.1.121 255.255.255.255"
 
