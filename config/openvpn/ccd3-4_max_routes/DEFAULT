@@ -47,6 +47,24 @@ push "route 208.67.220.220" # Route to OpenDNS
 #push "route-ipv6 2001:4860:4860::8844"
 ### Google DNS ###
 
+# Comodo Secure DNS
+#push "dhcp-option DNS 8.26.56.26" # First DNS Comodo Secure DNS
+#push "dhcp-option DNS 8.20.247.20" # Second DNS Comodo Secure DNS
+#push "route 8.26.56.26" # Route to Comodo Secure DNS
+#push "route 8.20.247.20" # Route to Comodo Secure DNS
+
+# DNS.Watch
+#push "dhcp-option DNS 84.200.69.80" # First DNS DNS.Watch
+#push "dhcp-option DNS 84.200.70.40" # Second DNS DNS.Watch
+#push "route 84.200.69.80" # Route to DNS.Watch
+#push "route 84.200.70.40" # Route to DNS.Watch
+
+# Level3DNS
+#push "dhcp-option DNS 4.2.2.1" # First DNS Level3DNS
+#push "dhcp-option DNS 4.2.2.2" # Second DNS Level3DNS
+#push "route 4.2.2.1" # Route to Level3DNS
+#push "route 4.2.2.2" # Route to Level3DNS
+
 #Persist TUN
 push "persist-tun"
 
@@ -2678,7 +2696,7 @@ push "route 185.32.248.0 255.255.252.0" # VKontakte Ltd
 # Qiwi JSC
 push "route 79.142.17.142 255.255.255.255"
 push "route 87.236.19.238 255.255.255.255"
-push "route 91.232.230.0 255.255.255.0"
+#push "route 91.232.230.0 255.255.255.0"
 push "route 91.239.233.254 255.255.255.255"
 push "route 185.146.1.121 255.255.255.255"
 
