@@ -1,0 +1,15 @@
+[Unit]
+Description=dnscrypt-proxy listening socket
+Documentation=https://github.com/DNSCrypt/dnscrypt-proxy/wiki
+Before=nss-lookup.target
+Wants=nss-lookup.target
+Wants=dnscrypt-proxy-resolvconf.service
+
+[Socket]
+ListenStream=127.0.0.1:5252
+ListenDatagram=127.0.0.1:5252
+NoDelay=true
+DeferAcceptSec=1
+
+[Install]
+WantedBy=sockets.target
