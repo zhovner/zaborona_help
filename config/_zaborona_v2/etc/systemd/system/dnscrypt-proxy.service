@@ -1,0 +1,25 @@
+[Unit]
+Description=DNSCrypt client proxy
+Documentation=https://github.com/DNSCrypt/dnscrypt-proxy/wiki
+Requires=dnscrypt-proxy.socket
+After=network.target
+Before=nss-lookup.target
+Wants=nss-lookup.target
+
+[Install]
+Also=dnscrypt-proxy.socket
+WantedBy=multi-user.target
+
+[Service]
+NonBlocking=true
+ExecStart=/usr/sbin/dnscrypt-proxy -config /etc/dnscrypt-proxy/dnscrypt-proxy.toml
+ProtectHome=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+MemoryDenyWriteExecute=true
+
+User=_dnscrypt-proxy
+CacheDirectory=dnscrypt-proxy
+LogsDirectory=dnscrypt-proxy
+RuntimeDirectory=dnscrypt-proxy

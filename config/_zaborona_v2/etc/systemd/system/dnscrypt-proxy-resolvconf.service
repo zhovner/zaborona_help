@@ -1,0 +1,21 @@
+[Unit]
+Description=DNSCrypt proxy resolvconf support
+Documentation=https://github.com/DNSCrypt/dnscrypt-proxy/wiki
+After=dnscrypt-proxy.socket
+Requires=dnscrypt-proxy.socket
+ConditionFileIsExecutable=/sbin/resolvconf
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/sh -c 'systemctl show dnscrypt-proxy.socket \
+                    | grep "Listen.*Datagram" \
+                    | cut -d "=" -f 2 \
+                    | cut -d ":" -f 1 \
+                    | awk \'{ print "nameserver " $1 }\' \
+                    | /sbin/resolvconf -a lo.dnscrypt-proxy'
+ExecStop=/sbin/resolvconf -d lo.dnscrypt-proxy
+
+[Install]
+WantedBy=multi-user.target
+Also=dnscrypt-proxy.socket

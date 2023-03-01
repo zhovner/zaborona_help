@@ -1,3 +1,16 @@
+### Zone LTD ###
+server=/.lib/127.0.0.1#5252
+server=/.bbs/127.0.0.1#5252
+server=/.chan/127.0.0.1#5252
+server=/.cyb/127.0.0.1#5252
+server=/.geek/127.0.0.1#5252
+server=/.pirate/127.0.0.1#5252
+server=/.lib/127.0.0.1#5252
+server=/.emc/127.0.0.1#5252
+server=/.coin/127.0.0.1#5252
+server=/.bazar/127.0.0.1#5252
+server=/.bit/127.0.0.1#5252
+### Zone LTD ###
 server=/archive.org/127.0.0.4#5959
 server=/licdn.com/127.0.0.4#5959
 server=/new-team.org/127.0.0.4#5959
