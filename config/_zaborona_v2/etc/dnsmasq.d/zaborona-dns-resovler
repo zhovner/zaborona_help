@@ -1,15 +1,15 @@
 ### Zone LTD ###
-server=/.lib/127.0.0.1#5252
-server=/.bbs/127.0.0.1#5252
-server=/.chan/127.0.0.1#5252
-server=/.cyb/127.0.0.1#5252
-server=/.geek/127.0.0.1#5252
-server=/.pirate/127.0.0.1#5252
-server=/.lib/127.0.0.1#5252
-server=/.emc/127.0.0.1#5252
-server=/.coin/127.0.0.1#5252
-server=/.bazar/127.0.0.1#5252
-server=/.bit/127.0.0.1#5252
+server=/.lib/127.0.0.4#5656
+server=/.bbs/127.0.0.4#5656
+server=/.chan/127.0.0.4#5656
+server=/.cyb/127.0.0.4#5656
+server=/.geek/127.0.0.4#5656
+server=/.pirate/127.0.0.4#5656
+server=/.lib/127.0.0.4#5656
+server=/.emc/127.0.0.4#5656
+server=/.coin/127.0.0.4#5656
+server=/.bazar/127.0.0.4#5656
+server=/.bit/127.0.0.4#5656
 server=/.onion/127.0.0.4#5858
 server=/.i2p/127.0.0.4#5757
 ### Zone LTD ###
