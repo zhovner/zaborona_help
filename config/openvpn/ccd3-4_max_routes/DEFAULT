@@ -68,6 +68,12 @@ push "route 208.67.220.220" # Route to OpenDNS
 #Persist TUN
 push "persist-tun"
 
+# Def Config
+# push "dhcp-option DNS 192.168.XXX.1"
+push "route 10.224.0.0 255.254.0.0"
+#push "block-outside-dns"
+# Def Config
+
 # Routes
 
 # Yandex network
