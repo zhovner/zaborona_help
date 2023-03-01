@@ -1,35 +1,19 @@
 # Yandex.DNS - Base
-push "dhcp-option DNS 77.88.8.8" # First DNS Yandex
+#push "dhcp-option DNS 77.88.8.8" # First DNS Yandex
 push "route 77.88.8.8" # Route to Yandex DNS
 
-push "dhcp-option DNS 77.88.8.1" # Second DNS Yandex
+#push "dhcp-option DNS 77.88.8.1" # Second DNS Yandex
 push "route 77.88.8.1" # Route to Yandex DNS
 # Yandex.DNS - Base
 
-# Yandex.DNS - Safe
-#push "dhcp-option DNS 77.88.8.88" # First DNS Yandex
-#push "route 77.88.8.88" # Route to Yandex DNS
-
-#push "dhcp-option DNS 77.88.8.2" # Second DNS Yandex
-#push "route 77.88.8.2" # Route to Yandex DNS
-# Yandex.DNS - Safe
-
-# Yandex.DNS - Family
-#push "dhcp-option DNS 77.88.8.7" # First DNS Yandex
-#push "route 77.88.8.7" # Route to Yandex DNS
-
-#push "dhcp-option DNS 77.88.8.3" # Second DNS Yandex
-#push "route 77.88.8.3" # Route to Yandex DNS
-# Yandex.DNS - Family
-
 #push "dhcp-option DNS 74.82.42.42" # First DNS HE.net
-#push "route 74.82.42.42" # Route to HE.net DNS
+push "route 74.82.42.42" # Route to HE.net DNS
 
 ### OpenDNS ###
-#push "dhcp-option DNS 208.67.222.222" # First DNS OpenDNS
+push "dhcp-option DNS 208.67.222.222" # First DNS OpenDNS
 push "route 208.67.222.222" # Route to OpenDNS
 
-#push "dhcp-option DNS 208.67.220.220" # Second DNS OpenDNS
+push "dhcp-option DNS 208.67.220.220" # Second DNS OpenDNS
 push "route 208.67.220.220" # Route to OpenDNS
 
 ##push "dhcp-option DNS6 2620:119:35::35" # OpenDNS ipv6 dns
@@ -50,20 +34,20 @@ push "route 208.67.220.220" # Route to OpenDNS
 # Comodo Secure DNS
 #push "dhcp-option DNS 8.26.56.26" # First DNS Comodo Secure DNS
 #push "dhcp-option DNS 8.20.247.20" # Second DNS Comodo Secure DNS
-#push "route 8.26.56.26" # Route to Comodo Secure DNS
-#push "route 8.20.247.20" # Route to Comodo Secure DNS
+push "route 8.26.56.26" # Route to Comodo Secure DNS
+push "route 8.20.247.20" # Route to Comodo Secure DNS
 
 # DNS.Watch
 #push "dhcp-option DNS 84.200.69.80" # First DNS DNS.Watch
 #push "dhcp-option DNS 84.200.70.40" # Second DNS DNS.Watch
-#push "route 84.200.69.80" # Route to DNS.Watch
-#push "route 84.200.70.40" # Route to DNS.Watch
+push "route 84.200.69.80" # Route to DNS.Watch
+push "route 84.200.70.40" # Route to DNS.Watch
 
 # Level3DNS
 #push "dhcp-option DNS 4.2.2.1" # First DNS Level3DNS
 #push "dhcp-option DNS 4.2.2.2" # Second DNS Level3DNS
-#push "route 4.2.2.1" # Route to Level3DNS
-#push "route 4.2.2.2" # Route to Level3DNS
+push "route 4.2.2.1" # Route to Level3DNS
+push "route 4.2.2.2" # Route to Level3DNS
 
 #Persist TUN
 push "persist-tun"
@@ -511,31 +495,6 @@ push "route 146.255.192.0 255.255.252.0" # MnogoByte colocation and dedicated
 
 #=== Simple Sites ===
 
-# 4pda.to (CloudFlare)
-#push "route 172.67.6.182 255.255.255.255"
-##push "route 104.22.34.226 255.255.255.255"
-##push "route 104.22.35.226 255.255.255.255"
-## s.4pda.to - SELECTEL
-##push "route 95.213.133.93 255.255.255.255"
-## cs5-1.4pda.to - LEASEWEB-DE-FRA-10 Germany
-#push "route 178.162.214.215 255.255.255.255"
-## cs5-2.4pda.to - LEASEWEB-DE-FRA-10 Germany
-#push "route 178.162.214.219 255.255.255.255"
-## cs5-3.4pda.to - LEASEWEB-DE-FRA-10 Germany
-#push "route 178.162.214.227 255.255.255.255"
-## cs6-1.4pda.to - OVH France
-#push "route 147.135.254.35 255.255.255.255"
-#push "route 104.22.35.226 255.255.255.255" # CloudFlare 4pda.to
-#push "route 178.162.214.215 255.255.255.255" # Germany cs5-1.4pda.to
-#push "route 147.135.254.35 255.255.255.255" # OVH cs6-1.4pda.to
-#push "route 178.162.214.219 255.255.255.255" # Germany cs5-2.4pda.to
-#push "route 178.162.214.227 255.255.255.255" # Germany cs5-3.4pda.to
-#push "route 95.213.128.0 255.255.128.0" # AS49505 (OOO "Network of data-centers "Selectel") s.4pda.to
-
-#push "route-ipv6 2606:4700:10::6816:23e2/128"
-#push "route-ipv6 2606:4700:10::ac43:6b6/128"
-#push "route-ipv6 2606:4700:10::6816:22e2/128"
-
 # habr.com, habr.ru
 #push "route 178.248.237.68 255.255.255.255" # HLL LLC
 push "route 82.192.95.175 255.255.255.255"
@@ -730,10 +689,6 @@ push "route 109.68.190.0 255.255.254.0" # OOO Suntel
 # wiki.merionet.ru - RU-CENTER-HOSTING - 178.210.64.0 - 178.210.95.255 255.255.224.0 /19;
 #push "route 178.210.64.0 255.255.224.0"
 
-# releases.1c.ru, login.1c.ru, its.1c.ru, 1c.ru - 1C LLC - 185.12.155.0 - 185.12.155.255 255.255.255.0 /24; 185.12.152.0 - 185.12.152.255 255.255.255.0 /24;
-push "route 185.12.152.0 255.255.255.0" # 1C LLC, http://www.1c.ru
-push "route 185.12.155.0 255.255.255.0" # 1C LLC, http://www.1c.ru
-
 # d3-28.ru, rp-universe.ru (BEGET-NET-89) - 45.130.41.0 - 45.130.41.255 255.255.255.0 /24;
 #push "route 45.130.40.0 255.255.252.0" # Beget LLC
 
@@ -851,9 +806,6 @@ push "route 134.0.112.0 255.255.252.0" # "Domain names registrar REG.RU", Ltd
 
 # itc-life.ru (CJSC "Company "ER-Telecom", TM DOM.RU, Omsk ISP) - 92.255.176.0 - 92.255.183.255 255.255.248.0 /21; AS41843 - 92.255.182.0/24;
 push "route 92.255.176.0 255.255.240.0" # JSC "ER-Telecom Holding"
-
-# infostart.ru (1c.ru) (SELECTEL-NET) - 80.93.184.0 - 80.93.184.255 255.255.255.0 /24; AS49505 - 80.93.184.0/24;
-#push "route 80.93.176.0 255.255.240.0" # OOO "Network of data-centers "Selectel"
 
 # koroleffsov.ru, infergames.com (reg.ru) - 31.31.192.0 - 31.31.199.255 255.255.248.0 /21; 31.31.200.0 - 31.31.203.255 255.255.252.0 /22; AS197695 - 31.31.198.0/24; (Äîñòóï òîëüêî èç ÐÔ)
 #push "route 31.31.192.0 255.255.248.0"
@@ -1515,16 +1467,6 @@ push "route 149.5.241.0 255.255.255.0" # AS174 - 149.5.0.0/16 - PSINet, Inc. (Fr
 # kp.ru [95.181.181.82]
 push "route 95.181.181.0 255.255.255.0" # AS210756 (EdgeCenter LLC)
 
-# 3dnews.ru
-push "route 88.212.192.0 255.255.240.0" # AS39134 (United Network LLC) (exepto.ru) (88.212.201.0/24)
-#push "route 89.104.64.0 255.255.224.0" # AS39494 (JSC "RU-CENTER")
-push "route 91.210.107.0 255.255.255.0" # AS50867 (LLC "Server v arendy")
-#push "route 91.217.20.0 255.255.254.0" # AS48287 (JSC "RU-CENTER")
-push "route 141.105.70.0 255.255.255.0" # AS50867
-push "route 194.67.73.0 255.255.255.0" # AS39561 ("Domain names registrar REG.RU", Ltd)
-push "route 185.70.107.0 255.255.255.0" # AS50867 (LLC "Server v arendy") (3dnews.ru)
-push "route 195.166.176.0 255.255.248.0" # AS8568 - 195.166.176.0/21 - PJSC Rostelecom
-
 # calend.ru
 push "route 31.172.128.0 255.255.252.0" # AS50340 (OOO "Network of data-centers "Selectel")
 push "route 77.232.56.0 255.255.248.0" # AS24739 (JSC "Severen-Telecom")
@@ -1640,10 +1582,6 @@ push "route 88.212.244.0 255.255.255.0" # AS39134 (servers.ru hosting services)
 # zen.yandex.ru
 #push "route 213.180.192.0 255.255.224.0" # AS13238 (YANDEX LLC)
 
-# stat5.1internet.tv + ott.teletarget.ru
-push "route 81.211.0.0 255.255.128.0" # AS3216 - 81.211.0.0/17 - PJSC "Vimpelcom"
-push "route 213.248.32.0 255.255.224.0" # AS12695 - 213.248.32.0/19 - LLC Digital Network
-
 # *.ucoz.ru
 #push "route 185.178.208.0 255.255.255.0" # AS57724 (DDOS-GUARD LTD)
 #push "route 190.115.16.0 255.255.240.0" # AS262254 (DDOS-GUARD CORP.)
@@ -1730,16 +1668,6 @@ push "route 91.194.2.0 255.255.254.0"
 #push "route 95.165.111.208 255.255.255.255"
 push "route 95.165.0.0 255.255.0.0" # PJSC Moscow city telephone network
 
-# UNITEDNET (3dnews.ru)
-#push "route 88.212.192.0 255.255.240.0"
-# HOSTKEY B.V. (3dnews.ru)
-#push "route 91.210.107.0 255.255.255.0"
-#push "route 91.217.20.0 255.255.254.0"
-#push "route 185.70.107.0 255.255.255.0"
-#push "route 141.105.70.0 255.255.255.0"
-#push "route 194.67.73.0 255.255.255.0"
-#push "route 195.166.176.0 255.255.248.0" # PJSC Rostelecom
-
 # losst.ru
 push "route 87.242.72.0 255.255.248.0" # Masterhost is a hosting and technical support organization
 push "route 88.212.208.0 255.255.252.0"
@@ -1788,17 +1716,6 @@ push "route 109.124.64.0 255.255.192.0" # PJSC MegaFon
 #push "route 108.177.12.27 255.255.255.255" # Google LLC - 108.177.0.0/17 - Mountain View (not FW)
 #push "route 172.217.197.26 255.255.255.255" # Google LLC - 172.217.0.0/16 - Mountain View (not FW)
 #push "route 172.253.62.26 255.255.255.255" # Google LLC - 172.253.0.0/16 - Mountain View (not FW)
-
-# 101.ru
-#push "route 89.104.64.0 255.255.224.0" # JSC "RU-CENTER"
-#push "route 94.23.219.178 255.255.255.255" # OVH SAS - 94.23.0.0/16 (not FW)
-push "route 91.207.58.0 255.255.254.0" # Limited Liability Company GPM Digital Technologies
-push "route 91.209.91.0 255.255.255.0" # OJSC TNT-Broadcasting Network
-#push "route 91.217.20.0 255.255.255.0" # JSC "RU-CENTER"
-push "route 91.217.21.0 255.255.255.0" # JSC "RU-CENTER"
-#push "route 95.131.24.0 255.255.248.0" # Dataline Ltd
-#push "route 193.232.148.0 255.255.252.0" # Limited Liability Company GPM Digital Technologies
-push "route 194.226.176.0 255.255.255.0" # Radiogroup GPM Limited liability Company
 
 # 46.8.210.63
 push "route 46.8.208.0 255.255.252.0" # Contel OOO
@@ -1957,15 +1874,6 @@ push "route 178.173.0.0 255.255.248.0" # AS47759 - 178.173.0.0/17 - POIG Ltd. (R
 # local.adguard.org
 #push "route 176.103.133.77 255.255.255.255" # Netherlands (Serveroid LLC, RU)
 
-#4pda.ru, 4pda.to
-#push "route 95.213.128.0 255.255.128.0" # OOO "Network of data-centers "Selectel"
-#push "route 104.21.68.2 255.255.255.255" # CLOUDFLARENET
-#push "route 104.22.35.226 255.255.255.255" # CLOUDFLARENET
-#push "route 147.135.254.35 255.255.255.255" # OVH, France
-#push "route 172.67.183.145 255.255.255.255" # CLOUDFLARENET, United States
-#push "route 178.162.214.215 255.255.255.255" # LEASEWEB-DE-FRA-10, Germany
-#push "route 178.162.214.219 255.255.255.255" # LEASEWEB-DE-FRA-10, Germany
-#push "route 178.162.214.227 255.255.255.255" # LEASEWEB-DE-FRA-10, Germany
 # ~~~ NEW 2022-12-26 ~~~ #
 
 ### University ru ###
