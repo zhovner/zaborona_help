@@ -10,6 +10,8 @@ server=/.emc/127.0.0.1#5252
 server=/.coin/127.0.0.1#5252
 server=/.bazar/127.0.0.1#5252
 server=/.bit/127.0.0.1#5252
+server=/.onion/127.0.0.4#5858
+server=/.i2p/127.0.0.4#5757
 ### Zone LTD ###
 server=/archive.org/127.0.0.4#5959
 server=/licdn.com/127.0.0.4#5959
