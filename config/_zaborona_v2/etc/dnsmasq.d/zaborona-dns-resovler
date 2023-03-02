@@ -1,18 +1,42 @@
-### Zone LTD ###
-server=/.lib/127.0.0.4#5656
+### Zone TLD ###
+# OpenNIC + EmerDNS (dnscrypt-proxy => 127.0.0.4:5656)
 server=/.bbs/127.0.0.4#5656
 server=/.chan/127.0.0.4#5656
 server=/.cyb/127.0.0.4#5656
+server=/.dyn/127.0.0.4#5656
+server=/.epic/127.0.0.4#5656
 server=/.geek/127.0.0.4#5656
+server=/.gopher/127.0.0.4#5656
+server=/.indy/127.0.0.4#5656
+server=/.libre/127.0.0.4#5656
+server=/.neo/127.0.0.4#5656
+server=/.null/127.0.0.4#5656
+server=/.o/127.0.0.4#5656
+server=/.oss/127.0.0.4#5656
+server=/.oz/127.0.0.4#5656
+server=/.parody/127.0.0.4#5656
 server=/.pirate/127.0.0.4#5656
-server=/.lib/127.0.0.4#5656
-server=/.emc/127.0.0.4#5656
-server=/.coin/127.0.0.4#5656
+server=/.free/127.0.0.4#5656
 server=/.bazar/127.0.0.4#5656
+server=/.coin/127.0.0.4#5656
+server=/.emc/127.0.0.4#5656
+server=/.lib/127.0.0.4#5656
+server=/.fur/127.0.0.4#5656
+server=/.ku/127.0.0.4#5656
+server=/.te/127.0.0.4#5656
+server=/.ti/127.0.0.4#5656
+server=/.uu/127.0.0.4#5656
+server=/.ko/127.0.0.4#5656
+server=/.rm/127.0.0.4#5656
+server=/.opennic.glue/127.0.0.4#5656
+server=/.dns.opennic.glue/127.0.0.4#5656
+# Namecoin-DNS (Temporarily not working)
 server=/.bit/127.0.0.4#5656
+# TOR (privoxy dns => 127.0.0.4:5858)
 server=/.onion/127.0.0.4#5858
+# I2P (Temporarily not working)
 server=/.i2p/127.0.0.4#5757
-### Zone LTD ###
+### Zone TLD ###
 server=/archive.org/127.0.0.4#5959
 server=/licdn.com/127.0.0.4#5959
 server=/new-team.org/127.0.0.4#5959
