@@ -98,6 +98,7 @@ iptables -t filter -A FORWARD -j REJECT
 iptables -t nat -N dnsmap
 iptables -t nat -N dnsmaptor
 iptables -t nat -N dnsmapi2p
+iptables -t nat -N dnsmaptld
 ##iptables -t nat -A PREROUTING -s $VPNUDP_RANGE !-d $VPNUDP_DNS -p udp --dport 53 -m u32 --u32 '0x1C & 0xFFCF = 0x0100 && 0x1E & 0xFFFF = 0x0001' -j REDIRECT --to-ports 53
 ##iptables -t nat -A PREROUTING -s $VPNTCP_RANGE !-d $VPNTCP_DNS -p tcp --dport 53 -m u32 --u32 '0x1C & 0xFFCF = 0x0100 && 0x1E & 0xFFFF = 0x0001' -j REDIRECT --to-ports 53
 # DNSMASQ PORT=5353
