@@ -38,6 +38,9 @@ iptables -t filter -A INPUT -i $WAN_4 -p tcp --dport 22 -j ACCEPT
 #VPN_ADDR_6=""
 
 DNSMAP_RANGE="10.224.0.0/15"
+DNSMAP_RANGE_02="10.226.0.0/15"
+DNSMAP_RANGE_03="10.228.0.0/15"
+DNSMAP_RANGE_04="10.230.0.0/15"
 VPN_NAME_INTERFACE="zaborona+ wg+ wghub+ ppp+"
 
 VPN_ADDR_4_01="192.168.224.0/22"
@@ -181,6 +184,63 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 ! -d $DNSMAP_RANGE -j MARK --set
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 ! -d $DNSMAP_RANGE -j MARK --set-mark 1
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 ! -d $DNSMAP_RANGE -j MARK --set-mark 1
 
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 ! -d $DNSMAP_RANGE_02 -j MARK --set-mark 1
+
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 ! -d $DNSMAP_RANGE_03 -j MARK --set-mark 1
+
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 ! -d $DNSMAP_RANGE_04 -j MARK --set-mark 1
+
 #iptables -t nat -A PREROUTING -s $VPNUDP_RANGE -d $DNSMAP_RANGE -j dnsmap
 #iptables -t nat -A PREROUTING -s $VPNTCP_RANGE -d $DNSMAP_RANGE -j dnsmap
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $DNSMAP_RANGE -j dnsmap
@@ -201,6 +261,63 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $DNSMAP_RANGE -j dnsmap
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $DNSMAP_RANGE -j dnsmap
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $DNSMAP_RANGE -j dnsmap
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $DNSMAP_RANGE -j dnsmap
+
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $DNSMAP_RANGE_02 -j dnsmaptor
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $DNSMAP_RANGE_02 -j dnsmaptor
+
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $DNSMAP_RANGE_03 -j dnsmapi2p
+
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $DNSMAP_RANGE_04 -j dnsmaptld
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $DNSMAP_RANGE_04 -j dnsmaptld
 
 #iptables -t nat -A POSTROUTING -s $VPNUDP_RANGE -j MASQUERADE
 #iptables -t nat -A POSTROUTING -s $VPNTCP_RANGE -j MASQUERADE

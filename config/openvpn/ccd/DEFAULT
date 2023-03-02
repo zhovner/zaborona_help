@@ -60,7 +60,7 @@ push "route 10.224.0.0 255.254.0.0"
 push "route 10.226.0.0 255.254.0.0"
 # Zone I2P
 push "route 10.228.0.0 255.254.0.0"
-# Zone LTD
+# Zone TLD
 push "route 10.230.0.0 255.254.0.0"
 #push "block-outside-dns"
 # Def Config
