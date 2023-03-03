@@ -71,6 +71,7 @@ Zaborona.help VPN Script
 * OpenNIC (`.bbs, .chan, .cyb, .geek, .pirate` и другие) - Должно работать. Нужно использовать наши ДНС: 208.67.222.222, 208.67.220.220. Тестовый домен: http://flibusta.lib
 * EmerDNS (`.lib, .emc, .coin, .bazar`) - Должно работать. Нужно использовать наши ДНС: 208.67.222.222, 208.67.220.220. Тестовый домен: http://flibusta.lib
 * Namecoin (`.bit`) - Временно не доступно
+* I2P (`.i2p`) - Временно не доступно
 * Tor (`.onion`) - Должно работать. Нужно использовать наши ДНС: 208.67.222.222, 208.67.220.220. Тестовый домен: http://76qugh5bey5gum7l.onion, http://www.facebookcorewwwi.onion (Facebook), http://3g2upl4pq6kufc4m.onion (DuckDuckGo)
 
 ## Техническая поддержка
