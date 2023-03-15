@@ -1562,7 +1562,7 @@ push "route 146.255.198.0 255.255.254.0" # AS42632 (MnogoByte colocation and ded
 #push "route 176.58.42.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
 #push "route 176.58.46.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
 #push "route 176.58.49.0 255.255.255.0" # AS199251 - 176.58.48.0/23 - DigitalOne AG, Amsterdam, Netherlands, ZeroCDN
-push "route 176.58.50.0 255.255.255.0" # AS199251 (MnogoByte CDN)
+###push "route 176.58.50.0 255.255.255.0" # AS199251 (MnogoByte CDN)
 #push "route 176.58.53.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
 #push "route 176.58.54.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
 #push "route 176.58.57.0 255.255.255.0" # AS48158 (DigitalOne AG), Amsterdam, Netherlands, ZeroCDN
