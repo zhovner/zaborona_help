@@ -13186,7 +13186,7 @@ d_ad = [
 
   for (var i = 0; i < curarr.length; i++) {
     if (oip === 1 || host === curarr[i]) {
-      return "PROXY proxy.antizapret.prostovpn.org:3128; DIRECT";
+      return "PROXY socks.zaboronahelp.pp.ua:1488; DIRECT";
     }
   }
 
