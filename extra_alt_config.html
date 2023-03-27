@@ -161,7 +161,54 @@
                                     </li>
                                     <li>
                                       Первичный DNS (AdGuard DNS) &mdash;
-                                      <span class="zz-value">145.239.93.168</span>
+                                      <span class="zz-value">57.128.195.127</span>
+                                    </li>
+                                    <li>
+                                      Вторичный DNS (Отсутствует) &mdash;
+                                      <span class="zz-value">---</span>
+                                    </li>
+                                  </ul>
+                                  <ul class="zz-config">
+                                    <li>
+                                      <span><hr /><font color="red">Альтернативная конфигурация</font>:</span><br>
+                                      <span class="zz-value">zm.dmsrvc.com (на сервере работает несколько вариантов openvpn)</span>
+                                      <span class="zz-note">Доменные имена направлены на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
+                                    </li>
+                                    <li>
+                                      Порт и протокол &mdash; <br>
+                                      <span class="zz-value">1194 | tcp/udp - обычный</span> (auth: sha1; cipher: AES-256-CBC)<br>
+									  <span class="zz-value">1199 | tcp/udp - обычный + google и youtube</span> (auth: sha1; cipher: AES-256-CBC)<br>
+									  <span class="zz-value">666 | tcp/udp - конфиг "для микротика"</span> (auth: sha1; cipher: AES-256-CBC; отключен tls-crypt)<br>
+									  <span class="zz-value">1111 | tcp/udp - конфиг со всеми подсетями - 13,5к маршрутов</span> (auth: sha1; cipher: AES-256-CBC)<br>
+									  <span class="zz-value">1488 | tcp/udp - конфиг для временно оккупированных территорий</span> (auth: sha1; cipher: AES-256-CBC; отключен tls-crypt)<br>
+									  <span class="zz-value"></span><br> Чтобы перейти с одного конфига на другой, достаточно в клиентском конфиге изменить порт/протокол и, при необходимости сменить шифрование SHA512 -> SHA1, а также удалить или закомментировать блок с tls-crypt.<br>Также, на сервере установлен AdGuardHome, все ДНС запросы идут через него, что позволяет немного уменьшить количество трафика и количество рекламы в браузере.<br>
+                                    </li>
+                                    <li>
+                                      Протокол инкапсулирования/device type &mdash;
+                                      <span class="zz-value">L3 (tun)</span>
+                                    </li>
+                                    <li>
+                                      Алгоритм шифрования &mdash;
+                                      <span class="zz-value">AES-256-CBC/AES-256-GCM</span> 
+                                    </li>
+                                    <li>
+                                      Корневой сертификат &mdash;
+                                      <a href="/openvpn-client-config/alt-config/zm_occup_ca.crt">zm_occup_ca.crt</a>
+                                    </li>
+                                    <li>
+                                      Клиентский сертификат &mdash;
+                                      <a href="/openvpn-client-config/alt-config/zm_occup.crt">zm_occup.crt</a>
+                                    </li>
+                                    <li>
+                                      Приватный ключ &mdash;
+                                      <a href="/openvpn-client-config/alt-config/zm_occup.key" download="zm_occup.key">zm_occup.key</a>
+                                    </li>
+                                    <li>
+                                      <span>Основные ДНС-сервера:</span>
+                                    </li>
+                                    <li>
+                                      Первичный DNS (Устанавливается автоматически) &mdash;
+                                      <span class="zz-value">---</span>
                                     </li>
                                     <li>
                                       Вторичный DNS (Отсутствует) &mdash;
