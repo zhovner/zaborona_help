@@ -67,6 +67,9 @@ push "route 10.230.0.0 255.254.0.0"
 
 # Routes
 
+# My.Games 2023-05-27
+push "route 45.66.96.0 255.255.252.0"
+
 # Yandex network
 #push "route 5.45.192.0 255.255.192.0"
 #push "route 5.255.192.0 255.255.192.0"
