@@ -37,25 +37,6 @@ server=/.onion/127.0.0.4#5858
 # I2P (Temporarily not working)
 server=/.i2p/127.0.0.4#5757
 ### Zone TLD ###
-# server=/rezga.ag/127.0.0.4#5959 # could not resolve hostname
-# server=/sentry-cdn.com/127.0.0.4#5959 # Remove 2023-05-14
-# server=/servebeer.com/127.0.0.4#5959 # noip.com
-#address=/zaborona.help/104.21.40.12
-#address=/zaborona.help/172.67.173.217
-#server=/all-poster.ru/127.0.0.4#5959 - SALES
-#server=/astatic.trovocdn.net/127.0.0.4#5959
-#server=/elmi.ua/127.0.0.4#5959 - SALES
-#server=/esetnod32.ru/127.0.0.4#5959 - Worked Direct
-#server=/finttv.ga/127.0.0.4#5959 - SALES
-#server=/fly-phone.ru/127.0.0.4#5959 - CASINO
-#server=/free-rutor.org/127.0.0.4#5959 - SALES
-#server=/licdn.com/127.0.0.4#5959 #LinkedIn CDN
-#server=/mail.ua/127.0.0.4#5959 # could not resolve hostname
-#server=/nnm-club.ws/127.0.0.4#5959
-#server=/paymaster.ua/127.0.0.4#5959 #could not resolve hostname
-#server=/sched.ovscdns.net/127.0.0.4#5959 # tiktok.freeflow.sched.ovscd
-#server=/wm-factor.com.ua/127.0.0.4#5959 #could not resolve hostname
-#server=/xseo.in/127.0.0.4#5959 # Remove 2023-05-14
 server=/16-bits.ru/127.0.0.4#5959
 server=/1internet.tv/127.0.0.4#5959
 server=/1prime.ru/127.0.0.4#5959
