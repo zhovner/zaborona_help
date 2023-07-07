@@ -37,6 +37,11 @@ server=/.onion/127.0.0.4#5858
 # I2P (Temporarily not working)
 server=/.i2p/127.0.0.4#5757
 ### Zone TLD ###
+server=/seasonvar.ru/127.0.0.4#5959
+server=/remontka.pro/127.0.0.4#5959
+server=/dzen.ru/127.0.0.4#5959
+server=/droider.ru/127.0.0.4#5959
+server=/blast.hk/127.0.0.4#5959
 server=/16-bits.ru/127.0.0.4#5959
 server=/1internet.tv/127.0.0.4#5959
 server=/1prime.ru/127.0.0.4#5959
