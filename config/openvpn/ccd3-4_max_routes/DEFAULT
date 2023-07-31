@@ -1891,6 +1891,12 @@ push "route 178.173.0.0 255.255.248.0" # AS47759 - 178.173.0.0/17 - POIG Ltd. (R
 push "route  178.173.16.0 255.255.240.0" # POIG Ltd.
 # ~~~ NEW 2023-04-23 ~~~ #
 
+# ~~~ NEW 2023-07-31 ~~~ #
+push "route 37.230.137.58 255.255.255.255"
+# support.my.games
+push "route 195.211.131.0 255.255.255.0"
+# ~~~ NEW 2023-07-31 ~~~ #
+
 ### University ru ###
 # osu.ru
 push "route 62.76.152.0 255.255.255.0" # Orenburg State University
