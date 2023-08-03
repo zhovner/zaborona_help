@@ -37,6 +37,7 @@ server=/.onion/127.0.0.4#5858
 # I2P (Temporarily not working)
 server=/.i2p/127.0.0.4#5757
 ### Zone TLD ###
+server=/virtustec.ru/127.0.0.4#5959
 server=/speedfans.ru/127.0.0.4#5959
 server=/4brain.ru/127.0.0.4#5959
 server=/lenovo-forums.ru/127.0.0.4#5959
