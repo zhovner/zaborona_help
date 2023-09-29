@@ -1921,6 +1921,15 @@ push "route 88.212.250.100 255.255.255.255"
 push "route 95.213.153.34 255.255.255.255"
 # ~~~ ADD 2023-09-24 ~~~ #
 
+# ~~~ ADD 2023-09-29 ~~~ #
+# remontka.pro
+push "route 193.168.131.0 255.255.255.0"
+# elementy.ru
+push "route 185.17.9.0 255.255.255.0"
+push "route 185.17.10.0 255.255.255.0"
+push "route 185.17.11.0 255.255.255.0"
+# ~~~ ADD 2023-09-29 ~~~ #
+
 ### University ru ###
 # osu.ru
 push "route 62.76.152.0 255.255.255.0" # Orenburg State University

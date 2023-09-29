@@ -267,7 +267,8 @@ server=/mts.ru/127.0.0.4#5959
 server=/myarena.ru/127.0.0.4#5959
 server=/myarena.site/127.0.0.4#5959
 server=/mybook.ru/127.0.0.4#5959
-server=/myshows.me/127.0.0.4#5959
+# IP Route Test
+#server=/myshows.me/127.0.0.4#5959
 server=/myvi.tv/127.0.0.4#5959
 server=/nag.ru/127.0.0.4#5959
 server=/narfu.ru/127.0.0.4#5959
@@ -339,7 +340,8 @@ server=/rambler.ru/127.0.0.4#5959
 server=/rbc.ru/127.0.0.4#5959
 server=/reg.ru/127.0.0.4#5959
 server=/remontcompa.ru/127.0.0.4#5959
-server=/remontka.pro/127.0.0.4#5959
+# IP Route Test
+#server=/remontka.pro/127.0.0.4#5959
 server=/remplanner.ru/127.0.0.4#5959
 server=/rezka.ag/127.0.0.4#5959
 server=/rf-cheats.ru/127.0.0.4#5959
@@ -505,6 +507,7 @@ server=/pct.amocrm.ru/127.0.0.4#5959
 server=/win10tweaker.ru/127.0.0.4#5959
 server=/dvhab.ru/127.0.0.4#5959
 server=/mirtesen.ru/127.0.0.4#5959
+server=/elementy.ru/127.0.0.4#5959
 # Test for Latvia
 server=/aif.ru/127.0.0.4#5959
 server=/iz.ru/127.0.0.4#5959
