@@ -1421,8 +1421,8 @@ push "route 212.42.32.0 255.255.224.0"
 
 # 5.45.72.170 # AS58061 - 5.45.72.0 255.255.252.0" - IROKO Networks Corporation - US - iedem.tv
 #push "route 5.45.72.170 255.255.255.255" # Panama city
-push "route 5.45.72.0 255.255.252.0" # Panama city
-# edemtv.me + i-edem.tv
+push "route 5.45.72.0 255.255.252.0" # Panama city - 2023-11-30
+# edemtv.me + i-edem.tv - 2023-11-30
 push "route 194.67.64.0 255.255.255.0" # AS49352 - "Domain names registrar REG.RU", Ltd
 
 # devapps.ru
@@ -1932,6 +1932,28 @@ push "route 185.17.9.0 255.255.255.0"
 push "route 185.17.10.0 255.255.255.0"
 push "route 185.17.11.0 255.255.255.0"
 # ~~~ ADD 2023-09-29 ~~~ #
+
+# ~~~ ADD 2023-11-30 ~~~ #
+# autobook.one
+push "route 92.53.97.0 255.255.255.0"
+# 
+push "route 158.160.0.0 255.255.0.0"
+# radiokot.ru
+push "route 185.178.209.20 255.255.255.255"
+push "route 213.110.205.48 255.255.255.255"
+push "route 194.146.243.137 255.255.255.255"
+# ~~~ ADD 2023-11-30 ~~~ #
+
+# ~~~ ADD 2023-12-06 ~~~ #
+# HD REZKA
+push "route 176.58.38.0 255.255.254.0"
+push "route 176.58.40.0 255.255.248.0"
+push "route 176.58.48.0 255.255.252.0"
+push "route 176.58.52.0 255.255.254.0"
+push "route 176.58.54.0 255.255.255.0"
+push "route 176.58.57.0 255.255.255.0"
+push "route 185.190.188.0 255.255.252.0"
+# ~~~ ADD 2023-12-06 ~~~ #
 
 ### University ru ###
 # osu.ru
