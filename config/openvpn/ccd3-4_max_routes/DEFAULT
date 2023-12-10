@@ -1955,6 +1955,14 @@ push "route 176.58.57.0 255.255.255.0"
 push "route 185.190.188.0 255.255.252.0"
 # ~~~ ADD 2023-12-06 ~~~ #
 
+# ~~~ ADD 2023-12-09 ~~~ #
+push "route 5.63.128.0 255.255.248.0"
+# river-5-511.rutube.ru
+push "route 212.188.0.0 255.255.128.0"
+# RADCAP
+push "route 79.120.77.11 255.255.255.255"
+# ~~~ ADD 2023-12-09 ~~~ #
+
 ### University ru ###
 # osu.ru
 push "route 62.76.152.0 255.255.255.0" # Orenburg State University
