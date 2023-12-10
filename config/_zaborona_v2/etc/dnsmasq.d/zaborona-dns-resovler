@@ -533,6 +533,7 @@ server=/cwer.ru/127.0.0.4#5959
 server=/cwer.su/127.0.0.4#5959
 server=/cwer.ws/127.0.0.4#5959
 server=/cwer.lib/127.0.0.4#5959
+server=/stitch.su/127.0.0.4#5959
 # Test for Latvia
 server=/aif.ru/127.0.0.4#5959
 server=/iz.ru/127.0.0.4#5959
