@@ -1963,6 +1963,11 @@ push "route 212.188.0.0 255.255.128.0"
 push "route 79.120.77.11 255.255.255.255"
 # ~~~ ADD 2023-12-09 ~~~ #
 
+# ~~~ ADD 2023-12-19 ~~~ #
+# prostoy.ru
+push "route 146.120.224.0 255.255.255.0"
+# ~~~ ADD 2023-12-19 ~~~ #
+
 ### University ru ###
 # osu.ru
 push "route 62.76.152.0 255.255.255.0" # Orenburg State University
