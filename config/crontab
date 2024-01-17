@@ -1,0 +1,14 @@
+# Update DNS
+0 0 * * * /root/updateCFGzaborona.sh
+# Update IPTables (without restarting ferm)
+0 0 * * * /root/updateCFGzaboronaIPTables.sh
+# Update FERM IPv4
+0 0 * * * /root/updateCFGzaboronaIPTablesFREM.sh
+# Update FERM IPv6
+0 0 * * * /root/updateCFGzaboronaIPTablesFREM-ipv6.sh
+# Update OpenVPN Routes
+0 0 * * * /root/updateCFGzaboronaOpenVPNRoutesNEW.sh
+# Update OpenVPN BIG Routes
+0 0 * * * /root/updateCFGzaboronaOpenVPNRoutesBIG.sh
+# Check Alive Server
+* * * * * curl -X POST -F 'server=zbrn-srv-ovh10' http://samp.monitor.example.com/tgbot_take.php
