@@ -9624,5 +9624,6 @@ push "route 217.198.180.0 255.255.255.0" #
 push "route 217.199.208.0 255.255.240.0" #
 push "route 217.199.224.0 255.255.224.0" #
 push "route 217.212.254.0 255.255.255.0" #
+push "route 47.246.132.0 255.255.252.0" # Alibaba Cloud LLC (aliexpress.ru)
 
 # NOW - 1098 routes
