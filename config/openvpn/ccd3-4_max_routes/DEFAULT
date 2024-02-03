@@ -810,7 +810,8 @@ push "route 188.232.128.0 255.255.192.0" # JSC "ER-Telecom Holding"
 #push "route 95.213.232.0 255.255.255.0"
 
 # usbdev.ru (reg.ru) - 134.0.112.0 - 134.0.115.255 255.255.252.0 /22; AS197695 - 134.0.112.0/24;
-push "route 134.0.112.0 255.255.252.0" # "Domain names registrar REG.RU", Ltd
+#push "route 134.0.112.0 255.255.252.0" # "Domain names registrar REG.RU", Ltd
+# ERROR 403 (BAN SEVBER)
 
 # flashboot.ru (ruweb.net) - 212.8.247.0 - 212.8.247.255 255.255.255.0 /24; AS210079 - 212.8.247.0/24;
 #push "route 212.8.247.0 255.255.255.0"
@@ -1981,6 +1982,13 @@ push "route 190.115.16.16 255.255.255.255"
 push "route 91.204.176.0 255.255.252.0"
 push "route 193.168.131.0 255.255.255.0"
 # ~~~ ADD 2024-01-20 ~~~ #
+
+# ~~~ ADD 2024-02-03 ~~~ #
+# serveradmin.ru
+#push "route 188.227.57.126 255.255.255.255" # AS-ITGLOBALCOM ITGLOBAL.COM (United States)
+push "route 5.178.80.0 255.255.248.0" # OOO "Network of data-centers "Selectel"
+push "route 62.113.115.0 255.255.255.0" # VDSINA VDS Hosting
+# ~~~ ADD 2024-02-03 ~~~ #
 
 ### University ru ###
 # osu.ru

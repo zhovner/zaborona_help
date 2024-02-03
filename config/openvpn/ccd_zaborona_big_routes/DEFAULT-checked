@@ -1,0 +1,90 @@
+# Yandex.DNS - Base
+push "dhcp-option DNS 77.88.8.8" # First DNS Yandex
+push "route 77.88.8.8" # Route to Yandex DNS
+
+push "dhcp-option DNS 77.88.8.1" # Second DNS Yandex
+push "route 77.88.8.1" # Route to Yandex DNS
+# Yandex.DNS - Base
+
+# Yandex.DNS - Safe
+#push "dhcp-option DNS 77.88.8.88" # First DNS Yandex
+#push "route 77.88.8.88" # Route to Yandex DNS
+
+#push "dhcp-option DNS 77.88.8.2" # Second DNS Yandex
+#push "route 77.88.8.2" # Route to Yandex DNS
+# Yandex.DNS - Safe
+
+# Yandex.DNS - Family
+#push "dhcp-option DNS 77.88.8.7" # First DNS Yandex
+#push "route 77.88.8.7" # Route to Yandex DNS
+
+#push "dhcp-option DNS 77.88.8.3" # Second DNS Yandex
+#push "route 77.88.8.3" # Route to Yandex DNS
+# Yandex.DNS - Family
+
+#push "dhcp-option DNS 74.82.42.42" # First DNS HE.net
+#push "route 74.82.42.42" # Route to HE.net DNS
+
+### OpenDNS ###
+#push "dhcp-option DNS 208.67.222.222" # First DNS OpenDNS
+push "route 208.67.222.222" # Route to OpenDNS
+
+#push "dhcp-option DNS 208.67.220.220" # Second DNS OpenDNS
+push "route 208.67.220.220" # Route to OpenDNS
+
+##push "dhcp-option DNS6 2620:119:35::35" # OpenDNS ipv6 dns
+##push "route-ipv6 2620:119:35::35" # OpenDNS ipv6 dns
+
+##push "dhcp-option DNS6 2620:119:53::53" # OpenDNS ipv6 dns
+##push "route-ipv6 2620:119:53::53" # OpenDNS ipv6 dns
+### OpenDNS ###
+
+### Google DNS ###
+#push "dhcp-option DNS6 2001:4860:4860::8888" # Google ipv6 dns
+#push "route-ipv6 2001:4860:4860::8888"
+
+#push "dhcp-option DNS6 2001:4860:4860::8844" # Google ipv6 dns
+#push "route-ipv6 2001:4860:4860::8844"
+### Google DNS ###
+
+#Persist TUN
+push "persist-tun"
+
+# Routes
+
+# Beget LLC
+push "route 5.35.82.0 255.255.254.0"
+push "route 5.35.88.0 255.255.248.0"
+push "route 5.101.152.0 255.255.248.0"
+push "route 5.181.108.0 255.255.252.0"
+push "route 31.129.96.0 255.255.240.0"
+push "route 45.9.40.0 255.255.252.0"
+push "route 45.12.16.0 255.255.252.0"
+push "route 45.12.72.0 255.255.252.0"
+push "route 45.12.236.0 255.255.252.0"
+push "route 45.67.56.0 255.255.252.0"
+push "route 45.80.68.0 255.255.252.0"
+push "route 45.84.224.0 255.255.252.0"
+push "route 45.90.32.0 255.255.252.0"
+push "route 45.130.40.0 255.255.252.0"
+push "route 45.146.164.0 255.255.252.0"
+push "route 45.147.176.0 255.255.252.0"
+push "route 62.113.96.0 255.255.240.0"
+push "route 62.217.176.0 255.255.248.0"
+push "route 81.200.112.0 255.255.248.0"
+push "route 87.236.16.0 255.255.248.0"
+push "route 91.106.200.0 255.255.248.0"
+push "route 95.214.60.0 255.255.252.0"
+push "route 185.19.204.0 255.255.252.0"
+push "route 185.50.24.0 255.255.252.0"
+push "route 185.78.28.0 255.255.252.0"
+push "route 185.155.118.0 255.255.255.0"
+push "route 185.225.32.0 255.255.252.0"
+push "route 193.168.46.0 255.255.254.0"
+push "route 193.168.48.0 255.255.254.0"
+push "route 193.176.76.0 255.255.252.0"
+push "route 193.200.72.0 255.255.252.0"
+push "route 213.139.208.0 255.255.252.0"
+push "route 217.172.24.0 255.255.252.0"
+
+# NOW - 1098 routes
