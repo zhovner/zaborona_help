@@ -1416,6 +1416,8 @@ push "route 194.87.144.0 255.255.252.0" # AS48347 (JSC Mediasoft ekspert) ruvds.
 
 # antispamsniper.com !
 push "route 46.30.46.0 255.255.255.0" # AS210079 (Eurobyte VPS)
+# opencart-russia.ru
+push "route 217.144.99.0 255.255.255.0" # AS210079 (Eurobyte VPS)
 
 # playground.ru - AS50313 - 212.42.32.0 255.255.224.0" - TESLATEL LLC
 push "route 212.42.32.0 255.255.224.0"
