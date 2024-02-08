@@ -29,3 +29,4 @@ config/_zaborona_v2/root/zaborona-vpn/temp/list.csv
 config/_zaborona_v2/root/zaborona-vpn/temp/list_orig.csv
 *.bk1
 *.bk2
+config/iptables.sh
