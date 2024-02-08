@@ -20,5 +20,27 @@ openwrt very simple script
 На Mikrotik работает!
 Всем чмоки в этом чяти
 Wiki для Ubuntu
+* Seems like 'Обход блокировок без VPN' wiki entry is wrong (links to https://github.com/ValdikSS/GoodbyeDPI which is completely different issue).
+=======
+Hello world!  
+Yep . 
+Редактирование wiki  
+tesuto desu . 
+и я хочу помочь!  
+Zyxel Keenetic II-series wiki . 
+openwrt very simple script  
+Что там с Mikrotik-ом? У кого получилось?  
++1 . 
+На Mikrotik работает!  
+Всем чмоки в этом чяти . 
+Wiki для Ubuntu . 
++ . 
+UniFi Controller Works!+ . 
+Люблю маму и верстку!  
+Hi!  
+======= . 
+Да!  
+Good!!  
+=======
 +
 UniFi Controller Works!+
