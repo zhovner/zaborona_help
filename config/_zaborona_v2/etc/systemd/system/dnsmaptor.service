@@ -4,8 +4,10 @@ After=network.target
 
 [Service]
 WorkingDirectory=/root/dnsmaptor
-#ExecStart=/root/dnsmaptor/proxy.py -a 127.0.0.4 --iprange 10.224.0.0/15 -u 57.128.195.123:53
+#ExecStart=/root/dnsmaptor/proxy.py -a 127.0.0.4 --iprange 10.224.0.0/15 -u 8.8.8.8:53
 ExecStart=/root/dnsmaptor/proxy.py -a 127.0.0.4 -p 5858 --iprange 10.226.0.0/15 -u 127.0.0.1:5300
+Restart=on-failure
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
