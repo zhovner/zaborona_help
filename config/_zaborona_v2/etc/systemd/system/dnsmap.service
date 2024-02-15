@@ -4,8 +4,10 @@ After=network.target
 
 [Service]
 WorkingDirectory=/root/dnsmap
-ExecStart=/root/dnsmap/proxy.py -a 127.0.0.4 --iprange 10.224.0.0/15 -u 57.128.195.123:53
+ExecStart=/root/dnsmap/proxy.py -a 127.0.0.4 --iprange 10.224.0.0/15 -u 8.8.8.8:53
 #ExecStart=/root/dnsmap/proxy.py -a 127.0.0.4 -p 5959 --iprange 10.224.0.0/15 -u 57.128.195.123:53
+Restart=on-failure
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target

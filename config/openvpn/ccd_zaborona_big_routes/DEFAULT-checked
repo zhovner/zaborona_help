@@ -52,6 +52,7 @@ push "persist-tun"
 
 # Routes
 
+# HOSTINGS CHECKED #
 # Beget LLC
 push "route 5.35.82.0 255.255.254.0"
 push "route 5.35.88.0 255.255.248.0"
@@ -86,5 +87,6 @@ push "route 193.176.76.0 255.255.252.0"
 push "route 193.200.72.0 255.255.252.0"
 push "route 213.139.208.0 255.255.252.0"
 push "route 217.172.24.0 255.255.252.0"
+# HOSTINGS CHECKED #
 
 # NOW - 1098 routes
