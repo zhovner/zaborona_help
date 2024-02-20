@@ -15,14 +15,15 @@ cd "$HERE"
 # Full path to the current directory ( Полный путь до текущей директории )
 $PWD
 
-YUM_PACKAGE_NAME="iptables curl pip python3 dnsmasq knot-resolver htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib python-dnslib git"
-DEB_PACKAGE_NAME="iptables curl pip python3 dnsmasq knot-resolver htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib python-dnslib git"
-UBNT_PACKAGE_NAME="iptables curl pip python3 dnsmasq knot-resolver htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib python-dnslib git"
+YUM_PACKAGE_NAME="iptables curl python3 dnsmasq htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib python-dnslib netdata"
+DEB_PACKAGE_NAME="iptables curl python3 dnsmasq htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib netdata"
+UBNT_PACKAGE_NAME="iptables curl python3 dnsmasq htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib python-dnslib netdata"
 
 # Installing software for the correct work of the resolver ( Устанавливаем софт для корректрой работы резолвера )
 echo "Installing software for the correct work of the resolver ( Устанавливаем софт для корректрой работы резолвера )"
 #apt install -y iptables curl pip python3 dnsmasq knot-resolver htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib
 #pip install dnslib
+#apt install knot-resolver
 ## Ubuntu
 #apt install -y python-dnslib
 ## apt install -y ferm
@@ -87,7 +88,7 @@ TMPFOLDERNAME="/tmp"
 
 #curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEALLCONFIG_ARCHIVE "$LISTLINK_ALLCONFIG_ARCHIVE/$FILENAMEALLCONFIG_ARCHIVE" || exit 1
 
-if  curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEALLCONFIG_ARCHIVE "$LISTLINK_ALLCONFIG_ARCHIVE/$FILENAMEALLCONFIG_ARCHIVE"
+if  curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMEALLCONFIG_ARCHIVE "$LISTLINK_ALLCONFIG_ARCHIVE/$FILENAMEALLCONFIG_ARCHIVE"; then
     echo "Unpack the archive to the specified folder. Default $PWD"	
     # Распаковываем архив в указанную папку. По-умолчанию $PWD
     #tar xvzf $FILENAMEALLCONFIG_ARCHIVE -C $WORKFOLDERNAME
@@ -116,6 +117,35 @@ chmod +x ./easy-rsa-ipsec/*.sh
 chmod +x ./zaborona-vpn/*.sh
 chmod +x ./zaborona-vpn/config/*.sh
 chmod +x ./zaborona-vpn/scripts/*.py
+
+echo "Edit the netdata config and restart the service"
+# Редактируем конфиг netdata и перезапускаем службу
+sed -i 's/127.0.0.1/0.0.0.0/' /etc/netdata/netdata.conf
+service netdata restart
+
+#echo "To add it to the crontab, with no duplication"
+## Добавления задания в crontab с проверкой дублирования
+#croncmd="# Check Alive Server\n* * * * * curl -X POST -F 'server=zbrn-srv-ovh10' http://samp.monitor.example.com/tgbot_take.php"
+#cronjob="0 */15 * * * $croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="# Update DNS\n0 0 * * * /root/updateCFGzaborona.sh"
+#cronjob="0 */15 * * * $croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="# Update IPTables (without restarting ferm)\n0 0 * * * /root/updateCFGzaboronaIPTables.sh"
+#cronjob="0 */15 * * * $croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="# Update FERM IPv4\n0 0 * * * /root/updateCFGzaboronaIPTablesFREM.sh"
+#cronjob="0 */15 * * * $croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="# Update FERM IPv6\n0 0 * * * /root/updateCFGzaboronaIPTablesFREM-ipv6.sh"
+#cronjob="0 */15 * * * $croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="# Update OpenVPN Routes\n0 0 * * * /root/updateCFGzaboronaOpenVPNRoutesNEW.sh"
+#cronjob="0 */15 * * * $croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="# Update OpenVPN BIG Routes\n0 0 * * * /root/updateCFGzaboronaOpenVPNRoutesBIG.sh"
+#cronjob="0 */15 * * * $croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
 
 echo "We start updating configs after updating files"
 # Запускаем обновление конфигов после обновления файлов
