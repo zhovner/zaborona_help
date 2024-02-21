@@ -7,7 +7,7 @@
 # Yandex.DNS - Base
 
 #push "dhcp-option DNS 74.82.42.42" # First DNS HE.net
-#push "route 74.82.42.42" # Route to HE.net DNS
+push "route 74.82.42.42" # Route to HE.net DNS
 
 ### OpenDNS ###
 push "dhcp-option DNS 208.67.222.222" # First DNS OpenDNS
@@ -34,35 +34,21 @@ push "route 208.67.220.220" # Route to OpenDNS
 # Comodo Secure DNS
 #push "dhcp-option DNS 8.26.56.26" # First DNS Comodo Secure DNS
 #push "dhcp-option DNS 8.20.247.20" # Second DNS Comodo Secure DNS
-#push "route 8.26.56.26" # Route to Comodo Secure DNS
-#push "route 8.20.247.20" # Route to Comodo Secure DNS
+push "route 8.26.56.26" # Route to Comodo Secure DNS
+push "route 8.20.247.20" # Route to Comodo Secure DNS
 
 # DNS.Watch
 #push "dhcp-option DNS 84.200.69.80" # First DNS DNS.Watch
 #push "dhcp-option DNS 84.200.70.40" # Second DNS DNS.Watch
-#push "route 84.200.69.80" # Route to DNS.Watch
-#push "route 84.200.70.40" # Route to DNS.Watch
+push "route 84.200.69.80" # Route to DNS.Watch
+push "route 84.200.70.40" # Route to DNS.Watch
 
 # Level3DNS
 #push "dhcp-option DNS 4.2.2.1" # First DNS Level3DNS
 #push "dhcp-option DNS 4.2.2.2" # Second DNS Level3DNS
-#push "route 4.2.2.1" # Route to Level3DNS
-#push "route 4.2.2.2" # Route to Level3DNS
+push "route 4.2.2.1" # Route to Level3DNS
+push "route 4.2.2.2" # Route to Level3DNS
 
 #Persist TUN
 push "persist-tun"
 
-# Def Config
-# push "dhcp-option DNS 192.168.XXX.1"
-# Zone Block Site
-push "route 10.224.0.0 255.254.0.0"
-# Zone TOR
-push "route 10.226.0.0 255.254.0.0"
-# Zone I2P
-#push "route 10.228.0.0 255.254.0.0"
-# Zone TLD
-push "route 10.230.0.0 255.254.0.0"
-#push "block-outside-dns"
-# Def Config
-
-# IP Routes

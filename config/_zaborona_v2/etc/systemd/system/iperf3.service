@@ -1,0 +1,14 @@
+[Unit]
+Description=iperf3 -s -f K -D.
+#Requires=network.target
+#After=network.target
+Wants=ferm.service
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=iperf3 -s -f K -D
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

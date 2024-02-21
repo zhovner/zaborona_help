@@ -1,7 +1,7 @@
 #!/bin/bash
 
-WAN_4="ens3"
-WAN_6="ens3"
+WAN_4="changeIF"
+WAN_6="changeIF"
 VPN_ADDR_4=""
 VPN_ADDR_6=""
 
@@ -81,6 +81,11 @@ VPN_ADDR_4_DNS16="192.168.17.1/32"
 VPN_ADDR_4_DNS17="192.168.16.1/32"
 VPN_ADDR_4_DNS18="192.168.15.1/32"
 
+VPN_ADDR_4_DNSFAKE1="208.67.222.222/32"
+VPN_ADDR_4_DNSFAKE2="208.67.220.220/32"
+VPN_ADDR_4_DNSFAKE3="77.88.8.8/32"
+VPN_ADDR_4_DNSFAKE4="77.88.8.1/32"
+
 iptables -t filter -N ZABORONA_V4
 
 for VPN_NAME_INTERFACE1 in $VPN_NAME_INTERFACE; do
@@ -105,42 +110,42 @@ iptables -t nat -N dnsmaptld
 ##iptables -t nat -A PREROUTING -s $VPNUDP_RANGE !-d $VPNUDP_DNS -p udp --dport 53 -m u32 --u32 '0x1C & 0xFFCF = 0x0100 && 0x1E & 0xFFFF = 0x0001' -j REDIRECT --to-ports 53
 ##iptables -t nat -A PREROUTING -s $VPNTCP_RANGE !-d $VPNTCP_DNS -p tcp --dport 53 -m u32 --u32 '0x1C & 0xFFCF = 0x0100 && 0x1E & 0xFFFF = 0x0001' -j REDIRECT --to-ports 53
 # DNSMASQ PORT=5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 ! -d $VPN_ADDR_4_DNS01 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 ! -d $VPN_ADDR_4_DNS02 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 ! -d $VPN_ADDR_4_DNS03 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 ! -d $VPN_ADDR_4_DNS04 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 ! -d $VPN_ADDR_4_DNS05 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 ! -d $VPN_ADDR_4_DNS06 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 ! -d $VPN_ADDR_4_DNS07 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 ! -d $VPN_ADDR_4_DNS08 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 ! -d $VPN_ADDR_4_DNS09 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 ! -d $VPN_ADDR_4_DNS10 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 ! -d $VPN_ADDR_4_DNS11 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 ! -d $VPN_ADDR_4_DNS12 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 ! -d $VPN_ADDR_4_DNS13 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 ! -d $VPN_ADDR_4_DNS14 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 ! -d $VPN_ADDR_4_DNS15 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 ! -d $VPN_ADDR_4_DNS16 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 ! -d $VPN_ADDR_4_DNS17 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 ! -d $VPN_ADDR_4_DNS18 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 ! -d $VPN_ADDR_4_DNS01 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 ! -d $VPN_ADDR_4_DNS02 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 ! -d $VPN_ADDR_4_DNS03 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 ! -d $VPN_ADDR_4_DNS04 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 ! -d $VPN_ADDR_4_DNS05 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 ! -d $VPN_ADDR_4_DNS06 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 ! -d $VPN_ADDR_4_DNS07 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 ! -d $VPN_ADDR_4_DNS08 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 ! -d $VPN_ADDR_4_DNS09 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 ! -d $VPN_ADDR_4_DNS10 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 ! -d $VPN_ADDR_4_DNS11 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 ! -d $VPN_ADDR_4_DNS12 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 ! -d $VPN_ADDR_4_DNS13 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 ! -d $VPN_ADDR_4_DNS14 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 ! -d $VPN_ADDR_4_DNS15 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 ! -d $VPN_ADDR_4_DNS16 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 ! -d $VPN_ADDR_4_DNS17 -p tcp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 ! -d $VPN_ADDR_4_DNS18 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 ! -d $VPN_ADDR_4_DNS01 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 ! -d $VPN_ADDR_4_DNS02 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 ! -d $VPN_ADDR_4_DNS03 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 ! -d $VPN_ADDR_4_DNS04 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 ! -d $VPN_ADDR_4_DNS05 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 ! -d $VPN_ADDR_4_DNS06 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 ! -d $VPN_ADDR_4_DNS07 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 ! -d $VPN_ADDR_4_DNS08 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 ! -d $VPN_ADDR_4_DNS09 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 ! -d $VPN_ADDR_4_DNS10 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 ! -d $VPN_ADDR_4_DNS11 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 ! -d $VPN_ADDR_4_DNS12 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 ! -d $VPN_ADDR_4_DNS13 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 ! -d $VPN_ADDR_4_DNS14 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 ! -d $VPN_ADDR_4_DNS15 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 ! -d $VPN_ADDR_4_DNS16 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 ! -d $VPN_ADDR_4_DNS17 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 ! -d $VPN_ADDR_4_DNS18 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 ! -d $VPN_ADDR_4_DNS01 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 ! -d $VPN_ADDR_4_DNS02 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 ! -d $VPN_ADDR_4_DNS03 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 ! -d $VPN_ADDR_4_DNS04 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 ! -d $VPN_ADDR_4_DNS05 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 ! -d $VPN_ADDR_4_DNS06 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 ! -d $VPN_ADDR_4_DNS07 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 ! -d $VPN_ADDR_4_DNS08 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 ! -d $VPN_ADDR_4_DNS09 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 ! -d $VPN_ADDR_4_DNS10 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 ! -d $VPN_ADDR_4_DNS11 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 ! -d $VPN_ADDR_4_DNS12 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 ! -d $VPN_ADDR_4_DNS13 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 ! -d $VPN_ADDR_4_DNS14 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 ! -d $VPN_ADDR_4_DNS15 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 ! -d $VPN_ADDR_4_DNS16 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 ! -d $VPN_ADDR_4_DNS17 -p tcp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 ! -d $VPN_ADDR_4_DNS18 -p tcp --dport 53 -j REDIRECT --to-ports 5353
 
 #iptables -t nat -A PREROUTING -s $VPNUDP_RANGE -d $VPNUDP_DNS -j ACCEPT
 #iptables -t nat -A PREROUTING -s $VPNTCP_RANGE -d $VPNTCP_DNS -j ACCEPT
@@ -162,6 +167,90 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNS15 -p udp --dp
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNS16 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNS17 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNS18 -p udp --dport 53 -j REDIRECT --to-ports 5353
+
+# VPN_ADDR_4_DNSFAKE1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+
+# VPN_ADDR_4_DNSFAKE2
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+
+# VPN_ADDR_4_DNSFAKE3
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+
+# VPN_ADDR_4_DNSFAKE4
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_02 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_03 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_04 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 
 #iptables -t nat -A PREROUTING -s $VPNUDP_RANGE !-d $DNSMAP_RANGE -j MARK --set-mark 1
 #iptables -t nat -A PREROUTING -s $VPNTCP_RANGE !-d $DNSMAP_RANGE -j MARK --set-mark 1
@@ -359,8 +448,8 @@ iptables -I INPUT -i $WAN_4 -s 240.0.0.0/5 -j DROP
 ### DROP NETWORKS ### 
 
 ### DROP TORRENTS ###
-#iptables -t filter -I FORWARD -m string --string "BitTorrent" --algo bm --to 65535 -j DROP
-#iptables -t filter -I FORWARD -m string --string "BitTorrent protocol" --algo bm --to 65535 -j DROP
+iptables -t filter -I FORWARD -m string --string "BitTorrent" --algo bm --to 65535 -j DROP
+iptables -t filter -I FORWARD -m string --string "BitTorrent protocol" --algo bm --to 65535 -j DROP
 #iptables -t filter -I FORWARD -m string --string "peer_id=" --algo bm --to 65535 -j DROP
 #iptables -t filter -I FORWARD -m string --string ".torrent" --algo bm --to 65535 -j DROP
 #iptables -t filter -I FORWARD -m string --string "announce.php?passkey=" --algo bm --to 65535 -j DROP
@@ -378,8 +467,8 @@ iptables -I INPUT -i $WAN_4 -s 240.0.0.0/5 -j DROP
 #iptables -t mangle -A PREROUTING -m string --string "get_peers" --algo bm -j DROP
 #iptables -t mangle -A PREROUTING -m string --string "announce_peer" --algo bm -j DROP
 #iptables -t mangle -A PREROUTING -m string --string "find_node" --algo bm -j DROP
-#iptables -t mangle -A PREROUTING -p udp -m string --algo bm --string "BitTorrent" -j DROP
-#iptables -t mangle -A PREROUTING -p udp -m string --algo bm --string "BitTorrent protocol" -j DROP
+iptables -t mangle -A PREROUTING -p udp -m string --algo bm --string "BitTorrent" -j DROP
+iptables -t mangle -A PREROUTING -p udp -m string --algo bm --string "BitTorrent protocol" -j DROP
 #iptables -t mangle -A PREROUTING -p udp -m string --algo bm --string "peer_id=" -j DROP
 #iptables -t mangle -A PREROUTING -p udp -m string --algo bm --string ".torrent" -j DROP
 #iptables -t mangle -A PREROUTING -p udp -m string --algo bm --string "announce.php?passkey=" -j DROP
@@ -389,8 +478,8 @@ iptables -I INPUT -i $WAN_4 -s 240.0.0.0/5 -j DROP
 # Attention! When using this rule, all domains and requests containing the word "tracker" will be dropped!
 #iptables -t mangle -A PREROUTING -p udp -m string --algo bm --string "tracker" -j DROP
 
-#iptables -t mangle -A POSTROUTING -p udp -m string --algo bm --string "BitTorrent" -j DROP
-#iptables -t mangle -A POSTROUTING -p udp -m string --algo bm --string "BitTorrent protocol" -j DROP
+iptables -t mangle -A POSTROUTING -p udp -m string --algo bm --string "BitTorrent" -j DROP
+iptables -t mangle -A POSTROUTING -p udp -m string --algo bm --string "BitTorrent protocol" -j DROP
 #iptables -t mangle -A POSTROUTING -p udp -m string --algo bm --string "peer_id=" -j DROP
 #iptables -t mangle -A POSTROUTING -p udp -m string --algo bm --string ".torrent" -j DROP
 #iptables -t mangle -A POSTROUTING -p udp -m string --algo bm --string "announce.php?passkey=" -j DROP
@@ -402,82 +491,17 @@ iptables -I INPUT -i $WAN_4 -s 240.0.0.0/5 -j DROP
 
 # DROP CONN PORTS #
 #iptables -t mangle -A POSTROUTING -s 192.168.0.0/16 -o $WAN_4 -d 0.0.0.0/0 -p tcp --dport 22 -j LOG log-prefix ' IP address tried to connect to blocked ports!';
-#iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 22 -j DROP
-#iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 25 -j DROP
-#iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 465 -j DROP
-#iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 587 -j DROP
-#iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 1337 -j DROP
-#iptables -t mangle -A POSTROUTING -i $VPN_NAME_INTERFACE -o $WAN_4 -p tcp --dport 6969 -j DROP
 for VPN_NAME_INTERFACE1 in $VPN_NAME_INTERFACE; do
 #	iptables -t mangle -A POSTROUTING -s 192.168.0.0/16 -o $WAN_4 -d 0.0.0.0/0 -p tcp -m multiport --dports 22,25,465,587,1337,6969 -j LOG log-prefix ' IP address tried to connect to blocked ports!';
 #	iptables -t filter -I FORWARD -i $VPN_NAME_INTERFACE1 -o $WAN_4 -p tcp -m tcp -m multiport --dports 22,25,465,587,1337,6969 -j REJECT
-	iptables -t filter -I FORWARD -i $VPN_NAME_INTERFACE1 -o $WAN_4 -p tcp -m tcp -m multiport --dports 22,25,1337,6969 -j REJECT
+	iptables -t filter -I FORWARD -i $VPN_NAME_INTERFACE1 -o $WAN_4 -p tcp -m tcp -m multiport --dports 22,25,135:139,445,543,1337,6969 -j REJECT
+    iptables -t filter -I FORWARD -p udp -m udp -m multiport --dports 135:139,445,543,6969 -j REJECT
+    iptables -t filter -I FORWARD -p tcp -m tcp -m multiport --dports 135:139,445,543,6969 -j REJECT
 done
 # DROP CONN PORTS #
 
 # DNS Redirect to localhost
 #iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT
 #iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT
-
-#
-#iptables -A FORWARD -i $WAN_4 -o zaborona+ -j ACCEPT
-#iptables -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT
-
-#iptables -t nat -A POSTROUTING -o $WAN_4 -s 192.168.0.0/16 -j MASQUERADE
-#echo 1 > /proc/sys/net/ipv4/ip_forward
-
-# PREROUTING - Access For VPN-users (PPTP). All traffic
-#iptables -t nat -I POSTROUTING -p tcp -s 192.168.115.0/24 -d 0.0.0.0/0 -o $WAN_4 -j MASQUERADE
-#iptables -I FORWARD -p gre -j ACCEPT
-#iptables -I FORWARD -i $WAN_4 -p tcp --dport 1723 -j ACCEPT
-#iptables -I FORWARD -i $WAN_4 -o ppp+ -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
-#iptables -I FORWARD -i ppp+ -o $WAN_4 -d 0.0.0.0/0 -j ACCEPT
-
-############################
-#iptables -I FORWARD -i $WAN_4 -o ppp+ -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
-iptables -I FORWARD -i ppp+ -o $WAN_4 -d 0.0.0.0/0 -j ACCEPT
-#iptables -I FORWARD -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
-# PPTP
-#iptables -t nat -I POSTROUTING -p tcp -s 192.168.216.0/22 -d 0.0.0.0/0 -o $WAN_4 -j MASQUERADE
-# L2TP-IPsec
-#iptables -t nat -I POSTROUTING -p tcp -s 192.168.212.0/22 -d 0.0.0.0/0 -o $WAN_4 -j MASQUERADE
-# IKEv2-IPsec
-#iptables -I INPUT -i $WAN_4 -p esp -j ACCEPT
-#iptables -t nat -I POSTROUTING -p tcp -s 192.168.208.0/22 -d 0.0.0.0/0 -o $WAN_4 -j MASQUERADE
-# WireGuard
-#iptables -t nat -I POSTROUTING -p tcp -s 192.168.220.0/22 -d 0.0.0.0/0 -o $WAN_4 -j MASQUERADE
-#iptables -t nat -I POSTROUTING -p udp -s 192.168.220.0/22 -d 0.0.0.0/0 -o $WAN_4 -j MASQUERADE
-
-#iptables -I FORWARD -i $WAN_4 -p tcp --dport 1723 -j ACCEPT
-#iptables -I FORWARD -p gre -j ACCEPT
-#iptables -I INPUT -p gre -j ACCEPT
-
-#iptables -I INPUT -i $WAN_4 -p udp --dport 500 -j ACCEPT
-#iptables -I INPUT -i $WAN_4 -p tcp --dport 500 -j ACCEPT
-#iptables -I INPUT -i $WAN_4 -p udp --dport 4500 -j ACCEPT
-#iptables -I INPUT -i $WAN_4 -p udp --dport 1701 -j ACCEPT
-#iptables -I INPUT -i $WAN_4 -p tcp --dport 1723 -j ACCEPT
-
-#iptables -I FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
-#iptables -I FORWARD -s 192.168.115.0/24  -j ACCEPT
-#iptables -I FORWARD -s 192.168.116.0/24  -j ACCEPT
-#iptables -I FORWARD -s 192.168.120.0/21  -j ACCEPT
-#iptables -I FORWARD -s 192.168.80.0/24  -j ACCEPT
-############################
-
-### INDIVIDUAL CFG ###
-# Examlpe: iptables -I FORWARD -s 192.168.216.5/32 -o $WAN_4 -d 0.0.0.0/0 -j ACCEPT
-#iptables -I FORWARD -s 192.168.216.2/32 -o $WAN_4 -d 0.0.0.0/0 -j ACCEPT
-#iptables -I FORWARD -s 192.168.17.0/24 -o $WAN_4 -d 0.0.0.0/0 -j ACCEPT
-#iptables -I FORWARD -s 192.168.16.0/24 -o $WAN_4 -d 0.0.0.0/0 -j ACCEPT
-#iptables -I FORWARD -s 192.168.15.0/24 -o $WAN_4 -d 0.0.0.0/0 -j ACCEPT
-### INDIVIDUAL CFG ###
-
-# Tor DNS and Routes #
-#iptables -t nat -I PREROUTING -p udp --dport 53 -m string --hex-string "|056f6e696f6e00|" --algo bm -j REDIRECT --to-ports 5300
-#iptables -t nat -I OUTPUT -p udp --dport 53 -m string --hex-string "|056f6e696f6e00|" --algo bm -j REDIRECT --to-ports 5300
-##iptables -t nat -I PREROUTING -p tcp -d 192.168.13.0/24 -j REDIRECT --to-port 9040
-##iptables -t nat -I OUTPUT -p tcp -d 192.168.13.0/24 -j REDIRECT --to-port 9040
-# Tor DNS and Routes #
  
 exit 0

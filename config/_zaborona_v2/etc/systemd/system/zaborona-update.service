@@ -2,9 +2,10 @@
 Description=zaborona-vpn update
 After=network-online.target
 Wants=network-online.target
+Wants=zaborona-update.timer
 
 [Service]
-WorkingDirectory=/root/antizapret
+WorkingDirectory=/root/zaborona-vpn
 ExecStart=/root/zaborona-vpn/doall.sh
 
 [Install]

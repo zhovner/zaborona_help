@@ -1,8 +1,11 @@
 [Unit]
 Description=Run zaborona-vpn update every 6h
+Requires=zaborona-update.service
 
 [Timer]
+Unit=zaborona-update.service
 OnUnitActiveSec=6h
+#OnCalendar=*-*-* 00:00:00
 
 [Install]
 WantedBy=timers.target

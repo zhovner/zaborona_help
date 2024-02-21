@@ -35,7 +35,7 @@ while read -r line
 do
     iptables -w -A ZABORONA_V4 -d "$line" -j ACCEPT
 
-done < /root/updateCFGzaboronaIPTables.txt.txt
+done < /root/updateCFGzaboronaIPTables.txt
 
 echo "Update File OK"
 
