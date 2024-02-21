@@ -154,4 +154,7 @@ echo "We start updating configs after updating files"
 
 ### INSTALL FILES ###
 
+# First Config Software
+$PWD/first-config-software.sh
+
 exit 0
