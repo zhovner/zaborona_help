@@ -157,8 +157,8 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $VPN_ADDR_4_DNS05 -p udp --dp
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $VPN_ADDR_4_DNS06 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $VPN_ADDR_4_DNS07 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $VPN_ADDR_4_DNS08 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNS09 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNS10 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNS09 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNS10 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNS11 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNS12 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNS13 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -177,8 +177,8 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $VPN_ADDR_4_DNSFAKE1 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -198,8 +198,8 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $VPN_ADDR_4_DNSFAKE2 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -219,8 +219,8 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $VPN_ADDR_4_DNSFAKE3 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -240,8 +240,8 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_05 -d $VPN_ADDR_4_DNSFAKE4 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_06 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_07 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_08 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_09 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_10 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353

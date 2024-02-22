@@ -1992,6 +1992,11 @@ push "route 5.178.80.0 255.255.248.0" # OOO "Network of data-centers "Selectel"
 push "route 62.113.115.0 255.255.255.0" # VDSINA VDS Hosting
 # ~~~ ADD 2024-02-03 ~~~ #
 
+# ~~~ ADD 2024-02-22 ~~~ #
+# yandex subnet
+push "route 213.180.204.0 255.255.255.0"
+# ~~~ ADD 2024-02-22 ~~~ #
+
 ### University ru ###
 # osu.ru
 push "route 62.76.152.0 255.255.255.0" # Orenburg State University
