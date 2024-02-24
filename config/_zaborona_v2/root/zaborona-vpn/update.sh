@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+#set -e
 
 HERE="$(dirname "$(readlink -f "${0}")")"
 cd "$HERE"
@@ -9,10 +9,15 @@ LISTLINK_OFFICIAL="https://uablacklist.net"
 FILENAMEDOMAINS_OFFICIAL="domains.txt"
 ### OFFICIAL LIST SITE ###
 
+### LIST RU ###
+LISTLINKIPS_RU="https://ipv4.fetus.jp"
+FILENAMEIPS_RU="ru.txt"
+### LIST RU ###
+
 LISTLINK_ALLCONFIG="https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/_zaborona_v2/root/zaborona-vpn/config"
 
 ### INCLUDE ###
-FILENAMEALLCONFIG_INCLUDE="include-hosts-dist.txt include-ips-dist.txt include-nxdomain-dist.txt include-blockport-dist.txt include-blockstring-dist.txt"
+FILENAMEALLCONFIG_INCLUDE="include-hosts-dist.txt include-ips-dist.txt include-nxdomain-dist.txt include-blockport-dist.txt include-blockstring-dist.txt openvpn-ccd-DEFAULT-dns.txt openvpn-ccd-DEFAULT-route.txt"
 FILENAMEALLCONFIG_INCLUDE_CUSTOM="include-hosts-custom.txt include-ips-custom.txt include-nxdomain-custom.txt include-blockport-custom.txt include-blockstring-custom.txt"
 ### INCLUDE ###
 
