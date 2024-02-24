@@ -9,9 +9,17 @@ chmod +x *.sh
 chmod +x ./config/*.sh
 chmod +x ./scripts/*.py
 
-# Update manually. This option is under development.
+# Update the Zaborona VPN software manually. This option is under development.
 #./upgrade.sh
-./iptables-custom.sh
+
+# Проверяем, существует ли файл конфига ferm
+if [ -f /etc/ferm/ferm.conf ]
+then
+	$iptablesCTRL="ferm"
+else
+	./iptables-custom.sh
+fi
+
 ./update.sh
 ./parse.sh
 ./process.sh
