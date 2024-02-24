@@ -154,12 +154,12 @@ echo "We start updating configs after updating files"
 
 ### INSTALL FILES ###
 
-# Проверяем, существует ли файл конфига dnsmasq либо knot-resolver
+# Проверяем, какой конфиг существует и запускаем нужный. Если присутствуют оба конфига, то приоритет отдается новому конфигу.
 if [ -f $PWD/first-config-software.sh ]
 then
 	# First Config Software
 	$PWD/first-config-software.sh
-elif [ -f /etc/knot-resolver/kresd.conf ]
+elif [ -f $PWD/first-config-software_oldcfg.sh ]
 	# First Config Software (Old Configs)
 	$PWD/first-config-software_oldcfg.sh
 else
