@@ -15,9 +15,9 @@ cd "$HERE"
 # Full path to the current directory ( Полный путь до текущей директории )
 $PWD
 
-YUM_PACKAGE_NAME="iptables curl python3 dnsmasq htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib python-dnslib netdata"
-DEB_PACKAGE_NAME="iptables curl python3 dnsmasq htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib netdata"
-UBNT_PACKAGE_NAME="iptables curl python3 dnsmasq htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib python-dnslib netdata"
+YUM_PACKAGE_NAME="iptables curl python3 dnsmasq htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib python-dnslib netdata sipcalc"
+DEB_PACKAGE_NAME="iptables curl python3 dnsmasq htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib netdata sipcalc"
+UBNT_PACKAGE_NAME="iptables curl python3 dnsmasq htop iftop net-tools git openvpn idn zip unzip python3-pip python3-dnslib python-dnslib netdata sipcalc"
 
 # Installing software for the correct work of the resolver ( Устанавливаем софт для корректрой работы резолвера )
 echo "Installing software for the correct work of the resolver ( Устанавливаем софт для корректрой работы резолвера )"
