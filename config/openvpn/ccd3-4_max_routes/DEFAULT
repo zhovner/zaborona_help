@@ -1997,6 +1997,10 @@ push "route 62.113.115.0 255.255.255.0" # VDSINA VDS Hosting
 push "route 213.180.204.0 255.255.255.0"
 # ~~~ ADD 2024-02-22 ~~~ #
 
+# ~~~ ADD 2024-02-27 ~~~ #
+push "route 93.92.203.0 255.255.255.0"
+# ~~~ ADD 2024-02-27 ~~~ #
+
 ### University ru ###
 # osu.ru
 push "route 62.76.152.0 255.255.255.0" # Orenburg State University

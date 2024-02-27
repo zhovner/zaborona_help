@@ -10,8 +10,8 @@ port=5353
 server=1.1.1.1
 server=1.0.0.1
 # CloudFlare DNS Block malware
-#server=1.1.1.3
-#server=1.0.0.3
+#server=1.1.1.2
+#server=1.0.0.2
 # CloudFlare DNS Block malware and adult content
 #server=1.1.1.3
 #server=1.0.0.3
