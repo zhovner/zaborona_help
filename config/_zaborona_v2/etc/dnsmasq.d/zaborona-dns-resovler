@@ -590,3 +590,15 @@ server=/aif.ru/127.0.0.4#5959
 server=/iz.ru/127.0.0.4#5959
 server=/mir24.tv/127.0.0.4#5959
 server=/prolaz.su/127.0.0.4#5959
+# TEMP DNS ukr.net
+server=/ukr.net/104.18.8.128
+server=/ukr.net/104.18.9.128
+server=/ukr.net/195.214.195.105
+server=/ukr.net/212.42.73.50
+server=/ukr.net/212.42.75.251
+server=/ukr.net/212.42.76.252
+server=/ukr.net/212.42.76.253
+server=/ukr.net/35.186.218.67
+server=/mail.ukr.net/212.42.75.249
+server=/mail.ukr.net/212.42.77.249
+server=/mail.ukr.net/212.42.77.253
