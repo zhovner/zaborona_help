@@ -160,6 +160,7 @@ then
 	# First Config Software
 	$PWD/first-config-software.sh
 elif [ -f $PWD/first-config-software_oldcfg.sh ]
+then
 	# First Config Software (Old Configs)
 	$PWD/first-config-software_oldcfg.sh
 else

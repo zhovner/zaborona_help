@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Checking root privileges
 if [ "$(id -u)" -ne 0 ]
@@ -26,6 +26,7 @@ if [ -f /etc/dnsmasq.conf ]
 then
 	$dnsserver="dnsmasq"
 elif [ -f /etc/knot-resolver/kresd.conf ]
+then
 	$dnsserver="knot-resolver"
 else
 	echo "!!! Не установлен ДНС сервер dnsmasq либо knot-resolver. Некуда копировать конфигурационные файлы."
@@ -209,7 +210,7 @@ systemctl reload ferm
 
 else
 
-sed -i 's/"/root/zaborona-vpn/iptables-custom.sh"/"/root/iptables.sh"/' /etc/systemd/system/firewall-config-script-custom.service
+sed -i 's/\/root\/zaborona-vpn\/iptables-custom.sh/\/root\/iptables.sh/' /etc/systemd/system/firewall-config-script-custom.service
 
 echo "Enable autostart service firewall-config-script-custom"
 # Включаем автозапуск сервиса firewall-config-script-custom
