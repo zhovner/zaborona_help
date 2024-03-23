@@ -585,6 +585,7 @@ server=/tabor.ru/127.0.0.4#5959
 server=/chipmaker.ru/127.0.0.4#5959
 server=/nuipogoda.ru/127.0.0.4#5959
 server=/amediateka.ru/127.0.0.4#5959
+server=/aliexpress.ru/127.0.0.4#5959
 # Test for Latvia
 server=/aif.ru/127.0.0.4#5959
 server=/iz.ru/127.0.0.4#5959
