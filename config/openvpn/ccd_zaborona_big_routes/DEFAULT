@@ -9632,6 +9632,25 @@ push "route 217.212.254.0 255.255.255.0" #
 #push "route 47.246.132.0 255.255.252.0" # Alibaba Cloud LLC (aliexpress.ru)
 push "route 185.188.183.0 255.255.255.0" # FIRST SERVER LIMITED (usbtor.ru)
 
+# ~~~ ADD 2024-03-26 ~~~ #
+# Lost Ark
+#push "route 195.211.129.0 255.255.255.0"
+push "route 104.26.12.205 255.255.255.255"
+push "route 34.117.186.192 255.255.255.255"
+# tidal.com (music service)
+push "route 13.226.34.0 255.255.255.0"
+push "route 18.164.96.0 255.255.255.0"
+push "route 18.164.116.0 255.255.255.0"
+push "route 18.164.124.0 255.255.255.0"
+push "route 18.173.239.248 255.255.255.255"
+push "route 18.238.55.0 255.255.255.0"
+push "route 104.16.51.111 255.255.255.255"
+push "route 104.16.53.111 255.255.255.255"
+push "route 104.18.32.137 255.255.255.255"
+push "route 108.138.106.0 255.255.255.0"
+push "route 172.64.155.119 255.255.255.255"
+# ~~~ ADD 2024-03-26 ~~~ #
+
 # HOSTINGS CHECKED #
 # Beget LLC
 push "route 5.35.82.0 255.255.254.0"
