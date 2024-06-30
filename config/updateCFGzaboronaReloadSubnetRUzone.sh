@@ -59,22 +59,22 @@ mv $WORKFOLDERNAME/$FILENAMERESULT4 $WORKFOLDERNAME2/$FILENAMERESULT3
 # Удаляем пустые строки и коментарии из файла
 sed -i -e '/^#/d' -e '/^$/d' $WORKFOLDERNAME2/$FILENAMERESULT3
 
-#while read -r line
-#do
-##	# Delete Old IPs
-##	iptables -w -D ZABORONA_V4 -d "$line" -j ACCEPT
+while read -r line
+do
+#	# Delete Old IPs
+#	iptables -w -D ZABORONA_V4 -d "$line" -j ACCEPT
+
+	if [[ -z $(iptables -S | grep $line) ]]; then
+		echo "$line - Address not found in iptables. Add it."
+		# Add New IPs
+		iptables -w -A ZABORONA_V4 -d "$line" -j ACCEPT
+	fi
+
 #
-#	if [[ -z $(iptables -S | grep $line) ]]; then
-#		echo "$line - Address not found in iptables. Add it."
-#		# Add New IPs
-#		iptables -w -A ZABORONA_V4 -d "$line" -j ACCEPT
-#	fi
+#	# Add New IPs
+#    iptables -w -A ZABORONA_V4 -d "$line" -j ACCEPT
 #
-##
-##	# Add New IPs
-##    iptables -w -A ZABORONA_V4 -d "$line" -j ACCEPT
-##
-#done < $WORKFOLDERNAME2/$FILENAMERESULT3
+done < $WORKFOLDERNAME2/$FILENAMERESULT3
 
 # Выполняем сортировку и проверку на дубликаты айпишников
 #sort -u $WORKFOLDERNAME2/$FILENAMERESULT3 $WORKFOLDERNAME2/$FILENAMERESULT5 > $WORKFOLDERNAME2/$FILENAMERESULT1
@@ -87,7 +87,7 @@ sort -u $WORKFOLDERNAME2/$FILENAMERESULT3 > $WORKFOLDERNAME2/$FILENAMERESULT1
 #    echo $"push \"route ${C_NET} ${C_NETMASK}\"" >> $WORKFOLDERNAME2/$FILENAMERESULT6
 #done < $WORKFOLDERNAME2/$FILENAMERESULT1
 
-# Заменяем оригинальный файл ipsdb.txt отсортированный файлом, для заполнения iptables при перезагрузке сервера
+# Заменяем оригинальный файл ipsdb.txt отсортированным файлом, для заполнения iptables при перезагрузке сервера
 mv $WORKFOLDERNAME2/$FILENAMERESULT1 $WORKFOLDERNAME2/$FILENAMERESULT
 
 ./updateCFGzaboronaOpenVPNRoutes.sh
