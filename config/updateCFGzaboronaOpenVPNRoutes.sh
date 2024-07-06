@@ -7,7 +7,7 @@ cd "$HERE"
 # Generate OpenVPN route file
 echo -n > ./openvpn-blocked-ranges.txt
 
-cat ./updateCFGzaboronaOpenVPNRoutesBIG_header0.txt > ./openvpn-blocked-ranges.txt
+#cat ./updateCFGzaboronaOpenVPNRoutesBIG_header0.txt > ./openvpn-blocked-ranges.txt
 
 while read -r line
 do
@@ -16,7 +16,11 @@ do
     echo $"push \"route ${C_NET} ${C_NETMASK}\"" >> ./openvpn-blocked-ranges.txt
 done < ./ipsdb0.txt
 
-mv ./openvpn-blocked-ranges.txt /etc/openvpn/ccd_zaborona_big_routes/DEFAULT
+sort -u ./openvpn-blocked-ranges.txt ./ccd_zaborona_big_routes_DEFAULT.txt > ./openvpn-blocked-ranges_sorted.txt
+
+cat ./updateCFGzaboronaOpenVPNRoutesBIG_header0.txt >> ./openvpn-blocked-ranges_sorted.txt
+
+mv ./openvpn-blocked-ranges_sorted.txt /etc/openvpn/ccd_zaborona_big_routes/DEFAULT
 
 echo "Update File OK"
 
