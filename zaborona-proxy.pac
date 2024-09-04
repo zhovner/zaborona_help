@@ -105,7 +105,7 @@ function mkMask(s) {  // convert CIDR notation /24 to mask 255.255.255.0 etc.
 
 function FindProxyForURL(url, host) {
     if ( nets.some( (net) => isInNet( dnsResolve(host), net[0], net[1]) ) ) {
-        return 'SOCKS5 socks.zaborona.help:1488; DIRECT';
+        return 'HTTP socks0.zaborona.help:3188; DIRECT';
     } else {
         return 'DIRECT';
     }
