@@ -3,12 +3,19 @@
 # Update IPTables (without restarting ferm)
 0 0 * * * /root/updateCFGzaboronaIPTables.sh
 # Update FERM IPv4
-0 0 * * * /root/updateCFGzaboronaIPTablesFREM.sh
+#0 0 * * * /root/updateCFGzaboronaIPTablesFREM.sh
 # Update FERM IPv6
-0 0 * * * /root/updateCFGzaboronaIPTablesFREM-ipv6.sh
+#0 0 * * * /root/updateCFGzaboronaIPTablesFREM-ipv6.sh
 # Update OpenVPN Routes
 0 0 * * * /root/updateCFGzaboronaOpenVPNRoutesNEW.sh
 # Update OpenVPN BIG Routes
-0 0 * * * /root/updateCFGzaboronaOpenVPNRoutesBIG.sh
-# Check Alive Server
-* * * * * curl -X POST -F 'server=zbrn-srv-ovh10' http://samp.monitor.example.com/tgbot_take.php
+#0 0 * * * /root/updateCFGzaboronaOpenVPNRoutesBIG.sh
+# Update IP Address DB
+0 0 * * * /root/updateCFGzaboronaIPTablesWhiteListUpdate.sh
+# Update SubnetRUzone and Generate File OVPN BIG Routes. Cron Run: At 00:00 on Saturday
+0 0 * * 6 /root/updateCFGzaboronaReloadSubnetRUzone.sh
+# Update WebProxy + Socks5 White List  
+0 0 * * * /root/updateCFGzaboronaWebProxySocks5WhiteList.sh
+
+# Autoupdate site zaborona.help
+*/10 * * * * /root/post_merge_deps_update.sh
