@@ -1,10 +1,14 @@
-usbdev.ru # ERROR 403 (BAN SERVER)
-vokrug.tv # 403 forbidden
-playme8.ru # OFF-LINE SITE
-win10tweaker.ru # Open Direct
+cloud.pocketbook.digital # MS Cloud
 coub.com # Open Direct
-pathofexile.com # Open Direct
+drive2.ru # 403 forbidden
+hdrezka.me # Open Direct
 login.p1.worldoftanks.net # Open Direct
 login.p2.worldoftanks.net # Open Direct
 login.p6.worldoftanks.net # Open Direct
-drive2.ru # 403 forbidden
+pathofexile.com # Open Direct
+playme8.ru # OFF-LINE SITE
+pocketbook.digital # MS Cloud
+rezka.ag # Open Direct
+usbdev.ru # ERROR 403 (BAN SERVER)
+vokrug.tv # 403 forbidden
+win10tweaker.ru # Open Direct
