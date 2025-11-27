@@ -16,7 +16,8 @@ do
     echo $"push \"route ${C_NET} ${C_NETMASK}\"" >> ./openvpn-blocked-ranges.txt
 done < ./ipsdb0.txt
 
-sort -u ./openvpn-blocked-ranges.txt ./ccd_zaborona_big_routes_DEFAULT.txt > ./openvpn-blocked-ranges_sorted.txt
+#sort -u ./openvpn-blocked-ranges.txt ./ccd_zaborona_big_routes_DEFAULT.txt > ./openvpn-blocked-ranges_sorted.txt
+sort -u ./openvpn-blocked-ranges.txt > ./openvpn-blocked-ranges_sorted.txt
 
 cat ./updateCFGzaboronaOpenVPNRoutesBIG_header0.txt >> ./openvpn-blocked-ranges_sorted.txt
 

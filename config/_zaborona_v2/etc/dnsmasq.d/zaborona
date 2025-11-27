@@ -1,33 +1,50 @@
 #listen-address=127.0.0.1,192.168.224.1,192.168.228.1,192.168.232.1,192.168.236.1,192.168.240.1,192.168.244.1,192.168.248.1,192.168.252.1,192.168.220.1,192.168.216.1,192.168.212.1,192.168.208.1,192.168.111.129,192.168.111.1,10.14.20.1
 listen-address=127.0.0.1,192.168.224.1,192.168.228.1,192.168.232.1,192.168.236.1,192.168.240.1,192.168.244.1,192.168.248.1,192.168.252.1,192.168.220.1,192.168.216.1,192.168.212.1,192.168.208.1,192.168.204.1,192.168.111.129,192.168.111.1,10.14.20.1,192.168.17.1
 
-resolv-file=/etc/resolv.dnsmasq.conf
+#resolv-file=/etc/resolv.dnsmasq.conf
 port=5353
+# OpenDNS
+server=208.67.222.222
+server=208.67.220.220
 # CloudFlare DOH
 #server=127.0.0.1#5553
 #server=57.128.195.123
 # CloudFlare DNS Default
-server=1.1.1.1
-server=1.0.0.1
+#server=1.1.1.1
+#server=1.0.0.1
 # CloudFlare DNS Block malware
-#server=1.1.1.2
-#server=1.0.0.2
+#server=1.1.1.3
+#server=1.0.0.3
 # CloudFlare DNS Block malware and adult content
 #server=1.1.1.3
 #server=1.0.0.3
 # Google DNS
-server=8.8.8.8
-server=8.8.4.4
-strict-order
+#server=8.8.8.8
+#server=8.8.4.4
+# AdGuardHomeZBRN
+#server=185.69.152.191#5359
+#server=127.0.0.1#5359
+#strict-order
+all-servers
 no-resolv
+no-hosts
+local-ttl=120
+neg-ttl=300
+max-ttl=300
+bogus-priv
+#bogus-nxdomain=192.168.0.0/16
 cache-size=0
-dns-forward-max=10000
+dns-forward-max=1000000
 # --min-cache-ttl=[seconds] (-- minimum TTL = 2 minutes)
 max-cache-ttl=300
 min-cache-ttl=120
-#log-queries
+# For debugging purposes, log each DNS query as it passes through
+# dnsmasq.
+log-queries
+log-facility=/var/log/dnsmasq/log-queries.log
 #domain=*.onion,10.0.0.0/8
 #address=/dns-test.zaborona/94.242.59.156
+#address=/zaborona.help/185.69.152.191
 #server=/pandora.com/127.0.0.4#5959
 
 # DNSMAP

@@ -42,7 +42,7 @@
                 <div class="t-container t-align_center">
                     <div class="t-col t-col_8 t-prefix_2">
                         <div field="text" class="t-text t-text_lg ">
-                            OpenVPN &nbsp; <a href="extra_socks.html"  rel="">Socks5 <font color="red" style="font-weight: bold;">(TEST)</font></a> &nbsp; <a href="extra_proxy.html"  rel="">Web-Proxy <font color="red" style="font-weight: bold;">(TEST)</font></a>
+                            OpenVPN  | <a href="extra_socks.html"  rel="">Socks5 <font color="red" style="font-weight: bold;">(TEST)</font></a> | <a href="extra_proxy.html"  rel="">Web-Proxy <font color="red" style="font-weight: bold;">(TEST)</font></a>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
 								<br />
                                 <br /><span style="font-size: 32px;">Самостійне налаштування OpenVPN</span>
                                 <br />
-                                <br /> Сервер працює на OpenVPN 2.5.9
+                                <br /> Сервер працює на OpenVPN 2.6.11
                                 <br />
                                 <br />
                                <div>
@@ -95,7 +95,9 @@
                                   <ul class="zz-config">
                                     <li>
                                       <span>Основні сервери, Європа:</span><br>
-									  <span class="zz-value">srv0.vpn.zaborona.help</span>
+									  <span class="zz-value">srv0.vpn.zaborona.help</span><br>
+									  <span class="zz-value">srv0.vpn.zaboronahelp.ovh</span><br>
+									  <span class="zz-value">srv0.vpn.zaboronahelp.pp.ua</span>
                                       <span class="zz-note">Доменні імена та їх дзеркала налаштовані на декілька серверів. Рекомендовано використовувати домен замість IP-адреси, оскільки адреси серверів регулярно змінюються.</span>
                                     </li>
                                     <li>
@@ -148,6 +150,65 @@
                                       <span class="zz-note">Для коректної роботи "Заборона VPN" у Вас повинні бути прописані наші ДНС сервери. При використанні будь-яких інших ДНС-серверів, не вказаних тут - обхід блокувань буде працювати не коректно або не буде працювати взагалі.</span>
                                     </li>
                                   </ul>
+								  
+                                  <ul class="zz-config">
+                                    <li>
+                                      <span>Основні сервери, Європа (Роздача великого списку маршрутів):</span><br>
+                                      <span class="zz-value">srv0bigroutes.vpn.zaborona.help</span><br>
+									  <span class="zz-value">srv0bigroutes.vpn.zaboronahelp.ovh</span><br>
+									  <span class="zz-value">srv0bigroutes.vpn.zaboronahelp.pp.ua</span>
+                                      <span class="zz-note">Доменні імена та їх дзеркала налаштовані на декілька серверів. Рекомендовано використовувати домен замість IP-адреси, оскільки адреси серверів регулярно змінюються.</span>
+                                    </li>
+                                    <li>
+                                      Порт та протокол &mdash;<br>
+                                      <span class="zz-value">TCP 1200</span> (auth: sha1; cipher: AES-128-CBC)<br>
+                                      <span class="zz-value">UDP 1200</span> (auth: sha1; cipher: AES-128-CBC)
+                                      <span class="zz-note">Краще використовувати TCP замість UDP для зниження накладних витрат, щоб рідше відправляти пінги на мобільних пристроях та заощаджувати батарею.</span>
+                                    </li>
+                                    <li>
+                                      Протокол інкапсулювання/device type &mdash;
+                                      <span class="zz-value">L3 (tun)</span>
+                                    </li>
+                                    <li>
+                                      Алгоритм шифрування &mdash;
+                                      <!--//<span class="zz-value">BF-CBC (Blowfish)</span>
+                                       (рекомендовано), або //-->
+                                      <span class="zz-value">AES-128-CBC/AES-128-GCM</span>
+                                    </li>
+                                    <li>
+                                      Кореневий сертифікат &mdash;
+                                      <a href="https://zaborona.help/ca.crt">ca.crt</a>
+                                    </li>
+                                    <li>
+                                      Клієнтський сертифікат &mdash;
+                                      <a href="https://zaborona.help/zaborona-help.crt">zaborona-help.crt</a>
+                                    </li>
+                                    <li>
+                                      Приватний ключ &mdash;
+                                      <a href="https://zaborona.help/zaborona-help.key" download="zaborona-help.key">zaborona-help.key</a>
+                                    </li>
+                                     <li>
+                                      <span>Основні ДНС-сервери:</span>
+                                    </li>
+                                    <li>
+                                      Первинний DNS (не обов'язково) &mdash;
+                                      <span class="zz-value">208.67.222.222</span>
+                                    </li>
+                                    <li>
+                                      Вторинний DNS (не обов'язково) &mdash;
+                                      <span class="zz-value">208.67.220.220</span>
+                                    </li>
+                                    <li>
+                                      Нотатка по конфігу
+                                      <span class="zz-value"></span>
+                                      <span class="zz-note">Ця конфігурація підійде для комп'ютерів, смартфонів, планшетів та деяких моделей роутерів, які можуть завантажити великий список маршрутів та працювати з ним.</span>
+                                    </li>
+                                    <li>
+                                      Нотатка по DNS-серверам
+                                      <span class="zz-value"></span>
+                                      <span class="zz-note">DNS-сервера на цьому порту можна використовувати будь-які, але обов'язково, щоб вони мали захист від перехоплення запитів. Наприклад, використання DOT/DOH для шифрування запитів і не використовувати провайдерські DNS-сервера. Якщо використання шифрування DNS-запитів неможливе технічно, тоді можна використовувати наші DNS-сервера, запити через які будуть йти на vpn і оброблятися сервером не будуть.</span>
+                                    </li>
+                                  </ul>								  
 
                                 <div field="text" class="t-text t-text_md ">
                                    <div>

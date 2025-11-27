@@ -20,6 +20,7 @@ FILENAMERESULT5="domainsdb_checked.txt"
 FILENAMERESULT6="domainsdb_webproxy_allsubdomains.txt"
 FILENAMERESULT7="domainsdb_webproxy_done.txt"
 FILENAMERESULT8="domainsdb_webproxy_done2.txt"
+FILENAMERESULT9="domainsdb.txt"
 
 #curl -f --fail-early --compressed --connect-timeout 15 -o $WORKFOLDERNAME/$FILENAMERESULT3 "$LISTLINK_ALLCONFIG_DONE"
 
@@ -32,6 +33,9 @@ FILENAMERESULT8="domainsdb_webproxy_done2.txt"
 LISTSIZE="$(curl -sI --connect-timeout 15 "$LISTLINK_ALLCONFIG" | awk 'BEGIN {IGNORECASE=1;} /content-length/ {sub(/[ \t\r\n]+$/, "", $2); print $2}')"
 [[ "$LISTSIZE" == "$(stat -c '%s' $WORKFOLDERNAME/$FILENAMERESULT5)" ]] && echo "The files are the same ($WORKFOLDERNAME/$FILENAMERESULT5)" && exit 2
 #done
+
+# Копируем локальную базу доменов в скачанный файл
+cat $WORKFOLDERNAME/$FILENAMERESULT9 >> $WORKFOLDERNAME/$FILENAMERESULT4
 
 # Заменяем временную базу доменов, если файл со списком доменов изменился, который мы загружаем из стороннего ресурса
 cp $WORKFOLDERNAME/$FILENAMERESULT4 $WORKFOLDERNAME/$FILENAMERESULT3
@@ -49,6 +53,8 @@ sed -i -e 's/^/*./' $WORKFOLDERNAME/$FILENAMERESULT6
 
 # Добавляем префикс для всех субдоменов
 echo "*.ru" >> $WORKFOLDERNAME/$FILENAMERESULT6
+echo "*.by" >> $WORKFOLDERNAME/$FILENAMERESULT6
+echo "*.su" >> $WORKFOLDERNAME/$FILENAMERESULT6
 
 sort -u $WORKFOLDERNAME/$FILENAMERESULT3 $WORKFOLDERNAME/$FILENAMERESULT6 > $WORKFOLDERNAME/$FILENAMERESULT7
 

@@ -4,7 +4,15 @@ After=network.target
 
 [Service]
 WorkingDirectory=/root/dnsmap
-ExecStart=/root/dnsmap/proxy.py -a 127.0.0.4 -p 5959 --iprange 10.224.0.0/15 -u 77.88.8.8:53
+# Yandex DNS
+#ExecStart=/root/dnsmap/proxy.py -a 127.0.0.4 -p 5959 --iprange 10.224.0.0/15 -u 77.88.8.8:53
+# Google DNS
+#ExecStart=/root/dnsmap/proxy.py -a 127.0.0.4 -p 5959 --iprange 10.224.0.0/15 -u 8.8.8.8:53
+# CloudFlare DNS
+ExecStart=/root/dnsmap/proxy.py -a 127.0.0.4 -p 5959 --iprange 10.224.0.0/15 -u 1.1.1.1:53
+# ADGuard DNS
+#ExecStart=/root/dnsmap/proxy.py -a 127.0.0.4 -p 5959 --iprange 10.224.0.0/15 -u 127.0.0.1:5359
+ExecStop=iptables -t nat -F dnsmap
 Restart=on-failure
 RestartSec=5
 

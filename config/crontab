@@ -16,6 +16,31 @@
 0 0 * * 6 /root/updateCFGzaboronaReloadSubnetRUzone.sh
 # Update WebProxy + Socks5 White List  
 0 0 * * * /root/updateCFGzaboronaWebProxySocks5WhiteList.sh
+# Generate new DNS config
+0 0 * * * /root/updateCFGzaboronaDNSGenerateConfig.sh
+
+# Simple script to parse log file and create list of dnsmasq domains
+59 * * * * /root/updateCFGzaboronadnsmasq-log-queries.sh
+# Clear the cache list once a day to avoid cluttering up disk space
+#0 0 * * * echo "" > /root/dnsmasq-log-queries.txt
+
+0 3 * * */2 systemctl restart dnsmap
+0 3 * * */2 systemctl restart dnsmasq
+0 3 * * */2 systemctl restart openvpn@zaborona1
+0 3 * * */2 systemctl restart openvpn@zaborona3
+0 3 * * */2 systemctl restart openvpn@zaborona5udp
+0 3 * * */2 systemctl restart openvpn@zaborona7udp
+0 3 * * 6 systemctl restart openvpn@zaborona12
+0 3 * * 6 systemctl restart openvpn@zaborona13udp
 
 # Autoupdate site zaborona.help
 */10 * * * * /root/post_merge_deps_update.sh
+
+# Clear the cache list once a day to avoid cluttering up disk space
+0 * * * * echo "" > /var/log/dnsmasq/log-queries.log
+0 * * * * echo "" > /var/log/daemon.log
+0 * * * * echo "" > /var/log/syslog
+0 * * * * rm -rf /var/log/journal/
+
+# Monitoring for outgoing brute force attacks
+*/5 * * * * /root/monitoring/outgoing_bruteforce_watch.sh

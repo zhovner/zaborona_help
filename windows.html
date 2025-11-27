@@ -82,8 +82,8 @@
                                 <br><a href="https://zaborona.help/openvpn-client-config/zaborona-help_maxroutes.ovpn">zaborona-help_maxroutes.ovpn</a> (расширенный, для доступа к Mail.ru, ОК, ВК, Касперский, Dr. Web, WebMoney и другим сайтам)
                                 <hr />//-->
                                 <!--//<br>Подключение к серверам Zaborona.help через Европу (у кого не работает прямое подключение)://-->
-                                <br><a href="/openvpn-client-config/srv0.zaborona-help_maxroutes.ovpn">srv0.zaborona-help_maxroutes.ovpn</a> TCP
-                                <br><a href="/openvpn-client-config/srv0.zaborona-help-UDP-no-encryption_maxroutes.ovpn">srv0.zaborona-help-UDP-no-encryption_maxroutes.ovpn</a> UDP<br>
+                                <br><a href="/openvpn-client-config/srv0.zaborona-help-TCP_maxroutes.ovpn">srv0.zaborona-help-TCP_maxroutes.ovpn</a> TCP
+                                <br><a href="/openvpn-client-config/srv0.zaborona-help-UDP_maxroutes.ovpn">srv0.zaborona-help-UDP_maxroutes.ovpn</a> UDP<br>
                                 <!--# include file="openvpn_alt_config.html" -->
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                             <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff; border: 2px solid #1f5bff; ">3</div>
                         </div>
                         <div class="t510__textwrapper t-cell t-valign_top" >
-                            <div class="t-descr t-descr_sm"  field="li_descr__1476966597622">Запустите OpenVPN. Нажмите правой кнопкой на OpenVPN в трее (значок компьютера внизу справа около часов). Нажмите "Импорт конфигурации" и выберите скачанный файл <em>zaborona-help.ovpn</em>, <em>zaborona-help_maxroutes.ovpn</em>, <em>srv0.zaborona-help_maxroutes.ovpn</em> либо <em>srv0.zaborona-help-UDP-no-encryption_maxroutes.ovpn</em>.</div>
+                            <div class="t-descr t-descr_sm"  field="li_descr__1476966597622">Запустите OpenVPN. Нажмите правой кнопкой на OpenVPN в трее (значок компьютера внизу справа около часов). Нажмите "Импорт конфигурации" и выберите скачанный файл <em>zaborona-help.ovpn</em>.</div>
                         </div>
                     </div>
                     <div class="t-clear t510__separator" ></div>
@@ -148,12 +148,15 @@
                     <div class="t-col t-col_8 t-prefix_2 t-item ">
                         <div class="t510__textwrapper t-cell t-valign_top" >
                             <div class="t-descr t-descr_sm"  field="li_descr__1476966581869"><hr />
+								<div class="t225__descr t-descr t-descr_xxl" field="descr" >Пользователям Windows 10 (Устаревшая ОС)</div><br>
+                                      <span class="zz-note"> Обратите внимание, что поддержка OpenVPN для Windows 10, может быть в любое время прекращена разработчиком. На данный момент акутальную версию можно загрузить <a href="https://openvpn.net/community-downloads" target="_blank">по ссылке здесь</a></span><br />
+							
 								<div class="t225__descr t-descr t-descr_xxl" field="descr" >Пользователям Windows 7/8/8.1 (Устаревшая ОС)</div><br>
                                       <span class="zz-note"> Обратите внимание, что поддержка OpenVPN для Windows 7/8/8.1, может быть в любое время прекращена разработчиком. На данный момент акутальную версию можно загрузить <a href="https://openvpn.net/community-downloads" target="_blank">по ссылке здесь</a></span><br />
 
 								<div class="t225__descr t-descr t-descr_xxl" field="descr" >Пользователям Windows XP (Устаревшая ОС)</div><br>
-                                      <span class="zz-note">Обратите внимание, что последняя версия OpenVPN, которая поддерживает Windows XP, - это 2.3.18, которую можно загрузить как в <a href="https://build.openvpn.net/downloads/releases/openvpn-install-2.3.18-I001-i686.exe">32-разрядной</a>, так и в <a href="https://build.openvpn.net/downloads/releases/openvpn-install-2.3.18-I001-x86_64.exe">64-разрядной</a> версиях.</span><br>Конфиг специально для Windows XP: <a href="https://zaborona.help/zaborona-help-WinXP.ovpn">zaborona-help-WinXP.ovpn</a> (TCP).<br />
-<span class="zz-note">Обратите так же внимание на то что, нужен именно <b>OpenVPN Community Клиент</b>.</span>
+                                      <span class="zz-note">Обратите внимание, что последняя версия OpenVPN, которая поддерживает Windows XP, - это 2.3.18, которую можно загрузить как в 32-разрядной, так и в 64-разрядной версиях по ссылке <a href="https://build.openvpn.net/downloads/releases">здесь</a>.</span><br>Конфиг специально для Windows XP: <a href="https://zaborona.help/zaborona-help-WinXP.ovpn">zaborona-help-WinXP.ovpn</a> (TCP).<br />
+<span class="zz-note">Обратите так же внимание на то, что для Windows XP нужен именно <b>OpenVPN Community Клиент</b>.</span>
 <!--//<br /><br />
                                       Скачайте TAP-Windows Adapter V9 (Драйвер виртуальной сетевой карты):<br />
                                       <span class="zz-note"><a href="https://build.openvpn.net/downloads/releases/latest/tap-windows-latest-stable.exe">TAP-Windows Adapter V9 INSTALLER (NSIS)</a></span><br />
