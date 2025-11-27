@@ -11,8 +11,4 @@ pocketbook.digital # MS Cloud
 rezka.ag # Open Direct
 usbdev.ru # ERROR 403 (BAN SERVER)
 vokrug.tv # 403 forbidden
-<<<<<<< Updated upstream
 win10tweaker.ru # Open Direct
-=======
-win10tweaker.ru # Open Direct
->>>>>>> Stashed changes
