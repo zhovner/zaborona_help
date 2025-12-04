@@ -1,2 +1,7 @@
 User-agent: *
 Host: https://zaborona.help
+Host: https://zaborona.help/ua
+
+User-agent: *
+Disallow: /donate.html
+Disallow: /ua/donate.html

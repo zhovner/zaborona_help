@@ -16,8 +16,8 @@ if [ $CHANGE -eq 0 ]; then
 else
 	echo "Not up to date. Start git pull"
 	git pull
-	echo "Coy all files from /root/zaborona_help/* to /www/zaborona_help/"
-	cp -Rv * /www/zaborona_help/
+	echo "Coy all files from /root/zaborona_help/* to /var/www/zaborona_help/"
+	cp -Rv * /var/www/zaborona_help/
 	echo "Updated!"
 	# tg message
 	/root/telegram.sh "227897154" "Information!" "Site zaborona.help updated!"

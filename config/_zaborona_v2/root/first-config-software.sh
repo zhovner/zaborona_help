@@ -26,6 +26,7 @@ if [ -f /etc/dnsmasq.conf ]
 then
 	$dnsserver="dnsmasq"
 elif [ -f /etc/knot-resolver/kresd.conf ]
+then
 	$dnsserver="knot-resolver"
 else
 	echo "!!! Не установлен ДНС сервер dnsmasq либо knot-resolver. Некуда копировать конфигурационные файлы."
@@ -197,35 +198,32 @@ fi
 
 echo "To add it to the crontab, with no duplication"
 # Добавления задания в crontab с проверкой дублирования
-croncmd="#* * * * * curl -X POST -F 'server=zbrn-srv-$HOSTNAME' http://samp.monitor.example.com/tgbot_take.php"
-cronjob="# Check Alive Server\n$croncmd"
-( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
-croncmd="0 0 * * * /root/updateCFGzaborona.sh"
-cronjob="# Update DNS\n$croncmd"
-( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
-croncmd="0 0 * * * /root/updateCFGzaboronaIPTables.sh"
-cronjob="# Update IPTables (without restarting ferm)\n$croncmd"
-( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
-croncmd="0 0 * * * /root/updateCFGzaboronaIPTablesFREM.sh"
-cronjob="# Update FERM IPv4\n$croncmd"
-( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
-croncmd="0 0 * * * /root/updateCFGzaboronaIPTablesFREM-ipv6.sh"
-cronjob="# Update FERM IPv6\n$croncmd"
-( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
-croncmd="0 0 * * * /root/updateCFGzaboronaOpenVPNRoutesNEW.sh"
-cronjob="# Update OpenVPN Routes\n$croncmd"
-( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
-croncmd="0 0 * * * /root/updateCFGzaboronaOpenVPNRoutesBIG.sh"
-cronjob="# Update OpenVPN BIG Routes\n$croncmd"
-( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
-croncmd="0 0 * * * /root/updateCFGzaboronaIPTablesWhiteListUpdate.sh"
-cronjob="# Update IP Address DB\n$croncmd"
-( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="#* * * * * curl -X POST -F 'server=zbrn-srv-$HOSTNAME' http://samp.monitor.example.com/tgbot_take.php"
+#cronjob="# Check Alive Server\n$croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="0 0 * * * /root/updateCFGzaborona.sh"
+#cronjob="# Update DNS\n$croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="0 0 * * * /root/updateCFGzaboronaIPTables.sh"
+#cronjob="# Update IPTables (without restarting ferm)\n$croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="0 0 * * * /root/updateCFGzaboronaIPTablesFREM.sh"
+#cronjob="# Update FERM IPv4\n$croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="0 0 * * * /root/updateCFGzaboronaIPTablesFREM-ipv6.sh"
+#cronjob="# Update FERM IPv6\n$croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="0 0 * * * /root/updateCFGzaboronaOpenVPNRoutesNEW.sh"
+#cronjob="# Update OpenVPN Routes\n$croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="0 0 * * * /root/updateCFGzaboronaOpenVPNRoutesBIG.sh"
+#cronjob="# Update OpenVPN BIG Routes\n$croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
+#croncmd="0 0 * * * /root/updateCFGzaboronaIPTablesWhiteListUpdate.sh"
+#cronjob="# Update IP Address DB\n$croncmd"
+#( crontab -l | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -
 
-echo "We start updating configs after updating files"
-# Запускаем обновление конфигов после обновления файлов
-#cd "./zaborona-vpn"
-#./doall.sh
+echo "Complete!"
 
 ### CONFIG FILES ###
 

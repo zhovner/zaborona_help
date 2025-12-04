@@ -42,7 +42,7 @@
                 <div class="t-container t-align_center">
                     <div class="t-col t-col_8 t-prefix_2">
                         <div field="text" class="t-text t-text_lg ">
-                            OpenVPN &nbsp; <a href="/extra_socks.html"  rel="">Socks5 <font color="red" style="font-weight: bold;">(TEST)</font></a> &nbsp; <a href="/extra_proxy.html"  rel="">Web-Proxy <font color="red" style="font-weight: bold;">(TEST)</font></a>
+                            OpenVPN <!--// &nbsp; <a href="/extra_socks.html"  rel="">Socks5 <font color="red" style="font-weight: bold;">(TEST)</font></a> &nbsp; <a href="/extra_proxy.html"  rel="">Web-Proxy <font color="red" style="font-weight: bold;">(TEST)</font></a> //-->
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
 								<br />
                                 <br /><span style="font-size: 32px;">Ручная настройка OpenVPN</span>
                                 <br />
-                                <br /> Сервер работает на OpenVPN 2.5.9
+                                <br /> Сервер работает на OpenVPN 2.6.11
                                 <br />
                                 <br />
                                <div>
@@ -94,13 +94,15 @@
                                   <ul class="zz-config">
                                     <li>
                                       <span>Основные сервера, Европа:</span><br>
+									  <span class="zz-value">srv0.vpn.zaboronahelp.pp.ua</span><br>
+									  <span class="zz-value">srv0.vpn.zaboronahelp.ovh</span><br>
 									  <span class="zz-value">srv0.vpn.zaborona.help</span>
                                       <span class="zz-note">Доменные имена и их зеркала направлены на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
                                     </li>
                                     <li>
                                       Порт и протокол &mdash;<br>
-                                      <span class="zz-value">TCP 1194/1196</span> (мин. шифрование: auth: sha1; cipher: AES-128-CBC)<br>
-                                      <span class="zz-value">UDP 1194/1196</span> (мин. шифрование: auth: sha1; cipher: AES-128-CBC)
+                                      <span class="zz-value">TCP 1194/1196</span> (auth: sha1; cipher: AES-128-CBC)<br>
+                                      <span class="zz-value">UDP 1194/1196</span> (auth: sha1; cipher: AES-128-CBC)
                                       <span class="zz-note">Лучше использовать TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
                                     </li>
 <!--//                                    <li>
@@ -152,6 +154,70 @@
                                       <span class="zz-note">Для корректной работы "Заборона VPN", у Вас должны быть прописаны наши ДНС сервера. При использовании любых других ДНС-серверов, не указанных здесь - обход блокировок будет работать не корректно либо не будет работать вообще.</span>
                                     </li>
                                   </ul>
+								  
+                                  <ul class="zz-config">
+                                    <li>
+                                      <span>Основные сервера, Европа (раздача большого списка маршрутов):</span><br>
+                                      <span class="zz-value">srv0bigroutes.vpn.zaboronahelp.pp.ua</span><br>
+									  <span class="zz-value">srv0bigroutes.vpn.zaboronahelp.ovh</span><br>
+									  <span class="zz-value">srv0bigroutes.vpn.zaborona.help</span>
+                                      <span class="zz-note">Доменные имена и их зеркала направлены на несколько серверов. Рекомендуется использовать домен вместо IP-адреса, так как адреса серверов регулярно изменяются.</span>
+                                    </li>
+                                    <li>
+                                      Порт и протокол &mdash;<br>
+                                      <span class="zz-value">TCP 1200</span> (auth: sha1; cipher: AES-128-CBC)<br>
+                                      <span class="zz-value">UDP 1200</span> (auth: sha1; cipher: AES-128-CBC)
+                                      <span class="zz-note">Лучше использовать TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
+                                    </li>
+<!--//                                    <li>
+                                      Протокол &mdash;
+                                      <span class="zz-value">TCP/UDP</span>
+                                      <span class="zz-note">Лучше использовать TCP вместо UDP для снижения накладных расходов, чтобы реже отправлять пинги на мобильных устройствах и экономить батарею.</span>
+                                    </li>//-->
+                                    <li>
+                                      Протокол инкапсулирования/device type &mdash;
+                                      <span class="zz-value">L3 (tun)</span>
+                                    </li>
+                                    <li>
+                                      Алгоритм шифрования &mdash;
+                                      <!--//<span class="zz-value">BF-CBC (Blowfish)</span>
+                                       (рекомендуется), или//-->
+                                      <span class="zz-value">AES-128-CBC/AES-128-GCM</span> 
+                                    </li>
+                                    <li>
+                                      Корневой сертификат &mdash;
+                                      <a href="https://zaborona.help/ca.crt">ca.crt</a>
+                                    </li>
+                                    <li>
+                                      Клиентский сертификат &mdash;
+                                      <a href="https://zaborona.help/zaborona-help.crt">zaborona-help.crt</a>
+                                    </li>
+                                    <li>
+                                      Приватный ключ &mdash;
+                                      <a href="https://zaborona.help/zaborona-help.key" download="zaborona-help.key">zaborona-help.key</a>
+                                    </li>
+                                    <li>
+                                      <span>Основные ДНС-сервера:</span>
+                                    </li>
+                                    <li>
+                                      Первичный DNS (не обязательно) &mdash;
+                                      <span class="zz-value">208.67.222.222</span>
+                                    </li>
+                                    <li>
+                                      Вторичный DNS (не обязательно) &mdash;
+                                      <span class="zz-value">208.67.220.220</span>
+                                    </li>
+                                    <li>
+                                      Заметка по конфигу
+                                      <span class="zz-value"></span>
+                                      <span class="zz-note">Данная конфигурация подойдет для компьютеров, смартфонов, планшетов и некоторых моделей роутеров, которые могут загрузить большой список маршрутов и работать с ним.</span>
+                                    </li>
+                                    <li>
+                                      Заметка по DNS-серверам
+                                      <span class="zz-value"></span>
+                                      <span class="zz-note">DNS-сервера на этом порту можно использовать любые, но обязательно, чтобы они имели защиту от перехвата запросов. Например, использование DOT/DOH для шифрования запросов и не использовать провайдерские DNS-сервера. Если использование шифрования DNS-запросов невозможно технически, тогда можно использовать наши DNS-сервера, запросы через которые будут уходить на vpn и сервером обрабатываться не будут.</span>
+                                    </li>
+                                  </ul>								  
 
                                 <div field="text" class="t-text t-text_md ">
                                    <div>
