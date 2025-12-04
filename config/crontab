@@ -35,3 +35,12 @@
 
 # Autoupdate site zaborona.help
 */10 * * * * /root/post_merge_deps_update.sh
+
+# Clear the cache list once a day to avoid cluttering up disk space
+0 * * * * echo "" > /var/log/dnsmasq/log-queries.log
+0 * * * * echo "" > /var/log/daemon.log
+0 * * * * echo "" > /var/log/syslog
+0 * * * * rm -rf /var/log/journal/
+
+# Monitoring for outgoing brute force attacks
+*/5 * * * * /root/monitoring/outgoing_bruteforce_watch.sh

@@ -23,6 +23,7 @@ server=208.67.220.220
 #server=8.8.4.4
 # AdGuardHomeZBRN
 #server=185.69.152.191#5359
+#server=127.0.0.1#5359
 #strict-order
 all-servers
 no-resolv
