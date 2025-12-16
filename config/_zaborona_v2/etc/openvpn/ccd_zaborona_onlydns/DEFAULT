@@ -1,0 +1,84 @@
+# Yandex.DNS - Base
+#push "dhcp-option DNS 77.88.8.8" # First DNS Yandex
+#push "route 77.88.8.8" # Route to Yandex DNS
+
+#push "dhcp-option DNS 77.88.8.1" # Second DNS Yandex
+#push "route 77.88.8.1" # Route to Yandex DNS
+# Yandex.DNS - Base
+
+# Yandex.DNS - Safe
+#push "dhcp-option DNS 77.88.8.88" # First DNS Yandex
+#push "route 77.88.8.88" # Route to Yandex DNS
+
+#push "dhcp-option DNS 77.88.8.2" # Second DNS Yandex
+#push "route 77.88.8.2" # Route to Yandex DNS
+# Yandex.DNS - Safe
+
+# Yandex.DNS - Family
+#push "dhcp-option DNS 77.88.8.7" # First DNS Yandex
+#push "route 77.88.8.7" # Route to Yandex DNS
+
+#push "dhcp-option DNS 77.88.8.3" # Second DNS Yandex
+#push "route 77.88.8.3" # Route to Yandex DNS
+# Yandex.DNS - Family
+
+#push "dhcp-option DNS 74.82.42.42" # First DNS HE.net
+#push "route 74.82.42.42" # Route to HE.net DNS
+
+### OpenDNS ###
+push "dhcp-option DNS 208.67.222.222" # First DNS OpenDNS
+push "route 208.67.222.222" # Route to OpenDNS
+
+push "dhcp-option DNS 208.67.220.220" # Second DNS OpenDNS
+push "route 208.67.220.220" # Route to OpenDNS
+
+##push "dhcp-option DNS6 2620:119:35::35" # OpenDNS ipv6 dns
+##push "route-ipv6 2620:119:35::35" # OpenDNS ipv6 dns
+
+##push "dhcp-option DNS6 2620:119:53::53" # OpenDNS ipv6 dns
+##push "route-ipv6 2620:119:53::53" # OpenDNS ipv6 dns
+### OpenDNS ###
+
+# Comodo Secure DNS
+#push "dhcp-option DNS 8.26.56.26" # First DNS Comodo Secure DNS
+#push "dhcp-option DNS 8.20.247.20" # Second DNS Comodo Secure DNS
+#push "route 8.26.56.26" # Route to Comodo Secure DNS
+#push "route 8.20.247.20" # Route to Comodo Secure DNS
+
+# DNS.Watch
+#push "dhcp-option DNS 84.200.69.80" # First DNS DNS.Watch
+#push "dhcp-option DNS 84.200.70.40" # Second DNS DNS.Watch
+#push "route 84.200.69.80" # Route to DNS.Watch
+#push "route 84.200.70.40" # Route to DNS.Watch
+
+# Level3DNS
+#push "dhcp-option DNS 4.2.2.1" # First DNS Level3DNS
+#push "dhcp-option DNS 4.2.2.2" # Second DNS Level3DNS
+#push "route 4.2.2.1" # Route to Level3DNS
+#push "route 4.2.2.2" # Route to Level3DNS
+
+### Google DNS ###
+#push "dhcp-option DNS6 2001:4860:4860::8888" # Google ipv6 dns
+#push "route-ipv6 2001:4860:4860::8888"
+
+#push "dhcp-option DNS6 2001:4860:4860::8844" # Google ipv6 dns
+#push "route-ipv6 2001:4860:4860::8844"
+### Google DNS ###
+
+#Persist TUN
+push "persist-tun"
+
+# Def Config
+# push "dhcp-option DNS 192.168.XXX.1"
+# Zone Block Site
+push "route 10.224.0.0 255.254.0.0"
+# Zone TOR
+push "route 10.226.0.0 255.254.0.0"
+# Zone I2P
+#push "route 10.228.0.0 255.254.0.0"
+# Zone TLD
+push "route 10.230.0.0 255.254.0.0"
+#push "block-outside-dns"
+# Def Config
+
+# Routes
