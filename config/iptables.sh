@@ -79,6 +79,7 @@ VPN_ADDR_4_16="192.168.17.0/24"
 VPN_ADDR_4_17="192.168.16.0/24"
 VPN_ADDR_4_18="192.168.15.0/24"
 VPN_ADDR_4_19="192.168.204.0/24"
+VPN_ADDR_4_20="192.168.200.0/22"
 
 #VPN_ADDR_4=(
 #"192.168.224.0/22"
@@ -100,6 +101,7 @@ VPN_ADDR_4_19="192.168.204.0/24"
 #"192.168.16.0/24"
 #"192.168.15.0/24"
 #"192.168.204.0/24"
+#"192.168.200.0/22"
 #)
 
 VPN_ADDR_4_DNS01="192.168.224.1/32"
@@ -121,6 +123,7 @@ VPN_ADDR_4_DNS16="192.168.17.1/32"
 VPN_ADDR_4_DNS17="192.168.16.1/32"
 VPN_ADDR_4_DNS18="192.168.15.1/32"
 VPN_ADDR_4_DNS19="192.168.204.1/32"
+VPN_ADDR_4_DNS20="192.168.200.1/32"
 
 #VPN_ADDR_4_DNS=(
 #"192.168.224.1/32"
@@ -142,6 +145,7 @@ VPN_ADDR_4_DNS19="192.168.204.1/32"
 #"192.168.16.1/32"
 #"192.168.15.1/32"
 #"192.168.204.1/32"
+#"192.168.200.1/32"
 #)
 
 VPN_ADDR_4_DNSFAKE1="208.67.222.222/32"
@@ -149,7 +153,7 @@ VPN_ADDR_4_DNSFAKE2="208.67.220.220/32"
 VPN_ADDR_4_DNSFAKE3="77.88.8.8/32"
 VPN_ADDR_4_DNSFAKE4="77.88.8.1/32"
 
-#VPN_ADDR_4_DNSFAKE=("208.67.222.222/32" "208.67.220.220/32" "77.88.8.8/32" "77.88.8.1/32")
+#VPN_ADDRS=("208.67.222.222/32" "208.67.220.220/32" "77.88.8.8/32" "77.88.8.1/32")
 
 # iproute firewall
 iptables -t filter -N ZABORONA_V4
@@ -268,6 +272,7 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNS16 -p udp --dp
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNS17 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNS18 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNS19 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNS20 -p udp --dport 53 -j REDIRECT --to-ports 5353
 
 # VPN_ADDR_4_DNSFAKE1
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -291,6 +296,7 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE1 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 
 # VPN_ADDR_4_DNSFAKE2
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -314,6 +320,7 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE2 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 
 # VPN_ADDR_4_DNSFAKE3
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -337,6 +344,7 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE3 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 
 # VPN_ADDR_4_DNSFAKE4
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -360,6 +368,7 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE4 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 
 # 2025-11-14
 # На серверах OVH антиспам система фиксирует количество запросов к одному ДНС-серверу
@@ -421,6 +430,7 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 ! -d $DNSMAP_RANGE -j MARK --set
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 ! -d $DNSMAP_RANGE -j MARK --set-mark 1
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 ! -d $DNSMAP_RANGE -j MARK --set-mark 1
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 ! -d $DNSMAP_RANGE -j MARK --set-mark 1
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 ! -d $DNSMAP_RANGE -j MARK --set-mark 1
 #iptables -t mangle -A PREROUTING -m mark --mark 1 -j CONNMARK --save-mark
 iptables -t nat -A PREROUTING -m mark --mark 1 -j CONNMARK --save-mark
 
@@ -445,6 +455,7 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $DNSMAP_RANGE -j dnsmap
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $DNSMAP_RANGE -j dnsmap
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $DNSMAP_RANGE -j dnsmap
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $DNSMAP_RANGE -j dnsmap
+iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $DNSMAP_RANGE -j dnsmap
 
 #iptables -t nat -A POSTROUTING -s $VPNUDP_RANGE -j MASQUERADE
 #iptables -t nat -A POSTROUTING -s $VPNTCP_RANGE -j MASQUERADE
@@ -467,6 +478,7 @@ iptables -t nat -A POSTROUTING -s $VPN_ADDR_4_16 -o $WAN_4 -j MASQUERADE
 iptables -t nat -A POSTROUTING -s $VPN_ADDR_4_17 -o $WAN_4 -j MASQUERADE
 iptables -t nat -A POSTROUTING -s $VPN_ADDR_4_18 -o $WAN_4 -j MASQUERADE
 iptables -t nat -A POSTROUTING -s $VPN_ADDR_4_19 -o $WAN_4 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s $VPN_ADDR_4_20 -o $WAN_4 -j MASQUERADE
 
 # Balanced Connections
 #iptables -t nat -I PREROUTING -i $WAN_4 -p tcp -m tcp --dport 1194 -m conntrack --ctstate NEW -m statistic --mode random --probability 0.50000000000 -j REDIRECT --to-ports 1195
