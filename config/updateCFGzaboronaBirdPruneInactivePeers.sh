@@ -32,7 +32,7 @@ birdc show protocols all | awk '
     AGE=$((NOW - SINCE_TS))
 
     # извлекаем IP из имени протокола dyn_1.2.3.4
-    PEER_IP=$(echo "$PROTO" | sed 's/^dyn_//')
+    PEER_IP=$(echo "$PROTO" | sed 's/^dyn_//' | tr '_' '.')
 
     if [ "$STATE" = "Established" ]; then
         echo "$PEER_IP" >> "$TMP_ACTIVE"
