@@ -25,6 +25,8 @@
 # Generate BIRD config Clients
 */5 * * * * /root/updateCFGzaboronaBird.sh
 */6 * * * * /root/updateCFGzaboronaBirdDynUpdateConfig.sh
+# Generate BIRD config Routes
+0 0 * * 6 /root/updateCFGzaboronaBirdGenRoutesConfig.sh
 
 # Simple script to parse log file and create list of dnsmasq domains
 59 * * * * /root/updateCFGzaboronadnsmasq-log-queries.sh

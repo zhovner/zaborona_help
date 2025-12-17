@@ -32,6 +32,11 @@ cat ./bird-add-ranges_gen.txt >> ./bird-add-ranges.txt
 #mv ./bird-add-ranges.txt /etc/bird/routes.conf
 cp ./bird-add-ranges.txt /etc/bird/routes.conf
 
+# Перезагружаем конфиг BIRD
+birdc configure
+
+echo "BIRD конфиг обновлен и перезагружен."
+
 echo "Update File OK"
 
 exit 0
