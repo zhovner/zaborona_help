@@ -18,6 +18,8 @@
 0 0 * * * /root/updateCFGzaboronaWebProxySocks5WhiteList.sh
 # Generate new DNS config
 0 0 * * * /root/updateCFGzaboronaDNSGenerateConfig.sh
+# Generate new Mikrotik config routes
+0 0 * * 6 /root/updateCFGzaboronaGenMikrotikRoutesCLI.sh
 
 # Simple script to parse log file and create list of dnsmasq domains
 59 * * * * /root/updateCFGzaboronadnsmasq-log-queries.sh
