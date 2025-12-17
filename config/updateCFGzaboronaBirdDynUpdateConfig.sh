@@ -25,6 +25,7 @@ protocol bgp dyn_$PEER_IP {
     local as 65432;
     neighbor $PEER_IP as $PEER_AS;
     multihop 100;
+	#password "oH3sfT0lpE8xvP5kkC2gcM6ewU7vzR";
 
     import none;
     export filter EXPORT_TO_DYN_ROUTERS;
