@@ -19,9 +19,13 @@ TEMP_CONF="/etc/bird/dynamic_peers.conf.tmp"
 
 # Динамические BGP-пиры
 while read PEER_IP PEER_AS; do
+
+# Заменяем точки в IP на нижнее подчеркивание
+PEER_ID=${PEER_IP//./_}
+
     cat >> "$TEMP_CONF" <<EOL
 
-protocol bgp dyn_$PEER_IP {
+protocol bgp dyn_$PEER_ID {
     local as 65432;
     neighbor $PEER_IP as $PEER_AS;
     multihop 100;
