@@ -8,6 +8,8 @@ cd "$HERE"
 # Generate New route file for Mikrotik
 echo -n > ./mikrotik-add-ranges_gen.txt
 echo -n > ./mikrotik-del-ranges_gen.txt
+echo -n > ./mikrotik-add-ranges.txt
+echo -n > ./mikrotik-del-ranges.txt
 
 #cat ./updateCFGzaboronaOpenVPNRoutesBIG_header0.txt > ./openvpn-blocked-ranges.txt
 
