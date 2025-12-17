@@ -21,6 +21,7 @@ TEMP_CONF="/etc/bird/dynamic_peers.conf.tmp"
 while read PEER_IP PEER_AS; do
 
 # Заменяем точки в IP на нижнее подчеркивание
+# и прописываем PEER_ID
 PEER_ID=${PEER_IP//./_}
 
     cat >> "$TEMP_CONF" <<EOL
