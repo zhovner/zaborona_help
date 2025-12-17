@@ -13,23 +13,31 @@ BIRD_CONF="/etc/bird/dynamic_peers.conf"
 #TEMP_CONF="/etc/bird/bird.conf.tmp"
 TEMP_CONF="/etc/bird/dynamic_peers.conf.tmp"
 
+# Шаблон до секции динамических пиров
+cat > "$TEMP_CONF" <<EOL
+router id 203.0.113.1;
+
+# Статические маршруты
+protocol static static_routes {
+EOL
+
 # Вставляем маршруты из routes.conf
-#cat /etc/bird/routes.conf >> "$TEMP_CONF"
-#echo "}" >> "$TEMP_CONF"
+cat /etc/bird/routes.conf >> "$TEMP_CONF"
+echo "}" >> "$TEMP_CONF"
 
 # Динамические BGP-пиры
 while read PEER_IP PEER_AS; do
     cat >> "$TEMP_CONF" <<EOL
 
 protocol bgp dyn_$PEER_IP {
-    local as 65432;
+    local as 65001;
     neighbor $PEER_IP as $PEER_AS;
-    multihop 100;
+    multihop 5;
 
-    import none;
-    export filter EXPORT_TO_DYN_ROUTERS;
-
-    graceful restart on;
+    ipv4 {
+        import all;
+        export all;
+    };
 }
 EOL
 done < "$PEERS_FILE"
