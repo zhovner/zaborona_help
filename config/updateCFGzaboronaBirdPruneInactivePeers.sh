@@ -31,7 +31,7 @@ birdc show protocols all | awk '
     SINCE_TS=$(date -d "$SINCE_DATE $SINCE_TIME" +%s 2>/dev/null || echo 0)
     AGE=$((NOW - SINCE_TS))
 
-    # извлекаем IP из имени протокола dyn_1.2.3.4
+    # извлекаем IP из имени протокола dyn_1.2.3.4. Конвертируем подчеркивание в точки
     PEER_IP=$(echo "$PROTO" | sed 's/^dyn_//' | tr '_' '.')
 
     if [ "$STATE" = "Established" ]; then
