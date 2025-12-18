@@ -18,8 +18,9 @@ do
 	# Если в файле есть мусор (пробелы, комментарии)
 	#line="$(echo "$line" | xargs)"
     #[[ -z "$line" || "$line" =~ ^# ]] && continue
-    echo "/ip route add dst-address=$line gateway=ovpn-out0-tmpl" >> ./mikrotik-add-ranges_gen.txt
-    echo "/ip route remove [find dst-address=$line gateway=ovpn-out0-tmpl]" >> ./mikrotik-del-ranges_gen.txt
+    echo "/ip route add dst-address=$line gateway=zaborona comment=zaborona-autoupdate" >> ./mikrotik-add-ranges_gen.txt
+    #echo "/ip route remove [find dst-address=$line gateway=ovpn-out0-tmpl]" >> ./mikrotik-del-ranges_gen.txt
+	#echo "/ip route remove [find comment=zaborona-autoupdate]" >> ./mikrotik-del-ranges_gen.txt
 	# Массовое удаление (осторожно)
     #echo "/ip route remove [find dst-address=$line]" >> ./mikrotik-del-ranges_gen.txt
 	# Массовое удаление (осторожно)
