@@ -153,7 +153,7 @@ VPN_ADDR_4_DNSFAKE2="208.67.220.220/32"
 VPN_ADDR_4_DNSFAKE3="77.88.8.8/32"
 VPN_ADDR_4_DNSFAKE4="77.88.8.1/32"
 
-#VPN_ADDRS=("208.67.222.222/32" "208.67.220.220/32" "77.88.8.8/32" "77.88.8.1/32")
+#VPN_ADDR_4_DNSFAKE=("208.67.222.222/32" "208.67.220.220/32" "77.88.8.8/32" "77.88.8.1/32")
 
 # iproute firewall
 iptables -t filter -N ZABORONA_V4
@@ -267,12 +267,16 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNS11 -p udp --dp
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNS12 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNS13 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $VPN_ADDR_4_DNS14 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNS15 -p udp --dport 53 -j REDIRECT --to-ports 5353
+## AdGuardHOME
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNS15 -p udp --dport 53 -j REDIRECT --to-ports 5359
+##
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNS16 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNS17 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNS18 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNS19 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNS20 -p udp --dport 53 -j REDIRECT --to-ports 5353
+## AdGuardHOME
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNS20 -p udp --dport 53 -j REDIRECT --to-ports 5359
+##
 
 # VPN_ADDR_4_DNSFAKE1
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -291,12 +295,16 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE1 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+## AdGuardHOME
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5359
+##
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5353
+## AdGuardHOME
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE1 -p udp --dport 53 -j REDIRECT --to-ports 5359
+##
 
 # VPN_ADDR_4_DNSFAKE2
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -315,12 +323,16 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE2 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+## AdGuardHOME
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5359
+##
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5353
+## AdGuardHOME
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE2 -p udp --dport 53 -j REDIRECT --to-ports 5359
+##
 
 # VPN_ADDR_4_DNSFAKE3
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -339,12 +351,16 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE3 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+## AdGuardHOME
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5359
+##
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5353
+## AdGuardHOME
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE3 -p udp --dport 53 -j REDIRECT --to-ports 5359
+##
 
 # VPN_ADDR_4_DNSFAKE4
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_01 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
@@ -363,12 +379,16 @@ iptables -t nat -A PREROUTING -s $VPN_ADDR_4_11 -d $VPN_ADDR_4_DNSFAKE4 -p udp -
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_12 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_13 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_14 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+## AdGuardHOME
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_15 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5359
+##
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_16 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_17 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_18 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -s $VPN_ADDR_4_19 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
-iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5353
+## AdGuardHOME
+#iptables -t nat -A PREROUTING -s $VPN_ADDR_4_20 -d $VPN_ADDR_4_DNSFAKE4 -p udp --dport 53 -j REDIRECT --to-ports 5359
+##
 
 # 2025-11-14
 # На серверах OVH антиспам система фиксирует количество запросов к одному ДНС-серверу
@@ -679,7 +699,7 @@ done
 iptables -t nat -A OUTPUT -p udp -d 127.0.0.5 --dport 53 -j REDIRECT --to-ports 5359
 # TCP
 iptables -t nat -A OUTPUT -p tcp -d 127.0.0.5 --dport 53 -j REDIRECT --to-ports 5359
-
+# DNS REDIRECT: 127.0.0.5:53 -> 127.0.0.5:5359 (AdGuardHome)
 iptables -t nat -A OUTPUT -p udp -d 127.0.0.1 --dport 53 -j ACCEPT
 iptables -t nat -A OUTPUT -p tcp -d 127.0.0.1 --dport 53 -j ACCEPT
 iptables -t nat -A OUTPUT -p udp -d 127.0.0.5 --dport 53 -j ACCEPT
