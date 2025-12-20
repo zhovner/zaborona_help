@@ -1,0 +1,16 @@
+[Unit]
+Description=Zaborona TXT File HTTPS Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+ExecStart=/usr/bin/python3 /root/updateCFGzaboronaWebServer.py
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
