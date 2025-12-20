@@ -82,3 +82,6 @@ for line in proc.stdout:
             # Открываем лог-файл
             f.write(f"{datetime.now()} NEW BGP PEER {ip}\n")
             # Пишем событие с временной меткой
+
+        # ВЫЗОВ bash-СКРИПТА TELEGRAM
+        # subprocess.Popen([TG_SCRIPT, ip])

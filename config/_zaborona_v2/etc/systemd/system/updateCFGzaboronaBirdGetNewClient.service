@@ -1,0 +1,40 @@
+[Unit]
+Description=BGP TCP 179 Sniffer (Dynamic Peers Detector)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+
+# Пользователь — root, т.к. tcpdump требует CAP_NET_RAW
+User=root
+Group=root
+
+# Команда запуска
+ExecStart=/usr/bin/python3 /usr/local/bin/bgp_sniffer.py
+
+# Автоперезапуск при падении
+Restart=on-failure
+RestartSec=5
+
+# Ограничение бесконечных рестартов.
+# если 5 падений за 5 минут — systemd перестанет дергать сервис
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+# Убить tcpdump при остановке сервиса
+KillMode=process
+
+# Ограничения ресурсов (безопасно)
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/etc/bird /var/log
+
+# Логи
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
