@@ -23,7 +23,7 @@
 # Generate new Keenetic config routes
 0 0 * * 6 /root/updateCFGzaboronaGenKeenetikRoutesCLIandWeb.sh
 # Generate BIRD config Clients
-*/5 * * * * /root/updateCFGzaboronaBird.sh
+#*/5 * * * * /root/updateCFGzaboronaBird.sh
 */6 * * * * /root/updateCFGzaboronaBirdDynUpdateConfig.sh
 # Generate BIRD config Routes
 0 0 * * 6 /root/updateCFGzaboronaBirdGenRoutesConfig.sh
