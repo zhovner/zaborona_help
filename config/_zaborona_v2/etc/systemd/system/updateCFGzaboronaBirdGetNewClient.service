@@ -3,6 +3,11 @@ Description=BGP TCP 179 Sniffer (Dynamic Peers Detector)
 After=network-online.target
 Wants=network-online.target
 
+# чтобы не было сюрпризов, пути должны существовать:
+# mkdir -p /etc/bird
+# touch /etc/bird/dynamic_peers.txt
+# touch /var/log/bgp-sniffer.log
+
 [Service]
 Type=simple
 
