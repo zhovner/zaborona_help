@@ -1,7 +1,7 @@
 [Unit]
 Description=BGP TCP 179 Sniffer (Dynamic Peers Detector)
 After=network-online.target
-Wants=network-online.target
+#Wants=network-online.target
 
 # чтобы не было сюрпризов, пути должны существовать:
 # mkdir -p /etc/bird
@@ -9,14 +9,14 @@ Wants=network-online.target
 # touch /var/log/bgp-sniffer.log
 
 [Service]
-Type=simple
+#Type=simple
 
 # Пользователь — root, т.к. tcpdump требует CAP_NET_RAW
-User=root
-Group=root
+#User=root
+#Group=root
 
 # Команда запуска
-ExecStart=/usr/bin/python3 /usr/local/bin/bgp_sniffer.py
+ExecStart=/usr/bin/python3 /root/updateCFGzaboronaBirdGetNewClient.py
 
 # Автоперезапуск при падении
 Restart=on-failure
@@ -31,11 +31,11 @@ StartLimitBurst=5
 KillMode=process
 
 # Ограничения ресурсов (безопасно)
-NoNewPrivileges=true
-PrivateTmp=true
-ProtectSystem=full
-ProtectHome=true
-ReadWritePaths=/etc/bird /var/log
+#NoNewPrivileges=true
+#PrivateTmp=true
+#ProtectSystem=full
+#ProtectHome=true
+#ReadWritePaths=/etc/bird /var/log
 
 # Логи
 StandardOutput=journal
