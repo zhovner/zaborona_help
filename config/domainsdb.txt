@@ -46,6 +46,7 @@ asp24.ru
 atraining.ru
 autobook.one
 autosport.com.ru
+av3715.ru
 avcdn.net
 awru.my.games
 bafista.ru
@@ -124,6 +125,7 @@ dnd.su
 dns-shop.ru
 docs-python.ru
 donationalerts.com
+dos.zone
 drive2.ru
 driver.ru
 droider.ru
@@ -178,6 +180,7 @@ freelance.ru
 freeman42.ru
 freize.net
 frenglish.ru
+ftpserver.biz
 game-debate.com
 gamearmy.ru
 gameawards.ru
@@ -336,6 +339,7 @@ meteotrend.com
 mhdd.ru
 micro-solution.ru
 micrus.ru
+mikrotik.wiki
 mil.ru
 mipt.ru
 mir24.tv
@@ -396,6 +400,7 @@ okdk.ru
 old-combats.com
 old-games.ru
 oldbk2.com
+onespot.one
 onetrust.com
 online-cloud.moscow
 onlinezakladki.ru
@@ -418,6 +423,7 @@ pascalabc.net
 pathofexile.com
 patriarchia.ru
 paymaster.ru
+pcprogs.net
 pct.amocrm.ru
 peertube.su
 performer.emg.fm
@@ -483,6 +489,7 @@ rolz.org
 rosebook.ru
 rp-universe.ru
 rp5.ru
+rp5.ru 
 rsload.net
 rsload.ru
 rsload.website
@@ -508,6 +515,7 @@ ruweb.net
 rv77.pw
 rzd.ru
 sadmin.io
+samlab.ws
 sampo.ru
 sape.ru
 sberbank.ru
@@ -612,6 +620,7 @@ userapi.com
 utmn.ru
 utro.ru
 v3.skladchik.org
+vasilevkirill.ru
 vc.ru
 veesp.com
 vegalab.ru
@@ -624,6 +633,7 @@ visionbot.ru
 visions.ru
 vk-apps.com
 vk.com
+vk.ru
 vkforms.ru
 vkontakte.ru
 vkopt.net
@@ -636,6 +646,7 @@ voenmeh.ru
 voice-server.ru
 voidboost.cc
 voidboost.in
+vokino.pro
 vokrug.tv
 vpn.zaborona.help
 vz.ru
@@ -682,12 +693,3 @@ zilore.com
 zinenkos.site
 zoneofgames.ru
 zozo.gg
-av3715.ru
-rp5.ru 
-dos.zone
-tanksblitz.ru
-ftpserver.biz
-pcprogs.net
-vasilevkirill.ru
-9649.ru
-vk.ru
