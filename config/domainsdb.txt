@@ -697,3 +697,5 @@ online-cloud.moscow
 samlab.ws
 phpbbguru.net
 warezok.net
+eax.me
+repack.me
