@@ -2174,8 +2174,17 @@ push "route 92.38.156.0 255.255.255.0"
 
 ### 2025-07-14 ###
 # majestic-rp.ru (AntiDDoS Solutions LLC)
-push "route 80.66.82.0 255.255.255.0"
+#push "route 80.66.82.0 255.255.255.0"
 ### 2025-07-14 ###
+
+### 2026-05-01 ###
+# dl.repack.me
+push "route 5.188.119.0 255.255.255.0"
+# myfanfic.ru
+push "route 188.17.224.0 255.255.224.0"
+#  diakov.net
+push "route 212.8.246.0 255.255.255.0"
+### 2026-05-01 ###
 
 #=== Simple Sites ===
 
@@ -3049,4 +3058,4 @@ push "route 91.210.107.31 255.255.255.255"
 #####ROUTES-TEST#####################
 
 # Keenetic - 1100 routes maximum
-# NOW - 990 routes
+# NOW - 993 routes
