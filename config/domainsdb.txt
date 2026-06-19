@@ -684,16 +684,13 @@ zozo.gg
 av3715.ru
 rp5.ru 
 dos.zone
-tanksblitz.ru
 ftpserver.biz
 pcprogs.net
 vasilevkirill.ru
-9649.ru
 vk.ru
 mikrotik.wiki
 onespot.one
 vokino.pro
-online-cloud.moscow
 samlab.ws
 phpbbguru.net
 warezok.net
@@ -701,3 +698,5 @@ eax.me
 repack.me
 myfanfic.ru
 diakov.net
+getnet.pro
+fedulovschool.com
