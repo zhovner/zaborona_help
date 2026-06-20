@@ -3,10 +3,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Самостійне налаштування Zaborona Web-Proxy</title>
+    <title>Самостійне налаштування Zaborona XRay</title>
     <meta property="og:url" content="https://zaborona.help">
-    <meta property="og:title" content="Самостійне налаштування Zaborona Web-Proxy">
-    <meta property="og:description" content="Налаштування клієнта Web-Proxy для Ubuntu Linux, FreeBSD, Windows та інших">
+    <meta property="og:title" content="Самостійне налаштування Zaborona XRay">
+    <meta property="og:description" content="Налаштування клієнта XRay для Ubuntu Linux, FreeBSD, Windows та інших">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/img/cog.png">
     <meta property="fb:app_id" content="">
@@ -42,7 +42,7 @@
                 <div class="t-container t-align_center">
                     <div class="t-col t-col_8 t-prefix_2">
                         <div field="text" class="t-text t-text_lg ">
-                            <a href="extra.html"  rel="">OpenVPN</a> | <a href="extra_socks.html"  rel="">Socks5 <font color="red" style="font-weight: bold;">(TEST)</font></a> | Web-Proxy <font color="red" style="font-weight: bold;">(TEST)</font> | <a href="extra_xray.html"  rel="">XRay <font color="red" style="font-weight: bold;">(TEST)</font></a>
+                            <a href="extra.html"  rel="">OpenVPN</a> | <a href="extra_socks.html"  rel="">Socks5 <font color="red" style="font-weight: bold;">(TEST)</font></a> | <a href="extra_proxy.html"  rel="">Web-Proxy <font color="red" style="font-weight: bold;">(TEST)</font></a> | XRay <font color="red" style="font-weight: bold;">(TEST)</font>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
             <div class="t225">
                 <div class="t-container t-align_center">
                     <div class="t-col t-col_8 t-prefix_2">
-                        <div class="t225__title t-title t-title_md" field="title" >Самостійне налаштування<br> Web-Proxy</div>
+                        <div class="t225__title t-title t-title_md" field="title" >Самостійне налаштування<br> XRay</div>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                                 <br />
                                 <br /> Якщо ви знайшли помилку на сайті або хочете щось доповнити, це можна зробити відправивши <a href="https://git-scm.com/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B">pull request</a>
                                 <div field="text" class="t-text t-text_md ">
-                                    <br /><span style="font-size: 32px;">Web-Proxy</span>
+                                    <br /><span style="font-size: 32px;">XRay</span>
                                     <br />
                                     <br />
                                    <div>
@@ -89,56 +89,86 @@
                                               display: block;
                                               font-size: 14px;
                                             }
+											.zz-value-long-line {
+											  font-family: monospace;
+                                              font-weight: bold;
+											  cursor: pointer;
+											  user-select: all;
+											  display: inline-block;
+											  max-width: 100%;
+											  overflow-wrap: anywhere;
+											}												
                                           </style>
 
                                           <ul class="zz-config">
                                             <li>
                                               <span>Сервер, Європа:</span><br>
-                                              <span class="zz-value">proxy0.zaborona.help</span><br>
-											  <span class="zz-value">proxy0.zaboronahelp.ovh</span><br>
-											  <span class="zz-value">proxy0.zaboronahelp.pp.ua</span>
+                                              <span class="zz-value">xrproxy0.zaborona.help</span><br>
+											  <span class="zz-value">xrproxy0.zaboronahelp.ovh</span><br>
+											  <span class="zz-value">xrproxy0.zaboronahelp.pp.ua</span>
 											  <span class="zz-note">Доменні імена та їх дзеркала налаштовані на декілька серверів. Рекомендовано використовувати домен замість IP-адреси, оскільки адреси серверів регулярно змінюються.</span>
                                             </li>
                                             <li>
                                               Порт &mdash;
-                                              <span class="zz-value">3188</span>
+                                              <span class="zz-value">443</span>
                                             </li>
                                             <li>
                                               Протокол &mdash;
-                                              <span class="zz-value">HTTP/HTTPS</span>
+                                              <span class="zz-value">VLESS Reality</span>
+                                            </li>
+                                            <li>
+                                              Поток &mdash;
+                                              <span class="zz-value">xtls-rprx-vision</span>
                                             </li>
 											<li>
-                                              Логін/пароль &mdash;
-                                              <span class="zz-value">zaborona/zaborona</span>
+                                              ID &mdash;
+                                              <span class="zz-value">1d924fbb-2b18-4701-99ad-af36f87c2a09</span>
                                             </li>
+											<li>
+                                              Шифрування &mdash;
+                                              <span class="zz-value">none</span>
+                                            </li>
+											<li>
+                                              Транспорт &mdash;
+                                              <span class="zz-value">tcp</span>
+                                            </li>
+											<li>
+                                              Тип заголовку &mdash;
+                                              <span class="zz-value">none</span>
+                                            </li>
+											<li>
+                                              TLS &mdash;
+                                              <span class="zz-value">reality</span>
+                                            </li>
+											<li>
+                                              SNI &mdash;
+                                              <span class="zz-value">www.google.com</span>
+                                            </li>
+											<li>
+                                              Публічний ключ &mdash;
+                                              <span class="zz-value">-rYE7gtxreoDkCOMgFDeN3NLKmYxbpmiWLMo9A0j91A</span>
+                                            </li>
+											<li>
+                                              ShortID &mdash;
+                                              <span class="zz-value">224a4f954eb5b815</span>
+                                            </li>											
+                                            <li>
+                                              URL для швидкого підключення &mdash;
+                                              <span class="zz-value-long-line">vless://1d924fbb-2b18-4701-99ad-af36f87c2a09@xrproxy0.zaborona.help:443?security=reality&type=tcp&flow=xtls-rprx-vision&pbk=-rYE7gtxreoDkCOMgFDeN3NLKmYxbpmiWLMo9A0j91A&sid=224a4f954eb5b815&sni=www.google.com#zaborona.help_XRay_Proxy</span>
+                                            </li>										
                                           </ul>
-                                            <span class="zz-note">Проксі пропускає запити лише до IP-адрес перелічених у цьому <a href="https://zaborona.help/ips.txt">списку</a>. Тому його не вдасться використовувати для доступу до будь-яких ресурсів в Інтернеті.</span>
-											<!--// <span class="zz-note">Web-Proxy тимчасово вимкнено.</span> //-->
-											<br><span class="zz-note">Переважний спосіб <b>для комп'ютерів</b>. Погано працює на смартфонах.</span><br>
-											<span class="zz-note">Chrome:<br>
-											Установіть наступне: Установки → Показати додаткові налаштування → Змінити налаштування проксі-сервера → Налаштування мережі.<br>
-											Прописати параметри, які вказаны вище, в поля http і https.<br><br>
-											
-											Firefox:<br>
-											Налаштуйте наступним чином: Меню → Установки → Кнопка «налаштувати…» «Проксі-сервер».<br>
-											Прописати параметри, які вказаны вище, в поля http і https.<br><br>
-											
-											Opera:<br>
-											Установки → Браузер → Мережа → Редагувати параметри проксі-сервера.<br>
-											Прописати параметри, які вказаны вище, в поля http і https.<br><br>
-											
-											Internet Explorer:<br>
-											Сервіс → Властивості браузера → Безпека → виділити «Місцева інтрамережа» → сайти → зняти галку «Всі сайти, підключення до яких виконується в обхід проксі-сервера»<br>
-											Сервіс → Властивості браузера → Підключення → Налаштування мережі.<br>
-											Прописати параметри, які вказаны вище, в поля http і https.<br></span>
+                                            <span class="zz-note">XRay пропускає запити лише до IP-адрес та доменів, перелічених у цьому <a href="https://zaborona.help/ips.txt">списку</a>. Тому його не вдасться використовувати для доступу до будь-яких ресурсів в Інтернеті.</span>
+											<!--// <span class="zz-note">XRay временно отключен.</span> //-->
+											<br><span class="zz-note">Працює як на <b>комп'ютерах</b>, так і на смартфонах.</span><br>
+											<span class="zz-note">Якщо ви хочете налаштувати винятки, вам потрібно самостійно вибрати програми, які не повинні взаємодіяти з XRay в налаштуваннях вашої конкретної програми.<br></span>
 											<span class="zz-note">
 		<div id="rec20206738" class="r r_showed r_anim" style="padding-top:56px;padding-bottom:56px; " data-record-type="3">
             <!-- T107 -->
-            <div class="t107">
+            <!--<div class="t107">
                 <div class="t-align_center" itemscope="" itemtype="http://schema.org/ImageObject">
                     <img src="/img/firefox_settings_proxy_ua.png" class="t107__width t-width t-width_6 t-img loaded" imgfield="img">
                 </div>
-            </div>
+            </div>-->
         </div>
 											</span>
                                         </div>
