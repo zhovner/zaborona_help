@@ -1,0 +1,10 @@
+{
+  "BindAddr": [":2053"],
+  "BypassUID": ["nNy3fV8LCZMH8QGjGNepCg=="],
+  "RedirAddr": "www.google.com",
+  "PrivateKey": "00000000000000000000000000000000000000000000",
+  "ProxyBook": {
+    "shadowsocks": ["tcp", "127.0.0.1:2088"],
+    "openvpn": ["tcp", "127.0.0.1:1288"]
+  }
+}
