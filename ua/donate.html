@@ -20,6 +20,44 @@
 	<script type="text/javascript" src="/js/jquery.lightbox-0.5.js"></script>
 	<link rel="stylesheet" type="text/css" href="/css/jquery.lightbox-0.5.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="/css/style_custom.css" media="screen" />
+	
+<style>
+  .donate-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #FF7E5F, #FEB47B);
+    color: #ffffff !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 126, 95, 0.4);
+    transition: all 0.3s ease;
+  }
+
+  .donate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 126, 95, 0.6);
+  }
+
+  .donate-btn:active {
+    transform: translateY(1px);
+  }
+
+  .donate-icon {
+    animation: heartbeat 1.5s infinite;
+  }
+
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+  }
+</style>
+
 </head>
 
 <body class="t-body" style="margin: 0px;" data-gr-c-s-loaded="true">
@@ -82,7 +120,14 @@
                             Підходить для разових та регулярних пожертвувань. Регулярна підтримка допомагає планувати витрати на обслуговування інфраструктури та забезпечує стабільну роботу сервісу.
                         </div>						
                         <div class="t225__title t-title t-title_xxs card-number" field="title" >
-							<span><small>choko.link: <a href="https://choko.link/dntsrvhlp" target="_blank">https://choko.link/dntsrvhlp</a></small></span>
+							<span><small><!--// choko.link: <a href="https://choko.link/dntsrvhlp" target="_blank">https://choko.link/dntsrvhlp</a> //-->
+							<a href="https://choko.link/dntsrvhlp" target="_blank" rel="noopener noreferrer" class="donate-btn">
+							<svg class="donate-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+							</svg>
+							Задонатити!
+							</a>
+							</small></span>
                         </div>
                     </div>
                 </div>
